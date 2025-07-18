@@ -1,0 +1,51 @@
+RENT ALLOCATION NORMALIZATION SUMMARY
+==================================================
+
+Processing Date: 2025-07-17T22:07:40.658668
+Source File: data/raw/Consolidated_Rent_Allocation_20250527.csv
+Records Processed: 18
+
+COLUMN MAPPINGS:
+  'Month' -> 'month'
+  'Tax Base Rent' -> 'base_rent'
+  'Tax Garage' -> 'garage_fee'
+  'Tax Trash' -> 'trash_fee'
+  'Tax Courtesy' -> 'courtesy_fee'
+  'Conservice' -> 'utility_fee'
+  'Gross Total' -> 'gross_total'
+  'Ryan's Rent (43%)' -> 'ryan_amount'
+  'Jordyn's Rent (57%)' -> 'jordyn_amount'
+
+DATA TRANSFORMATIONS:
+  base_rent: 18 successful, 0 failed
+  garage_fee: 18 successful, 0 failed
+  trash_fee: 18 successful, 0 failed
+  courtesy_fee: 18 successful, 0 failed
+  utility_fee: 10 successful, 8 failed
+  gross_total: 18 successful, 0 failed
+  ryan_amount: 18 successful, 0 failed
+  jordyn_amount: 18 successful, 0 failed
+
+VALIDATION RESULTS:
+  Valid records: 18
+  Invalid records: 0
+
+RENT SPLIT VALIDATION:
+  Jan-24: ✓ Ryan 43.0%, Jordyn 57.0%
+  Feb-24: ✓ Ryan 43.0%, Jordyn 57.0%
+  Mar-24: ✓ Ryan 43.0%, Jordyn 57.0%
+  Apr-24: ✓ Ryan 43.0%, Jordyn 57.0%
+  May-24: ✓ Ryan 43.0%, Jordyn 57.0%
+  Jun-24: ✓ Ryan 43.0%, Jordyn 57.0%
+  Jul-24: ✓ Ryan 43.0%, Jordyn 57.0%
+  Aug-24: ✓ Ryan 43.0%, Jordyn 57.0%
+  Sep-24: ✓ Ryan 43.0%, Jordyn 57.0%
+  Oct-24: ✓ Ryan 43.0%, Jordyn 57.0%
+  Nov-24: ✓ Ryan 43.0%, Jordyn 57.0%
+  Dec-24: ✓ Ryan 43.0%, Jordyn 57.0%
+  Jan-25: ✓ Ryan 43.0%, Jordyn 57.0%
+  Feb-25: ✓ Ryan 43.0%, Jordyn 57.0%
+  Mar-25: ✓ Ryan 43.0%, Jordyn 57.0%
+  Apr-25: ✓ Ryan 43.0%, Jordyn 57.0%
+  May-25: ✓ Ryan 43.0%, Jordyn 57.0%
+  Jun-25: ✓ Ryan 43.0%, Jordyn 57.0%

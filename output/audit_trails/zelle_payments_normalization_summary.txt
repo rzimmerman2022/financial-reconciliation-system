@@ -1,0 +1,29 @@
+ZELLE PAYMENTS NORMALIZATION SUMMARY
+==================================================
+
+Processing Date: 2025-07-17T23:04:34.491298
+Source File: data/raw/Zelle_From_Jordyn_Final.csv
+Records Processed: 11
+
+COLUMN MAPPINGS:
+  'Date' -> 'date'
+  'Merchant' -> 'merchant'
+  'Category' -> 'category'
+  'Account' -> 'account'
+  'Original Statement' -> 'original_statement'
+  'Notes' -> 'notes'
+  'Amount' -> 'amount'
+
+DATA TRANSFORMATIONS:
+  date: 11 successful, 0 failed
+  amount: 11 successful, 0 failed
+
+VALIDATION RESULTS:
+  Valid records: 11
+  Invalid records: 0
+
+PAYMENT STATISTICS:
+  Total amount: $10,450.00
+  Average payment: $950.00
+  Payment range: $200.00 - $3000.00
+  Total payments: 11

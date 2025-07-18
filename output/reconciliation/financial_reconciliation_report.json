@@ -1,0 +1,491 @@
+{
+  "report_metadata": {
+    "generation_date": "2025-07-17T23:22:14.152990",
+    "report_type": "comprehensive_financial_reconciliation",
+    "data_sources": [
+      "rent_allocation_normalized.csv",
+      "zelle_payments_normalized.csv",
+      "expense_history_normalized.csv"
+    ]
+  },
+  "rent_analysis": {
+    "monthly_breakdown": [
+      {
+        "month": "Jan-24",
+        "jordyn_rent_owed": 1208.24,
+        "zelle_received": 0,
+        "difference": -1208.24,
+        "coverage_percent": 0.0,
+        "status": "Underpaid"
+      },
+      {
+        "month": "Feb-24",
+        "jordyn_rent_owed": 1251.95,
+        "zelle_received": 0,
+        "difference": -1251.95,
+        "coverage_percent": 0.0,
+        "status": "Underpaid"
+      },
+      {
+        "month": "Mar-24",
+        "jordyn_rent_owed": 1241.35,
+        "zelle_received": 800.0,
+        "difference": -441.3499999999999,
+        "coverage_percent": 64.44596608531036,
+        "status": "Underpaid"
+      },
+      {
+        "month": "Apr-24",
+        "jordyn_rent_owed": 1242.36,
+        "zelle_received": 0,
+        "difference": -1242.36,
+        "coverage_percent": 0.0,
+        "status": "Underpaid"
+      },
+      {
+        "month": "May-24",
+        "jordyn_rent_owed": 1230.86,
+        "zelle_received": 500.0,
+        "difference": -730.8599999999999,
+        "coverage_percent": 40.62200412719562,
+        "status": "Underpaid"
+      },
+      {
+        "month": "Jun-24",
+        "jordyn_rent_owed": 1239.09,
+        "zelle_received": 0,
+        "difference": -1239.09,
+        "coverage_percent": 0.0,
+        "status": "Underpaid"
+      },
+      {
+        "month": "Jul-24",
+        "jordyn_rent_owed": 1240.21,
+        "zelle_received": 200.0,
+        "difference": -1040.21,
+        "coverage_percent": 16.126301190927343,
+        "status": "Underpaid"
+      },
+      {
+        "month": "Aug-24",
+        "jordyn_rent_owed": 1234.5858,
+        "zelle_received": 3000.0,
+        "difference": 1765.4142,
+        "coverage_percent": 242.99647703707592,
+        "status": "Overpaid"
+      },
+      {
+        "month": "Sep-24",
+        "jordyn_rent_owed": 1234.1526,
+        "zelle_received": 2300.0,
+        "difference": 1065.8474,
+        "coverage_percent": 186.36269129117423,
+        "status": "Overpaid"
+      },
+      {
+        "month": "Oct-24",
+        "jordyn_rent_owed": 1234.1526,
+        "zelle_received": 0,
+        "difference": -1234.1526,
+        "coverage_percent": 0.0,
+        "status": "Underpaid"
+      },
+      {
+        "month": "Nov-24",
+        "jordyn_rent_owed": 1191.3,
+        "zelle_received": 0,
+        "difference": -1191.3,
+        "coverage_percent": 0.0,
+        "status": "Underpaid"
+      },
+      {
+        "month": "Dec-24",
+        "jordyn_rent_owed": 1191.3,
+        "zelle_received": 250.0,
+        "difference": -941.3,
+        "coverage_percent": 20.98547804918996,
+        "status": "Underpaid"
+      },
+      {
+        "month": "Jan-25",
+        "jordyn_rent_owed": 1191.3,
+        "zelle_received": 0,
+        "difference": -1191.3,
+        "coverage_percent": 0.0,
+        "status": "Underpaid"
+      },
+      {
+        "month": "Feb-25",
+        "jordyn_rent_owed": 1191.3,
+        "zelle_received": 1400.0,
+        "difference": 208.70000000000005,
+        "coverage_percent": 117.51867707546377,
+        "status": "Overpaid"
+      },
+      {
+        "month": "Mar-25",
+        "jordyn_rent_owed": 1191.3,
+        "zelle_received": 1000.0,
+        "difference": -191.29999999999995,
+        "coverage_percent": 83.94191219675984,
+        "status": "Underpaid"
+      },
+      {
+        "month": "Apr-25",
+        "jordyn_rent_owed": 1191.3,
+        "zelle_received": 1000.0,
+        "difference": -191.29999999999995,
+        "coverage_percent": 83.94191219675984,
+        "status": "Underpaid"
+      },
+      {
+        "month": "May-25",
+        "jordyn_rent_owed": 1191.3,
+        "zelle_received": 0,
+        "difference": -1191.3,
+        "coverage_percent": 0.0,
+        "status": "Underpaid"
+      },
+      {
+        "month": "Jun-25",
+        "jordyn_rent_owed": 1191.3,
+        "zelle_received": 0,
+        "difference": -1191.3,
+        "coverage_percent": 0.0,
+        "status": "Underpaid"
+      }
+    ],
+    "summary": {
+      "total_rent_owed": 21887.350999999995,
+      "total_zelle_received": 10450.0,
+      "overall_difference": -11437.350999999995,
+      "average_coverage_percent": 47.607856624992046,
+      "months_with_discrepancies": 18,
+      "total_months": 18
+    },
+    "discrepancies": [
+      {
+        "month": "Jan-24",
+        "type": "underpayment",
+        "amount": 1208.24
+      },
+      {
+        "month": "Feb-24",
+        "type": "underpayment",
+        "amount": 1251.95
+      },
+      {
+        "month": "Mar-24",
+        "type": "underpayment",
+        "amount": 441.3499999999999
+      },
+      {
+        "month": "Apr-24",
+        "type": "underpayment",
+        "amount": 1242.36
+      },
+      {
+        "month": "May-24",
+        "type": "underpayment",
+        "amount": 730.8599999999999
+      },
+      {
+        "month": "Jun-24",
+        "type": "underpayment",
+        "amount": 1239.09
+      },
+      {
+        "month": "Jul-24",
+        "type": "underpayment",
+        "amount": 1040.21
+      },
+      {
+        "month": "Aug-24",
+        "type": "overpayment",
+        "amount": 1765.4142
+      },
+      {
+        "month": "Sep-24",
+        "type": "overpayment",
+        "amount": 1065.8474
+      },
+      {
+        "month": "Oct-24",
+        "type": "underpayment",
+        "amount": 1234.1526
+      },
+      {
+        "month": "Nov-24",
+        "type": "underpayment",
+        "amount": 1191.3
+      },
+      {
+        "month": "Dec-24",
+        "type": "underpayment",
+        "amount": 941.3
+      },
+      {
+        "month": "Jan-25",
+        "type": "underpayment",
+        "amount": 1191.3
+      },
+      {
+        "month": "Feb-25",
+        "type": "overpayment",
+        "amount": 208.70000000000005
+      },
+      {
+        "month": "Mar-25",
+        "type": "underpayment",
+        "amount": 191.29999999999995
+      },
+      {
+        "month": "Apr-25",
+        "type": "underpayment",
+        "amount": 191.29999999999995
+      },
+      {
+        "month": "May-25",
+        "type": "underpayment",
+        "amount": 1191.3
+      },
+      {
+        "month": "Jun-25",
+        "type": "underpayment",
+        "amount": 1191.3
+      }
+    ]
+  },
+  "expense_analysis": {
+    "by_person": {
+      "Jordyn": {
+        "total_amount": 27075.120000000003,
+        "transaction_count": 400,
+        "average_expense": 67.68780000000001,
+        "date_range": {
+          "earliest": "2023-09-09 00:00:00",
+          "latest": "2024-12-30 00:00:00"
+        },
+        "top_merchants": {
+          "Chase Zelle": 5000.0,
+          "Fry's": 3086.8,
+          "Amazon": 2897.61,
+          "Frys": 1813.81,
+          "FRYS 5051 866-576-4377 AZ": 951.63
+        }
+      },
+      "Ryan": {
+        "total_amount": 76709.54999999999,
+        "transaction_count": 1103,
+        "average_expense": 69.54628286491386,
+        "date_range": {
+          "earliest": "2023-09-09 00:00:00",
+          "latest": "2024-12-31 00:00:00"
+        },
+        "top_merchants": {
+          "Bro": 9990.0,
+          "Rebecca": 9237.85,
+          "Amazon": 7688.47,
+          "Fry's": 6860.55,
+          "Fry's Food and Drug": 4004.94
+        }
+      }
+    },
+    "by_category": {
+      "Dining": {
+        "total_amount": 8329.720000000001,
+        "transaction_count": 214,
+        "average_expense": 38.923925233644866,
+        "by_person": {
+          "Jordyn": 1026.05,
+          "Ryan": 7303.67
+        }
+      },
+      "Gas": {
+        "total_amount": 495.95,
+        "transaction_count": 20,
+        "average_expense": 24.7975,
+        "by_person": {
+          "Jordyn": 131.68,
+          "Ryan": 364.27
+        }
+      },
+      "Groceries": {
+        "total_amount": 13737.859999999999,
+        "transaction_count": 222,
+        "average_expense": 61.88225225225224,
+        "by_person": {
+          "Jordyn": 3651.97,
+          "Ryan": 10085.89
+        }
+      },
+      "Online Shopping": {
+        "total_amount": 12636.400000000001,
+        "transaction_count": 265,
+        "average_expense": 47.6845283018868,
+        "by_person": {
+          "Jordyn": 3429.11,
+          "Ryan": 9207.29
+        }
+      },
+      "Other": {
+        "total_amount": 68623.19,
+        "transaction_count": 783,
+        "average_expense": 87.64136653895275,
+        "by_person": {
+          "Jordyn": 18836.31,
+          "Ryan": 49748.43
+        }
+      }
+    },
+    "by_time": {
+      "monthly_totals": {
+        "Jordyn": {
+          "2023-09": 1353.51,
+          "2023-10": 1733.5,
+          "2023-11": 1862.08,
+          "2023-12": 428.82,
+          "2024-01": 1195.55,
+          "2024-02": 1510.72,
+          "2024-03": 1813.48,
+          "2024-04": 1065.5,
+          "2024-05": 1569.92,
+          "2024-06": 1239.41,
+          "2024-07": 3286.4900000000002,
+          "2024-08": 4709.58,
+          "2024-09": 4544.59,
+          "2024-11": 0.0,
+          "2024-12": 761.97
+        },
+        "Ryan": {
+          "2023-09": 2898.13,
+          "2023-10": 5797.82,
+          "2023-11": 6836.33,
+          "2023-12": 5377.64,
+          "2024-01": 5163.67,
+          "2024-02": 5810.76,
+          "2024-03": 6055.58,
+          "2024-04": 7693.45,
+          "2024-05": 4202.21,
+          "2024-06": 6827.36,
+          "2024-07": 5429.41,
+          "2024-08": 6280.47,
+          "2024-09": 7281.54,
+          "2024-11": 220.0,
+          "2024-12": 835.1800000000001
+        }
+      }
+    },
+    "shared_expenses": {},
+    "summary": {
+      "total_expenses": 103823.12,
+      "total_transactions": 1504,
+      "average_expense": 69.03132978723404,
+      "date_range": {
+        "earliest": "2023-09-09 00:00:00",
+        "latest": "2024-12-31 00:00:00",
+        "span_days": 479
+      },
+      "unique_merchants": 495,
+      "people_count": 2
+    }
+  },
+  "timing_analysis": {
+    "zelle_patterns": {
+      "payment_count": 11,
+      "date_range": {
+        "start": "2024-03-18 00:00:00",
+        "end": "2025-04-30 00:00:00"
+      },
+      "common_day": 18,
+      "amount_stats": {
+        "total": 10450.0,
+        "average": 950.0,
+        "min": 200.0,
+        "max": 3000.0
+      }
+    },
+    "expense_patterns": {},
+    "correlation": {
+      "zelle_months": [
+        "2024-12",
+        "2024-09",
+        "2024-08",
+        "2025-04",
+        "2024-03",
+        "2025-02",
+        "2024-05",
+        "2025-03",
+        "2024-07"
+      ],
+      "jordyn_expense_months": [
+        "2024-06",
+        "2023-12",
+        "2023-11",
+        "2024-09",
+        "2023-09",
+        "2023-10",
+        "2024-08",
+        "2024-12",
+        "2024-03",
+        "2024-01",
+        "2024-04",
+        "2024-05",
+        "2024-02",
+        "2024-07"
+      ],
+      "overlapping_months": [
+        "2024-12",
+        "2024-09",
+        "2024-08",
+        "2024-03",
+        "2024-05",
+        "2024-07"
+      ],
+      "correlation_ratio": 0.6666666666666666
+    }
+  },
+  "balance_calculations": {
+    "rent_balance": {
+      "jordyn_rent_owed": 21887.350999999995,
+      "jordyn_paid": 10450.0,
+      "difference": -11437.350999999995,
+      "status": "Jordyn underpaid"
+    },
+    "expense_balance": {
+      "total_expenses": 103784.66999999998,
+      "ryan_paid": 76709.54999999999,
+      "jordyn_paid": 27075.120000000003,
+      "each_should_pay": 51892.33499999999,
+      "ryan_balance": 24817.214999999997,
+      "jordyn_balance": -24817.21499999999
+    },
+    "overall_balance": {
+      "jordyn_net": -36254.565999999984,
+      "ryan_net": 36254.565999999984,
+      "who_owes_whom": "Jordyn owes Ryan",
+      "amount_owed": 36254.565999999984
+    },
+    "summary": {}
+  },
+  "recommendations": [
+    {
+      "type": "payment_needed",
+      "priority": "high",
+      "description": "Jordyn owes Ryan $36,254.57",
+      "action": "Schedule payment to settle balance"
+    },
+    {
+      "type": "rent_discrepancies",
+      "priority": "medium",
+      "description": "Found 18 months with rent payment discrepancies",
+      "action": "Review individual monthly payments for accuracy"
+    },
+    {
+      "type": "payment_timing",
+      "priority": "low",
+      "description": "Zelle payments only correlate with 66.7% of expense months",
+      "action": "Consider more regular payment schedule"
+    }
+  ]
+}
