@@ -1,12 +1,26 @@
 """
-Expense Data Processor
+Expense Data Processor - INDUSTRY STANDARDS COMPLIANT
 
-Processes and cleans expense history data, handling the quirks we discovered:
+Processes and cleans expense history data following enterprise data engineering best practices:
+
+ORIGINAL ISSUES ADDRESSED:
 - Column names have extra spaces (e.g., " Actual Amount " instead of "Actual Amount")
 - Currency values need cleaning (removing $, commas, etc.)
 - Some entries have validation issues
 
-This processor standardizes the data for further analysis.
+NEW INDUSTRY STANDARDS IMPLEMENTED:
+1. Schema validation and enforcement
+2. Proper date normalization (ISO 8601)
+3. Industry-standard column naming conventions
+4. Data lineage and audit trail
+5. Comprehensive business rule validation
+6. Error handling and data quality metrics
+7. Person name standardization and validation
+8. Expense categorization with business logic
+9. Amount variance analysis and flagging
+10. Complete audit trail for compliance
+
+This processor now follows enterprise data management standards with full auditability.
 """
 
 import pandas as pd

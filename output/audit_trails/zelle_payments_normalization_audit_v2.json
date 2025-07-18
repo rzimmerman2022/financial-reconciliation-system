@@ -1,0 +1,207 @@
+{
+  "processing_metadata": {
+    "source_file": "data/raw/Zelle_From_Jordyn_Final.csv",
+    "load_timestamp": "2025-07-18T01:03:10.121624",
+    "original_row_count": 11,
+    "original_column_count": 7,
+    "original_columns": [
+      "Date",
+      "Merchant",
+      "Category",
+      "Account",
+      "Original Statement",
+      "Notes",
+      "Amount"
+    ]
+  },
+  "schema_validation": {
+    "expected_columns": [
+      "Date",
+      "Merchant",
+      "Category",
+      "Account",
+      "Original Statement",
+      "Notes",
+      "Amount"
+    ],
+    "actual_columns": [
+      "Date",
+      "Merchant",
+      "Category",
+      "Account",
+      "Original Statement",
+      "Notes",
+      "Amount"
+    ],
+    "missing_columns": [],
+    "extra_columns": [],
+    "column_mapping_valid": true
+  },
+  "data_transformations": {
+    "column_mapping": {
+      "successful_mappings": {
+        "Date": "transaction_date",
+        "Merchant": "payment_processor",
+        "Category": "transaction_category",
+        "Account": "receiving_account_id",
+        "Original Statement": "bank_statement_description",
+        "Notes": "transaction_notes",
+        "Amount": "payment_amount_usd"
+      },
+      "failed_mappings": []
+    },
+    "transaction_dates": {
+      "successful": 11,
+      "failed": 0,
+      "errors": []
+    },
+    "payment_amounts": {
+      "successful": 11,
+      "failed": 0,
+      "errors": []
+    }
+  },
+  "business_rule_validation": {},
+  "payment_authenticity_checks": {
+    "total_payments": 11,
+    "authentic_payments": 11,
+    "failed_validations": [],
+    "validation_details": {
+      "payment_001": {
+        "payment_id": "payment_001",
+        "is_authentic": true,
+        "failed_checks": [],
+        "validation_checks": {
+          "is_zelle_processor": true,
+          "is_transfer_category": true,
+          "has_jordyn_reference": true,
+          "has_valid_amount": true,
+          "has_valid_account_format": true
+        }
+      },
+      "payment_002": {
+        "payment_id": "payment_002",
+        "is_authentic": true,
+        "failed_checks": [],
+        "validation_checks": {
+          "is_zelle_processor": true,
+          "is_transfer_category": true,
+          "has_jordyn_reference": true,
+          "has_valid_amount": true,
+          "has_valid_account_format": true
+        }
+      },
+      "payment_003": {
+        "payment_id": "payment_003",
+        "is_authentic": true,
+        "failed_checks": [],
+        "validation_checks": {
+          "is_zelle_processor": true,
+          "is_transfer_category": true,
+          "has_jordyn_reference": true,
+          "has_valid_amount": true,
+          "has_valid_account_format": true
+        }
+      },
+      "payment_004": {
+        "payment_id": "payment_004",
+        "is_authentic": true,
+        "failed_checks": [],
+        "validation_checks": {
+          "is_zelle_processor": true,
+          "is_transfer_category": true,
+          "has_jordyn_reference": true,
+          "has_valid_amount": true,
+          "has_valid_account_format": true
+        }
+      },
+      "payment_005": {
+        "payment_id": "payment_005",
+        "is_authentic": true,
+        "failed_checks": [],
+        "validation_checks": {
+          "is_zelle_processor": true,
+          "is_transfer_category": true,
+          "has_jordyn_reference": true,
+          "has_valid_amount": true,
+          "has_valid_account_format": true
+        }
+      },
+      "payment_006": {
+        "payment_id": "payment_006",
+        "is_authentic": true,
+        "failed_checks": [],
+        "validation_checks": {
+          "is_zelle_processor": true,
+          "is_transfer_category": true,
+          "has_jordyn_reference": true,
+          "has_valid_amount": true,
+          "has_valid_account_format": true
+        }
+      },
+      "payment_007": {
+        "payment_id": "payment_007",
+        "is_authentic": true,
+        "failed_checks": [],
+        "validation_checks": {
+          "is_zelle_processor": true,
+          "is_transfer_category": true,
+          "has_jordyn_reference": true,
+          "has_valid_amount": true,
+          "has_valid_account_format": true
+        }
+      },
+      "payment_008": {
+        "payment_id": "payment_008",
+        "is_authentic": true,
+        "failed_checks": [],
+        "validation_checks": {
+          "is_zelle_processor": true,
+          "is_transfer_category": true,
+          "has_jordyn_reference": true,
+          "has_valid_amount": true,
+          "has_valid_account_format": true
+        }
+      },
+      "payment_009": {
+        "payment_id": "payment_009",
+        "is_authentic": true,
+        "failed_checks": [],
+        "validation_checks": {
+          "is_zelle_processor": true,
+          "is_transfer_category": true,
+          "has_jordyn_reference": true,
+          "has_valid_amount": true,
+          "has_valid_account_format": true
+        }
+      },
+      "payment_010": {
+        "payment_id": "payment_010",
+        "is_authentic": true,
+        "failed_checks": [],
+        "validation_checks": {
+          "is_zelle_processor": true,
+          "is_transfer_category": true,
+          "has_jordyn_reference": true,
+          "has_valid_amount": true,
+          "has_valid_account_format": true
+        }
+      },
+      "payment_011": {
+        "payment_id": "payment_011",
+        "is_authentic": true,
+        "failed_checks": [],
+        "validation_checks": {
+          "is_zelle_processor": true,
+          "is_transfer_category": true,
+          "has_jordyn_reference": true,
+          "has_valid_amount": true,
+          "has_valid_account_format": true
+        }
+      }
+    },
+    "authenticity_rate": 1.0
+  },
+  "data_quality_metrics": {},
+  "issues_identified": []
+}

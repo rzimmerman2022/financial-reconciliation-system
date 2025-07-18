@@ -1,0 +1,120 @@
+{
+  "processing_metadata": {
+    "source_file": "data/raw/Consolidated_Rent_Allocation_20250527.csv",
+    "load_timestamp": "2025-07-18T00:14:50.735061",
+    "original_row_count": 18,
+    "original_column_count": 9,
+    "original_columns": [
+      "Month",
+      "Tax Base Rent",
+      "Tax Garage",
+      "Tax Trash",
+      "Tax Courtesy",
+      "Conservice",
+      "Gross Total",
+      "Ryan's Rent (43%)",
+      "Jordyn's Rent (57%)"
+    ]
+  },
+  "schema_validation": {
+    "expected_columns": [
+      "Month",
+      "Tax Base Rent",
+      "Tax Garage",
+      "Tax Trash",
+      "Tax Courtesy",
+      "Conservice",
+      "Gross Total",
+      "Ryan's Rent (43%)",
+      "Jordyn's Rent (57%)"
+    ],
+    "actual_columns": [
+      "Month",
+      "Tax Base Rent",
+      "Tax Garage",
+      "Tax Trash",
+      "Tax Courtesy",
+      "Conservice",
+      "Gross Total",
+      "Ryan's Rent (43%)",
+      "Jordyn's Rent (57%)"
+    ],
+    "missing_columns": [],
+    "extra_columns": [],
+    "column_mapping_valid": true
+  },
+  "data_transformations": {
+    "column_mapping": {
+      "successful_mappings": {
+        "Month": "period_month",
+        "Tax Base Rent": "base_rent_amount",
+        "Tax Garage": "garage_fee_amount",
+        "Tax Trash": "waste_management_fee",
+        "Tax Courtesy": "courtesy_fee_amount",
+        "Conservice": "utility_service_fee",
+        "Gross Total": "total_rent_amount",
+        "Ryan's Rent (43%)": "ryan_allocation_amount",
+        "Jordyn's Rent (57%)": "jordyn_allocation_amount"
+      },
+      "failed_mappings": []
+    },
+    "period_dates": {
+      "successful": 18,
+      "failed": 0,
+      "errors": []
+    },
+    "base_rent_amount": {
+      "successful": 18,
+      "failed": 0,
+      "errors": []
+    },
+    "garage_fee_amount": {
+      "successful": 18,
+      "failed": 0,
+      "errors": []
+    },
+    "waste_management_fee": {
+      "successful": 18,
+      "failed": 0,
+      "errors": []
+    },
+    "courtesy_fee_amount": {
+      "successful": 18,
+      "failed": 0,
+      "errors": []
+    },
+    "utility_service_fee": {
+      "successful": 18,
+      "failed": 0,
+      "errors": []
+    },
+    "total_rent_amount": {
+      "successful": 18,
+      "failed": 0,
+      "errors": []
+    },
+    "ryan_allocation_amount": {
+      "successful": 18,
+      "failed": 0,
+      "errors": []
+    },
+    "jordyn_allocation_amount": {
+      "successful": 18,
+      "failed": 0,
+      "errors": []
+    }
+  },
+  "business_rule_validation": {
+    "total_records": 18,
+    "valid_records": 18,
+    "allocation_percentage_errors": [],
+    "amount_validation_errors": [],
+    "summary": {
+      "validation_rate": 1.0,
+      "percentage_errors": 0,
+      "amount_errors": 0
+    }
+  },
+  "data_quality_metrics": {},
+  "issues_identified": []
+}

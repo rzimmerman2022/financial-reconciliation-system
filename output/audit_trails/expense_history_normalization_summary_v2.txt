@@ -1,0 +1,27 @@
+EXPENSE HISTORY NORMALIZATION AUDIT - INDUSTRY STANDARDS v2.0
+================================================================================
+
+Processing Timestamp: 2025-07-18T01:06:17.754589
+Source File: data/raw/Consolidated_Expense_History_20250622.csv
+Normalization Method: industry_standard_v2
+
+SCHEMA VALIDATION:
+  Column mapping valid: True
+  Missing columns: []
+  Columns with space issues: 4
+
+PERSON NAME VALIDATION:
+  Valid person records: 1514
+  Invalid person records: 3
+  Person distribution: {'Ryan': 1109, 'Jordyn': 405, 'Name': 2}
+
+EXPENSE CATEGORIZATION:
+  Categorized records: 847
+  Uncategorized records: 670
+  Category distribution: {'Other': 670, 'Groceries': 393, 'Online Shopping': 261, 'Utilities': 74, 'Dining': 54, 'Transportation': 35, 'Gas': 30}
+
+VARIANCE ANALYSIS:
+  Records with budget: 1289
+  Records with variance: 48
+  Total variance amount: $2,582.92
+  Large variances: 10

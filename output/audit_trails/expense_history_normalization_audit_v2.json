@@ -1,0 +1,297 @@
+{
+  "processing_metadata": {
+    "source_file": "data/raw/Consolidated_Expense_History_20250622.csv",
+    "load_timestamp": "2025-07-18T01:06:17.754589",
+    "original_row_count": 1517,
+    "original_column_count": 10,
+    "original_columns": [
+      "Name",
+      "Date of Purchase",
+      "Account",
+      "Merchant",
+      " Merchant Description ",
+      " Actual Amount ",
+      " Allowed Amount ",
+      " Description ",
+      "Category",
+      "Running Balance"
+    ]
+  },
+  "schema_validation": {
+    "expected_columns": [
+      "Name",
+      "Date of Purchase",
+      "Account",
+      "Merchant",
+      " Merchant Description ",
+      " Actual Amount ",
+      " Allowed Amount ",
+      " Description ",
+      "Category",
+      "Running Balance"
+    ],
+    "actual_columns": [
+      "Name",
+      "Date of Purchase",
+      "Account",
+      "Merchant",
+      " Merchant Description ",
+      " Actual Amount ",
+      " Allowed Amount ",
+      " Description ",
+      "Category",
+      "Running Balance"
+    ],
+    "missing_columns": [],
+    "extra_columns": [],
+    "column_mapping_valid": true,
+    "column_space_issues": [
+      " Merchant Description ",
+      " Actual Amount ",
+      " Allowed Amount ",
+      " Description "
+    ]
+  },
+  "data_transformations": {
+    "column_mapping": {
+      "successful_mappings": {
+        "Name": "person_name",
+        "Date of Purchase": "expense_date",
+        "Account": "payment_account",
+        "Merchant": "merchant_name",
+        " Merchant Description ": "merchant_description_text",
+        " Actual Amount ": "actual_expense_amount",
+        " Allowed Amount ": "budgeted_expense_amount",
+        " Description ": "expense_description_text",
+        "Category": "expense_category",
+        "Running Balance": "account_running_balance"
+      },
+      "failed_mappings": []
+    },
+    "expense_dates": {
+      "successful": 1505,
+      "failed": 12,
+      "errors": [
+        {
+          "value": "-",
+          "error": "Invalid date format"
+        },
+        {
+          "value": "11/086/2023",
+          "error": "Could not parse date"
+        },
+        {
+          "value": "-",
+          "error": "Invalid date format"
+        },
+        {
+          "value": "-",
+          "error": "Invalid date format"
+        },
+        {
+          "value": "**rent +  newly itemized rent",
+          "error": "Invalid date format"
+        },
+        {
+          "value": "Poketrition",
+          "error": "Invalid date format"
+        },
+        {
+          "value": "Date of Purchase",
+          "error": "Invalid date format"
+        },
+        {
+          "value": "Date of Purchase",
+          "error": "Invalid date format"
+        }
+      ]
+    },
+    "actual_expense_amount": {
+      "successful": 1511,
+      "failed": 6,
+      "errors": [
+        {
+          "value": " Actual Amount ",
+          "error": "could not convert string to float: 'ActualAmount'"
+        },
+        {
+          "value": " Actual Amount ",
+          "error": "could not convert string to float: 'ActualAmount'"
+        }
+      ]
+    },
+    "budgeted_expense_amount": {
+      "successful": 1289,
+      "failed": 228,
+      "errors": [
+        {
+          "value": " Actual Amount ",
+          "error": "could not convert string to float: 'ActualAmount'"
+        }
+      ]
+    },
+    "account_running_balance": {
+      "successful": 395,
+      "failed": 1122,
+      "errors": [
+        {
+          "value": "Running Balance",
+          "error": "could not convert string to float: 'RunningBalance'"
+        },
+        {
+          "value": " Running Balance ",
+          "error": "could not convert string to float: 'RunningBalance'"
+        }
+      ]
+    }
+  },
+  "business_rule_validation": {},
+  "person_validation": {
+    "total_records": 1517,
+    "valid_person_records": 1514,
+    "invalid_person_records": 3,
+    "person_name_issues": [
+      {
+        "record_index": 657,
+        "issue": "Missing person name",
+        "original_value": "None"
+      },
+      {
+        "record_index": 1119,
+        "issue": "Unexpected person name: Name",
+        "original_value": "Name"
+      },
+      {
+        "record_index": 1380,
+        "issue": "Unexpected person name: Name",
+        "original_value": "Name"
+      }
+    ],
+    "standardized_names": {
+      "Ryan": 1109,
+      "Jordyn": 405,
+      "Name": 2
+    }
+  },
+  "expense_categorization": {
+    "total_records": 1517,
+    "categorized_records": 847,
+    "uncategorized_records": 670,
+    "category_distribution": {
+      "Other": 670,
+      "Groceries": 393,
+      "Online Shopping": 261,
+      "Utilities": 74,
+      "Dining": 54,
+      "Transportation": 35,
+      "Gas": 30
+    }
+  },
+  "variance_analysis": {
+    "total_records_with_budget": 1289,
+    "records_with_variance": "48",
+    "total_variance_amount": 2582.9200000000005,
+    "large_variances": [
+      {
+        "person": "Ryan",
+        "date": "2023-10-17",
+        "merchant": "Amazon",
+        "actual_amount": 1185.3,
+        "budgeted_amount": 600.0,
+        "variance": 585.3,
+        "variance_percentage": 97.55
+      },
+      {
+        "person": "Ryan",
+        "date": "2023-11-05",
+        "merchant": "Rebecca",
+        "actual_amount": 220.0,
+        "budgeted_amount": 120.0,
+        "variance": 100.0,
+        "variance_percentage": 83.33333333333334
+      },
+      {
+        "person": "Ryan",
+        "date": "2023-11-10",
+        "merchant": "Amazon",
+        "actual_amount": 102.62,
+        "budgeted_amount": 49.99,
+        "variance": 52.63,
+        "variance_percentage": 105.28105621124224
+      },
+      {
+        "person": "Ryan",
+        "date": "2023-11-13",
+        "merchant": "Walmart",
+        "actual_amount": 139.12,
+        "budgeted_amount": 30.0,
+        "variance": 109.12,
+        "variance_percentage": 363.73333333333335
+      },
+      {
+        "person": "Jordyn",
+        "date": "2023-11-19",
+        "merchant": "Amazon",
+        "actual_amount": 381.54,
+        "budgeted_amount": 46.0,
+        "variance": 335.54,
+        "variance_percentage": 729.4347826086957
+      },
+      {
+        "person": "Ryan",
+        "date": "2023-11-17",
+        "merchant": "Amazon",
+        "actual_amount": 77.61,
+        "budgeted_amount": 6.0,
+        "variance": 71.61,
+        "variance_percentage": 1193.5
+      },
+      {
+        "person": "Jordyn",
+        "date": "2023-11-23",
+        "merchant": "Amazon",
+        "actual_amount": 381.54,
+        "budgeted_amount": 306.6,
+        "variance": 74.94,
+        "variance_percentage": 24.442270058708413
+      },
+      {
+        "person": "Ryan",
+        "date": "2023-11-21",
+        "merchant": "Fry's",
+        "actual_amount": 92.96,
+        "budgeted_amount": 19.99,
+        "variance": 72.97,
+        "variance_percentage": 365.0325162581291
+      },
+      {
+        "person": "Ryan",
+        "date": "2024-02-03",
+        "merchant": "Best Buy",
+        "actual_amount": 500.0,
+        "budgeted_amount": 146.0,
+        "variance": 354.0,
+        "variance_percentage": 242.46575342465752
+      },
+      {
+        "person": "Ryan",
+        "date": "2024-01-04",
+        "merchant": "Kohl's",
+        "actual_amount": 343.94,
+        "budgeted_amount": 50.0,
+        "variance": 293.94,
+        "variance_percentage": 587.88
+      }
+    ],
+    "variance_statistics": {
+      "mean_variance": 2.003816912335144,
+      "median_variance": 0.0,
+      "max_positive_variance": 585.3,
+      "max_negative_variance": -26.11,
+      "total_over_budget": 2635.22,
+      "total_under_budget": -52.29999999999998
+    }
+  },
+  "data_quality_metrics": {},
+  "issues_identified": []
+}

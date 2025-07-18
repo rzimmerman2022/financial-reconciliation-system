@@ -1,0 +1,28 @@
+RENT ALLOCATION NORMALIZATION AUDIT - INDUSTRY STANDARDS v2.0
+================================================================================
+
+Processing Timestamp: 2025-07-18T00:14:50.735061
+Source File: data/raw/Consolidated_Rent_Allocation_20250527.csv
+Normalization Method: industry_standard_v2
+
+SCHEMA VALIDATION:
+  Column mapping valid: True
+  Missing columns: []
+  Extra columns: []
+
+DATA TRANSFORMATIONS:
+  period_dates: 18 successful, 0 failed
+  base_rent_amount: 18 successful, 0 failed
+  garage_fee_amount: 18 successful, 0 failed
+  waste_management_fee: 18 successful, 0 failed
+  courtesy_fee_amount: 18 successful, 0 failed
+  utility_service_fee: 18 successful, 0 failed
+  total_rent_amount: 18 successful, 0 failed
+  ryan_allocation_amount: 18 successful, 0 failed
+  jordyn_allocation_amount: 18 successful, 0 failed
+
+BUSINESS RULE VALIDATION:
+  Valid records: 18/18
+  Validation rate: 100.0%
+  Allocation errors: 0
+  Amount errors: 0
