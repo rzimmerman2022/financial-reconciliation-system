@@ -1,0 +1,18 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Clean Null Bytes and Line Endings",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"clean_null_bytes.py",
+				"--root",
+				"."
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"isBackground": false
+		}
+	]
+}
