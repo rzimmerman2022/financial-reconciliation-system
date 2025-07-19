@@ -33,6 +33,8 @@ class DescriptionDecoder:
         # Compile regex patterns for efficiency
         self.math_expression_pattern = re.compile(r'\(([0-9\.\+\-\*\/\s]+)\)', re.IGNORECASE)
         self.split_payment_pattern = re.compile(r'split\s+\$[0-9]+', re.IGNORECASE)
+        # Add pattern for dollar amounts in exclusions
+        self.exclusion_amount_pattern = re.compile(r'(?:remove|exclude|deduct).*?\$([0-9]+\.?[0-9]*)', re.IGNORECASE)
         
     def decode_transaction(self, description: str, amount: Decimal, payer: str = None) -> Dict[str, Any]:
         """
@@ -77,13 +79,13 @@ class DescriptionDecoder:
                 "action": "full_reimbursement",
                 "payer_share": Decimal('0'),
                 "other_share": amount,
-                "reason": "2x to calculate pattern detected - full reimbursement required",
+                "reason": "2x to calculate pattern detected - 2x workaround for full reimbursement",
                 "confidence": "high"
             })
             return result
         
-        # 2. Check for gift patterns
-        gift_patterns = ["birthday", "gift", "present", "christmas", "valentine"]
+        # 2. Check for gift patterns - Updated to include Christmas and Valentine
+        gift_patterns = ["birthday", "gift", "present", "christmas", "valentine", "anniversary"]
         if self._contains_pattern(description_lower, gift_patterns):
             result.update({
                 "action": "gift",
@@ -101,7 +103,7 @@ class DescriptionDecoder:
                     "action": "personal_jordyn",
                     "payer_share": Decimal('0'),
                     "other_share": amount,
-                    "reason": "100% Jordyn pattern - Jordyn's personal expense",
+                    "reason": "100% Jordyn pattern - Jordyn's personal expense paid by Ryan",
                     "confidence": "high"
                 })
             else:
@@ -120,7 +122,7 @@ class DescriptionDecoder:
                     "action": "personal_ryan",
                     "payer_share": Decimal('0'),
                     "other_share": amount,
-                    "reason": "100% Ryan pattern - Ryan's personal expense",
+                    "reason": "100% Ryan pattern - Ryan's personal expense paid by Jordyn",
                     "confidence": "high"
                 })
             else:
@@ -163,7 +165,7 @@ class DescriptionDecoder:
             # Try to extract the amount to be removed
             excluded_amount = self._extract_excluded_amount(description)
             if excluded_amount is not None:
-                remaining_amount = amount - excluded_amount
+                remaining_amount = max(amount - excluded_amount, Decimal('0'))  # Prevent negative
                 split_amount = remaining_amount / 2
                 result.update({
                     "action": "split_50_50",
@@ -186,19 +188,26 @@ class DescriptionDecoder:
                 })
             return result
         
-        # 6. Check for split payment patterns
-        if self.split_payment_pattern.search(description):
-            result.update({
-                "action": "manual_review",
-                "payer_share": amount,
-                "other_share": Decimal('0'),
-                "reason": "Split payment pattern detected - requires manual review",
-                "confidence": "low"
-            })
-            return result
+        # 6. Check for split payment patterns - Enhanced regex
+        split_patterns = [
+            re.compile(r'split\s+\$[0-9]+', re.IGNORECASE),
+            re.compile(r'\$[0-9]+.*\/.*\$[0-9]+', re.IGNORECASE),  # $XX / $YY pattern
+            re.compile(r'credit card.*\/.*ebt', re.IGNORECASE)      # Credit Card / EBT pattern
+        ]
+        
+        for pattern in split_patterns:
+            if pattern.search(description):
+                result.update({
+                    "action": "manual_review",
+                    "payer_share": amount,
+                    "other_share": Decimal('0'),
+                    "reason": "Split payment pattern detected - requires manual review",
+                    "confidence": "low"
+                })
+                return result
         
         # 7. Check for unclear/discussion patterns
-        unclear_patterns = ["lost", "discuss", "???", "reassess", "difficult to determine"]
+        unclear_patterns = ["lost", "discuss", "???", "reassess", "difficult to determine", "unsure"]
         if self._contains_pattern(description_lower, unclear_patterns):
             result.update({
                 "action": "manual_review",
@@ -217,8 +226,10 @@ class DescriptionDecoder:
         return any(pattern in text for pattern in patterns)
     
     def _find_matching_pattern(self, text: str, patterns: list) -> str:
-        """Find the first matching pattern in the text."""
-        for pattern in patterns:
+        """Find the first matching pattern in the text, preferring longer/more specific matches."""
+        # Sort patterns by length (longest first) to prefer more specific matches
+        sorted_patterns = sorted(patterns, key=len, reverse=True)
+        for pattern in sorted_patterns:
             if pattern in text:
                 return pattern
         return "unknown"
@@ -330,6 +341,18 @@ if __name__ == "__main__":
             "amount": Decimal("50.00"),
             "payer": "Ryan",
             "expected_action": "split_50_50"
+        },
+        {
+            "description": "Target (45.00 + 12.99 - 5.00)",
+            "amount": Decimal("100.00"),
+            "payer": "Ryan",
+            "expected_action": "split_50_50"
+        },
+        {
+            "description": "Split $139.49 Credit Card / $76.25 EBT",
+            "amount": Decimal("215.74"),
+            "payer": "Ryan",
+            "expected_action": "manual_review"
         }
     ]
     

@@ -1,0 +1,504 @@
+{
+  "metadata": {
+    "generation_timestamp": "2025-07-18T22:06:08.482092",
+    "total_entries": 1564,
+    "manual_review_required": 36,
+    "validation_summary": {}
+  },
+  "account_balances": {
+    "ryan": {
+      "debits": "78968.99",
+      "credits": "117.54",
+      "net_balance": "78851.45"
+    },
+    "jordyn": {
+      "debits": "73906.01",
+      "credits": "10567.54",
+      "net_balance": "63338.47"
+    }
+  },
+  "monthly_summary": {},
+  "validation_issues": [
+    {
+      "entry_id": "EXP_000095",
+      "errors": [
+        "Invalid or missing date"
+      ]
+    },
+    {
+      "entry_id": "EXP_000135",
+      "errors": [
+        "Invalid or missing date"
+      ]
+    },
+    {
+      "entry_id": "EXP_000192",
+      "errors": [
+        "Invalid or missing date"
+      ]
+    },
+    {
+      "entry_id": "EXP_000347",
+      "errors": [
+        "Invalid or missing date"
+      ]
+    },
+    {
+      "entry_id": "EXP_000348",
+      "errors": [
+        "Invalid or missing date"
+      ]
+    },
+    {
+      "entry_id": "EXP_000457",
+      "errors": [
+        "Invalid or missing date"
+      ]
+    },
+    {
+      "entry_id": "EXP_000458",
+      "errors": [
+        "Invalid amount format",
+        "Invalid or missing date"
+      ]
+    },
+    {
+      "entry_id": "EXP_000459",
+      "errors": [
+        "Invalid amount format",
+        "Invalid or missing date"
+      ]
+    },
+    {
+      "entry_id": "EXP_000610",
+      "errors": [
+        "Invalid or missing date"
+      ]
+    },
+    {
+      "entry_id": "EXP_000657",
+      "errors": [
+        "Invalid person: Unknown"
+      ]
+    },
+    {
+      "entry_id": "EXP_001119",
+      "errors": [
+        "Invalid amount format",
+        "Invalid or missing date",
+        "Invalid person: Name"
+      ]
+    },
+    {
+      "entry_id": "EXP_001379",
+      "errors": [
+        "Invalid amount format",
+        "Invalid or missing date"
+      ]
+    },
+    {
+      "entry_id": "EXP_001380",
+      "errors": [
+        "Invalid amount format",
+        "Invalid or missing date",
+        "Invalid person: Name"
+      ]
+    },
+    {
+      "entry_id": "EXP_001508",
+      "errors": [
+        "Invalid amount format"
+      ]
+    }
+  ],
+  "manual_review_items": [
+    {
+      "entry_id": "EXP_000006",
+      "date": "2023-09-24T00:00:00",
+      "amount": "$11.20",
+      "description": "100% Jordyn (2x to calculate appropriately) nan",
+      "reasons": [
+        "Complex calculation: 2x multiplier"
+      ],
+      "calculation_notes": [
+        "Contains 2x calculation multiplier",
+        "100% allocated to Jordyn per description"
+      ]
+    },
+    {
+      "entry_id": "EXP_000013",
+      "date": "2023-09-23T00:00:00",
+      "amount": "$170.63",
+      "description": "$85.31 (Birthday present portion, 2x to calculate) nan",
+      "reasons": [
+        "Complex calculation: 2x multiplier",
+        "Gift allocation requires review",
+        "Gift allocation requires review"
+      ],
+      "calculation_notes": [
+        "Contains 2x calculation multiplier",
+        "Contains gift/present adjustment",
+        "Contains gift/present adjustment",
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000070",
+      "date": "2023-10-06T00:00:00",
+      "amount": "$14.33",
+      "description": "10/04 Order (Split $14.33 2463 / $29.06 EBT) Oikos, Beef Jerky, Sponges and Water nan",
+      "reasons": [
+        "Split payment requires verification",
+        "Split payment requires verification"
+      ],
+      "calculation_notes": [
+        "Split payment detected",
+        "Split payment detected",
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000072",
+      "date": "2023-10-11T00:00:00",
+      "amount": "$139.49",
+      "description": "10/09 Order (Split $139.49 2463 / $76.25 EBT) nan",
+      "reasons": [
+        "Split payment requires verification",
+        "Split payment requires verification"
+      ],
+      "calculation_notes": [
+        "Split payment detected",
+        "Split payment detected",
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000076",
+      "date": "2023-10-04T00:00:00",
+      "amount": "$29.06",
+      "description": "10/04 Order (Split $14.33 2463 / $29.06 EBT) Oikos, Beef Jerky, Sponges and Water nan",
+      "reasons": [
+        "Split payment requires verification",
+        "Split payment requires verification"
+      ],
+      "calculation_notes": [
+        "Split payment detected",
+        "Split payment detected",
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000077",
+      "date": "2023-10-09T00:00:00",
+      "amount": "$76.27",
+      "description": "10/09 Order (Split $139.49 2463 / $76.25 EBT) nan",
+      "reasons": [
+        "Split payment requires verification",
+        "Split payment requires verification"
+      ],
+      "calculation_notes": [
+        "Split payment detected",
+        "Split payment detected",
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000078",
+      "date": "2023-10-16T00:00:00",
+      "amount": "$177.03",
+      "description": "10/16 Order (Split $138.76 4296 / 177.03 EBT) nan",
+      "reasons": [
+        "Split payment requires verification",
+        "Split payment requires verification"
+      ],
+      "calculation_notes": [
+        "Split payment detected",
+        "Split payment detected",
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000154",
+      "date": "2023-11-13T00:00:00",
+      "amount": "$139.12",
+      "description": "Totes & Tito (reassess next time) nan",
+      "reasons": [
+        "Contains review keyword: reassess"
+      ],
+      "calculation_notes": [
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000195",
+      "date": "2023-11-25T00:00:00",
+      "amount": "$93.89",
+      "description": "Reassess next time (some items will be returned /refunded) nan",
+      "reasons": [
+        "Contains review keyword: reassess"
+      ],
+      "calculation_notes": [
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000210",
+      "date": "2023-11-15T00:00:00",
+      "amount": "$242.68",
+      "description": "In Store Purchase: Storage Trays, Aquafina, Keurig Water Filter, Measuring Cup, Vanity Tray Crackle Cream, Paper Towel Holder, Suction Sink Caddy, Shower Hooks, Shower Heads, Hamper, Wine Glasses, Rug - Where is this rug?! Order was originally $286, final price charged to credit reflects. See below transaction. nan",
+      "reasons": [
+        "Contains review keyword: where is"
+      ],
+      "calculation_notes": [
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000263",
+      "date": "2023-12-09T00:00:00",
+      "amount": "$14.28",
+      "description": "Gifts for Mom and Jack nan",
+      "reasons": [
+        "Gift allocation requires review"
+      ],
+      "calculation_notes": [
+        "Contains gift/present adjustment",
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000267",
+      "date": "2023-11-25T00:00:00",
+      "amount": "$93.89",
+      "description": "From previous period: \"Reassess next time (some items will be returned /refunded)\" 12/30 - $10.34 Refunded 12/14 nan",
+      "reasons": [
+        "Contains review keyword: reassess"
+      ],
+      "calculation_notes": [
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000343",
+      "date": "2023-12-23T00:00:00",
+      "amount": "$220.00",
+      "description": "Lost (I will take half the financial burden as a sign of good faith) nan",
+      "reasons": [
+        "Contains review keyword: lost"
+      ],
+      "calculation_notes": [
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000373",
+      "date": "2024-01-20T00:00:00",
+      "amount": "$8.07",
+      "description": "Mothers PowerPlastic 4Lights (Monitor Scratch) nan",
+      "reasons": [
+        "Contains review keyword: monitor"
+      ],
+      "calculation_notes": [
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000381",
+      "date": "2024-02-03T00:00:00",
+      "amount": "$83.98",
+      "description": "LetsGetChecked, Breather Fit, L-Serine, Spermcheck (Order# 113-1499724-0624207) nan",
+      "reasons": [
+        "Contains review keyword: check"
+      ],
+      "calculation_notes": [
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000420",
+      "date": "2024-01-20T00:00:00",
+      "amount": "$24.83",
+      "description": "??? nan",
+      "reasons": [
+        "Contains review keyword: ???"
+      ],
+      "calculation_notes": [
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000432",
+      "date": "2024-01-04T00:00:00",
+      "amount": "$343.94",
+      "description": "Patio Chairs, Kitchen Towels, Heated Blanket, Super Rest Down Comforter (343.94 - 240.59) Kohl's cash?? Ryan response: Partially, but I worked for this Kohl's' cash. We will need to discuss further, as that Kohl's cash I earned with hours of time invested. nan",
+      "reasons": [
+        "Contains review keyword: discuss further"
+      ],
+      "calculation_notes": [
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000434",
+      "date": "2024-01-26T00:00:00",
+      "amount": "$251.99",
+      "description": "Glass Top Computer Desk (251.99-50.40-200.00) - Discuss further. nan",
+      "reasons": [
+        "Contains review keyword: discuss further"
+      ],
+      "calculation_notes": [
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000442",
+      "date": "2024-01-04T00:00:00",
+      "amount": "$149.95",
+      "description": "SoundAsleep Air Mattress --- what happened to the one returned??? Ryan response: this is the original, the return was $0.00. Note the date of purchase is 01/04/2024. Order #111-2504086-5973049 nan",
+      "reasons": [
+        "Contains review keyword: ???"
+      ],
+      "calculation_notes": [
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000925",
+      "date": "2024-05-03T00:00:00",
+      "amount": "$10.77",
+      "description": "Logest Metal Hand Grip Set, 100LB-350LB 6 Pack No Slip Heavy-Duty Grip Strengthener with Gift Box, Great Wrist & Forearm Hand Exerciser, Home Gym, Hand Gripper Grip Strength Trainer; Bronson Vitamin K2 as MK-7 Menaquinone 100 mcg Non-GMO, 120 Capsules; Grip Strength Trainer Finger Strengthener-Hand Strengthener 8 Resistant Level Exerciser-Adjustable Hand for Therapy, Relieve Pain Arthritis(Black+Grey, 2PCS); Quality Reusable Earplugs 100 Pair - 25dB Corded Silicone Ear Plugs for Shooting Noise Reduction Construction Work - Motorcycle Ear Plugs with String Hunting Ear Protection Range Hearing Protection; nan",
+      "reasons": [
+        "Gift allocation requires review"
+      ],
+      "calculation_notes": [
+        "Contains gift/present adjustment",
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000926",
+      "date": "2024-05-03T00:00:00",
+      "amount": "$8.40",
+      "description": "Remember I Love You Mom Gifts for Her Pocket Hug Token for Womens Keychain Accessories for Mom Christmas Birthday Gifts for Women Mother Gifts from Daughter Son Mama Mom Engraved Holiday Gifts Ideas; nan",
+      "reasons": [
+        "Gift allocation requires review"
+      ],
+      "calculation_notes": [
+        "Contains gift/present adjustment",
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000928",
+      "date": "2024-05-04T00:00:00",
+      "amount": "$29.39",
+      "description": "Pet Memorial Wind Chime - 18\" Metal Casted Pawprint Wind Chime - A Beautiful Remembrance Gift for a Grieving Pet Owner - Includes Pawprints Left by You Poem Card; nan",
+      "reasons": [
+        "Gift allocation requires review"
+      ],
+      "calculation_notes": [
+        "Contains gift/present adjustment",
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000946",
+      "date": "2024-06-10T00:00:00",
+      "amount": "$25.86",
+      "description": "VIVO Steel Reinforcement Bracket Mount Plate for Thin, Glass, and Other Fragile Table Tops, Clamp Compatible with Most Monitor Stand C-Clamp Installations, Black, STAND-AC01R; MOUNTUP Monitor Mount Reinforcement for Tempered Glass Desk, Monitor Arm Plate, Steel Bracket for Thin and Most Fragile Table, for Desk C Clamp Installation of Monitor Stand; CompressionZ Compression Arm Sleeves for Men & Women UV Protection (Black, M); RENPHO Eyeris 2 Extended - Eye Massager with Heating Pad for Migraines, Heated Eye Mask for Relax, Eye Care, Face Massager for Eye Strain Eye Bags Dry Eyes, Improve Sleep, Ideal Birthday Gift; Govee RGBIC Table Lamp, Smart Lamp Work with Alexa, LED Lamp with Music Sync and 43 Scene Modes, Color Changing Lamp for Bedroom Decor, Dimmable Night Light (Corded Electric); 6 Pack Reusable Mop Pads Compatible with Swiffer Powermop, Papclean Power Mop Refills Microfiber Power Mop Mopping Pads for Powermop Multi-Surface & Wood Mop Kit All Types of Floor Cleaning, Purple; nan",
+      "reasons": [
+        "Gift allocation requires review",
+        "Contains review keyword: monitor"
+      ],
+      "calculation_notes": [
+        "Contains gift/present adjustment",
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_000949",
+      "date": "2024-06-12T00:00:00",
+      "amount": "$74.83",
+      "description": "AUVON Large Insulin Cooler Travel Case, Longer Cooling Effect with 4 * 160g Ice Packs, Compact Medication Cooler Bag for 8 Insulin Pens and Diabetic Supplies, Ideal Travel Partner with Handle Design; Hydro Flask Standard Flex Cap Black 24 Oz; AUVON Insulin Cooler Travel Case, Expandable Insulated Diabetic Bag with 2 * 180g Ice Packs for Double Cooling Time, Portable Medication Cooler Bag for Insulin Pens and Blood Glucose Monitor Supplies; nan",
+      "reasons": [
+        "Contains review keyword: monitor"
+      ],
+      "calculation_notes": [
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_001050",
+      "date": "2024-05-02T00:00:00",
+      "amount": "$9.89",
+      "description": "Pocket Hug Token Long Distance Relationship Keepsake Stainless Steel Double Sided Inspirational Gift with PU Leather Keychain (Sobriety) nan",
+      "reasons": [
+        "Gift allocation requires review"
+      ],
+      "calculation_notes": [
+        "Contains gift/present adjustment",
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_001096",
+      "date": "2024-06-15T00:00:00",
+      "amount": "$25.33",
+      "description": "Gifts for Dad, Dad Gifts from Daughter Son, Fathers Day Birthday Gifts for Dad Grandpa, Gifts for Dad Who Wants Nothing, Soy Candle, Long Burning & Highly Scented & Bommex Dear Dad We Hope Every Time You Hug This Pillow It Reminds You How Much We Love You Throw Pillow Cover Cushion Case Dad Gift Reminder Gift Birthday Gift (dad-we) nan",
+      "reasons": [
+        "Gift allocation requires review"
+      ],
+      "calculation_notes": [
+        "Contains gift/present adjustment",
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_001400",
+      "date": "2024-07-23T00:00:00",
+      "amount": "$-9.23",
+      "description": "nan Amazon Marketplace (Refund)",
+      "reasons": [],
+      "calculation_notes": [
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_001441",
+      "date": "2024-08-08T00:00:00",
+      "amount": "$-51.83",
+      "description": "nan Wells Fargo Cash Back",
+      "reasons": [],
+      "calculation_notes": [
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_001443",
+      "date": "2024-08-12T00:00:00",
+      "amount": "$-57.00",
+      "description": "nan Wells Fargo Payment",
+      "reasons": [],
+      "calculation_notes": [
+        "Applied default 50.00% split"
+      ]
+    },
+    {
+      "entry_id": "EXP_001482",
+      "date": "2024-09-12T00:00:00",
+      "amount": "$-117.00",
+      "description": "nan Wells Fargo Payment",
+      "reasons": [],
+      "calculation_notes": [
+        "Applied default 50.00% split"
+      ]
+    }
+  ],
+  "reconciliation_summary": {
+    "ryan_net_position": 78851.45,
+    "jordyn_net_position": 63338.47,
+    "system_imbalance": 142189.92,
+    "who_owes_whom": "Balanced",
+    "amount_owed": 78851.45
+  }
+}
