@@ -1,0 +1,23 @@
+{
+  "final_result": "Ryan owes Jordyn $3199.27",
+  "who_owes": "Ryan",
+  "amount_owed": 3199.27,
+  "statistics": {
+    "total_transactions": 1546,
+    "expenses_processed": 1517,
+    "rent_processed": 18,
+    "zelle_processed": 11,
+    "manual_review_count": 18,
+    "errors_count": 1,
+    "total_expense_amount": 104543.74999999996,
+    "total_rent_amount": 39000.3418,
+    "total_zelle_amount": 10450.0
+  },
+  "verification": {
+    "invariants_checked": 1521,
+    "total_transactions_processed": 1521,
+    "manual_review_count": 18,
+    "errors_count": 1
+  },
+  "timestamp": "2025-07-20T04:31:34.646932"
+}

@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m pytest test_data_loader.py -v)",
+      "Bash(python -m pytest test_data_loader.py::TestCleanColumnNames::test_multiple_spaces test_data_loader.py::TestParseFlexibleDate::test_invalid_dates -v)",
+      "Bash(python -m pytest test_data_loader.py::TestParseFlexibleDate::test_invalid_dates -v)",
+      "Bash(git add:*)",
+      "Bash(python -m pytest test_accounting_engine.py -v)",
+      "Bash(git commit:*)",
+      "Bash(git rm:*)",
+      "Bash(git push:*)",
+      "Bash(python:*)",
+      "Bash(head:*)",
+      "Bash(mv:*)",
+      "Bash(rm:*)"
+    ],
+    "deny": []
+  }
+}

@@ -48,6 +48,12 @@ This project follows a clean, modular approach:
 1. **One CSV at a time**: Process each data source independently first
 2. **Clear assumptions**: Document all business logic upfront
 3. **Full audit trails**: Every transaction must be traceable
+
+## ⚠️ CRITICAL: Rent Payment Rules
+
+**JORDYN ALWAYS PAYS THE FULL RENT UPFRONT**
+
+See [CRITICAL_RENT_RULES.md](CRITICAL_RENT_RULES.md) for detailed explanation. This is a fundamental rule that must be understood by all developers and AI models working on this system.
 4. **Clean separation**: Keep old experimental work separate
 
 ## Data Sources

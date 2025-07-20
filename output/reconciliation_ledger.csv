@@ -1,0 +1,1525 @@
+date,description,paid_by,amount,ryan_share,jordyn_share,current_balance,balance_status,category,transaction_type,decoded_action
+2023-09-09,[split_50_50],Ryan,39.86,19.93,19.93,19.93,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-09,[split_50_50],Ryan,80.00,40.00,40.00,59.93,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-09,[split_50_50],Jordyn,90.00,45.00,45.00,14.93,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-09,[split_50_50],Ryan,56.50,28.25,28.25,43.18,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-09,[split_50_50],Ryan,56.64,28.32,28.32,71.50,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-10,[split_50_50],Jordyn,35.81,17.91,17.91,53.59,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-11,[split_50_50],Ryan,225.00,112.50,112.50,166.09,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-11,[split_50_50],Jordyn,274.82,137.41,137.41,28.68,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-13,[split_50_50],Jordyn,25.50,12.75,12.75,15.93,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-14, Looking into overcharge possibility  [split_50_50],Ryan,84.39,42.20,42.20,58.13,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-15,[split_50_50],Ryan,40.00,20.00,20.00,78.13,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-15,[split_50_50],Ryan,27.56,13.78,13.78,91.91,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-15,[split_50_50],Jordyn,40.00,20.00,20.00,71.91,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-16,[split_50_50],Ryan,220.00,110.00,110.00,181.91,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-16, Wine $30  [split_50_50],Ryan,65.59,32.80,32.80,214.71,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-17,[split_50_50],Ryan,225.00,112.50,112.50,327.21,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-18,[split_50_50],Jordyn,35.56,17.78,17.78,309.43,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-18," Gatore, Chicken Broth, etc.  [split_50_50]",Ryan,24.78,12.39,12.39,321.82,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-18,[split_50_50],Jordyn,298.08,149.04,149.04,172.78,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-18, Poke Bowl  [split_50_50],Ryan,21.00,10.50,10.50,183.28,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-18," Groceries (Water, Wine, Waterloo, etc.)  [split_50_50]",Ryan,67.50,33.75,33.75,217.03,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-19,[split_50_50],Jordyn,32.00,16.00,16.00,201.03,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-20,[split_50_50],Jordyn,49.42,24.71,24.71,176.32,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-21, Wine & Water  [split_50_50],Ryan,61.28,30.64,30.64,206.96,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-22,[split_50_50],Ryan,51.81,25.91,25.91,232.87,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-23,[split_50_50],Ryan,13.10,6.55,6.55,239.42,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-23, Water & Wine  [split_50_50],Ryan,61.28,30.64,30.64,270.06,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-23," $85.31 (Birthday present portion, 2x to calculate)  [full_reimbursement]",Ryan,170.63,170.63,0.00,270.06,Jordyn owes Ryan,nan,expense,full_reimbursement
+2023-09-23,[split_50_50],Ryan,58.29,29.14,29.14,299.21,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-23,[split_50_50],Ryan,24.53,12.27,12.27,311.48,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-23,[split_50_50],Ryan,56.76,28.38,28.38,339.86,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-23," Hand sanitizer, Prosecco   [split_50_50]",Ryan,22.99,11.49,11.49,351.36,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-23," Astroglide, Milk Thistle  [split_50_50]",Ryan,44.98,22.49,22.49,373.85,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-24,[split_50_50],Jordyn,201.22,100.61,100.61,273.24,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-24," Tide, Arm & Hammer, Puff  [split_50_50]",Ryan,18.70,9.35,9.35,282.59,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-24," MIlk Thistle, Deodorant  [split_50_50]",Ryan,32.88,16.44,16.44,299.03,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-24, 100% Jordyn (2x to calculate appropriately)  [full_reimbursement],Ryan,11.20,11.20,0.00,299.03,Jordyn owes Ryan,nan,expense,full_reimbursement
+2023-09-24," Laundry detergent, tissue  [split_50_50]",Ryan,20.45,10.22,10.22,309.26,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-24, Jordyn Tolls  [split_50_50],Ryan,11.20,5.60,5.60,314.86,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-24,[split_50_50],Ryan,225.00,112.50,112.50,427.36,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-24," Milk Thistle, Deodorant  [split_50_50]",Ryan,38.88,19.44,19.44,446.80,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-25,[split_50_50],Ryan,59.75,29.88,29.88,476.68,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-25,[split_50_50],Jordyn,271.10,135.55,135.55,341.13,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-26,[split_50_50],Ryan,39.93,19.96,19.96,361.10,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-26,[split_50_50],Ryan,2.29,1.15,1.15,362.25,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-27," Groceries, water, etc.  [split_50_50]",Ryan,53.72,26.86,26.86,389.11,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-27, 3 Ring Binder  [split_50_50],Ryan,23.61,11.80,11.80,400.92,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-28, L-Theanine  [split_50_50],Ryan,21.58,10.79,10.79,411.71,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-28," CoQ10, Flaxseed  [split_50_50]",Ryan,47.97,23.98,23.98,435.70,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-28,[split_50_50],Ryan,235.00,117.50,117.50,553.20,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-29,[split_50_50],Ryan,200.00,100.00,100.00,653.20,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-30, Wine   [split_50_50],Ryan,43.40,21.70,21.70,674.90,Jordyn owes Ryan,nan,expense,split_50_50
+2023-09-30, Refund  [split_50_50],Ryan,13.10,6.55,6.55,681.45,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-01," 10/01 Order Amendment - Chicken tender, Pizza, Luna Bars  [split_50_50]",Ryan,39.30,19.65,19.65,701.10,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-01, 10/01 Order  [split_50_50],Ryan,147.66,73.83,73.83,774.93,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-01,[split_50_50],Jordyn,133.78,66.89,66.89,708.04,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-01,[split_50_50],Jordyn,1.75,0.88,0.88,707.16,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-01,[split_50_50],Jordyn,77.16,38.58,38.58,668.58,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-01,[split_50_50],Ryan,52.60,26.30,26.30,694.88,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-02,[split_50_50],Ryan,220.00,110.00,110.00,804.88,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-02, Rapid Strips  [split_50_50],Ryan,11.87,5.93,5.93,810.82,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-03, Itemized on Monthly Budget  [split_50_50],Ryan,125.46,62.73,62.73,873.55,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-03, Tests  [split_50_50],Ryan,22.57,11.29,11.29,884.84,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-04,[split_50_50],Jordyn,96.00,48.00,48.00,836.84,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-06, 3 Seltzers  [split_50_50],Ryan,11.09,5.54,5.54,842.39,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-06,[split_50_50],Ryan,225.00,112.50,112.50,954.89,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-07,[split_50_50],Jordyn,15.43,7.71,7.71,947.17,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-07,[split_50_50],Jordyn,46.30,23.15,23.15,924.02,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-09,[split_50_50],Ryan,39.85,19.93,19.93,943.95,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-09,[split_50_50],Jordyn,29.05,14.53,14.53,929.42,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-10, Refund  [split_50_50],Ryan,86.39,43.20,43.20,972.62,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-11, Vacuum & Brita  [split_50_50],Jordyn,144.00,72.00,72.00,900.62,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-11," Pans, Charger, Kindle, etc.  [split_50_50]",Jordyn,320.00,160.00,160.00,740.62,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-11,[split_50_50],Ryan,225.00,112.50,112.50,853.12,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-12, Gas  [split_50_50],Ryan,50.10,25.05,25.05,878.17,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-13, Refund  [split_50_50],Ryan,150.00,75.00,75.00,953.17,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-13, Refund  [split_50_50],Ryan,50.00,25.00,25.00,978.17,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-13, Ink  [split_50_50],Ryan,34.46,17.23,17.23,995.40,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-14, Water & Tito's  [split_50_50],Ryan,48.56,24.28,24.28,1019.68,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-14,[split_50_50],Ryan,32.38,16.19,16.19,1035.87,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-16, CB & CB  [split_50_50],Ryan,18.01,9.01,9.01,1044.88,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-16,[split_50_50],Ryan,220.00,110.00,110.00,1154.88,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-16,[split_50_50],Ryan,380.00,190.00,190.00,1344.88,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-16,[split_50_50],Jordyn,138.76,69.38,69.38,1275.50,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-16," Missed - Josh Cab, Vinegar, New Zealand Sauvignon Blanc, Sparkling Watermelon, Polar Lime  [split_50_50]",Ryan,51.56,25.78,25.78,1301.28,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-17, Sushi  [split_50_50],Ryan,22.16,11.08,11.08,1312.36,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-17, TV  [split_50_50],Ryan,1185.30,592.65,592.65,1905.01,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-18, Retainer Brite Tablets  [split_50_50],Ryan,15.55,7.78,7.78,1912.79,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-18,[split_50_50],Jordyn,26.17,13.09,13.09,1899.70,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-18, Mouthwash  [split_50_50],Ryan,22.46,11.23,11.23,1910.93,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-18, Brush  [split_50_50],Ryan,5.93,2.96,2.96,1913.90,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-19, Curiosty Stream?  [split_50_50],Ryan,3.15,1.57,1.57,1915.48,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-21,[split_50_50],Ryan,69.35,34.67,34.67,1950.16,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-21, Iron Man Shirt  [split_50_50],Ryan,21.60,10.80,10.80,1960.96,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-21," Luna bar, Band-Aid, Lunch Meat & Tito's  [split_50_50]",Ryan,50.43,25.21,25.21,1986.18,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-22,[split_50_50],Ryan,113.97,56.98,56.98,2043.17,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-22,[split_50_50],Jordyn,79.00,39.50,39.50,2003.67,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-22, Iron Man Shirt  [split_50_50],Ryan,20.52,10.26,10.26,2013.93,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-23, Chargers & Lysine  [split_50_50],Ryan,90.25,45.12,45.12,2059.06,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-23, 545 / 8.9 = $61.23  [split_50_50],Ryan,545.00,272.50,272.50,2331.56,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-23,[split_50_50],Jordyn,171.39,85.69,85.69,2245.86,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-23,[split_50_50],Jordyn,51.83,25.91,25.91,2219.94,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-23,[split_50_50],Ryan,49.65,24.82,24.82,2244.77,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-23," What was this, no record online?  [split_50_50]",Ryan,39.23,19.61,19.61,2264.39,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-23,[split_50_50],Ryan,36.33,18.16,18.16,2282.56,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-24,[split_50_50],Jordyn,23.00,11.50,11.50,2271.06,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-24,[split_50_50],Jordyn,27.27,13.63,13.63,2257.42,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-24, Fingertip Bandages (charged to my card?)  [split_50_50],Ryan,6.42,3.21,3.21,2260.63,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-24, Prescriptions  [split_50_50],Ryan,32.02,16.01,16.01,2276.64,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-26, Hulk Shirt  [split_50_50],Ryan,21.11,10.55,10.55,2287.20,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-26, LED Puck Lights  [split_50_50],Ryan,14.04,7.02,7.02,2294.22,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-27,"$45,224.63  [split_50_50]",Ryan,9.14,4.57,4.57,2298.79,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-27,[split_50_50],Ryan,20.05,10.03,10.03,2308.82,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-27," ""Pepper Shaker"" :)  [split_50_50]",Ryan,18.34,9.17,9.17,2317.99,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-27,[split_50_50],Jordyn,17.70,8.85,8.85,2309.14,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-27, Ear Plugs  [split_50_50],Ryan,18.97,9.48,9.48,2318.63,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-28,[split_50_50],Ryan,31.71,15.86,15.86,2334.49,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-28,[split_50_50],Ryan,73.70,36.85,36.85,2371.34,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-28,[split_50_50],Ryan,69.08,34.54,34.54,2405.88,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-28,[split_50_50],Ryan,52.44,26.22,26.22,2432.10,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-28, Cash for?  [split_50_50],Jordyn,30.00,15.00,15.00,2417.10,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-28,[split_50_50],Jordyn,15.00,7.50,7.50,2409.60,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-28,[split_50_50],Jordyn,32.48,16.24,16.24,2393.36,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-28,[split_50_50],Jordyn,16.75,8.38,8.38,2384.98,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-29,[split_50_50],Jordyn,240.68,120.34,120.34,2264.64,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-30,[split_50_50],Ryan,75.46,37.73,37.73,2302.37,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-30,"$45,227.88  [split_50_50]",Ryan,12.07,6.04,6.04,2308.41,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-30,"$45,227.71  [split_50_50]",Ryan,8.95,4.47,4.47,2312.89,Jordyn owes Ryan,nan,expense,split_50_50
+2023-10-31, Administration and Application Fees  [split_50_50],Ryan,365.40,182.70,182.70,2495.59,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-01," Eyeglass cleaner, soap dispenser  [split_50_50]",Ryan,50.50,25.25,25.25,2520.84,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-01, Stephanie  [split_50_50],Ryan,56.46,28.23,28.23,2549.07,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-01,[split_50_50],Jordyn,16.21,8.11,8.11,2540.96,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-01," Supplements, headlamp  [split_50_50]",Ryan,63.54,31.77,31.77,2572.73,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-04,[split_50_50],Ryan,37.14,18.57,18.57,2591.30,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-04,[split_50_50],Jordyn,26.63,13.31,13.31,2577.98,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-04," (Missed, ATM Withdrawal Due to Rebecca Not Wanting Paper Trail. Caught this time itemizing with text messages)  [split_50_50]",Ryan,225.00,112.50,112.50,2690.48,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-05,[split_50_50],Ryan,220.00,110.00,110.00,2800.48,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-05,[split_50_50],Ryan,55.36,27.68,27.68,2828.16,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-05,[split_50_50],Ryan,55.35,27.68,27.68,2855.84,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-06, late charge  [split_50_50],Jordyn,368.83,184.41,184.41,2671.42,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-06,[split_50_50],Ryan,220.00,110.00,110.00,2781.42,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-06, Koibito Poke  [split_50_50],Ryan,25.99,12.99,12.99,2794.42,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-06," Wine, Pho Rice Noodles  [split_50_50]",Ryan,45.85,22.93,22.93,2817.35,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-06, Clean Zen Den  [split_50_50],Ryan,150.00,75.00,75.00,2892.35,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-06, CB & CB  [split_50_50],Ryan,21.79,10.89,10.89,2903.25,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-08,[split_50_50],Ryan,44.31,22.16,22.16,2925.41,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-09,[split_50_50],Jordyn,49.50,24.75,24.75,2900.66,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-09,[split_50_50],Jordyn,44.31,22.16,22.16,2878.50,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-09," items for mom and Jack coming over before pool party (champagne, dip, cheese, etc)  [split_50_50]",Jordyn,30.54,15.27,15.27,2863.23,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-10, Dohm & LectroFan Sound Machines  [split_50_50],Ryan,102.62,51.31,51.31,2914.54,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-10,[split_50_50],Ryan,225.00,112.50,112.50,3027.04,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-11,[split_50_50],Jordyn,64.19,32.09,32.09,2994.94,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-11,[split_50_50],Ryan,62.00,31.00,31.00,3025.94,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-12,[split_50_50],Ryan,230.00,115.00,115.00,3140.94,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-12, Sound+Sleep Sound Machine  [split_50_50],Ryan,97.19,48.59,48.59,3189.54,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-12,[split_50_50],Jordyn,6.74,3.37,3.37,3186.17,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-12,[split_50_50],Jordyn,23.18,11.59,11.59,3174.58,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-12, Hardware for bed + Tool Kit  [split_50_50],Ryan,51.53,25.77,25.77,3200.35,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-13, Electric  [split_50_50],Ryan,190.00,95.00,95.00,3295.35,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-13,[split_50_50],Jordyn,55.00,27.50,27.50,3267.85,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-13,[split_50_50],Jordyn,27.31,13.65,13.65,3254.19,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-14,[split_50_50],Jordyn,26.35,13.18,13.18,3241.01,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-14, Zen Den Clean  [split_50_50],Ryan,150.00,75.00,75.00,3316.01,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-14,[split_50_50],Jordyn,30.71,15.36,15.36,3300.65,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-14,[split_50_50],Jordyn,34.39,17.20,17.20,3283.45,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-14,[split_50_50],Jordyn,45.24,22.62,22.62,3260.83,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-14, Toaster  [split_50_50],Jordyn,56.91,28.45,28.45,3232.37,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-15, Dyson  [split_50_50],Ryan,242.68,121.34,121.34,3353.71,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-15,[split_50_50],Jordyn,39.79,19.89,19.89,3333.81,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-15, Glasses & Wine Glasses  [split_50_50],Ryan,76.01,38.01,38.01,3371.82,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-15, Dining Out  [split_50_50],Ryan,19.64,9.82,9.82,3381.64,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-15," Not in history - didn't use number with purchase - need  (rug, wine glasses, etc.)  [split_50_50]",Ryan,76.01,38.01,38.01,3419.65,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-15," In Store Purchase: Storage Trays, Aquafina, Keurig Water Filter, Measuring Cup, Vanity Tray Crackle Cream, Paper Towel Holder, Suction Sink Caddy, Shower Hooks, Shower Heads, Hamper, Wine Glasses, Rug - Where is this rug?! Order was originally $286, final price charged to credit reflects. See below transaction.  [split_50_50]",Ryan,242.68,121.34,121.34,3540.99,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-15,[split_50_50],Ryan,19.64,9.82,9.82,3550.81,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-16, Chipotle  [split_50_50],Ryan,17.66,8.83,8.83,3559.64,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-16,[split_50_50],Jordyn,16.81,8.40,8.40,3551.23,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-16, Bathroom Items  [split_50_50],Ryan,48.00,24.00,24.00,3575.23,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-16,[split_50_50],Ryan,325.58,162.79,162.79,3738.02,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-16, Bathroom Items  [split_50_50],Ryan,77.61,38.80,38.80,3776.83,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-17, Shower Items  [split_50_50],Ryan,48.00,24.00,24.00,3800.83,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-17, Bathroom Items  [split_50_50],Ryan,26.94,13.47,13.47,3814.30,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-17," Holder Dispenser, Neck Pillow  [split_50_50]",Ryan,77.61,38.80,38.80,3853.11,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-17, Shower Bathroom Rug  [split_50_50],Ryan,26.94,13.47,13.47,3866.58,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-17, -  [split_50_50],Ryan,220.00,110.00,110.00,3976.58,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-18,[split_50_50],Ryan,17.50,8.75,8.75,3985.33,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-18, Hardware  [split_50_50],Ryan,31.07,15.54,15.54,4000.87,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-18, When did I get fuel at Fry's?  [split_50_50],Ryan,43.12,21.56,21.56,4022.43,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-18,[split_50_50],Ryan,230.00,115.00,115.00,4137.43,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-18,[split_50_50],Ryan,119.99,59.99,59.99,4197.43,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-18,[split_50_50],Ryan,286.30,143.15,143.15,4340.58,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-19, Omitted from above  [split_50_50],Ryan,46.99,23.50,23.50,4364.08,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-19," Ryan only purchases: $70 pillow,  office mat $189.99 ($260) Jordyn only $75  [split_50_50]",Jordyn,381.54,190.77,190.77,4173.31,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-19," House supplies, cleaning, brooms, etc. (includes Target returns  [split_50_50]",Ryan,179.27,89.64,89.64,4262.95,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-19,[split_50_50],Ryan,88.20,44.10,44.10,4307.05,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-19," Didn't use number, not available on purchase history (gas)  [split_50_50]",Ryan,41.67,20.84,20.84,4327.89,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-19, Couch moving service  [split_50_50],Ryan,76.50,38.25,38.25,4366.14,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-19, Duh  [split_50_50],Ryan,2.00,1.00,1.00,4367.14,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-20, Jordyn's Pillow  [split_50_50],Ryan,51.19,25.59,25.59,4392.74,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-20, Couch delivery service  [split_50_50],Ryan,76.50,38.25,38.25,4430.99,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-20," Shower Curtain HOoks, Dohm White Noise Machine  [split_50_50]",Ryan,47.89,23.95,23.95,4454.94,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-20," Cholula, Granola, Luna Bars  [split_50_50]",Ryan,36.34,18.17,18.17,4473.11,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-20, Nasal Spray  [split_50_50],Ryan,22.15,11.07,11.07,4484.19,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-20, Refund (Sleep Machine)  [split_50_50],Ryan,54.01,27.00,27.00,4511.20,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-21, Unknown  [split_50_50],Ryan,92.96,46.48,46.48,4557.68,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-21," Incorrectly listed as ""0"" above. - Upon looking further, only Vizzy is applicable.  [split_50_50]",Ryan,92.96,46.48,46.48,4604.16,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-21, Mom Medicine  [split_50_50],Ryan,29.82,14.91,14.91,4619.07,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-22, Itemization Unavailable  [split_50_50],Jordyn,37.50,18.75,18.75,4600.32,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-22, 11/20/2023 - $232.64 (Processed Late - Capital One Itemized Prior Cycle)  [split_50_50],Ryan,157.04,78.52,78.52,4678.84,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-22, 11/20/2023 Order  [split_50_50],Ryan,75.60,37.80,37.80,4716.64,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-23, -  [split_50_50],Ryan,230.00,115.00,115.00,4831.64,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-23," Pizza tray, office chair mat, strainer, towel hooks, pillow. Refunded shirts, $25.99, $28.99, $19.99 = 74.94  [split_50_50]",Jordyn,381.54,190.77,190.77,4640.87,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-25, Itemization Unavailable  [split_50_50],Ryan,46.35,23.18,23.18,4664.05,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-25, Dining Out  [split_50_50],Ryan,44.99,22.50,22.50,4686.55,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-26, Clipboard  [split_50_50],Ryan,10.84,5.42,5.42,4691.97,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-26, 11/26/2023 - $197.54  [split_50_50],Ryan,99.92,49.96,49.96,4741.93,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-26, 11/26/2023 - $197.54  [split_50_50],Ryan,97.62,48.81,48.81,4790.74,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-27," Oikos, Chicken, Lettuce  [split_50_50]",Ryan,33.12,16.56,16.56,4807.30,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-27," Raid refunded, hotels $8.93  [split_50_50]",Ryan,21.79,10.89,10.89,4818.20,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-27, Dining Out  [split_50_50],Jordyn,29.18,14.59,14.59,4803.61,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-27," Rotisserie Chicken, Oikos, Lettuce  [split_50_50]",Ryan,37.97,18.98,18.98,4822.60,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-29, Drug Panels  [split_50_50],Ryan,24.78,12.39,12.39,4834.99,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-29, Return TV  [split_50_50],Ryan,20.00,10.00,10.00,4844.99,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-29, Back Massager  [split_50_50],Jordyn,43.57,21.79,21.79,4823.20,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-30, Food  [split_50_50],Jordyn,26.11,13.05,13.05,4810.14,Jordyn owes Ryan,nan,expense,split_50_50
+2023-11-30, Placemats  [split_50_50],Ryan,18.35,9.18,9.18,4819.32,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-01, Living Room Table  [split_50_50],Ryan,24.89,12.45,12.45,4831.77,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-01, Itemization Unavailable  [split_50_50],Jordyn,46.73,23.36,23.36,4808.40,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-01, Steel decorative balls  [split_50_50],Jordyn,25.87,12.94,12.94,4795.46,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-02, Itemization Unavailable  [split_50_50],Ryan,26.93,13.46,13.46,4808.93,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-02, Itemization Unavailable  [split_50_50],Ryan,28.72,14.36,14.36,4823.29,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-02, -  [split_50_50],Ryan,60.00,30.00,30.00,4853.29,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-02, Dining Out  [split_50_50],Jordyn,49.13,24.57,24.57,4828.72,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-02, Dining Out  [split_50_50],Ryan,35.13,17.57,17.57,4846.29,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-03, Itemization Unavailable  [split_50_50],Jordyn,31.34,15.67,15.67,4830.62,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-03, Stainless Steel Rotation Fruit Bowl  [split_50_50],Jordyn,21.07,10.54,10.54,4820.08,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-04," Granola, Luna Bars, Wine  [split_50_50]",Ryan,35.41,17.70,17.70,4837.79,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-04, -  [split_50_50],Ryan,220.00,110.00,110.00,4947.79,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-04, Itemization Unavailable  [split_50_50],Jordyn,45.09,22.55,22.55,4925.24,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-04, Dining Out  [split_50_50],Ryan,24.55,12.28,12.28,4937.52,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-05, 12/05/2023 - $399.47  [split_50_50],Ryan,399.47,199.74,199.74,5137.26,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-05, -  [split_50_50],Ryan,80.00,40.00,40.00,5177.26,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-06, Glutenease  [split_50_50],Jordyn,48.50,24.25,24.25,5153.01,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-06, In Store - Aquafina  [split_50_50],Ryan,20.26,10.13,10.13,5163.14,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-08," Nov 14, 2023 ($119.99 - $20 ACP Discount)  [split_50_50]",Ryan,89.99,44.99,44.99,5208.14,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-08," In Store - Oikos, Sushi, Wijne  [split_50_50]",Ryan,44.55,22.27,22.27,5230.42,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-09, Jade Roller  [split_50_50],Jordyn,10.77,5.38,5.38,5225.03,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-09, Hanukkah Dinner  [split_50_50],Jordyn,58.80,29.40,29.40,5195.63,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-09, Shitttttyyyyyyyyyy assssssss fooooooooooood.  [split_50_50],Ryan,75.44,37.72,37.72,5233.35,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-09, Gifts for Mom and Jack  [gift],Jordyn,14.28,0.00,14.28,5233.35,Jordyn owes Ryan,nan,expense,gift
+2023-12-09," Ketchup, Potatoes, BBQ Sauces, Carrots (Hanukkah Dinner)  [split_50_50]",Jordyn,24.90,12.45,12.45,5220.90,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-10, Dining Out  [split_50_50],Jordyn,52.34,26.17,26.17,5194.73,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-10, -  [split_50_50],Ryan,230.00,115.00,115.00,5309.73,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-10, Dining Out  [split_50_50],Ryan,19.92,9.96,9.96,5319.69,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-11, Food?  [split_50_50],Ryan,19.92,9.96,9.96,5329.65,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-11, 12/11/2023 - $231.80  [split_50_50],Ryan,270.58,135.29,135.29,5464.94,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-11, In store - Wine   [split_50_50],Ryan,16.99,8.49,8.49,5473.44,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-11," 12/11/2023 - $78.31 (Tuna, Cheerios, Tomatoes, Beef Jerky, Small Trash Bags, Lime, Taco Seasoning Mix, Green Bell Pepper, Seltzer  [split_50_50]",Ryan,78.39,39.20,39.20,5512.64,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-12,"$45,270.00  [split_50_50]",Ryan,231.80,115.90,115.90,5628.54,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-13, Pan (Returned)  [split_50_50],Ryan,25.85,12.93,12.93,5641.47,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-13, Unable to itemize  [split_50_50],Ryan,34.47,17.23,17.23,5658.71,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-13, House Items  [split_50_50],Ryan,1.98,0.99,0.99,5659.70,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-14," Chobani, Mustard, Lemon, Pepperoni, Artichoke Hearts  [split_50_50]",Ryan,25.85,12.93,12.93,5672.63,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-14," Batteries, Wine  [split_50_50]",Ryan,48.56,24.28,24.28,5696.91,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-14, Six Storage Cubes  [split_50_50],Ryan,27.53,13.77,13.77,5710.68,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-15, Dinner  [split_50_50],Ryan,19.22,9.61,9.61,5720.29,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-15, White Down Alternative Comforter  [split_50_50],Ryan,65.15,32.58,32.58,5752.87,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-15,[split_50_50],Ryan,250.00,125.00,125.00,5877.87,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-16, Dinner  [split_50_50],Ryan,23.00,11.50,11.50,5889.37,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-16, A R I Z O N A Concert  [split_50_50],Ryan,20.70,10.35,10.35,5899.72,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-16, Unable to itemize  [split_50_50],Ryan,29.08,14.54,14.54,5914.26,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-16, A R I Z O N A Concert  [split_50_50],Ryan,21.60,10.80,10.80,5925.06,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-16, A R I Z O N A Concert  [split_50_50],Ryan,39.00,19.50,19.50,5944.56,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-16, A R I Z O N A Concert  [split_50_50],Ryan,41.40,20.70,20.70,5965.26,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-17, Six Storage Cubes  [split_50_50],Ryan,36.64,18.32,18.32,5983.58,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-17, Dresser Mounting Hardware  [split_50_50],Ryan,36.57,18.29,18.29,6001.87,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-17, Dinner  [split_50_50],Ryan,23.97,11.98,11.98,6013.86,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-18, A R I Z O N A Concert (Paid to ensure he would help find Jordyn and get her home safely)  [split_50_50],Ryan,100.00,50.00,50.00,6063.86,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-18, A R I Z O N A Concert  [split_50_50],Ryan,21.60,10.80,10.80,6074.66,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-18, A R I Z O N A Concert  [split_50_50],Ryan,34.08,17.04,17.04,6091.70,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-18," Aquafina, Tito's  [split_50_50]",Ryan,36.94,18.47,18.47,6110.17,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-18, Unknown  [split_50_50],Ryan,13.99,7.00,7.00,6117.17,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-19, Do we keep?  [split_50_50],Ryan,12.96,6.48,6.48,6123.65,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-20, Book holder/paper weight  [split_50_50],Ryan,9.59,4.79,4.79,6128.45,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-21, Jordyn Game  [split_50_50],Ryan,4.30,2.15,2.15,6130.60,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-21, Jordyn Game  [split_50_50],Ryan,2.69,1.34,1.34,6131.95,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-21, Unable to itemize  [split_50_50],Ryan,38.42,19.21,19.21,6151.16,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-21,[split_50_50],Ryan,80.00,40.00,40.00,6191.16,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-21, Drug Test - Will Be Refunded  [split_50_50],Ryan,24.78,12.39,12.39,6203.55,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-22,[split_50_50],Ryan,80.00,40.00,40.00,6243.55,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-22, Trigger Finger Splint  [split_50_50],Ryan,19.38,9.69,9.69,6253.24,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-22," Picture Frame, Back Massager (Mom Christmas Present)  [gift]",Ryan,73.66,73.66,0.00,6253.24,Jordyn owes Ryan,nan,expense,gift
+2023-12-22, Waterfall Fountain  [split_50_50],Ryan,39.93,19.96,19.96,6273.21,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-23,[split_50_50],Ryan,80.00,40.00,40.00,6313.21,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-23, PSN Subscription  [split_50_50],Ryan,43.11,21.55,21.55,6334.77,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-23, Trigger Finger Splint  [split_50_50],Ryan,29.92,14.96,14.96,6349.73,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-23, ?  [split_50_50],Ryan,9.23,4.62,4.62,6354.35,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-24," Busch Light Sign, No Salt Seasoning  [split_50_50]",Ryan,15.98,7.99,7.99,6362.34,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-25, Jordyn Christmas Present  [gift],Ryan,6.50,6.50,0.00,6362.34,Jordyn owes Ryan,nan,expense,gift
+2023-12-26, Unable to itemize  [split_50_50],Ryan,46.20,23.10,23.10,6385.44,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-26, Movie  [split_50_50],Ryan,29.50,14.75,14.75,6400.19,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-26,"$45,284.00  [split_50_50]",Ryan,154.73,77.36,77.36,6477.56,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-26, Dinner  [split_50_50],Ryan,40.81,20.41,20.41,6497.97,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-26, Gum  [split_50_50],Ryan,8.61,4.30,4.30,6502.28,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-26, Fuel  [split_50_50],Ryan,39.96,19.98,19.98,6522.26,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-26, Dinner  [split_50_50],Ryan,32.20,16.10,16.10,6538.36,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-27," Coloring Book, Frame, Back Massager, Heating Pad, Picture Frame (Mom Christmas Present)  [gift]",Ryan,145.41,145.41,0.00,6538.36,Jordyn owes Ryan,nan,expense,gift
+2023-12-27, 4x6 Picture Frame (Mom Christmas Present)  [gift],Ryan,9.44,9.44,0.00,6538.36,Jordyn owes Ryan,nan,expense,gift
+2023-12-27, Wine  [split_50_50],Ryan,33.00,16.50,16.50,6554.86,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-27, Wine  [split_50_50],Ryan,28.00,14.00,14.00,6568.86,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-27, Dinner  [split_50_50],Ryan,31.00,15.50,15.50,6584.36,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-27, Box to Ship Back Comforter (Amazon Return)  [split_50_50],Ryan,8.82,4.41,4.41,6588.77,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-28,[split_50_50],Ryan,80.00,40.00,40.00,6628.77,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-28," Busch Light Sign, No Salt Seasoning  [split_50_50]",Ryan,37.79,18.89,18.89,6647.67,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-29,[split_50_50],Ryan,80.00,40.00,40.00,6687.67,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-29," Baking sheets, Acetone, Clue, Fork  [split_50_50]",Ryan,10.12,5.06,5.06,6692.73,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-29,[split_50_50],Ryan,225.00,112.50,112.50,6805.23,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-30, Spice Rack  [split_50_50],Ryan,30.71,15.36,15.36,6820.59,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-30, Plates  [split_50_50],Ryan,71.68,35.84,35.84,6856.43,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-30," Dawn, Tide, Cheese Grater, Cards, Windex, Bounty ($25 Credit)  [split_50_50]",Ryan,29.73,14.87,14.87,6871.30,Jordyn owes Ryan,nan,expense,split_50_50
+2023-12-30, Four Forks  [split_50_50],Ryan,16.39,8.20,8.20,6879.50,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-02, Groceries  [split_50_50],Ryan,37.04,18.52,18.52,6898.02,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-02, Groceries  [split_50_50],Ryan,1.63,0.81,0.81,6898.84,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-03,[split_50_50],Jordyn,54.12,27.06,27.06,6871.78,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-03,[split_50_50],Ryan,220.00,110.00,110.00,6981.78,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-03, Prime student fee?? Why is this on Mercury x4893?  [split_50_50],Ryan,8.07,4.04,4.04,6985.82,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-03, Groceries  [split_50_50],Ryan,90.09,45.05,45.05,7030.87,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-04," Patio Chairs, Kitchen Towels, Heated Blanket, Super Rest Down Comforter (343.94 - 240.59) Kohl's cash?? Ryan response: Partially, but I worked for this Kohl's' cash. We will need to discuss further, as that Kohl's cash I earned with hours of time invested.  [split_50_50]",Ryan,343.94,171.97,171.97,7202.84,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-04, Mouse Mover  [split_50_50],Ryan,24.78,12.39,12.39,7215.23,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-04," Knee massager, eufy Scale, Lunix hand massager, etc.  [split_50_50]",Ryan,114.57,57.28,57.28,7272.52,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-05, Internet  [split_50_50],Ryan,89.99,44.99,44.99,7317.52,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-05,[split_50_50],Jordyn,13.43,6.71,6.71,7310.80,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-05,[split_50_50],Jordyn,25.38,12.69,12.69,7298.11,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-06,[split_50_50],Jordyn,42.58,21.29,21.29,7276.82,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-06,[split_50_50],Jordyn,90.23,45.12,45.12,7231.70,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-06,[split_50_50],Ryan,28.52,14.26,14.26,7245.96,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-07,[split_50_50],Ryan,220.00,110.00,110.00,7355.96,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-07,[split_50_50],Jordyn,28.43,14.21,14.21,7341.74,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-07,[split_50_50],Jordyn,14.54,7.27,7.27,7334.47,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-08,[split_50_50],Jordyn,37.52,18.76,18.76,7315.71,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-08,[split_50_50],Ryan,14.51,7.25,7.25,7322.97,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-08,[split_50_50],Ryan,37.51,18.75,18.75,7341.73,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-08, Oppenheimer Movie  [split_50_50],Ryan,6.46,3.23,3.23,7344.96,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-08,[split_50_50],Ryan,42.58,21.29,21.29,7366.25,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-09,[split_50_50],Jordyn,92.05,46.02,46.02,7320.22,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-09, Groceries  [split_50_50],Ryan,91.03,45.52,45.52,7365.74,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-09, Groceries  [split_50_50],Ryan,142.59,71.30,71.30,7437.04,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-10,[split_50_50],Jordyn,8.51,4.25,4.25,7432.78,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-11, Groceries  [split_50_50],Ryan,47.31,23.66,23.66,7456.44,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-11,[split_50_50],Ryan,220.00,110.00,110.00,7566.44,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-11, Kindle   [split_50_50],Ryan,52.82,26.41,26.41,7592.85,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-11,[split_50_50],Ryan,74.08,37.04,37.04,7629.89,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-13,[split_50_50],Ryan,5.42,2.71,2.71,7632.60,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-13,[split_50_50],Ryan,74.44,37.22,37.22,7669.82,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-13,[split_50_50],Ryan,16.39,8.20,8.20,7678.02,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-13,[split_50_50],Jordyn,49.28,24.64,24.64,7653.38,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-14,[split_50_50],Jordyn,36.86,18.43,18.43,7634.95,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-14,[split_50_50],Jordyn,29.92,14.96,14.96,7619.99,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-14," Paramount+ with SHOWTIME (How did this get passed my Subscriptions lists?) Did Jordyn order, do we want to keep?  [split_50_50]",Ryan,12.93,6.46,6.46,7626.46,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-14,[split_50_50],Ryan,235.00,117.50,117.50,7743.96,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-15,[split_50_50],Ryan,5.30,2.65,2.65,7746.61,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-15," Spice Rack, Back Stretching Device, 4 Pillows (100.69-32.98) ***Remove $29.99 for Back Stretching Device***  [split_50_50]",Ryan,100.69,50.34,50.34,7796.96,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-15, Groceries  [split_50_50],Ryan,164.74,82.37,82.37,7879.33,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-15, CoQ10 200 x2 (Jordyn & Ryan)  [split_50_50],Ryan,85.58,42.79,42.79,7922.12,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-16,[split_50_50],Jordyn,7.09,3.54,3.54,7918.57,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-16, Groceries  [split_50_50],Ryan,41.18,20.59,20.59,7939.16,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-16,[split_50_50],Ryan,72.82,36.41,36.41,7975.57,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-16,[split_50_50],Jordyn,11.26,5.63,5.63,7969.94,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-16,[split_50_50],Jordyn,11.86,5.93,5.93,7964.01,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-16," Acetaminophen, Ibuprofen, TheraTeras Dry Eye  (74.38 + 2.99 - 2.35 - 1.56 - 2.99 - 2.40 - 68.07. + 5.68 = 73.75). Deduct $23.12 for ThereaTeras Dry Eye  [split_50_50]",Ryan,73.75,36.88,36.88,8000.89,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-18, Electric  [split_50_50],Ryan,74.32,37.16,37.16,8038.05,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-18, Groceries  [split_50_50],Ryan,44.72,22.36,22.36,8060.41,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-19,[split_50_50],Jordyn,35.26,17.63,17.63,8042.78,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-19, Triamcinolone Nasal Allergy Spray  [split_50_50],Ryan,11.20,5.60,5.60,8048.38,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-19, Groceries  [split_50_50],Ryan,24.43,12.21,12.21,8060.60,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-20, 25' Ethernet Cable  [split_50_50],Ryan,19.99,9.99,9.99,8070.60,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-20, Mothers PowerPlastic 4Lights (Monitor Scratch)  [split_50_50],Ryan,8.07,4.04,4.04,8074.64,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-20,[split_50_50],Ryan,9.26,4.63,4.63,8079.27,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-20,[split_50_50],Ryan,27.97,13.98,13.98,8093.26,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-20,[split_50_50],Ryan,15.09,7.54,7.54,8100.81,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-20," Drawer Organizer, investigate. (61.72-39.56 Refund) Order# 113-3380358-9555412  [split_50_50]",Ryan,61.72,30.86,30.86,8131.67,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-21,[split_50_50],Jordyn,72.95,36.48,36.48,8095.19,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-21,[split_50_50],Ryan,29.10,14.55,14.55,8109.74,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-21,[split_50_50],Jordyn,12.96,6.48,6.48,8103.26,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-21," BACtrack (123.87), Exercise devices.  Order# 113-3583335-6728210  [split_50_50]",Ryan,199.81,99.91,99.91,8203.17,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-22,[split_50_50],Ryan,230.00,115.00,115.00,8318.17,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-22,[split_50_50],Ryan,28.01,14.01,14.01,8332.18,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-22, TV  [split_50_50],Ryan,146.00,73.00,73.00,8405.18,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-23,[split_50_50],Jordyn,58.60,29.30,29.30,8375.88,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-23,[split_50_50],Jordyn,270.30,135.15,135.15,8240.73,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-23,[split_50_50],Jordyn,34.41,17.20,17.20,8223.52,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-24,[split_50_50],Jordyn,67.86,33.93,33.93,8189.59,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-25,[split_50_50],Ryan,14.00,7.00,7.00,8196.59,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-26, Look into dropping to the cheaper plan  [split_50_50],Ryan,24.78,12.39,12.39,8208.98,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-26,[split_50_50],Jordyn,18.86,9.43,9.43,8199.55,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-26,[split_50_50],Ryan,28.01,14.01,14.01,8213.56,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-26,[split_50_50],Ryan,220.00,110.00,110.00,8323.56,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-26,[split_50_50],Ryan,72.37,36.19,36.19,8359.75,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-26, Glass Top Computer Desk (251.99-50.40-200.00) - Discuss further.  [split_50_50],Ryan,251.99,126.00,126.00,8485.75,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-26, 3x3 Cube Organizer  [split_50_50],Ryan,105.61,52.80,52.80,8538.56,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-27,[split_50_50],Ryan,27.61,13.80,13.80,8552.37,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-27,[split_50_50],Jordyn,52.95,26.48,26.48,8525.89,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-27,[split_50_50],Ryan,225.00,112.50,112.50,8638.39,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-27," Reading PIllow (Free for Jordyn from Ryan as a present, heart emoji), touch-toe stopper (11.53) Order# 113-3380358-9555412  [gift]",Ryan,40.95,40.95,0.00,8638.39,Jordyn owes Ryan,nan,expense,gift
+2024-01-28, Household Items  [split_50_50],Ryan,34.98,17.49,17.49,8655.88,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-28,[split_50_50],Jordyn,18.34,9.17,9.17,8646.71,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-28,$44.18  [split_50_50],Ryan,44.18,22.09,22.09,8668.80,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-29, Box for Air Mattress Return  [split_50_50],Ryan,20.24,10.12,10.12,8678.92,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-29," Zip Ties, Wood Squatting Toilet (Ryan 100%)  [split_50_50]",Ryan,42.02,21.01,21.01,8699.93,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-29,[split_50_50],Ryan,29.10,14.55,14.55,8714.48,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-30,[split_50_50],Ryan,53.50,26.75,26.75,8741.23,Jordyn owes Ryan,nan,expense,split_50_50
+2024-01-31,[split_50_50],Ryan,29.10,14.55,14.55,8755.78,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-01,[split_50_50],Jordyn,25.38,12.69,12.69,8743.09,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-02,[split_50_50],Jordyn,59.97,29.98,29.98,8713.10,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-02, Free for Jordyn  [split_50_50],Ryan,16.27,8.13,8.13,8721.24,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-02,[split_50_50],Ryan,23.37,11.69,11.69,8732.93,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-02, Unknown - Free  [split_50_50],Ryan,19.22,9.61,9.61,8742.54,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-02,[split_50_50],Ryan,59.57,29.79,29.79,8772.33,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-02, Batteries  [split_50_50],Ryan,6.64,3.32,3.32,8775.65,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-02, Ryan Purchases  [split_50_50],Ryan,64.66,32.33,32.33,8807.98,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-03, TV - $500 Less $146 Autopay  [split_50_50],Ryan,500.00,250.00,250.00,9057.98,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-03,[split_50_50],Jordyn,33.83,16.91,16.91,9041.06,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-03," LetsGetChecked, Breather Fit, L-Serine, Spermcheck (Order# 113-1499724-0624207)  [split_50_50]",Ryan,83.98,41.99,41.99,9083.05,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-03,[split_50_50],Ryan,50.72,25.36,25.36,9108.41,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-03,[split_50_50],Ryan,225.00,112.50,112.50,9220.91,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-03,[split_50_50],Ryan,30.49,15.24,15.24,9236.16,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-03,[split_50_50],Jordyn,41.07,20.54,20.54,9215.62,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-03,[split_50_50],Ryan,220.00,110.00,110.00,9325.62,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-04," D-Line Cord Hider Kit, Legrand Cable Management Kit  [split_50_50]",Ryan,89.70,44.85,44.85,9370.47,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-04," Household Items (Drill, Lightbulbs, etc.)  [split_50_50]",Ryan,121.34,60.67,60.67,9431.14,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-04,[split_50_50],Ryan,33.84,16.92,16.92,9448.06,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-04, Levoit Water Filter  [split_50_50],Ryan,10.77,5.38,5.38,9453.45,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-04, Cord Cover Raceway Kit. If this is returned pay Jordyn  [split_50_50],Ryan,35.71,17.86,17.86,9471.31,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-05,[split_50_50],Jordyn,110.32,55.16,55.16,9416.15,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-05, Internet  [split_50_50],Ryan,90.00,45.00,45.00,9461.15,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-05,[split_50_50],Jordyn,25.74,12.87,12.87,9448.28,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-05, Annual Membership  [split_50_50],Ryan,128.52,64.26,64.26,9512.54,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-05, MacBook Down Payment  [split_50_50],Ryan,100.00,50.00,50.00,9562.54,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-05, Internet  [split_50_50],Ryan,90.00,45.00,45.00,9607.54,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-05, Zinc Self Drilling Anchors (Order# 111-6450316-5362616)  [split_50_50],Ryan,10.55,5.28,5.28,9612.82,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-06,[split_50_50],Jordyn,44.61,22.30,22.30,9590.51,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-06, Claussen Pickles & Wine  [split_50_50],Ryan,71.85,35.92,35.92,9626.44,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-06, Scale / Amber Glass  [split_50_50],Ryan,32.76,16.38,16.38,9642.82,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-07, Vitamin D & Probiotics  [split_50_50],Jordyn,27.47,13.73,13.73,9629.08,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-08, Wine  [split_50_50],Ryan,51.60,25.80,25.80,9654.88,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-09, Refund - back pillow  [split_50_50],Ryan,34.81,17.41,17.41,9672.29,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-09, Dinner / Fun  [split_50_50],Ryan,30.73,15.37,15.37,9687.66,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-10,[split_50_50],Jordyn,28.07,14.04,14.04,9673.62,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-10,[split_50_50],Jordyn,17.37,8.69,8.69,9664.93,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-10,[split_50_50],Jordyn,131.89,65.94,65.94,9598.98,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-10,[split_50_50],Jordyn,31.74,15.87,15.87,9583.11,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-10, Surgineer  [split_50_50],Ryan,10.77,5.38,5.38,9588.50,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-10, Loco Dojo Unleashed  [split_50_50],Ryan,21.55,10.78,10.78,9599.28,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-10, Dinner / Fun  [split_50_50],Ryan,32.03,16.02,16.02,9615.30,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-10, Dinner / Fun  [split_50_50],Ryan,32.75,16.38,16.38,9631.68,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-10, Pinball FX2 VR  [split_50_50],Ryan,16.16,8.08,8.08,9639.76,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-10, ForeVR Bowl  [split_50_50],Ryan,21.55,10.78,10.78,9650.54,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-10, Dinner / Fun  [split_50_50],Ryan,19.23,9.62,9.62,9660.16,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-11, Food  [split_50_50],Ryan,165.93,82.97,82.97,9743.13,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-11, Dinner / Fun  [split_50_50],Ryan,220.00,110.00,110.00,9853.13,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-11, Dinner / Fun  [split_50_50],Ryan,56.78,28.39,28.39,9881.52,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-11, Dinner / Fun  [split_50_50],Ryan,78.64,39.32,39.32,9920.84,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-11," Distilled Water, Tito's & Vizzy  [split_50_50]",Ryan,54.44,27.22,27.22,9948.06,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-12, Valentines Day Presents (free for my baaaaaaaaaaaaaaaaby)  [gift],Ryan,20.45,20.45,0.00,9948.06,Jordyn owes Ryan,nan,expense,gift
+2024-02-12,[split_50_50],Jordyn,261.12,130.56,130.56,9817.50,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-12, Flaxseed Oil & L-Theanine  [split_50_50],Ryan,58.26,29.13,29.13,9846.63,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-12," (freeeeeeeeeee for my babbbbbbbbbbyy, i know she loves that paper towel!)  [split_50_50]",Ryan,148.89,74.44,74.44,9921.08,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-13, Dinner / Fun  [split_50_50],Ryan,225.00,112.50,112.50,10033.58,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-13,[split_50_50],Ryan,15.09,7.54,7.54,10041.13,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-13,[split_50_50],Jordyn,30.56,15.28,15.28,10025.85,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-14, Beef Jerky & Chocolate (freeeeeeeeeeeeee for my baaaaaabyyyyyyy)  [split_50_50],Ryan,40.74,20.37,20.37,10046.22,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-14, Dinner / Fun  [split_50_50],Ryan,176.26,88.13,88.13,10134.35,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-15, Wine & White Claw  [split_50_50],Ryan,34.17,17.09,17.09,10151.44,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-15, Word Search Puzzles  [split_50_50],Ryan,3.82,1.91,1.91,10153.35,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-15, Dinner / Fun  [split_50_50],Ryan,13.94,6.97,6.97,10160.32,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-15, Word Search Puzzles  [split_50_50],Ryan,6.90,3.45,3.45,10163.77,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-15, Rotisserie Chicken & Calipower (freeeeeeeeeee)  [split_50_50],Ryan,17.28,8.64,8.64,10172.41,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-16, Dinner / Fun  [split_50_50],Ryan,64.86,32.43,32.43,10204.84,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-16,[split_50_50],Ryan,13.99,7.00,7.00,10211.84,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-17, Wine & White Claw  [split_50_50],Ryan,37.17,18.59,18.59,10230.43,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-17, Dinner / Fun  [split_50_50],Ryan,53.78,26.89,26.89,10257.32,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-17,[split_50_50],Jordyn,59.24,29.62,29.62,10227.70,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-17, Dinner / Fun  [split_50_50],Ryan,59.24,29.62,29.62,10257.32,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-17,[split_50_50],Jordyn,124.38,62.19,62.19,10195.13,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-17, Dinner / Fun  [split_50_50],Ryan,11.07,5.54,5.54,10200.67,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-18," PIzza, Honey, Gatorade  [split_50_50]",Ryan,22.61,11.30,11.30,10211.98,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-18,[split_50_50],Jordyn,29.38,14.69,14.69,10197.29,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-18, Wurzer Paid Video Game - Prince of Persia  [split_50_50],Ryan,53.89,26.95,26.95,10224.24,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-19," Caulipower, Polar, Wine, Pizza, Carrots, etc.  [split_50_50]",Ryan,72.77,36.38,36.38,10260.63,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-20, Electric  [split_50_50],Ryan,124.61,62.30,62.30,10322.94,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-20, Probs wines yo  [split_50_50],Ryan,30.16,15.08,15.08,10338.02,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-21,[split_50_50],Jordyn,12.96,6.48,6.48,10331.54,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-21,[split_50_50],Jordyn,72.95,36.48,36.48,10295.06,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-21, Probs wines yo  [split_50_50],Ryan,15.62,7.81,7.81,10302.87,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-22, TV  [split_50_50],Ryan,146.00,73.00,73.00,10375.87,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-22," Kohl's Purchases (Full, chairs, etc.) -- already paid months ago  [split_50_50]",Ryan,184.55,92.28,92.28,10468.15,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-22, Probs wines yo - how much wine we drinksssss for real  [split_50_50],Ryan,14.00,7.00,7.00,10475.15,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-23, Dinner / Fun  [split_50_50],Ryan,22.12,11.06,11.06,10486.21,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-23, Dinner / Fun  [split_50_50],Ryan,225.00,112.50,112.50,10598.71,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-23,[split_50_50],Jordyn,19.35,9.68,9.68,10589.03,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-23,[split_50_50],Jordyn,43.19,21.59,21.59,10567.43,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-24, Dinner / Fun  [split_50_50],Ryan,13.39,6.70,6.70,10574.13,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-24, Steaks  [split_50_50],Ryan,17.00,8.50,8.50,10582.63,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-24, Dinner / Fun  [split_50_50],Ryan,48.24,24.12,24.12,10606.75,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-24, Dinner / Fun  [split_50_50],Ryan,10.30,5.15,5.15,10611.90,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-24, Dinner / Fun  [split_50_50],Ryan,220.00,110.00,110.00,10721.90,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-24, Dinner / Fun  [split_50_50],Ryan,18.30,9.15,9.15,10731.05,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-24,[split_50_50],Jordyn,31.47,15.73,15.73,10715.31,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-24, Fruit Basket  [split_50_50],Jordyn,21.53,10.77,10.77,10704.54,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-24, Dinner / Fun- earrings  [split_50_50],Ryan,48.51,24.25,24.25,10728.80,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-24, Wine  [split_50_50],Ryan,19.11,9.55,9.55,10738.36,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-24, Dinner / Fun  [split_50_50],Ryan,9.63,4.82,4.82,10743.18,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-24,[split_50_50],Jordyn,59.58,29.79,29.79,10713.39,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-25, Dinner / Fun  [split_50_50],Ryan,31.00,15.50,15.50,10728.89,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-25, We must be on my Kindle Unlimited plan or Amazon is screwing with me lol - occurrence #6  [split_50_50],Ryan,12.93,6.46,6.46,10735.36,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-25, Dinner / Fun  [split_50_50],Ryan,24.78,12.39,12.39,10747.75,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-25," Rotisserie Chicken, HIgh Noon, Cutwater Mango Tequila  [split_50_50]",Ryan,37.31,18.66,18.66,10766.41,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-25,[split_50_50],Jordyn,146.88,73.44,73.44,10692.97,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-26, Hand Physics Lab  [split_50_50],Ryan,10.77,5.38,5.38,10698.36,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-26, Water Bottles  [split_50_50],Ryan,19.45,9.72,9.72,10708.09,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-27," Compression socks, arm sleeves, and GPU Brace  [split_50_50]",Ryan,20.82,10.41,10.41,10718.50,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-27, Probs wines yo  [split_50_50],Ryan,32.10,16.05,16.05,10734.55,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-27, Compression arm sleeves  [split_50_50],Ryan,25.86,12.93,12.93,10747.48,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-28, Wine  [split_50_50],Ryan,21.24,10.62,10.62,10758.10,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-29, Meat Thermometers- being returned  [split_50_50],Ryan,34.46,17.23,17.23,10775.33,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-29,[split_50_50],Jordyn,20.67,10.34,10.34,10764.99,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-29, Dinner / Fun  [split_50_50],Ryan,225.00,112.50,112.50,10877.49,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-29, Rotisserie Chicken  [split_50_50],Ryan,17.28,8.64,8.64,10886.13,Jordyn owes Ryan,nan,expense,split_50_50
+2024-02-29, Wine  [split_50_50],Ryan,19.11,9.55,9.55,10895.69,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-01,[split_50_50],Jordyn,36.50,18.25,18.25,10877.44,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-01, Wine  [split_50_50],Ryan,21.24,10.62,10.62,10888.06,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-02, Dinner / Fun  [split_50_50],Ryan,20.40,10.20,10.20,10898.26,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-02, SI-LOC & Weight LIfting Belt  [split_50_50],Ryan,37.70,18.85,18.85,10917.11,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-02, Dinner / Fun-- I paid for my own  [split_50_50],Ryan,32.76,16.38,16.38,10933.49,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-02, Wine  [split_50_50],Ryan,19.11,9.55,9.55,10943.05,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-03, Dirt 5  [split_50_50],Ryan,12.92,6.46,6.46,10949.51,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-03, Dinner / Fun  [split_50_50],Ryan,25.50,12.75,12.75,10962.26,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-03, Dinner / Fun  [split_50_50],Ryan,51.31,25.66,25.66,10987.92,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-03, Dinner  [split_50_50],Ryan,51.31,25.66,25.66,11013.58,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-03, Dinner  [split_50_50],Ryan,25.50,12.75,12.75,11026.33,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-03, Yoga Master  [split_50_50],Ryan,18.85,9.43,9.43,11035.76,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-03, Resident Evil Village Gold Edition  [split_50_50],Ryan,21.55,10.78,10.78,11046.54,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-03, UFC 5 Deluxe Edition  [split_50_50],Ryan,64.67,32.34,32.34,11078.88,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-04, Wine & Tito's  [split_50_50],Ryan,50.99,25.50,25.50,11104.38,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-04, Dinner / Fun  [split_50_50],Ryan,27.20,13.60,13.60,11117.98,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-05, Wine  [split_50_50],Ryan,29.78,14.89,14.89,11132.87,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-05, Western Digital HD (Will itemize to right)  [split_50_50],Jordyn,125.75,62.88,62.88,11069.99,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-05, Ryan pays for this (will itemize to right)  [split_50_50],Jordyn,41.00,20.50,20.50,11049.49,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-05,[split_50_50],Jordyn,274.67,137.34,137.34,10912.15,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-06, Wine  [split_50_50],Ryan,29.73,14.87,14.87,10927.02,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-06," Eraser Kit, Beauty Curl  [split_50_50]",Jordyn,27.98,13.99,13.99,10913.03,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-06, Freeeee for my babbbbbbbbbbbbbbbbbbby (yayyyyyyyyyyyy)  [split_50_50],Ryan,220.00,110.00,110.00,11023.03,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-06, Dinner / Fun  [split_50_50],Ryan,225.00,112.50,112.50,11135.53,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-06, SoulGenie TipGuard  [split_50_50],Ryan,7.49,3.75,3.75,11139.28,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-06, SI-LOC & Weight LIfting Belt  [split_50_50],Ryan,43.07,21.54,21.54,11160.82,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-07, Internet  [split_50_50],Ryan,90.00,45.00,45.00,11205.82,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-07," Shea Moisture Hair Conditioner, AmazeFan Leg Stretcher, Stiff Bristle 4 Piece Drill Brush ($15 for Shea Moisture Conditioner) $30 listed to reflect $15  [split_50_50]",Ryan,70.00,35.00,35.00,11240.82,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-07, Ice Cream (Free for my baaaaaabyyyyyyyyyyyy)  [split_50_50],Ryan,9.49,4.75,4.75,11245.57,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-07," Shea Moisture Curl, CoQ10 & Wrist Brace ($11 for SheaMoisture Curl and Shine Shampoo) - $22 listed to reflect $11  [split_50_50]",Ryan,29.61,14.80,14.80,11260.38,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-07, Amber Glass 1 oz & Water Fountain  [split_50_50],Ryan,43.07,21.54,21.54,11281.92,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-07, Wine  [split_50_50],Ryan,33.98,16.99,16.99,11298.91,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-08," Shea Moisture Hair Conditioner, AmazeFan Leg Stretcher, Stiff Bristle 4 Piece Drill Brush ($15 for Shea Moisture Conditioner) $30 listed to reflect $15  [split_50_50]",Ryan,15.08,7.54,7.54,11306.45,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-08,[split_50_50],Jordyn,41.76,20.88,20.88,11285.57,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-08, Summer Sausage  [split_50_50],Ryan,6.08,3.04,3.04,11288.61,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-09, Snooze  [split_50_50],Ryan,66.47,33.23,33.23,11321.85,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-09, Beverages  [split_50_50],Ryan,16.59,8.29,8.29,11330.15,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-09, Dinner / Fun  [split_50_50],Ryan,66.47,33.23,33.23,11363.39,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-09, Dinner / Fun  [split_50_50],Ryan,11.33,5.67,5.67,11369.06,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-09, Ice Cream  [split_50_50],Ryan,11.33,5.67,5.67,11374.73,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-10, Art Festival  [split_50_50],Ryan,36.22,18.11,18.11,11392.84,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-10, Foundation Downtown Tempe  [split_50_50],Ryan,35.00,17.50,17.50,11410.34,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-10, Art Fesitval  [split_50_50],Ryan,19.46,9.73,9.73,11420.07,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-10, Art Festival  [split_50_50],Ryan,10.00,5.00,5.00,11425.07,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-10, Dinner / Fun-- what the heck is this?  [split_50_50],Ryan,36.22,18.11,18.11,11443.18,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-10, Dinner / Fun  [split_50_50],Ryan,19.46,9.73,9.73,11452.91,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-10, Five Guys --what about what I paid for Picazzos?  [split_50_50],Ryan,34.73,17.36,17.36,11470.28,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-10, Dinner / Fun -- being returned  [split_50_50],Ryan,27.64,13.82,13.82,11484.10,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-10, Dinner / Fun  [split_50_50],Ryan,10.00,5.00,5.00,11489.10,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-10, Dinner / Fun  [split_50_50],Ryan,35.00,17.50,17.50,11506.60,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-11, Dinner / Fun  [split_50_50],Ryan,225.00,112.50,112.50,11619.10,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-11,[split_50_50],Jordyn,37.84,18.92,18.92,11600.18,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-11,[split_50_50],Jordyn,35.00,17.50,17.50,11582.68,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-12,[split_50_50],Jordyn,48.26,24.13,24.13,11558.55,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-12,[split_50_50],Ryan,42.51,21.25,21.25,11579.81,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-12,[split_50_50],Jordyn,18.00,9.00,9.00,11570.81,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-12, Five Guys  [split_50_50],Ryan,34.73,17.36,17.36,11588.18,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-12, Picazzo's  [split_50_50],Ryan,22.73,11.37,11.37,11599.55,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-12," PIzza, Wine, Parm Cheese  [split_50_50]",Ryan,40.59,20.30,20.30,11619.85,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-12, Food  [split_50_50],Ryan,12.81,6.41,6.41,11626.26,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-12, Food  [split_50_50],Ryan,35.40,17.70,17.70,11643.96,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-14," Asparagus, Wine  [split_50_50]",Ryan,29.32,14.66,14.66,11658.62,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-14,[split_50_50],Jordyn,33.32,16.66,16.66,11641.96,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-14, N/A  [split_50_50],Ryan,230.00,115.00,115.00,11756.96,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-15," Sargento Cheese, Rotisserie Chicken  [split_50_50]",Ryan,13.19,6.59,6.59,11763.56,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-15," Oxi-Clean, Light Bulbs  [split_50_50]",Ryan,31.78,15.89,15.89,11779.45,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-15, Dinner  [split_50_50],Ryan,54.44,27.22,27.22,11806.67,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-15,[split_50_50],Jordyn,47.44,23.72,23.72,11782.95,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-16, HILL HOUSE ENTERPRISEPEORIA [Hill House Enterprise]  [split_50_50],Ryan,9.00,4.50,4.50,11787.45,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-16, Ostrich Festival  [split_50_50],Ryan,13.48,6.74,6.74,11794.19,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-16, Ostrich Festival  [split_50_50],Ryan,18.00,9.00,9.00,11803.19,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-16, Ostrich Festival  [split_50_50],Ryan,84.00,42.00,42.00,11845.19,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-16, STEVE LEVINE ENTERTAINMENSCOTTSDALE [Steve Levine Entertainmens]  [split_50_50],Ryan,15.00,7.50,7.50,11852.69,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-16,[split_50_50],Jordyn,19.00,9.50,9.50,11843.19,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-16, Walgreens  [split_50_50],Ryan,7.28,3.64,3.64,11846.83,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-16,[split_50_50],Jordyn,23.46,11.73,11.73,11835.10,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-16,[split_50_50],Jordyn,9.12,4.56,4.56,11830.54,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-16, Wine  [split_50_50],Ryan,23.36,11.68,11.68,11842.22,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-16, TST* HASH KITCHEN - CHANDCHANDLER [Hash Kitchen Chandler] Only you drank  [split_50_50],Ryan,22.46,11.23,11.23,11853.45,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-16, BUTLER AMUSEMENTS INC  [split_50_50],Ryan,20.00,10.00,10.00,11863.45,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-17, Lawyer  [split_50_50],Ryan,60.00,30.00,30.00,11893.45,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-17, Ostrich Festival  [split_50_50],Ryan,9.00,4.50,4.50,11897.95,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-17, Ostrich Festival  [split_50_50],Ryan,40.96,20.48,20.48,11918.43,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-17, Ostrich Festival  [split_50_50],Ryan,9.00,4.50,4.50,11922.93,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-17, Ostrich Festival  [split_50_50],Ryan,26.52,13.26,13.26,11936.19,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-17, Ostrich Festival  [split_50_50],Ryan,38.00,19.00,19.00,11955.19,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-17, Hilton [Hilton Chandler Fb]  [split_50_50],Ryan,61.08,30.54,30.54,11985.73,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-17, Hilton [Hilton Hotels & Resorts]  [split_50_50],Ryan,331.07,165.53,165.53,12151.27,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-18, Fry's Food and Drug  [split_50_50],Ryan,8.63,4.32,4.32,12155.59,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-18, Ostrich Festival  [split_50_50],Ryan,10.00,5.00,5.00,12160.59,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-18, N/A  [split_50_50],Ryan,450.00,225.00,225.00,12385.59,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-18," Pizza, Wine  [split_50_50]",Ryan,25.93,12.96,12.96,12398.56,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-18, Unknown  [split_50_50],Ryan,50.99,25.50,25.50,12424.06,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-18, Walmart+  [split_50_50],Ryan,13.99,7.00,7.00,12431.06,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-18, Ostrich Festival  [split_50_50],Ryan,30.00,15.00,15.00,12446.06,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-18, Ostrich Festival  [split_50_50],Ryan,20.00,10.00,10.00,12456.06,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-18,Zelle Settlement - nan,Jordyn,800.00,0.00,0.00,11656.06,Jordyn owes Ryan,Settlement,zelle,settlement
+2024-03-19,[split_50_50],Jordyn,150.46,75.23,75.23,11580.83,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-19, Wine  [split_50_50],Ryan,23.36,11.68,11.68,11592.51,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-19," GlutenEase, Generic Xyxal  [split_50_50]",Jordyn,68.92,34.46,34.46,11558.05,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-19, N/A  [split_50_50],Ryan,220.00,110.00,110.00,11668.05,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-19, Wine  [split_50_50],Ryan,15.09,7.54,7.54,11675.60,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-20,[split_50_50],Jordyn,35.86,17.93,17.93,11657.67,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-20, TV  [split_50_50],Ryan,38.00,19.00,19.00,11676.67,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-20, Wine  [split_50_50],Ryan,23.36,11.68,11.68,11688.35,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-21, Wine  [split_50_50],Ryan,23.36,11.68,11.68,11700.03,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-22, Wine  [split_50_50],Ryan,12.75,6.38,6.38,11706.41,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-22, TV  [split_50_50],Ryan,146.00,73.00,73.00,11779.41,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-22," Paint Tray, Paint Set, Wood Easel, Paint  [split_50_50]",Jordyn,36.80,18.40,18.40,11761.01,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-22, Teeth Whitening  [split_50_50],Ryan,52.82,26.41,26.41,11787.42,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-22, Wine  [split_50_50],Ryan,31.78,15.89,15.89,11803.31,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-23,[split_50_50],Jordyn,24.06,12.03,12.03,11791.28,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-23,[split_50_50],Jordyn,33.07,16.54,16.54,11774.74,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-23,[split_50_50],Jordyn,124.22,62.11,62.11,11712.63,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-23, PlayStation Subscription  [split_50_50],Ryan,43.11,21.55,21.55,11734.19,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-23, Dave & Buster's  [split_50_50],Ryan,48.65,24.32,24.32,11758.52,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-23,[split_50_50],Jordyn,24.33,12.16,12.16,11746.35,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-23, TST* POKITRITION- CHANDLEChandler [Pokitrition Sushi Burritos & Poke] You ate alone  [split_50_50],Ryan,14.59,7.29,7.29,11753.65,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-24,[split_50_50],Jordyn,38.98,19.49,19.49,11734.16,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-24, Chap Stick  [split_50_50],Ryan,4.30,2.15,2.15,11736.31,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-24, Wine  [split_50_50],Ryan,19.40,9.70,9.70,11746.01,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-24, ZINBURGER GILBERT [Zinburger Wine & Burger Bar]  [split_50_50],Ryan,40.51,20.25,20.25,11766.27,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-24," Titos, Yogurt  [split_50_50]",Ryan,31.99,15.99,15.99,11782.27,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-24, Wine  [split_50_50],Ryan,33.98,16.99,16.99,11799.26,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-25,[split_50_50],Jordyn,24.80,12.40,12.40,11786.86,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-25," Rabbit Automatic Electric Corkscrew Wine Bottle Opener, Burt's Bees, etc.  [split_50_50]",Jordyn,65.91,32.95,32.95,11753.90,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-25, 20x Amber Nasal Spray Bottle + 2 Funnels  [split_50_50],Ryan,22.69,11.35,11.35,11765.25,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-25, Netflix  [split_50_50],Ryan,24.78,12.39,12.39,11777.64,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-26, Wine  [split_50_50],Ryan,25.49,12.74,12.74,11790.39,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-26,[split_50_50],Jordyn,135.76,67.88,67.88,11722.51,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-27, Baked Chicken  [split_50_50],Ryan,9.12,4.56,4.56,11727.07,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-27," Distilled Water, Wine  [split_50_50]",Ryan,26.80,13.40,13.40,11740.47,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-27," Charmin, Cascade, Bounty  [split_50_50]",Ryan,85.33,42.66,42.66,11783.14,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-28, Dinner  [split_50_50],Ryan,48.78,24.39,24.39,11807.53,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-28, N/A  [split_50_50],Ryan,450.00,225.00,225.00,12032.53,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-28, Wine  [split_50_50],Ryan,27.62,13.81,13.81,12046.34,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-28,[split_50_50],Jordyn,48.77,24.39,24.39,12021.95,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-28, N/A  [split_50_50],Ryan,220.00,110.00,110.00,12131.95,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-29,[split_50_50],Jordyn,25.62,12.81,12.81,12119.14,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-29," Longzon 4-in-1 Knife Sharpener, Mercer Culinary Knife Guard  [split_50_50]",Jordyn,21.19,10.60,10.60,12108.54,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-29, Bownling  [split_50_50],Ryan,30.14,15.07,15.07,12123.61,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-29," Car Wash - your charge, not mine  [split_50_50]",Ryan,22.00,11.00,11.00,12134.61,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-29, Movie  [split_50_50],Ryan,29.50,14.75,14.75,12149.36,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-29, Electric  [split_50_50],Ryan,82.92,41.46,41.46,12190.82,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-30, Beverages  [split_50_50],Ryan,41.11,20.55,20.55,12211.38,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-30, Food  [split_50_50],Ryan,25.26,12.63,12.63,12224.01,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-30, Movie  [split_50_50],Ryan,28.00,14.00,14.00,12238.01,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-30,[split_50_50],Jordyn,40.43,20.21,20.21,12217.79,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-30,[split_50_50],Jordyn,67.73,33.87,33.87,12183.92,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-30,[split_50_50],Jordyn,27.47,13.73,13.73,12170.18,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-30, Wine  [split_50_50],Ryan,18.32,9.16,9.16,12179.34,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-31, Whole Foods  [split_50_50],Ryan,28.55,14.28,14.28,12193.62,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-31," Pineapple, Wine  [split_50_50]",Ryan,37.00,18.50,18.50,12212.12,Jordyn owes Ryan,nan,expense,split_50_50
+2024-03-31, Wine  [split_50_50],Ryan,9.56,4.78,4.78,12216.90,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-01," Wine, Butter, Yogurt  [split_50_50]",Ryan,33.79,16.89,16.89,12233.80,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-01, Neurodiversity T-Shirt  [split_50_50],Jordyn,21.55,10.78,10.78,12223.02,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-02,[split_50_50],Jordyn,91.74,45.87,45.87,12177.15,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-02," Pickles, Rotisserie Chicken, Wine  [split_50_50]",Ryan,40.79,20.39,20.39,12197.55,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-02, OMOTON Adjustsable Table STand for Desk (Kindle)  [split_50_50],Jordyn,12.60,6.30,6.30,12191.25,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-03," Power Mop Cleaner, Wine  [split_50_50]",Ryan,33.55,16.77,16.77,12208.03,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-04, Wine  [split_50_50],Ryan,24.43,12.21,12.21,12220.25,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-05, Wine  [split_50_50],Ryan,26.55,13.28,13.28,12233.53,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-05, Wine  [split_50_50],Ryan,27.65,13.82,13.82,12247.36,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-05,[split_50_50],Jordyn,35.89,17.95,17.95,12229.41,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-05, Internet  [split_50_50],Ryan,90.00,45.00,45.00,12274.41,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-05, Internet  [split_50_50],Ryan,90.00,45.00,45.00,12319.41,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-06, Wine  & ?  [split_50_50],Ryan,60.02,30.01,30.01,12349.42,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-06,[split_50_50],Jordyn,52.51,26.25,26.25,12323.16,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-06, Dinner  [split_50_50],Ryan,52.50,26.25,26.25,12349.41,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-06, Beverages or Dinner  [split_50_50],Ryan,39.89,19.95,19.95,12369.36,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-06, Govee Table Lamp ($59.00) + 6 Pack Reusable Mops ($16.99)  [split_50_50],Ryan,245.38,122.69,122.69,12492.05,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-06, Dinner  [split_50_50],Ryan,49.40,24.70,24.70,12516.75,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-06, Dinner  [split_50_50],Ryan,44.88,22.44,22.44,12539.19,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-06,[split_50_50],Jordyn,77.57,38.78,38.78,12500.40,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-06, Food  [split_50_50],Ryan,60.02,30.01,30.01,12530.41,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-06, Dining Out-- you ate alone  [split_50_50],Ryan,44.88,22.44,22.44,12552.85,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-06, Butterfly Coloring Book  [split_50_50],Jordyn,8.60,4.30,4.30,12548.55,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-06, Dining Out  [split_50_50],Ryan,52.50,26.25,26.25,12574.80,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-06, Dining Out  [split_50_50],Ryan,49.40,24.70,24.70,12599.50,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-06, Dining Out  [split_50_50],Ryan,39.89,19.95,19.95,12619.45,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-06,[split_50_50],Jordyn,18.52,9.26,9.26,12610.19,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-07," Ice Cream (put twice, second one deleted)  [split_50_50]",Ryan,7.11,3.56,3.56,12613.75,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-07, N/A  [split_50_50],Ryan,450.00,225.00,225.00,12838.75,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-07, Wine  [split_50_50],Ryan,26.55,13.28,13.28,12852.03,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-07, Beverages  [split_50_50],Ryan,66.70,33.35,33.35,12885.38,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-07, Dining Out  [split_50_50],Ryan,66.70,33.35,33.35,12918.73,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-07," Chicken, Wine  [split_50_50]",Ryan,36.46,18.23,18.23,12936.96,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-08, OnlyFan's Photo Editing  [split_50_50],Ryan,5.59,2.79,2.79,12939.76,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-08, Chomps (Jordyn - I'll pay 50%)  [split_50_50],Ryan,25.57,12.79,12.79,12952.55,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-08,[split_50_50],Jordyn,169.25,84.62,84.62,12867.92,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-08, Wine  [split_50_50],Ryan,27.62,13.81,13.81,12881.73,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-08," Rotisserie Chicken, Wine  [split_50_50]",Ryan,36.46,18.23,18.23,12899.96,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-09, N/A  [split_50_50],Ryan,220.00,110.00,110.00,13009.96,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-09, World of Warcraft  [split_50_50],Ryan,16.17,8.09,8.09,13018.05,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-09," DEVOPS 3 Pack Men's Athletic Compression Shirts Sleeveless (Medium, Black/Blue/White); DEVOPS 3 Pack Men's Compression Pants Athletic Leggings (Medium, Black/Black/Black);  [split_50_50]",Ryan,74.99,37.49,37.49,13055.55,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-09," CASEKOO for iPhone 13 Pro Case, Miracle-Gro  [split_50_50]",Jordyn,25.92,12.96,12.96,13042.59,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-09, Wine  [split_50_50],Ryan,29.95,14.97,14.97,13057.57,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-10, 20 + Household Items  [split_50_50],Ryan,239.59,119.80,119.80,13177.37,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-10," Homedics Tabletop Water Fountain, Home Décor Soothing Sound Machine - Automatic Pump, Deep Basin & Natural River Rocks. Indoor Zen Relaxation for Office, Living Room, or Bedroom, 8.25” Tall; Under Armour Men's ColdGear Armour Fitted Crew, Black (001)/White, Medium; Under Armour Men's ColdGear Armour Leggings, Black (001)/White, Medium; Under Armour Men's Armour HeatGear Compression Long-Sleeve T-Shirt , Black (001)/White , Medium; Under Armour Men's Armour HeatGear Compression Long-Sleeve T-Shirt , Black (001)/White , Small;  [split_50_50]",Ryan,179.49,89.75,89.75,13267.12,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-10,[split_50_50],Ryan,38.00,19.00,19.00,13286.12,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-11, Wine (1 Bottle)  [split_50_50],Ryan,15.08,7.54,7.54,13293.66,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-12, why duplicated?  [split_50_50],Ryan,40.57,20.29,20.29,13313.95,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-12, Back to the Future;  [split_50_50],Ryan,4.30,2.15,2.15,13316.10,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-12," Under Armour Men's ColdGear Armour Leggings, Black (001)/White, Medium; Under Armour Men's Armour HeatGear Compression Long-Sleeve T-Shirt , Black (001)/White , Small;  [split_50_50]",Ryan,158.30,79.15,79.15,13395.25,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-12," NOW Supplements, BioCell Collagen® Hydrolyzed Type II, Clinically Validated, 120 Veg Capsules; Nature's Bounty Calcium Carbonate & Vitamin D, Supports Immune Health & Bone Health, 1200mg Calcium & 1000IU Vitamin D3, 120 Softgels;  [split_50_50]",Ryan,22.54,11.27,11.27,13406.52,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-12,[split_50_50],Jordyn,48.51,24.25,24.25,13382.26,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-12, Dining Out  [split_50_50],Ryan,25.90,12.95,12.95,13395.21,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-12," Now Supplements, Lutein & Zeaxanthin with 25 mg Lutein and 5 mg Zeaxanthin, 60 Softgels (2 Pack);  [split_50_50]",Ryan,31.15,15.57,15.57,13410.79,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-12," NOW Supplements, BioCell Collagen® Hydrolyzed Type II, Clinically Validated, 120 Veg Capsules; Nature's Bounty Calcium Carbonate & Vitamin D, Supports Immune Health & Bone Health, 1200mg Calcium & 1000IU Vitamin D3, 120 Softgels;  [split_50_50]",Ryan,14.57,7.29,7.29,13418.08,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-12, Dinner  [split_50_50],Ryan,25.90,12.95,12.95,13431.03,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-12, Wine  [split_50_50],Ryan,40.57,20.29,20.29,13451.32,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-12,[split_50_50],Ryan,85.36,42.68,42.68,13494.00,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-13,[split_50_50],Ryan,33.12,16.56,16.56,13510.56,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-13," Gotu Kola Capsules (Centella Asiatica) 1,000mg of Per Serving (120 Capsules) No Fillers, Vega, Safe, Manufactured in The USA (Gotu Kola Extract for Relaxation and Cognitive Function) by Double Wood; NOW Supplements, Hawthorn Extract 300 mg, Cardiovascular Support*, 90 Veg Capsules; NOW Supplements, Horse Chestnut 300 mg with Added Rutin, Circulatory Support*, 90 Veg Capsules; NOW Supplements, Taurine 1,000 mg, Double Strength, Nervous System Health*, 100 Veg Capsules; Nature Made Vitamin D3 2000 IU (50 mcg), Dietary Supplement for Bone, Teeth, Muscle and Immune Health Support, 400 Tablets, 400 Day Supply; NOW Supplements, Probiotic-10™, 25 Billion, with 10 Probiotic Strains, Dairy, Soy and Gluten Free, Strain Verified, 100 Veg Capsules; NOW Supplements, L-Glutamine 500 mg, Nitrogen Transporter*, Amino Acid, 120 Veg Capsules; Nature Made Magnesium Citrate 250 mg per serving, Dietary Supplement for Muscle, Nerve, Bone and Heart Support, 120 Softgels, 60 Day Supply; Calcium 1200 mg with Vitamin D3, Dietary Supplement for Bone and Teeth Support, Calcium Supplements for Women & Men, Max Absorption Carbonate, Nature's Absorbable Calcium Supplement - 240 Tablets; Nature Made Vitamin E 180 mg (400 IU) dl-Alpha, Dietary Supplement for Antioxidant Support, 300 Softgels, 300 Day Supply; Nature Made Magnesium Glycinate 200 mg per serving, Dietary Supplement for Muscle, Heart, Nerve and Bone Support, 180 Capsules, 90 Day Supply;  [split_50_50]",Ryan,30.42,15.21,15.21,13525.77,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-13," Gotu Kola Capsules (Centella Asiatica) 1,000mg of Per Serving (120 Capsules) No Fillers, Vega, Safe, Manufactured in The USA (Gotu Kola Extract for Relaxation and Cognitive Function) by Double Wood; NOW Supplements, Hawthorn Extract 300 mg, Cardiovascular Support*, 90 Veg Capsules; NOW Supplements, Horse Chestnut 300 mg with Added Rutin, Circulatory Support*, 90 Veg Capsules; NOW Supplements, Taurine 1,000 mg, Double Strength, Nervous System Health*, 100 Veg Capsules; Nature Made Vitamin D3 2000 IU (50 mcg), Dietary Supplement for Bone, Teeth, Muscle and Immune Health Support, 400 Tablets, 400 Day Supply; NOW Supplements, Probiotic-10™, 25 Billion, with 10 Probiotic Strains, Dairy, Soy and Gluten Free, Strain Verified, 100 Veg Capsules; NOW Supplements, L-Glutamine 500 mg, Nitrogen Transporter*, Amino Acid, 120 Veg Capsules; Nature Made Magnesium Citrate 250 mg per serving, Dietary Supplement for Muscle, Nerve, Bone and Heart Support, 120 Softgels, 60 Day Supply; Calcium 1200 mg with Vitamin D3, Dietary Supplement for Bone and Teeth Support, Calcium Supplements for Women & Men, Max Absorption Carbonate, Nature's Absorbable Calcium Supplement - 240 Tablets; Nature Made Vitamin E 180 mg (400 IU) dl-Alpha, Dietary Supplement for Antioxidant Support, 300 Softgels, 300 Day Supply; Nature Made Magnesium Glycinate 200 mg per serving, Dietary Supplement for Muscle, Heart, Nerve and Bone Support, 180 Capsules, 90 Day Supply;  [split_50_50]",Ryan,145.28,72.64,72.64,13598.41,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-13," 2 Pieces Keychain Pill Holder Tiny Keychain Pill Case Titanium Keychain Medication Pill Holder Waterproof Pill Container Portable Titanium Pill Case with Keychain for Men Women Travel Purse Pocket; 5 Pack - Aluminum Keychain Medication Pill Box. Waterproof Portable Mini Travel Pill Boxes Medicine Vitamin Holder case. Bottle Container, Organizer, Dispenser, Reminder Weekly 7 Day, Daily, am pm; Pill Pod 3 Pack - Keychain Pill Holder: Luxe Colors - Micro-Sized & Lightweight with Magnetic Slide - Handmade for Secure Daily Medication Storage (Luxe 3 Pack); We Like Vitamins Diosmin Hesperidin 1000mg – 180 Capsules – 90 Day Supply - Diosmin and Hesperidin Supplement – Helps to Support Healthy Circulation, Veins, Capillaries, and Lymphatic Drainage; NOW Supplements, L-Tyrosine 500 mg, Supports Mental Alertness*, Neurotransmitter Support*, 120 Capsules;  [split_50_50]",Ryan,65.49,32.74,32.74,13631.16,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-13," NOW Supplements, Quercetin with Bromelain, Balanced Immune System*, 120 Veg Capsules;  [split_50_50]",Ryan,48.86,24.43,24.43,13655.59,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-13," Wine, Flowers, Yougurt, Sushi - Adjust Accordingly  [split_50_50]",Ryan,90.21,45.10,45.10,13700.70,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-13, Flowers for mom  [split_50_50],Ryan,62.99,31.50,31.50,13732.20,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-13, Starz Subscription  [split_50_50],Ryan,10.77,5.38,5.38,13737.59,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-14," Flowers, Oikos, Sushi, Wine (No Charge)  [split_50_50]",Ryan,90.21,45.10,45.10,13782.70,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-14,[split_50_50],Jordyn,47.98,23.99,23.99,13758.71,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-14, Wine  [split_50_50],Ryan,40.57,20.29,20.29,13779.00,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-14," 2 Pieces Keychain Pill Holder Tiny Keychain Pill Case Titanium Keychain Medication Pill Holder Waterproof Pill Container Portable Titanium Pill Case with Keychain for Men Women Travel Purse Pocket; 5 Pack - Aluminum Keychain Medication Pill Box. Waterproof Portable Mini Travel Pill Boxes Medicine Vitamin Holder case. Bottle Container, Organizer, Dispenser, Reminder Weekly 7 Day, Daily, am pm; Pill Pod 3 Pack - Keychain Pill Holder: Luxe Colors - Micro-Sized & Lightweight with Magnetic Slide - Handmade for Secure Daily Medication Storage (Luxe 3 Pack); We Like Vitamins Diosmin Hesperidin 1000mg – 180 Capsules – 90 Day Supply - Diosmin and Hesperidin Supplement – Helps to Support Healthy Circulation, Veins, Capillaries, and Lymphatic Drainage; NOW Supplements, L-Tyrosine 500 mg, Supports Mental Alertness*, Neurotransmitter Support*, 120 Capsules;  [split_50_50]",Ryan,8.61,4.30,4.30,13783.31,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-14,[split_50_50],Jordyn,48.39,24.20,24.20,13759.11,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-15, Wine  [split_50_50],Ryan,38.96,19.48,19.48,13778.59,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-15,[split_50_50],Ryan,45.00,22.50,22.50,13801.09,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-15,[split_50_50],Ryan,56.29,28.14,28.14,13829.24,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-15, 04/15 Groceries  [split_50_50],Ryan,230.63,115.31,115.31,13944.56,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-16," Chicken, Sop, Tooth Picks, White Claw  [split_50_50]",Ryan,38.96,19.48,19.48,13964.04,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-16," Hand Grip Set, Grip Strength Trainer, etc (Ryan 100%) - ADD TO FINAL  [split_50_50]",Jordyn,114.34,57.17,57.17,13906.87,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-16, Wine  [split_50_50],Ryan,19.12,9.56,9.56,13916.43,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-16, Vitamin K (Ryan 100%) - ADD TO FINAL  [split_50_50],Jordyn,10.77,5.38,5.38,13911.04,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-16, 0.22um Filter  [split_50_50],Ryan,13.57,6.79,6.79,13917.83,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-17, White Claw  [split_50_50],Ryan,19.12,9.56,9.56,13927.39,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-17, Electric  [split_50_50],Ryan,77.71,38.85,38.85,13966.25,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-17, Electric  [split_50_50],Ryan,77.71,38.85,38.85,14005.11,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-17, White Claw  [split_50_50],Ryan,19.12,9.56,9.56,14014.67,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-17, Food+  [split_50_50],Ryan,230.63,115.31,115.31,14129.99,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-17,[split_50_50],Ryan,13.57,6.79,6.79,14136.78,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-17," Floor Lamp, 6 Pack Reusable Mop Pads, 20x 20ml Luer Locks, ZAMAT Pillow (Adjust Price $41.99)  [split_50_50]",Ryan,184.91,92.45,92.45,14229.24,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-18, N/A  [split_50_50],Ryan,230.00,115.00,115.00,14344.24,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-18, Wine  [split_50_50],Ryan,20.43,10.21,10.21,14354.46,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-18, White Claw  [split_50_50],Ryan,19.12,9.56,9.56,14364.02,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-18,[split_50_50],Ryan,184.91,92.45,92.45,14456.48,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-19, White Claw  [split_50_50],Ryan,20.43,10.21,10.21,14466.70,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-19,[split_50_50],Jordyn,11.80,5.90,5.90,14460.80,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-19,[split_50_50],Jordyn,17.59,8.79,8.79,14452.00,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-19, Dining Out  [split_50_50],Ryan,31.49,15.74,15.74,14467.75,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-20," Under Armour Men's ColdGear Armour Leggings, Black (001)/White, Medium; Under Armour Men's Armour HeatGear Compression Long-Sleeve T-Shirt , Black (001)/White , Small;  [split_50_50]",Ryan,240.69,120.34,120.34,14588.10,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-20, Dining Out  [split_50_50],Ryan,7.00,3.50,3.50,14591.60,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-20," White Claw, Wine  [split_50_50]",Ryan,59.70,29.85,29.85,14621.45,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-20," OPTP SI-LOC, SI Joint Belt for Women, Sacroiliac Belt, Lower Back Support Belts for Men, Low Back & Pelvic Pain Relief - Small/Medium;  [split_50_50]",Ryan,86.14,43.07,43.07,14664.52,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-20, White Claw  [split_50_50],Ryan,19.12,9.56,9.56,14674.08,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-20, Wine  [split_50_50],Ryan,15.37,7.68,7.68,14681.77,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-21," White Claw, Wine, Mustard, Italian Sausage  [split_50_50]",Ryan,56.26,28.13,28.13,14709.90,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-22, TV  [split_50_50],Ryan,146.00,73.00,73.00,14782.90,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-22," Upgrade for Jordyn Character (Free, No Charge)  [split_50_50]",Ryan,100.00,50.00,50.00,14832.90,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-22, Spinatos  [split_50_50],Ryan,9.98,4.99,4.99,14837.89,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-23," Charmin, Chaleston Chew, Swedish Fish, Banana, Onion, Chicken, Sushi  [split_50_50]",Ryan,83.87,41.94,41.94,14879.83,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-23, N/A  [split_50_50],Ryan,220.00,110.00,110.00,14989.83,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-23,[split_50_50],Jordyn,38.51,19.25,19.25,14970.57,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-24, N/A  [split_50_50],Ryan,230.00,115.00,115.00,15085.57,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-24, White Claw  [split_50_50],Ryan,19.12,9.56,9.56,15095.13,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-24, Wine  [split_50_50],Ryan,15.09,7.54,7.54,15102.68,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-25," Chicken, Wine  [split_50_50]",Ryan,59.99,30.00,30.00,15132.68,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-26,[split_50_50],Jordyn,34.36,17.18,17.18,15115.50,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-26, Dining Out  [split_50_50],Ryan,35.79,17.89,17.89,15133.40,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-26," Wine, White Claw  [split_50_50]",Ryan,32.08,16.04,16.04,15149.44,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-27, Wine  [split_50_50],Ryan,40.57,20.29,20.29,15169.73,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-27, N/A  [split_50_50],Ryan,225.00,112.50,112.50,15282.23,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-27, -  [split_50_50],Ryan,89.99,44.99,44.99,15327.23,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-27," WORLD WIN Smart Led Floor Lamps, RGB Color Changing with APP & Remote Control, 62 Inch DIY Mode Music Sync Standing Modern Corner Lamp Decor for Living Room Bedroom Game, 1 Piece;  [split_50_50]",Ryan,63.13,31.57,31.57,15358.80,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-28, Dining Out  [split_50_50],Ryan,5.78,2.89,2.89,15361.69,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-28, Dining Out  [split_50_50],Ryan,122.06,61.03,61.03,15422.72,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-28,[split_50_50],Jordyn,6.50,3.25,3.25,15419.47,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-28," Chicken, Asaparagus, Frozen Vegetables, Wine  [split_50_50]",Ryan,87.89,43.95,43.95,15463.42,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-28," Serola Sacroiliac SI Belt, Medium;  [split_50_50]",Ryan,96.92,48.46,48.46,15511.88,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-28,[split_50_50],Jordyn,7.50,3.75,3.75,15508.13,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-28,[split_50_50],Jordyn,10.67,5.33,5.33,15502.79,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-28, Flowers / Paid by Zelle  [split_50_50],Jordyn,128.00,64.00,64.00,15438.79,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-29," Romaine Lettuce, Carrots, Wine  [split_50_50]",Ryan,28.17,14.09,14.09,15452.88,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-29," NOW Supplements, BioCell Collagen® Hydrolyzed Type II, Clinically Validated, 120 Veg Capsules;  [split_50_50]",Ryan,22.86,11.43,11.43,15464.31,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-29," Nature's Bounty Fish Oil 1200 mg, Supports Heart Health With Omega 3 EPA & DHA, 360 Rapid Release Softgels, Twin Pack;  [split_50_50]",Ryan,26.27,13.13,13.13,15477.45,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-30, TV  [split_50_50],Ryan,89.54,44.77,44.77,15522.22,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-30,[split_50_50],Jordyn,20.59,10.29,10.29,15511.92,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-30,[split_50_50],Jordyn,2.62,1.31,1.31,15510.61,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-30,[split_50_50],Jordyn,3.22,1.61,1.61,15509.00,Jordyn owes Ryan,nan,expense,split_50_50
+2024-04-30," Chicken, Pickles, BBQ, Wine  [split_50_50]",Ryan,44.15,22.07,22.07,15531.08,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-01, Unknown  [split_50_50],Ryan,2.83,1.42,1.42,15532.50,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-02, Pocket Hug Token Long Distance Relationship Keepsake Stainless Steel Double Sided Inspirational Gift with PU Leather Keychain (Sobriety)  [gift],Jordyn,9.89,0.00,9.89,15532.50,Jordyn owes Ryan,nan,expense,gift
+2024-05-02," White Claw, Wine, Cheese  [split_50_50]",Ryan,54.04,27.02,27.02,15559.52,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-03, N/A  [split_50_50],Ryan,225.00,112.50,112.50,15672.02,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-03," Water, Chicken, Wine  [split_50_50]",Ryan,37.96,18.98,18.98,15691.00,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-03, Remember I Love You Mom Gifts for Her Pocket Hug Token for Womens Keychain Accessories for Mom Christmas Birthday Gifts for Women Mother Gifts from Daughter Son Mama Mom Engraved Holiday Gifts Ideas;  [gift],Ryan,8.40,8.40,0.00,15691.00,Jordyn owes Ryan,nan,expense,gift
+2024-05-03," Logest Metal Hand Grip Set, 100LB-350LB 6 Pack No Slip Heavy-Duty Grip Strengthener with Gift Box, Great Wrist & Forearm Hand Exerciser, Home Gym, Hand Gripper Grip Strength Trainer; Bronson Vitamin K2 as MK-7 Menaquinone 100 mcg Non-GMO, 120 Capsules; Grip Strength Trainer Finger Strengthener-Hand Strengthener 8 Resistant Level Exerciser-Adjustable Hand for Therapy, Relieve Pain Arthritis(Black+Grey, 2PCS); Quality Reusable Earplugs 100 Pair - 25dB Corded Silicone Ear Plugs for Shooting Noise Reduction Construction Work - Motorcycle Ear Plugs with String Hunting Ear Protection Range Hearing Protection;  [gift]",Ryan,10.77,10.77,0.00,15691.00,Jordyn owes Ryan,nan,expense,gift
+2024-05-03,[split_50_50],Jordyn,49.72,24.86,24.86,15666.14,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-03,[split_50_50],Jordyn,27.39,13.70,13.70,15652.44,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-04," Pet Memorial Wind Chime - 18"" Metal Casted Pawprint Wind Chime - A Beautiful Remembrance Gift for a Grieving Pet Owner - Includes Pawprints Left by You Poem Card;  [gift]",Ryan,29.39,29.39,0.00,15652.44,Jordyn owes Ryan,nan,expense,gift
+2024-05-04," TV Antenna,TV Antenna Indoor, HD Antenna for Smart TV and All TV,TV Antenna for Local Channels,Support 4K 1080p with Signal Booster Antenna TV Digital HD Indoor & Outdoor- 15FT Coax HDTV Cable;  [split_50_50]",Ryan,30.51,15.26,15.26,15667.70,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-04, Rapid Response Fentanyl Test Strips - 5 Test Strips Per Pack - #1 Global Selling Fentanyl Strips - Harm Reduction Tool - Overdose Prevention;  [split_50_50],Ryan,10.66,5.33,5.33,15673.03,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-04,[split_50_50],Jordyn,16.22,8.11,8.11,15664.92,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-04, Dining Out  [split_50_50],Ryan,15.44,7.72,7.72,15672.64,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-04," White Claw, Wine, Cheese  [split_50_50]",Ryan,49.08,24.54,24.54,15697.18,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-04,[split_50_50],Jordyn,16.13,8.06,8.06,15689.11,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-04,[split_50_50],Jordyn,9.73,4.87,4.87,15684.24,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-05," Under Armour Men's Training Stretch Shorts , Pitch Gray (012)/Black , Large  [split_50_50]",Jordyn,24.13,12.06,12.06,15672.17,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-06,[split_50_50],Jordyn,13.98,6.99,6.99,15665.18,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-06, Internet  [split_50_50],Ryan,90.00,45.00,45.00,15710.18,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-06," Cutwater, Wine, White Claw  [split_50_50]",Ryan,45.68,22.84,22.84,15733.02,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-06, Diablo 4  [split_50_50],Jordyn,96.38,48.19,48.19,15684.83,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-07, N/A  [split_50_50],Ryan,220.00,110.00,110.00,15794.83,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-07, Five Guys  [split_50_50],Ryan,52.72,26.36,26.36,15821.19,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-07, N/A  [split_50_50],Ryan,450.00,225.00,225.00,16046.19,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-07," Chicken, Granola, Banana, Luna Bars, Water, Wine  [split_50_50]",Ryan,59.93,29.96,29.96,16076.16,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-08,[split_50_50],Jordyn,40.09,20.05,20.05,16056.11,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-08," Distilled Water, Carrots, Wine, White Claw  [split_50_50]",Ryan,34.45,17.23,17.23,16073.34,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-09, Misc  [split_50_50],Ryan,10.86,5.43,5.43,16078.77,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-09,[split_50_50],Ryan,16.17,8.09,8.09,16086.86,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-09," PIckles, Wine, White Claw  [split_50_50]",Ryan,45.42,22.71,22.71,16109.57,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-09, Dining Out  [split_50_50],Ryan,79.18,39.59,39.59,16149.16,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-09,[split_50_50],Ryan,76.11,38.05,38.05,16187.22,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-10," NOW Silymarin 2X - 300 mg,200 Veg Capsules;  [split_50_50]",Ryan,22.97,11.48,11.48,16198.71,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-10,[split_50_50],Ryan,37.99,19.00,19.00,16217.71,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-10," Membrane Solutions 10 Pack Syringe Filter Sterile PES Hydrophilic Filtration 0.22um Pore Size, 33mm Membrane Diameter Sterile PES Membrane Individually Packed; 
+  [split_50_50]",Ryan,29.40,14.70,14.70,16232.41,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-11, Dining Out  [split_50_50],Ryan,46.28,23.14,23.14,16255.55,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-11,[split_50_50],Jordyn,35.03,17.52,17.52,16238.03,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-11,[split_50_50],Jordyn,56.68,28.34,28.34,16209.69,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-11,[split_50_50],Jordyn,59.35,29.68,29.68,16180.01,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-11, Dining Out  [split_50_50],Ryan,36.50,18.25,18.25,16198.26,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-12, Dining Out  [split_50_50],Ryan,84.15,42.08,42.08,16240.34,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-12,[split_50_50],Jordyn,83.15,41.58,41.58,16198.76,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-13,[split_50_50],Ryan,8.99,4.50,4.50,16203.26,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-13," Luna Bars, Chicken, White Claw, Wine  [split_50_50]",Ryan,70.22,35.11,35.11,16238.37,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-13," Yogurt, Cetaphil  [split_50_50]",Ryan,20.59,10.29,10.29,16248.67,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-14," Whtie Claw, Wine, Distilled Water  [split_50_50]",Ryan,51.94,25.97,25.97,16274.64,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-14,[split_50_50],Jordyn,77.00,38.50,38.50,16236.14,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-15,[split_50_50],Jordyn,19.26,9.63,9.63,16226.51,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-15," Uineko Plastic Spray Bottle (4 Pack, 24 Oz, All-Purpose) Heavy Duty Spraying Bottles Leak Proof Mist Empty Water Bottle for Cleaning Solution Planting Pet with Adjustable Nozzle and Measurements;  [split_50_50]",Ryan,13.55,6.78,6.78,16233.29,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-15," Chicken, Dental Floss, Wine  [split_50_50]",Ryan,49.02,24.51,24.51,16257.80,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-16, Wine  [split_50_50],Ryan,38.55,19.27,19.27,16277.08,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-16, N/A  [split_50_50],Ryan,220.00,110.00,110.00,16387.08,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-17,[split_50_50],Ryan,81.86,40.93,40.93,16428.01,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-17, Dining Out  [split_50_50],Ryan,43.21,21.61,21.61,16449.62,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-17, Wine  [split_50_50],Ryan,37.38,18.69,18.69,16468.31,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-18,[split_50_50],Jordyn,43.21,21.61,21.61,16446.70,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-18,[split_50_50],Jordyn,51.70,25.85,25.85,16420.85,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-18,[split_50_50],Jordyn,50.65,25.32,25.32,16395.52,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-18," Daughtry (Opener), Finger 11  [split_50_50]",Jordyn,75.08,37.54,37.54,16357.98,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-18, Dining Out  [split_50_50],Ryan,71.69,35.84,35.84,16393.83,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-18, Wine  [split_50_50],Ryan,49.07,24.54,24.54,16418.37,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-19, Dining Out  [split_50_50],Ryan,24.17,12.09,12.09,16430.46,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-19,[split_50_50],Jordyn,7.47,3.73,3.73,16426.72,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-19, Back to the Future;  [split_50_50],Ryan,4.30,2.15,2.15,16428.87,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-19," Semmerfeld 10 Pack PES Sterile Syringe Filter 0.22um Pore Size 22 Micron Hydrophilic Filtration, 33mm Diameter Sterile Individually Packed PES Membrane; 10ml Luer Lock Syringe 20-Pack Plastic 10ml Syringes with Luer Lock Tip, Individually Sterile Sealed, No Needle;  [split_50_50]",Ryan,22.99,11.49,11.49,16440.37,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-19, Dining Out  [split_50_50],Ryan,33.03,16.52,16.52,16456.89,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-19,[split_50_50],Jordyn,71.57,35.78,35.78,16421.10,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-19," Membrane Solutions 20 Pack Syringe Filter Sterile PES Hydrophilic Filtration 0.22um Pore Size, 33mm Membrane Diameter Sterile PES Membrane Individually Packed;  [split_50_50]",Ryan,33.87,16.93,16.93,16438.04,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-20," Polar Seltzers, Oikos Yogurt, Water, White Claw  [split_50_50]",Ryan,41.50,20.75,20.75,16458.79,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-20," ZAMAT Contour Memory Foam Pillow for Neck Pain Relief, Adjustable Ergonomic Cervical Pillow for Sleeping, Orthopedic Neck Pillow with Washable Cover, Bed Pillows for Side, Back, Stomach Sleepers; 6 Pack Reusable Mop Pads Compatible with Swiffer PowerMop, Power Mop Refills Power Mop Refill Pads Wet Pads Refill Mop Pads Refills Machine Washable Thicken Microfiber Mop Pads for Hardwood Floor; 20ml Luer Lock Syringe 20-Pack Plastic 20ml Syringes with Luer Lock Tip, Individually Sterile Sealed, No Needle (20ML, 20.00); Membrane Solutions 10 Pack Syringe Filter Sterile PES Hydrophilic Filtration 0.22um Pore Size, 33mm Membrane Diameter Sterile PES Membrane Individually Packed; LEONC Design Floor Lamp, LEONC Standing Lamp, RGB 7 Colors Changing LED Bulbs and 10 Levels Brightness, Remote Control and Fabric Shade, Modern for Bedroom, Kids Room and Play Room;  [split_50_50]",Ryan,13.57,6.79,6.79,16465.58,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-21," Chicken, Granola, Luna Bars, Bananas, Lysol  [split_50_50]",Ryan,39.25,19.62,19.62,16485.21,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-21," Wine, White Claw  [split_50_50]",Ryan,53.51,26.75,26.75,16511.97,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-21,[split_50_50],Jordyn,43.58,21.79,21.79,16490.18,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-21," Boiron Arnicare Bruise Cream for Pain Relief from Bruising and Swelling or Discoloration from Injury - 1.4 oz(Pack of 1) & Chomps Snack Size Grass-Fed and Finished Sea Salt Beef Jerky Snack Sticks 0.5oz 24-Pack - Keto, Paleo, Whole30, 4g Lean Meat Protein, Gluten-Free, Zer  [split_50_50]",Jordyn,28.41,14.21,14.21,16475.97,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-22," Oikos, Carrots, Pickles, Wine  [split_50_50]",Ryan,49.79,24.89,24.89,16500.87,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-22, TV  [split_50_50],Ryan,146.00,73.00,73.00,16573.87,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-23," Chicken, Granola, Wine  [split_50_50]",Ryan,61.02,30.51,30.51,16604.38,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-23," DEVOPS 3 Pack Men's Athletic Compression Shirts Sleeveless (Small, Black/Black/Black); DEVOPS 3 Pack Men's Dry-Fit Workout Tank Tops Gym Sleeveless Shirts (Medium, Z Black 3 Pack); DEVOPS 3 Pack Men's Athletic Compression Shirts Sleeveless (Medium, Black/Black/Black);  [split_50_50]",Ryan,21.55,10.78,10.78,16615.16,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-23,[split_50_50],Jordyn,47.30,23.65,23.65,16591.51,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-23," DEVOPS 3 Pack Men's Athletic Compression Shirts Sleeveless (Small, Black/Black/Black); DEVOPS 3 Pack Men's Dry-Fit Workout Tank Tops Gym Sleeveless Shirts (Medium, Z Black 3 Pack); DEVOPS 3 Pack Men's Athletic Compression Shirts Sleeveless (Medium, Black/Black/Black);  [split_50_50]",Ryan,43.10,21.55,21.55,16613.06,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-23,[split_50_50],Jordyn,289.99,145.00,145.00,16468.06,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-24,[split_50_50],Jordyn,4.33,2.17,2.17,16465.89,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-24, What Should Danny Do? (The Power to Choose Series)  [split_50_50],Jordyn,12.93,6.46,6.46,16459.42,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-24, N/A  [split_50_50],Ryan,220.00,110.00,110.00,16569.42,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-24,[split_50_50],Jordyn,35.64,17.82,17.82,16551.60,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-24," Distilled Water, Wine  [split_50_50]",Ryan,38.69,19.34,19.34,16570.95,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-26, Food  [split_50_50],Ryan,55.63,27.82,27.82,16598.77,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-26, N/A  [split_50_50],Ryan,225.00,112.50,112.50,16711.27,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-26,[split_50_50],Jordyn,13.89,6.95,6.95,16704.32,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-26, Wine  [split_50_50],Ryan,40.57,20.29,20.29,16724.61,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-26, Wine & Food  [split_50_50],Ryan,52.07,26.04,26.04,16750.65,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-27,[split_50_50],Jordyn,18.65,9.32,9.32,16741.32,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-27,[split_50_50],Jordyn,34.22,17.11,17.11,16724.21,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-27, Dining Out  [split_50_50],Ryan,46.10,23.05,23.05,16747.26,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-27, Freaky;  [split_50_50],Ryan,4.09,2.04,2.04,16749.31,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-28,[split_50_50],Jordyn,19.46,9.73,9.73,16739.58,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-28, Entertainment  [split_50_50],Ryan,24.78,12.39,12.39,16751.97,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-28, Dining Out  [split_50_50],Ryan,2.70,1.35,1.35,16753.32,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-29," Bannas, Astroglide, Wine, White Claw  [split_50_50]",Ryan,70.44,35.22,35.22,16788.54,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-29,[split_50_50],Jordyn,26.45,13.22,13.22,16775.31,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-30," White Claw, Titos  [split_50_50]",Ryan,52.07,26.04,26.04,16801.35,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-31, Dining Out  [split_50_50],Ryan,85.13,42.56,42.56,16843.92,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-31," Haribos, Albanese, Wine  [split_50_50]",Ryan,29.33,14.66,14.66,16858.59,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-31," Orville Redenbacher's Original Gourmet Popping Corn Kernels, 8 lb. & DASH Hot Air Popcorn Popper Maker with Measuring Cup to Portion Popping Corn Kernels + Melt Butter, 16 Cups - Aqua  [split_50_50]",Jordyn,35.03,17.52,17.52,16841.07,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-31,[split_50_50],Jordyn,26.23,13.12,13.12,16827.95,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-01, Dining Out  [split_50_50],Ryan,16.32,8.16,8.16,16836.11,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-02,[split_50_50],Jordyn,62.24,31.12,31.12,16804.99,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-02, Fun Celebration Night For Jordyn Completing 1 Year and Summer Vacation (Free!)  [split_50_50],Ryan,8.11,4.05,4.05,16809.05,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-02, Fun Celebration Night For Jordyn Completing 1 Year and Summer Vacation (Free!)  [split_50_50],Ryan,94.57,47.28,47.28,16856.34,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-02, Cutwater  [split_50_50],Ryan,17.24,8.62,8.62,16864.96,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-04, N/A  [split_50_50],Ryan,220.00,110.00,110.00,16974.96,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-04, N/A  [split_50_50],Ryan,225.00,112.50,112.50,17087.46,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-04," Wine, White Claw  [split_50_50]",Ryan,54.58,27.29,27.29,17114.75,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-05," Luna Bars, Pickles  [split_50_50]",Ryan,22.41,11.21,11.21,17125.96,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-05,[split_50_50],Jordyn,34.75,17.38,17.38,17108.58,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-05, Internet  [split_50_50],Ryan,106.00,53.00,53.00,17161.58,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-06, White Claw  [split_50_50],Ryan,19.12,9.56,9.56,17171.14,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-06," 100 Pack 3ml Syringes Luer Lock Syringe without Needle, Individually Sterile Wrapped, with Cap; 
+  [split_50_50]",Ryan,14.00,7.00,7.00,17178.14,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-06," Physician's CHOICE Probiotics 60 Billion CFU - 10 Strains + Organic Prebiotics - Immune, Digestive & Gut Health - Supports Occasional Constipation, Diarrhea, Gas & Bloating - for Women & Men - 60ct  [split_50_50]",Jordyn,25.86,12.93,12.93,17165.21,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-07,[split_50_50],Jordyn,47.89,23.95,23.95,17141.26,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-07," White Claw, Pickles, Crest 3D Toothpaste   [split_50_50]",Ryan,40.22,20.11,20.11,17161.37,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-08, Inside Out;  [split_50_50],Ryan,4.09,2.04,2.04,17163.42,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-08, Dining Out  [split_50_50],Ryan,34.57,17.29,17.29,17180.71,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-08," Care Touch CTSLL10 10mL Syringe Only - Luer Lock Syringe Tip (No Needle),100 Count (Pack of 1);  [split_50_50]",Ryan,19.45,9.72,9.72,17190.44,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-08, Dining Out  [split_50_50],Ryan,46.78,23.39,23.39,17213.83,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-08,[split_50_50],Jordyn,93.00,46.50,46.50,17167.33,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-08, Entertainment  [split_50_50],Ryan,29.50,14.75,14.75,17182.08,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-09, Entertainment  [split_50_50],Ryan,16.17,8.09,8.09,17190.17,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-09," Cider, Top Chico, Wine  [split_50_50]",Ryan,43.55,21.77,21.77,17211.95,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-09, What Should Danny Do? (The Power to Choose Series);  [split_50_50],Ryan,12.93,6.46,6.46,17218.42,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-09," Cutwater, White Claw  [split_50_50]",Ryan,42.49,21.25,21.25,17239.67,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-09, Entertainment  [split_50_50],Ryan,22.00,11.00,11.00,17250.67,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-09, Entertainment  [split_50_50],Ryan,28.00,14.00,14.00,17264.67,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-10,[split_50_50],Ryan,168.15,84.08,84.08,17348.75,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-10, Dash Pass  [split_50_50],Ryan,4.99,2.50,2.50,17351.25,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-10," VIVO Steel Reinforcement Bracket Mount Plate for Thin, Glass, and Other Fragile Table Tops, Clamp Compatible with Most Monitor Stand C-Clamp Installations, Black, STAND-AC01R; MOUNTUP Monitor Mount Reinforcement for Tempered Glass Desk, Monitor Arm Plate, Steel Bracket for Thin and Most Fragile Table, for Desk C Clamp Installation of Monitor Stand; CompressionZ Compression Arm Sleeves for Men & Women UV Protection (Black, M); RENPHO Eyeris 2 Extended - Eye Massager with Heating Pad for Migraines, Heated Eye Mask for Relax, Eye Care, Face Massager for Eye Strain Eye Bags Dry Eyes, Improve Sleep, Ideal Birthday Gift; Govee RGBIC Table Lamp, Smart Lamp Work with Alexa, LED Lamp with Music Sync and 43 Scene Modes, Color Changing Lamp for Bedroom Decor, Dimmable Night Light (Corded Electric); 6 Pack Reusable Mop Pads Compatible with Swiffer Powermop, Papclean Power Mop Refills Microfiber Power Mop Mopping Pads for Powermop Multi-Surface & Wood Mop Kit All Types of Floor Cleaning, Purple;  [gift]",Ryan,25.86,25.86,0.00,17351.25,Jordyn owes Ryan,nan,expense,gift
+2024-06-11," Rapid Response Fentanyl Test Strips - 5 Test Strips Per Pack - #1 Global Selling Fentanyl Strips - Harm Reduction Tool - Overdose Prevention; Rapid Response Xylazine Test Strips - #1 Global Selling Xylazine Strips - Harm Reduction Tool - Overdose Prevention (5); Areta Multi-Drug Test Cup: 14 Panel at Home Drug Test Kit, Testing 14 Drugs BUP,THC,OPI 2000, AMP,BAR,BZO,COC,MET,MDMA,MTD,OXY,PCP,PPX,TCA-#ACDOA-1144-5 Pack;  [split_50_50]",Ryan,41.39,20.70,20.70,17371.95,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-11, Food  [split_50_50],Ryan,20.29,10.14,10.14,17382.10,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-11," Haribo, Pizza, White Claw, Chicken  [split_50_50]",Ryan,48.52,24.26,24.26,17406.36,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-11," Target - Water, etc.  [split_50_50]",Ryan,34.56,17.28,17.28,17423.64,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-11, Total Wine  [split_50_50],Ryan,22.41,11.21,11.21,17434.85,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-11, Spinatos  [split_50_50],Ryan,44.30,22.15,22.15,17457.00,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-12, Dining Out  [split_50_50],Ryan,18.65,9.32,9.32,17466.33,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-12," Chicken, Chips, Green Pepper, White Claw  [split_50_50]",Ryan,35.74,17.87,17.87,17484.20,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-12," AUVON Large Insulin Cooler Travel Case, Longer Cooling Effect with 4 * 160g Ice Packs, Compact Medication Cooler Bag for 8 Insulin Pens and Diabetic Supplies, Ideal Travel Partner with Handle Design; Hydro Flask Standard Flex Cap Black 24 Oz; AUVON Insulin Cooler Travel Case, Expandable Insulated Diabetic Bag with 2 * 180g Ice Packs for Double Cooling Time, Portable Medication Cooler Bag for Insulin Pens and Blood Glucose Monitor Supplies;  [split_50_50]",Ryan,74.83,37.41,37.41,17521.62,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-13, Standard Mouth Sport Cap Black; Hydro Flask Standard Flex Cap Dew 24 Oz;  [split_50_50],Ryan,9.85,4.92,4.92,17526.55,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-13," Luna Bars, Pickles, White Claw  [split_50_50]",Ryan,35.39,17.70,17.70,17544.25,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-14," Romaine Lettuce, White Claw  [split_50_50]",Ryan,21.09,10.54,10.54,17554.80,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-14," Kleenex Ultra Soft Facial Tissues, 3 Flat Boxes, 120 Tissues per Box, 3-Ply (360 Total Tissues), Packaging May Vary; Amazon Basics Sky Blue Cabana Stripe Pool & Beach Towel, 100% Cotton, Soft & Absorbant, 2 Pack, 30"" x 60"";  [split_50_50]",Ryan,27.26,13.63,13.63,17568.43,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-14," 
+Mantova Ghee Oil, 100% Pure Cooking Oil Spray, Omega-3, perfect for Keto snacks, baking, grilling, or cooking, our oil dispenser bottle lets you spray, drip, or stream with no waste, 5 oz  [split_50_50]",Jordyn,9.12,4.56,4.56,17563.87,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-14, Dining Out  [split_50_50],Ryan,88.47,44.23,44.23,17608.11,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-14, N/A  [split_50_50],Ryan,225.00,112.50,112.50,17720.61,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-14, Standard Mouth Sport Cap Black; Hydro Flask Standard Flex Cap Dew 24 Oz;  [split_50_50],Ryan,30.07,15.04,15.04,17735.65,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-14, N/A  [split_50_50],Ryan,220.00,110.00,110.00,17845.65,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-15," Gifts for Dad, Dad Gifts from Daughter Son, Fathers Day Birthday Gifts for Dad Grandpa, Gifts for Dad Who Wants Nothing, Soy Candle, Long Burning & Highly Scented & Bommex Dear Dad We Hope Every Time You Hug This Pillow It Reminds You How Much We Love You Throw Pillow Cover Cushion Case Dad Gift Reminder Gift Birthday Gift (dad-we)  [gift]",Jordyn,25.33,0.00,25.33,17845.65,Jordyn owes Ryan,nan,expense,gift
+2024-06-15, Food  [split_50_50],Ryan,24.62,12.31,12.31,17857.96,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-15," WIBIMEN Grill Mats for Ourdoor Grill, Set of 7 Copper Grill Mat 100% PFOA Free Non-Stick 15.75 x 13"", Heavy Duty, Resuable and Easy to Clean, Works on Gas Charcoal and Electric BBQ (7pcs) (Copper)  [split_50_50]",Jordyn,14.54,7.27,7.27,17850.69,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-15, Florensi Meditation Cushion - Comfortable Floor Pillow - Traditional Crescent Meditation Pillow with Beautiful Velvet Cover - Large Floor Cushion Seating for Adults - Premium Yoga Buckwheat Bolster  [split_50_50],Jordyn,43.11,21.55,21.55,17829.13,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-15,[split_50_50],Jordyn,61.58,30.79,30.79,17798.34,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-15,[split_50_50],Jordyn,31.85,15.93,15.93,17782.41,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-16,[split_50_50],Jordyn,7.47,3.73,3.73,17778.67,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-16, White Claw  [split_50_50],Ryan,18.06,9.03,9.03,17787.70,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-16, Wine  [split_50_50],Ryan,19.39,9.70,9.70,17797.40,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-16, Dining Out  [split_50_50],Ryan,39.80,19.90,19.90,17817.30,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-16, Entertainment  [split_50_50],Ryan,200.00,100.00,100.00,17917.30,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-16, Food  [split_50_50],Ryan,32.88,16.44,16.44,17933.74,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-16, Food  [split_50_50],Ryan,144.17,72.08,72.08,18005.83,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-16, Entertainment  [split_50_50],Ryan,27.02,13.51,13.51,18019.34,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-17, N/A  [split_50_50],Ryan,220.00,110.00,110.00,18129.34,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-17, Wine  [split_50_50],Ryan,30.36,15.18,15.18,18144.52,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-17,[split_50_50],Ryan,10.18,5.09,5.09,18149.61,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-17, N/A  [split_50_50],Ryan,225.00,112.50,112.50,18262.11,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-18,[split_50_50],Jordyn,95.98,47.99,47.99,18214.12,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-18, Wine / Food  [split_50_50],Ryan,30.36,15.18,15.18,18229.30,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-19, Wine / Food  [split_50_50],Ryan,40.11,20.05,20.05,18249.36,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-20, Glutenase & Shampoo  [split_50_50],Jordyn,23.73,11.87,11.87,18237.49,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-20," Rapid Response Fentanyl Test Strips, .22 um  [split_50_50]",Ryan,29.21,14.61,14.61,18252.10,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-20,[split_50_50],Ryan,137.42,68.71,68.71,18320.81,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-20, N/A  [split_50_50],Ryan,225.00,112.50,112.50,18433.31,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-20,[split_50_50],Ryan,28.25,14.12,14.12,18447.44,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-21,[split_50_50],Jordyn,32.36,16.18,16.18,18431.26,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-21,[split_50_50],Jordyn,73.42,36.71,36.71,18394.55,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-21, TP-Link AC1750 WiFi Extender  [split_50_50],Ryan,49.47,24.73,24.73,18419.29,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-22,[split_50_50],Ryan,82.74,41.37,41.37,18460.66,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-22,[split_50_50],Ryan,21.70,10.85,10.85,18471.51,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-22,[split_50_50],Ryan,60.59,30.30,30.30,18501.81,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-22, TV  [split_50_50],Ryan,146.00,73.00,73.00,18574.81,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-23,[split_50_50],Ryan,80.47,40.23,40.23,18615.05,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-23, Wine / Food  [split_50_50],Ryan,41.98,20.99,20.99,18636.04,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-23,[split_50_50],Jordyn,24.57,12.29,12.29,18623.75,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-23,[split_50_50],Jordyn,81.10,40.55,40.55,18583.20,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-23, PSN  [split_50_50],Ryan,43.11,21.55,21.55,18604.76,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-24, Zinc  [split_50_50],Ryan,5.63,2.81,2.81,18607.58,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-24,[split_50_50],Ryan,146.00,73.00,73.00,18680.58,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-24, N/A  [split_50_50],Ryan,62.85,31.43,31.43,18712.01,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-24,[split_50_50],Ryan,20.00,10.00,10.00,18722.01,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-24, .22 um  [split_50_50],Ryan,13.63,6.82,6.82,18728.83,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-24, N/A  [split_50_50],Ryan,225.00,112.50,112.50,18841.33,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-24, Wine / Food  [split_50_50],Ryan,29.93,14.96,14.96,18856.30,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-25, Wine / Food  [split_50_50],Ryan,48.22,24.11,24.11,18880.41,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-25,[split_50_50],Jordyn,224.66,112.33,112.33,18768.08,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-26,[split_50_50],Jordyn,25.94,12.97,12.97,18755.11,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-26, Wine / Food  [split_50_50],Ryan,38.33,19.16,19.16,18774.28,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-26, Preg Test & L-lysine  [split_50_50],Jordyn,31.83,15.91,15.91,18758.36,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-26,[split_50_50],Ryan,62.85,31.43,31.43,18789.79,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-27,[split_50_50],Jordyn,62.60,31.30,31.30,18758.49,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-27,[split_50_50],Jordyn,31.11,15.55,15.55,18742.93,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-27,[split_50_50],Ryan,133.99,67.00,67.00,18809.93,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-27,[split_50_50],Ryan,220.00,110.00,110.00,18919.93,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-27,[split_50_50],Ryan,24.78,12.39,12.39,18932.32,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-27,[split_50_50],Ryan,5.00,2.50,2.50,18934.82,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-28,[split_50_50],Ryan,21.12,10.56,10.56,18945.38,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-28,[split_50_50],Ryan,49.40,24.70,24.70,18970.08,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-29,[split_50_50],Ryan,5.56,2.78,2.78,18972.86,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-29,[split_50_50],Ryan,600.00,300.00,300.00,19272.86,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-29,[split_50_50],Ryan,128.83,64.42,64.42,19337.28,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-29,[split_50_50],Ryan,21.07,10.54,10.54,19347.82,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-29,[split_50_50],Ryan,11.44,5.72,5.72,19353.54,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-29,[split_50_50],Ryan,8.88,4.44,4.44,19357.98,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-29,[split_50_50],Ryan,3.00,1.50,1.50,19359.48,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-29,[split_50_50],Ryan,23.88,11.94,11.94,19371.42,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-29,[split_50_50],Ryan,161.41,80.70,80.70,19452.13,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-30, N/A  [split_50_50],Ryan,225.00,112.50,112.50,19564.63,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-30, Wine / Food  [split_50_50],Ryan,70.09,35.05,35.05,19599.68,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-30,[split_50_50],Jordyn,35.81,17.91,17.91,19581.77,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-30,[split_50_50],Ryan,27.41,13.71,13.71,19595.48,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-30, Wine / Food  [split_50_50],Ryan,92.25,46.12,46.12,19641.61,Jordyn owes Ryan,nan,expense,split_50_50
+2024-06-30, Ollie (aka Prince Ali!)  [split_50_50],Jordyn,39.56,19.78,19.78,19621.83,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-01, Ollie (aka Prince Ali!)  [split_50_50],Jordyn,34.48,17.24,17.24,19604.59,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-01,[split_50_50],Ryan,6.00,3.00,3.00,19607.59,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-01,[split_50_50],Ryan,23.78,11.89,11.89,19619.48,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-01,[split_50_50],Ryan,28.01,14.01,14.01,19633.49,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-01,[split_50_50],Ryan,53.33,26.66,26.66,19660.16,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-01,[split_50_50],Ryan,38.45,19.23,19.23,19679.39,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-07-01,[split_50_50],Ryan,6.00,3.00,3.00,19682.39,Jordyn owes Ryan,Auto & Transport,expense,split_50_50
+2024-07-01, Ollie (aka Prince Ali!)  [split_50_50],Jordyn,9.69,4.84,4.84,19677.54,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-01, Ollie (aka Prince Ali!)  [split_50_50],Jordyn,57.53,28.77,28.77,19648.77,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-01,[split_50_50],Ryan,82.13,41.06,41.06,19689.84,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-02,[split_50_50],Ryan,42.68,21.34,21.34,19711.18,Jordyn owes Ryan,Auto & Transport,expense,split_50_50
+2024-07-02,[split_50_50],Ryan,2.15,1.07,1.07,19712.26,Jordyn owes Ryan,Pets,expense,split_50_50
+2024-07-02,[split_50_50],Ryan,33.52,16.76,16.76,19729.02,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-02, No matching order found  [split_50_50],Ryan,53.89,26.95,26.95,19755.97,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-07-02," Burt's Bees, Vet's Best, Dog Oral Care Additive  [split_50_50]",Ryan,45.95,22.98,22.98,19778.95,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-02,[split_50_50],Ryan,41.84,20.92,20.92,19799.87,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-02,[split_50_50],Ryan,2.15,1.07,1.07,19800.95,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-02,[split_50_50],Ryan,24.40,12.20,12.20,19813.15,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-02, Wine / Food  [split_50_50],Ryan,32.51,16.25,16.25,19829.41,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-03, Ollie (aka Prince Ali!)  [split_50_50],Jordyn,380.00,190.00,190.00,19639.41,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-03,[split_50_50],Jordyn,41.84,20.92,20.92,19618.49,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-03,[split_50_50],Jordyn,19.10,9.55,9.55,19608.94,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-03,[split_50_50],Jordyn,130.91,65.45,65.45,19543.48,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-03,[split_50_50],Ryan,55.96,27.98,27.98,19571.46,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-03, Ollie (aka Prince Ali!)  [split_50_50],Jordyn,10.72,5.36,5.36,19566.10,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-03," Knee Pillow for Back Sleeping, Knee Pillow for Side Sleepers  [split_50_50]",Ryan,45.95,22.98,22.98,19589.08,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-07-04,[split_50_50],Jordyn,102.89,51.45,51.45,19537.63,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-04," Schylling NeeDoh Nice Cube, Fidget Spinners  [split_50_50]",Ryan,33.12,16.56,16.56,19554.19,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-07-04,[split_50_50],Ryan,21.55,10.78,10.78,19564.97,Jordyn owes Ryan,Subscription,expense,split_50_50
+2024-07-04,[split_50_50],Ryan,220.00,110.00,110.00,19674.97,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-06,[split_50_50],Jordyn,80.62,40.31,40.31,19634.66,Jordyn owes Ryan,Alcohol,expense,split_50_50
+2024-07-06," 100 Pack 3ml Syringes, Membrane Solutions Syringe Filters  [split_50_50]",Ryan,32.33,16.16,16.16,19650.83,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-07-06, 100 Pack 3ml Syringes  [split_50_50],Ryan,16.64,8.32,8.32,19659.15,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-07-06,[split_50_50],Jordyn,30.17,15.09,15.09,19644.06,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-07-06," Joel Gott Cabernet Sauvignon, Popchips Nacho Popped Snack  [split_50_50]",Ryan,23.07,11.54,11.54,19655.60,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-07,[split_50_50],Jordyn,11.59,5.79,5.79,19649.80,Jordyn owes Ryan,Dining,expense,split_50_50
+2024-07-08,[split_50_50],Ryan,11.93,5.96,5.96,19655.77,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-07-08,[split_50_50],Ryan,116.78,58.39,58.39,19714.16,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-07-08,[split_50_50],Jordyn,54.00,27.00,27.00,19687.16,Jordyn owes Ryan,Transportation,expense,split_50_50
+2024-07-08,[split_50_50],Ryan,64.81,32.41,32.41,19719.57,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-08,[split_50_50],Ryan,120.00,60.00,60.00,19779.57,Jordyn owes Ryan,Bills & Utilities,expense,split_50_50
+2024-07-08,[split_50_50],Ryan,7.83,3.92,3.92,19783.49,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-07-08,[split_50_50],Ryan,126.31,63.16,63.16,19846.65,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-07-08,[split_50_50],Ryan,29.71,14.86,14.86,19861.51,Jordyn owes Ryan,Auto & Transport,expense,split_50_50
+2024-07-09,[split_50_50],Jordyn,66.03,33.02,33.02,19828.49,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-07-09,[split_50_50],Ryan,31.25,15.62,15.62,19844.12,Jordyn owes Ryan,Loan Payment,expense,split_50_50
+2024-07-09,[split_50_50],Ryan,41.44,20.72,20.72,19864.84,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-09,[split_50_50],Ryan,48.50,24.25,24.25,19889.09,Jordyn owes Ryan,Retail,expense,split_50_50
+2024-07-09,[split_50_50],Ryan,12.93,6.46,6.46,19895.56,Jordyn owes Ryan,Subscription,expense,split_50_50
+2024-07-09,[split_50_50],Jordyn,244.38,122.19,122.19,19773.37,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-09,[split_50_50],Ryan,10.61,5.30,5.30,19778.68,Jordyn owes Ryan,Loan Payment,expense,split_50_50
+2024-07-10," Joel Gott Cabernet, Kim Crawford Sauvignon Blanc  [split_50_50]",Ryan,31.87,15.94,15.94,19794.62,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-10, Knee Pillow for Back Sleeping  [split_50_50],Ryan,26.62,13.31,13.31,19807.93,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-07-10," NOW Supplements, L-Tyrosine  [split_50_50]",Ryan,7.44,3.72,3.72,19811.65,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-07-10," NOW Supplements, L-Lysine  [split_50_50]",Ryan,14.33,7.17,7.17,19818.82,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-07-11," L-Serine Capsules, Nature's Bounty Zinc  [split_50_50]",Ryan,49.73,24.86,24.86,19843.69,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-07-11, Physician's CHOICE Probiotics  [split_50_50],Ryan,43.11,21.55,21.55,19865.25,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-07-11, Membrane Solutions Syringe Filters  [split_50_50],Ryan,27.90,13.95,13.95,19879.20,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-07-11,[split_50_50],Ryan,30.19,15.10,15.10,19894.30,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-11, Schylling NeeDoh Nice Cube  [split_50_50],Ryan,9.68,4.84,4.84,19899.14,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-07-12,[split_50_50],Ryan,220.00,110.00,110.00,20009.14,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-12," Joel Gott Cabernet, Kim Crawford Sauvignon Blanc, Simply Orange Juice  [split_50_50]",Ryan,36.43,18.21,18.21,20027.36,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-13,[split_50_50],Ryan,24.95,12.47,12.47,20039.84,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-07-13," Cutwater Mango Margarita, Joel Gott Cabernet Sauvignon, Kim Crawford Sauvignon Blanc, Kroger Pure Pumpkin  [split_50_50]",Ryan,47.70,23.85,23.85,20063.69,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-14,[split_50_50],Ryan,8.62,4.31,4.31,20068.00,Jordyn owes Ryan,Finance,expense,split_50_50
+2024-07-14,[split_50_50],Jordyn,46.78,23.39,23.39,20044.61,Jordyn owes Ryan,Dining,expense,split_50_50
+2024-07-14,[split_50_50],Jordyn,17.14,8.57,8.57,20036.04,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-07-14,[split_50_50],Jordyn,118.85,59.42,59.42,19976.61,Jordyn owes Ryan,Dining,expense,split_50_50
+2024-07-14,[split_50_50],Ryan,225.00,112.50,112.50,20089.11,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-15," Cutwater Mango Margarita, Fry's Purified Water, Joel Gott Cabernet, Kim Crawford Sauvignon Blanc  [split_50_50]",Ryan,49.73,24.86,24.86,20113.98,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-15,[split_50_50],Ryan,100.00,50.00,50.00,20163.98,Jordyn owes Ryan,Gaming,expense,split_50_50
+2024-07-15,[split_50_50],Jordyn,131.50,65.75,65.75,20098.23,Jordyn owes Ryan,Pets,expense,split_50_50
+2024-07-16,[split_50_50],Jordyn,31.64,15.82,15.82,20082.41,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-07-16,[split_50_50],Jordyn,47.19,23.59,23.59,20058.81,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-17, Knee Pillow for Back Sleeping  [split_50_50],Ryan,16.16,8.08,8.08,20066.89,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-07-17," Joel Gott Cabernet Sauvignon, Kim Crawford Sauvignon Blanc  [split_50_50]",Ryan,31.87,15.94,15.94,20082.83,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-18,[split_50_50],Jordyn,102.22,51.11,51.11,20031.72,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-07-19,[split_50_50],Ryan,50.66,25.33,25.33,20057.05,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-07-19,[split_50_50],Jordyn,50.16,25.08,25.08,20031.97,Jordyn owes Ryan,Dining,expense,split_50_50
+2024-07-19," Joel Gott Cabernet Sauvignon, Kim Crawford Sauvignon Blanc, White Claw Variety Pack No.3  [split_50_50]",Ryan,44.93,22.46,22.46,20054.44,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-20,"Cutwater Mango Margarita, Simple Truth Organic Greek Yogurt, White Claw Hard Seltzer Variety Pack No.2 [split_50_50]",Ryan,30.24,15.12,15.12,20069.56,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-20,[split_50_50],Ryan,30.02,15.01,15.01,20084.57,Jordyn owes Ryan,Entertainment,expense,split_50_50
+2024-07-20,Monthly payment on loan [split_50_50],Jordyn,214.58,107.29,107.29,19977.28,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-21,[split_50_50],Jordyn,78.00,39.00,39.00,19938.28,Jordyn owes Ryan,Dining,expense,split_50_50
+2024-07-21,[split_50_50],Ryan,13.89,6.95,6.95,19945.23,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-07-21,[split_50_50],Ryan,220.00,110.00,110.00,20055.23,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-21,[split_50_50],Ryan,38.35,19.18,19.18,20074.41,Jordyn owes Ryan,Entertainment & Rec.,expense,split_50_50
+2024-07-21,[split_50_50],Ryan,35.59,17.80,17.80,20092.21,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-07-22,Cutwater Mango Margarita [split_50_50],Ryan,10.62,5.31,5.31,20097.52,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-23,[split_50_50],Jordyn,137.12,68.56,68.56,20028.96,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-07-23,[split_50_50],Jordyn,26.56,13.28,13.28,20015.68,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-07-23,[split_50_50],Jordyn,-9.23,-4.62,-4.62,20020.30,Jordyn owes Ryan,Refund,expense,split_50_50
+2024-07-23, Membrane Solutions Syringe Filters  [split_50_50],Ryan,18.32,9.16,9.16,20029.46,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-07-23,[split_50_50],Jordyn,10.19,5.09,5.09,20024.36,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-07-23,[split_50_50],Ryan,6.50,3.25,3.25,20027.61,Jordyn owes Ryan,Uncategorized,expense,split_50_50
+2024-07-23,"Cutwater Mango Margarita, Fresh Bananas, Home Chef Cold Baked Chicken, Kim Crawford Sauvignon Blanc, Luna Bars [split_50_50]",Ryan,58.93,29.46,29.46,20057.08,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-23,[split_50_50],Ryan,146.00,73.00,73.00,20130.08,Jordyn owes Ryan,Credit Card Payment,expense,split_50_50
+2024-07-24,"Joel Gott Cabernet Sauvignon, Kim Crawford Sauvignon Blanc, Kroger Pure Pumpkin, White Claw Variety Pack No.3 [split_50_50]",Ryan,51.97,25.98,25.98,20156.07,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-24,"Famous Dave's Pickles, Harvest Snaps Mango Chile Lime, Kim Crawford Sauvignon Blanc, Luna Bars [split_50_50]",Ryan,29.00,14.50,14.50,20170.57,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-25,[split_50_50],Jordyn,38.76,19.38,19.38,20151.19,Jordyn owes Ryan,Dining,expense,split_50_50
+2024-07-25,[split_50_50],Jordyn,33.47,16.73,16.73,20134.45,Jordyn owes Ryan,Dining,expense,split_50_50
+2024-07-25,[split_50_50],Jordyn,52.00,26.00,26.00,20108.45,Jordyn owes Ryan,Travel,expense,split_50_50
+2024-07-25,[split_50_50],Ryan,21.56,10.78,10.78,20119.23,Jordyn owes Ryan,Subscription,expense,split_50_50
+2024-07-26,[split_50_50],Jordyn,8.51,4.25,4.25,20114.97,Jordyn owes Ryan,Travel,expense,split_50_50
+2024-07-26,[split_50_50],Ryan,9.00,4.50,4.50,20119.47,Jordyn owes Ryan,Municipal Service,expense,split_50_50
+2024-07-26,[split_50_50],Jordyn,36.90,18.45,18.45,20101.02,Jordyn owes Ryan,Transportation,expense,split_50_50
+2024-07-26,[split_50_50],Jordyn,30.32,15.16,15.16,20085.86,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-07-26,[split_50_50],Ryan,2.50,1.25,1.25,20087.11,Jordyn owes Ryan,Fees,expense,split_50_50
+2024-07-26,[split_50_50],Ryan,2.50,1.25,1.25,20088.36,Jordyn owes Ryan,Fees,expense,split_50_50
+2024-07-26,[split_50_50],Ryan,200.00,100.00,100.00,20188.36,Jordyn owes Ryan,Cash & Checks,expense,split_50_50
+2024-07-26,[split_50_50],Jordyn,136.99,68.50,68.50,20119.86,Jordyn owes Ryan,Dining,expense,split_50_50
+2024-07-26,[split_50_50],Jordyn,44.02,22.01,22.01,20097.85,Jordyn owes Ryan,Travel,expense,split_50_50
+2024-07-26,[split_50_50],Ryan,102.50,51.25,51.25,20149.10,Jordyn owes Ryan,Cash & Checks,expense,split_50_50
+2024-07-26,[split_50_50],Ryan,105.92,52.96,52.96,20202.06,Jordyn owes Ryan,Grocery,expense,split_50_50
+2024-07-26,[split_50_50],Jordyn,4.09,2.04,2.04,20200.01,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-07-26, Non-Amazon transaction  [split_50_50],Ryan,213.53,106.77,106.77,20306.78,Jordyn owes Ryan,Insurance,expense,split_50_50
+2024-07-26,Payment to Ryan [split_50_50],Jordyn,200.00,100.00,100.00,20206.78,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-27,[split_50_50],Ryan,4.99,2.50,2.50,20209.28,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-07-27, LEGO Creator 3-in-1 Cozy House Building Kit  [split_50_50],Ryan,48.46,24.23,24.23,20233.51,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-07-27,[split_50_50],Jordyn,5.78,2.89,2.89,20230.62,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-07-27,[split_50_50],Jordyn,2.30,1.15,1.15,20229.47,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-07-27,[split_50_50],Jordyn,15.17,7.58,7.58,20221.88,Jordyn owes Ryan,Dining,expense,split_50_50
+2024-07-27,[split_50_50],Jordyn,12.84,6.42,6.42,20215.46,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-07-27,[split_50_50],Ryan,8.63,4.32,4.32,20219.78,Jordyn owes Ryan,Uncategorized,expense,split_50_50
+2024-07-27,[split_50_50],Ryan,24.78,12.39,12.39,20232.17,Jordyn owes Ryan,Entertainment & Rec.,expense,split_50_50
+2024-07-28,[split_50_50],Jordyn,21.80,10.90,10.90,20221.27,Jordyn owes Ryan,Dining,expense,split_50_50
+2024-07-28,[split_50_50],Jordyn,76.00,38.00,38.00,20183.27,Jordyn owes Ryan,Travel,expense,split_50_50
+2024-07-28, Fidget Spinners  [split_50_50],Ryan,10.23,5.12,5.12,20188.39,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-07-28, Schylling NeeDoh Nice Cube  [split_50_50],Ryan,23.45,11.72,11.72,20200.12,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-07-28,[split_50_50],Jordyn,5.58,2.79,2.79,20197.33,Jordyn owes Ryan,Transportation,expense,split_50_50
+2024-07-28,[split_50_50],Jordyn,51.97,25.98,25.98,20171.34,Jordyn owes Ryan,Transportation,expense,split_50_50
+2024-07-28,[split_50_50],Jordyn,8.07,4.04,4.04,20167.30,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-28,[split_50_50],Ryan,37.10,18.55,18.55,20185.85,Jordyn owes Ryan,Auto & Transport,expense,split_50_50
+2024-07-28,[split_50_50],Ryan,18.96,9.48,9.48,20195.33,Jordyn owes Ryan,Auto & Transport,expense,split_50_50
+2024-07-28,[split_50_50],Jordyn,9.97,4.99,4.99,20190.34,Jordyn owes Ryan,Transportation,expense,split_50_50
+2024-07-28,[split_50_50],Jordyn,80.00,40.00,40.00,20150.34,Jordyn owes Ryan,Travel,expense,split_50_50
+2024-07-28,[split_50_50],Jordyn,8.00,4.00,4.00,20146.34,Jordyn owes Ryan,Travel,expense,split_50_50
+2024-07-28,[split_50_50],Ryan,346.73,173.37,173.37,20319.71,Jordyn owes Ryan,Auto & Transport,expense,split_50_50
+2024-07-29,[split_50_50],Jordyn,4.70,2.35,2.35,20317.36,Jordyn owes Ryan,Dining,expense,split_50_50
+2024-07-29,[split_50_50],Jordyn,4.70,2.35,2.35,20315.01,Jordyn owes Ryan,Dining,expense,split_50_50
+2024-07-29, Food service  [split_50_50],Jordyn,4.70,2.35,2.35,20312.66,Jordyn owes Ryan,Dining,expense,split_50_50
+2024-07-29,[split_50_50],Ryan,21.12,10.56,10.56,20323.22,Jordyn owes Ryan,Loan Payment,expense,split_50_50
+2024-07-29,[split_50_50],Ryan,31.81,15.90,15.90,20339.13,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-07-30, Online purchase  [split_50_50],Jordyn,18.33,9.16,9.16,20329.96,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-07-30,[split_50_50],Jordyn,18.33,9.16,9.16,20320.79,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-07-30,[split_50_50],Ryan,50.32,25.16,25.16,20345.95,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-30,[split_50_50],Ryan,21.56,10.78,10.78,20356.73,Jordyn owes Ryan,Subscription,expense,split_50_50
+2024-07-31,[split_50_50],Ryan,450.00,225.00,225.00,20581.73,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-31,[split_50_50],Jordyn,38.27,19.14,19.14,20562.59,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-31,[split_50_50],Ryan,220.00,110.00,110.00,20672.59,Jordyn owes Ryan,nan,expense,split_50_50
+2024-07-31, Grocery purchase  [split_50_50],Jordyn,38.27,19.14,19.14,20653.45,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-07-31,"Albanese Gummi Bears, Claussen Pickles, Cutwater Mango Margarita, Haribo Gummi Bears, Joel Gott Cabernet [split_50_50]",Ryan,79.90,39.95,39.95,20693.40,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-01,"Joel Gott Cabernet, Kroger Distilled Water, Kroger Tall Kitchen Bags, Luna Bars [split_50_50]",Ryan,47.46,23.73,23.73,20717.13,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-01,[split_50_50],Jordyn,8.88,4.44,4.44,20712.69,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-08-01, Online purchase  [split_50_50],Jordyn,8.88,4.44,4.44,20708.25,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-08-02,Payment to Ryan [split_50_50],Jordyn,3000.00,1500.00,1500.00,19208.25,Jordyn owes Ryan,nan,expense,split_50_50
+2024-08-02,[split_50_50],Jordyn,5.34,2.67,2.67,19205.58,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-08-02,[split_50_50],Ryan,58.75,29.38,29.38,19234.96,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-08-02, Online purchase  [split_50_50],Jordyn,10.77,5.38,5.38,19229.57,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-08-02, Online purchase  [split_50_50],Jordyn,5.34,2.67,2.67,19226.90,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-08-02,[split_50_50],Jordyn,33.49,16.75,16.75,19210.15,Jordyn owes Ryan,Dining,expense,split_50_50
+2024-08-02,[split_50_50],Jordyn,10.77,5.38,5.38,19204.76,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-08-02, Bakery purchase  [split_50_50],Jordyn,33.49,16.75,16.75,19188.01,Jordyn owes Ryan,Dining,expense,split_50_50
+2024-08-02,"Cutwater Tequila Mango Margarita, Home Chef Cold Baked Chicken, Joel Gott Cabernet Sauvignon [split_50_50]",Ryan,39.93,19.96,19.96,19207.98,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-02,[split_50_50],Ryan,37.50,18.75,18.75,19226.73,Jordyn owes Ryan,Entertainment,expense,split_50_50
+2024-08-03,[split_50_50],Ryan,32.33,16.16,16.16,19242.90,Jordyn owes Ryan,Gaming,expense,split_50_50
+2024-08-03,[split_50_50],Jordyn,10.55,5.28,5.28,19237.62,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-08-03, Drugstore purchase  [split_50_50],Jordyn,10.55,5.28,5.28,19232.34,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-08-03,[split_50_50],Ryan,51.16,25.58,25.58,19257.92,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-08-03,[split_50_50],Ryan,24.85,12.43,12.43,19270.35,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-08-03,[split_50_50],Ryan,102.88,51.44,51.44,19321.79,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-08-03,[split_50_50],Ryan,10.36,5.18,5.18,19326.97,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-08-03,[split_50_50],Ryan,30.23,15.12,15.12,19342.09,Jordyn owes Ryan,Auto & Transport,expense,split_50_50
+2024-08-03,[split_50_50],Ryan,23.00,11.50,11.50,19353.59,Jordyn owes Ryan,Entertainment & Rec.,expense,split_50_50
+2024-08-04,[split_50_50],Ryan,27.80,13.90,13.90,19367.49,Jordyn owes Ryan,Gaming,expense,split_50_50
+2024-08-04,[split_50_50],Ryan,10.77,5.38,5.38,19372.88,Jordyn owes Ryan,Gaming,expense,split_50_50
+2024-08-04,[split_50_50],Ryan,21.55,10.78,10.78,19383.66,Jordyn owes Ryan,Subscription,expense,split_50_50
+2024-08-04,[split_50_50],Ryan,35.19,17.59,17.59,19401.26,Jordyn owes Ryan,Auto & Transport,expense,split_50_50
+2024-08-04,[split_50_50],Ryan,240.00,120.00,120.00,19521.26,Jordyn owes Ryan,nan,expense,split_50_50
+2024-08-05,[split_50_50],Ryan,3.06,1.53,1.53,19522.79,Jordyn owes Ryan,Auto & Transport,expense,split_50_50
+2024-08-05,"Cutwater Tequila Mango Margarita, Parkers Estate Pinot Noir, Vizzy Hard Seltzer Tropical Variety Pack [split_50_50]",Ryan,42.49,21.25,21.25,19544.04,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-05,[split_50_50],Jordyn,94.29,47.15,47.15,19496.89,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-05,"Ben & Jerry's Cherry Garcia Ice Cream, Canada Dry Ginger Ale, Freschetta Gluten-Free Pizza, Fresh Bananas, Bottled Water, Luna Bars [split_50_50]",Ryan,53.68,26.84,26.84,19523.73,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-05,[split_50_50],Ryan,120.00,60.00,60.00,19583.73,Jordyn owes Ryan,Bills & Utilities,expense,split_50_50
+2024-08-06,"Charleston Chew Candy, Cutwater Tequila Mango Margarita, Haribo Gummi Bears, Home Chef Chicken, Jack Link's Teriyaki Beef Jerky [split_50_50]",Ryan,44.25,22.12,22.12,19605.86,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-06,[split_50_50],Ryan,107.79,53.90,53.90,19659.76,Jordyn owes Ryan,Subscription,expense,split_50_50
+2024-08-06,[split_50_50],Jordyn,7.86,3.93,3.93,19655.83,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-06,"Broccoli, Capri Sun Juice Pouches, Chicken of the Sea Tuna, Foster Farms Chicken Breast, Bananas, Green Beans, Bell Peppers, Raisin Bran Crunch, Ground Beef, Spinach, Eggs, Oikos Yogurt, Old Spice Body Wash, and more [split_50_50]",Ryan,101.59,50.80,50.80,19706.63,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-07,"Daisy Light Sour Cream, Kim Crawford Sauvignon Blanc, Oikos Pro Yogurt [split_50_50]",Ryan,23.53,11.77,11.77,19718.40,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-07,"Cutwater Tequila Mango Margarita, Home Chef Cold Baked Chicken, Kim Crawford Sauvignon Blanc [split_50_50]",Ryan,36.74,18.37,18.37,19736.77,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-07, Aromatherapy Sensual Massage Oil  [split_50_50],Ryan,13.30,6.65,6.65,19743.42,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-08-07, Aromatherapy Sensual Massage Oil  [split_50_50],Ryan,18.30,9.15,9.15,19752.57,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-08-08,"Claussen Kosher Dill Pickles, Kim Crawford Sauvignon Blanc, Polar Lime Seltzer Water, Yogi Throat Comfort Tea [split_50_50]",Ryan,28.50,14.25,14.25,19766.82,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-08,[split_50_50],Jordyn,-51.83,-25.91,-25.91,19792.74,Jordyn owes Ryan,Rewards,expense,split_50_50
+2024-08-09,"Joel Gott Cabernet Sauvignon, Kim Crawford Sauvignon Blanc [split_50_50]",Ryan,30.81,15.40,15.40,19808.15,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-09,[split_50_50],Ryan,31.25,15.62,15.62,19823.78,Jordyn owes Ryan,Loan Payment,expense,split_50_50
+2024-08-09,[split_50_50],Ryan,10.61,5.30,5.30,19829.09,Jordyn owes Ryan,Loan Payment,expense,split_50_50
+2024-08-09,[split_50_50],Ryan,12.93,6.46,6.46,19835.56,Jordyn owes Ryan,Subscription,expense,split_50_50
+2024-08-09,[split_50_50],Ryan,16.17,8.09,8.09,19843.65,Jordyn owes Ryan,Gaming,expense,split_50_50
+2024-08-10, The Disruptors (Digital Purchase)  [split_50_50],Ryan,15.08,7.54,7.54,19851.19,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-08-10,[split_50_50],Ryan,77.32,38.66,38.66,19889.85,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-08-10,Tito's Handmade Vodka [split_50_50],Ryan,32.94,16.47,16.47,19906.32,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-11,[split_50_50],Ryan,14.50,7.25,7.25,19913.57,Jordyn owes Ryan,Entertainment & Rec.,expense,split_50_50
+2024-08-11,[split_50_50],Ryan,14.50,7.25,7.25,19920.82,Jordyn owes Ryan,Entertainment & Rec.,expense,split_50_50
+2024-08-11,[split_50_50],Ryan,38.40,19.20,19.20,19940.02,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-08-11,"Amy's Gluten Free Broccoli & Cheddar Bake, Cutwater Tequila Mango Margarita, Famous Dave's Pickle Chips, Freschetta Gluten Free Pizza, Fresh Bananas [split_50_50]",Ryan,38.25,19.12,19.12,19959.15,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-11,[split_50_50],Ryan,14.75,7.38,7.38,19966.53,Jordyn owes Ryan,Entertainment,expense,split_50_50
+2024-08-11, Gotu Kola Capsules  [split_50_50],Ryan,16.36,8.18,8.18,19974.71,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-08-11,[split_50_50],Jordyn,194.88,97.44,97.44,19877.27,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-12,"Ace Elastic Bandage, Band-Aid Flexible Bandages, Home Chef Cold Baked Chicken, Joel Gott Cabernet, Isopropyl Alcohol, KT Tape Pro Therapeutic Tape [split_50_50]",Ryan,87.09,43.55,43.55,19920.82,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-12,[split_50_50],Jordyn,-57.00,-28.50,-28.50,19949.32,Jordyn owes Ryan,Payment,expense,split_50_50
+2024-08-12,[split_50_50],Ryan,224.77,112.39,112.39,20061.71,Jordyn owes Ryan,Loan Payment,expense,split_50_50
+2024-08-13," Care Touch 10mL Syringes, 100 Pack 3ml Syringes  [split_50_50]",Ryan,31.26,15.63,15.63,20077.34,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-08-13,"Cutwater Tequila Mango Margarita, Joel Gott Cabernet Sauvignon [split_50_50]",Ryan,30.81,15.40,15.40,20092.75,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-13,[split_50_50],Jordyn,15.68,7.84,7.84,20084.91,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-08-13,[split_50_50],Jordyn,31.71,15.86,15.86,20069.05,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-14,[split_50_50],Ryan,1.04,0.52,0.52,20069.57,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-08-14,"Cutwater Tequila Mango Margarita (2 packs), Joel Gott Cabernet Sauvignon, Polar Lime Flavored Seltzer Water [split_50_50]",Ryan,44.41,22.20,22.20,20091.78,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-14,[split_50_50],Jordyn,25.77,12.88,12.88,20078.89,Jordyn owes Ryan,Transportation,expense,split_50_50
+2024-08-14,[split_50_50],Ryan,8.62,4.31,4.31,20083.20,Jordyn owes Ryan,Finance,expense,split_50_50
+2024-08-15,Logitech MX Anywhere 3S for Mac (Pale Grey) [split_50_50],Ryan,41.06,20.53,20.53,20103.73,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-08-15,"Home Chef Cold Baked Chicken, Kim Crawford Sauvignon Blanc, Luna Mash-Ups Lemonzest + Raspberry Bars [split_50_50]",Ryan,30.54,15.27,15.27,20119.00,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-15,Logitech MX Anywhere 3S for Mac (Pale Grey) [split_50_50],Ryan,50.66,25.33,25.33,20144.33,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-08-16,"Cutwater Tequila Mango Margarita (2 packs), Ely By Callaway Cabernet Sauvignon, The Crossings Sauvignon Blanc [split_50_50]",Ryan,49.84,24.92,24.92,20169.25,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-16,[split_50_50],Ryan,114.86,57.43,57.43,20226.68,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-08-16,[split_50_50],Ryan,220.00,110.00,110.00,20336.68,Jordyn owes Ryan,nan,expense,split_50_50
+2024-08-16,[split_50_50],Ryan,11.25,5.62,5.62,20342.31,Jordyn owes Ryan,Auto & Transport,expense,split_50_50
+2024-08-17,"Band-Aid Flexible Bandages, Charmin Ultra Soft Toilet Paper, The Crossings Sauvignon Blanc (2 bottles) [split_50_50]",Ryan,96.62,48.31,48.31,20390.62,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-17,[split_50_50],Ryan,300.00,150.00,150.00,20540.62,Jordyn owes Ryan,nan,expense,split_50_50
+2024-08-17,[split_50_50],Ryan,37.88,18.94,18.94,20559.56,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-08-18,[split_50_50],Jordyn,84.35,42.17,42.17,20517.38,Jordyn owes Ryan,Dining,expense,split_50_50
+2024-08-18,[split_50_50],Jordyn,21.88,10.94,10.94,20506.44,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-08-18,"Bubly Sparkling Water (multiple flavors), Dawn Heavy Duty Scouring Pads, Kroger Allergy Nasal Spray, Carrots, Sponges [split_50_50]",Ryan,50.65,25.32,25.32,20531.77,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-19,[split_50_50],Jordyn,100.00,50.00,50.00,20481.77,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-19,[split_50_50],Jordyn,19.13,9.56,9.56,20472.20,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-08-19,[split_50_50],Jordyn,15.21,7.61,7.61,20464.59,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-08-20,Monthly payment on loan [split_50_50],Jordyn,214.58,107.29,107.29,20357.30,Jordyn owes Ryan,nan,expense,split_50_50
+2024-08-21,[split_50_50],Ryan,1281.30,640.65,640.65,20997.95,Jordyn owes Ryan,Bills & Utilities,expense,split_50_50
+2024-08-21,"Fresh Banana, Home Chef Cold Baked Chicken, KIND Healthy Grains Vanilla Blueberry Granola, Luna Mash-Ups Bars [split_50_50]",Ryan,22.98,11.49,11.49,21009.44,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-22,"Dawn Heavy Duty Scouring Pads, Harvest Snaps Mango Chile Lime Crisps, Kroger Allergy Nasal Spray, Baby Carrots, Scotch-Brite Sponges [split_50_50]",Ryan,27.58,13.79,13.79,21023.23,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-22,[split_50_50],Jordyn,31.36,15.68,15.68,21007.55,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-22,[split_50_50],Jordyn,37.11,18.55,18.55,20988.99,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-22,[split_50_50],Jordyn,12.88,6.44,6.44,20982.55,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-08-23,"Home Chef Cold Baked Chicken, Kroger 100% Pure Pumpkin [split_50_50]",Ryan,11.14,5.57,5.57,20988.12,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-23,[split_50_50],Jordyn,45.57,22.79,22.79,20965.33,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-23,[split_50_50],Ryan,146.00,73.00,73.00,21038.33,Jordyn owes Ryan,Credit Card Payment,expense,split_50_50
+2024-08-24,[split_50_50],Ryan,63.38,31.69,31.69,21070.02,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-08-25,[split_50_50],Ryan,21.56,10.78,10.78,21080.80,Jordyn owes Ryan,Subscription,expense,split_50_50
+2024-08-25,Care Touch 10mL Syringes (100 Count) [split_50_50],Ryan,19.35,9.68,9.68,21090.48,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-08-25,"Kroger Distilled Gallon Bottled Water, Strongbow Gold Apple Hard Cider 6-Pack [split_50_50]",Ryan,13.09,6.54,6.54,21097.03,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-25,"34 Degrees Cheese Crisps, Tito's Handmade Vodka [split_50_50]",Ryan,36.99,18.50,18.50,21115.53,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-25,[split_50_50],Ryan,34.81,17.41,17.41,21132.94,Jordyn owes Ryan,Auto & Transport,expense,split_50_50
+2024-08-25,[split_50_50],Ryan,117.93,58.97,58.97,21191.91,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-26,[split_50_50],Jordyn,20.47,10.23,10.23,21181.67,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-08-26,[split_50_50],Ryan,460.00,230.00,230.00,21411.67,Jordyn owes Ryan,nan,expense,split_50_50
+2024-08-26,The Disruptors (Digital Purchase) [split_50_50],Ryan,12.93,6.46,6.46,21418.14,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-08-26,[split_50_50],Ryan,10.71,5.36,5.36,21423.50,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-08-26,[split_50_50],Jordyn,214.62,107.31,107.31,21316.19,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-27,No matching order found [split_50_50],Ryan,43.01,21.50,21.50,21337.70,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-08-27,"Multiple Supplements (L-Serine, Zinc, L-Lysine, L-Tyrosine, Probiotics) [split_50_50]",Ryan,132.75,66.38,66.38,21404.08,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-08-27,[split_50_50],Ryan,97.10,48.55,48.55,21452.63,Jordyn owes Ryan,Gaming,expense,split_50_50
+2024-08-27,[split_50_50],Jordyn,34.24,17.12,17.12,21435.51,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-27,[split_50_50],Ryan,24.78,12.39,12.39,21447.90,Jordyn owes Ryan,Entertainment & Rec.,expense,split_50_50
+2024-08-27,[split_50_50],Ryan,3.20,1.60,1.60,21449.50,Jordyn owes Ryan,Gaming,expense,split_50_50
+2024-08-27,[split_50_50],Jordyn,40.64,20.32,20.32,21429.18,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-08-27,"Abigail (Digital), Alice In Wonderland (Digital), ""The Disruptors"" (Digital) [split_50_50]",Ryan,55.17,27.59,27.59,21456.77,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-08-27,[split_50_50],Ryan,4.99,2.50,2.50,21459.27,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-08-28,Home Chef Cold Baked Chicken [split_50_50],Ryan,9.12,4.56,4.56,21463.83,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-28,"Bumble Bee Tuna, Haribo Gummy Candy, Schar Gluten-Free Ciabatta, Swedish Fish [split_50_50]",Ryan,21.54,10.77,10.77,21474.60,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-28,[split_50_50],Ryan,21.12,10.56,10.56,21485.16,Jordyn owes Ryan,Loan Payment,expense,split_50_50
+2024-08-28,DECORA Googly Eyes [split_50_50],Ryan,21.71,10.86,10.86,21496.02,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-08-28,[split_50_50],Jordyn,8.61,4.30,4.30,21491.71,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-08-29,"Famous Dave's Pickle Chips, Good Culture Cottage Cheese, Success Boil-in-Bag Brown Rice, White Claw [split_50_50]",Ryan,25.44,12.72,12.72,21504.43,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-30,[split_50_50],Ryan,225.00,112.50,112.50,21616.93,Jordyn owes Ryan,nan,expense,split_50_50
+2024-08-30,[split_50_50],Jordyn,196.18,98.09,98.09,21518.84,Jordyn owes Ryan,Entertainment,expense,split_50_50
+2024-08-30,[split_50_50],Jordyn,62.31,31.16,31.16,21487.68,Jordyn owes Ryan,Pets,expense,split_50_50
+2024-08-30,[split_50_50],Jordyn,108.10,54.05,54.05,21433.63,Jordyn owes Ryan,Pets,expense,split_50_50
+2024-08-30,White Claw Hard Seltzer Variety Pack No. 3 [split_50_50],Ryan,17.00,8.50,8.50,21442.13,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-30,[split_50_50],Ryan,21.56,10.78,10.78,21452.91,Jordyn owes Ryan,Subscription,expense,split_50_50
+2024-08-30,[split_50_50],Ryan,18.65,9.32,9.32,21462.24,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-08-31,[split_50_50],Jordyn,5.64,2.82,2.82,21459.42,Jordyn owes Ryan,Transportation,expense,split_50_50
+2024-08-31,[split_50_50],Jordyn,7.23,3.62,3.62,21455.80,Jordyn owes Ryan,Transportation,expense,split_50_50
+2024-08-31,[split_50_50],Jordyn,30.05,15.03,15.03,21440.77,Jordyn owes Ryan,Transportation,expense,split_50_50
+2024-08-31,"Joel Gott Cabernet, Kim Crawford Sauvignon Blanc, Strongbow Gold Apple Hard Cider [split_50_50]",Ryan,55.23,27.61,27.61,21468.39,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-08-31,[split_50_50],Ryan,21.13,10.56,10.56,21478.96,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-09-01,[split_50_50],Jordyn,25.00,12.50,12.50,21466.46,Jordyn owes Ryan,Transportation,expense,split_50_50
+2024-09-01,[split_50_50],Ryan,21.00,10.50,10.50,21476.96,Jordyn owes Ryan,Auto & Transport,expense,split_50_50
+2024-09-01,[split_50_50],Jordyn,10.80,5.40,5.40,21471.56,Jordyn owes Ryan,Dining,expense,split_50_50
+2024-09-01,[split_50_50],Ryan,25.23,12.62,12.62,21484.18,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-09-01,[split_50_50],Jordyn,13.98,6.99,6.99,21477.19,Jordyn owes Ryan,Transportation,expense,split_50_50
+2024-09-01,No matching order found [split_50_50],Ryan,96.92,48.46,48.46,21525.65,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-09-01,[split_50_50],Jordyn,7.05,3.52,3.52,21522.12,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-09-01,[split_50_50],Ryan,16.58,8.29,8.29,21530.41,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-09-02,[split_50_50],Jordyn,20.00,10.00,10.00,21520.41,Jordyn owes Ryan,Transportation,expense,split_50_50
+2024-09-02,[split_50_50],Jordyn,149.07,74.53,74.53,21445.87,Jordyn owes Ryan,Travel,expense,split_50_50
+2024-09-02,[split_50_50],Jordyn,9.37,4.68,4.68,21441.18,Jordyn owes Ryan,Transportation,expense,split_50_50
+2024-09-02,[split_50_50],Ryan,107.79,53.90,53.90,21495.08,Jordyn owes Ryan,Subscription,expense,split_50_50
+2024-09-02,[split_50_50],Jordyn,35.96,17.98,17.98,21477.10,Jordyn owes Ryan,Transportation,expense,split_50_50
+2024-09-02,[split_50_50],Ryan,38.48,19.24,19.24,21496.34,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-09-02,[split_50_50],Ryan,6.24,3.12,3.12,21499.46,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-09-02,[split_50_50],Ryan,34.32,17.16,17.16,21516.62,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-09-02,[split_50_50],Ryan,17.00,8.50,8.50,21525.12,Jordyn owes Ryan,Auto & Transport,expense,split_50_50
+2024-09-02,[split_50_50],Ryan,324.58,162.29,162.29,21687.41,Jordyn owes Ryan,Travel & Vacation,expense,split_50_50
+2024-09-02,[split_50_50],Ryan,338.12,169.06,169.06,21856.47,Jordyn owes Ryan,Travel & Vacation,expense,split_50_50
+2024-09-03,[split_50_50],Ryan,57.36,28.68,28.68,21885.15,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-09-04,"Invivo X by Sarah Jessica Parker Sauvignon Blanc, Korbel Brut Champagne [split_50_50]",Ryan,29.74,14.87,14.87,21900.02,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-04,[split_50_50],Ryan,21.55,10.78,10.78,21910.80,Jordyn owes Ryan,Subscription,expense,split_50_50
+2024-09-04,[split_50_50],Ryan,35.58,17.79,17.79,21928.59,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-09-04,[split_50_50],Ryan,37.65,18.82,18.82,21947.42,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-09-04,[split_50_50],Jordyn,39.01,19.50,19.50,21927.91,Jordyn owes Ryan,Entertainment,expense,split_50_50
+2024-09-04,[split_50_50],Ryan,39.10,19.55,19.55,21947.46,Jordyn owes Ryan,Entertainment & Rec.,expense,split_50_50
+2024-09-05,[split_50_50],Ryan,9.26,4.63,4.63,21952.09,Jordyn owes Ryan,Auto & Transport,expense,split_50_50
+2024-09-05,[split_50_50],Ryan,48.62,24.31,24.31,21976.40,Jordyn owes Ryan,Auto & Transport,expense,split_50_50
+2024-09-05,[split_50_50],Ryan,120.00,60.00,60.00,22036.40,Jordyn owes Ryan,Bills & Utilities,expense,split_50_50
+2024-09-05,"Ben & Jerry's Cherry Garcia Ice Cream, Haribo Gummy Bears, Kim Crawford Sauvignon Blanc, Home Chef Chicken [split_50_50]",Ryan,48.56,24.28,24.28,22060.68,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-05,[split_50_50],Jordyn,16.78,8.39,8.39,22052.29,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-09-05,[split_50_50],Jordyn,41.15,20.57,20.57,22031.71,Jordyn owes Ryan,Transportation,expense,split_50_50
+2024-09-06,[split_50_50],Jordyn,9.97,4.99,4.99,22026.72,Jordyn owes Ryan,Transportation,expense,split_50_50
+2024-09-06,"Joel Gott Cabernet, Kim Crawford Sauvignon Blanc, Tito's Vodka, Kroger Distilled Water [split_50_50]",Ryan,64.10,32.05,32.05,22058.77,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-06,"34 Degrees Cheese Crisps, Salmon/Nigiri Combo, Spicy California Sushi Roll [split_50_50]",Ryan,26.16,13.08,13.08,22071.85,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-07,[split_50_50],Jordyn,20.00,10.00,10.00,22061.85,Jordyn owes Ryan,Entertainment,expense,split_50_50
+2024-09-07,[split_50_50],Ryan,30.05,15.03,15.03,22076.88,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-09-07,[split_50_50],Ryan,260.00,130.00,130.00,22206.88,Jordyn owes Ryan,nan,expense,split_50_50
+2024-09-08,DECORA Googly Eyes [split_50_50],Ryan,33.40,16.70,16.70,22223.58,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-09-08,Wild One Dog Poop Bags [split_50_50],Ryan,35.38,17.69,17.69,22241.27,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-09-08,[split_50_50],Jordyn,22.41,11.21,11.21,22230.06,Jordyn owes Ryan,Online Shopping,expense,split_50_50
+2024-09-08,[split_50_50],Jordyn,297.75,148.88,148.88,22081.18,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-08,[split_50_50],Ryan,109.76,54.88,54.88,22136.06,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-09-08,[split_50_50],Ryan,260.00,130.00,130.00,22266.06,Jordyn owes Ryan,nan,expense,split_50_50
+2024-09-09,[split_50_50],Ryan,10.71,5.36,5.36,22271.42,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-09-09,Payment to Ryan [split_50_50],Jordyn,1000.00,500.00,500.00,21771.42,Jordyn owes Ryan,nan,expense,split_50_50
+2024-09-09,"Haribo Goldbears Gummi Candy, Kim Crawford Sauvignon Blanc [split_50_50]",Ryan,22.43,11.21,11.21,21782.64,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-09,[split_50_50],Ryan,12.93,6.46,6.46,21789.11,Jordyn owes Ryan,Subscription,expense,split_50_50
+2024-09-09,[split_50_50],Ryan,31.25,15.62,15.62,21804.74,Jordyn owes Ryan,Loan Payment,expense,split_50_50
+2024-09-09,[split_50_50],Ryan,10.61,5.30,5.30,21810.05,Jordyn owes Ryan,Loan Payment,expense,split_50_50
+2024-09-11,[split_50_50],Ryan,224.77,112.39,112.39,21922.44,Jordyn owes Ryan,Loan Payment,expense,split_50_50
+2024-09-11,[split_50_50],Ryan,61.41,30.70,30.70,21953.15,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-12,[split_50_50],Jordyn,-117.00,-58.50,-58.50,22011.65,Jordyn owes Ryan,Payment,expense,split_50_50
+2024-09-13,[split_50_50],Jordyn,63.19,31.59,31.59,21980.05,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-13,"Home Chef Chicken, Kim Crawford Sauvignon Blanc [split_50_50]",Ryan,22.93,11.46,11.46,21991.52,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-13,[split_50_50],Ryan,11.55,5.78,5.78,21997.30,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-09-13,Wild One Dog Poop Bags [split_50_50],Ryan,28.00,14.00,14.00,22011.30,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-09-14,"Chevalier Sauvignon Blanc, McBride Sisters Sauvignon Blanc [split_50_50]",Ryan,32.09,16.05,16.05,22027.35,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-14,[split_50_50],Ryan,500.00,250.00,250.00,22277.35,Jordyn owes Ryan,nan,expense,split_50_50
+2024-09-15, No matching order found  [split_50_50],Ryan,15.46,7.73,7.73,22285.08,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-09-15,[split_50_50],Jordyn,13.89,6.95,6.95,22278.13,Jordyn owes Ryan,Dining,expense,split_50_50
+2024-09-15,[split_50_50],Jordyn,13.89,6.95,6.95,22271.18,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-09-15,[split_50_50],Jordyn,48.90,24.45,24.45,22246.73,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-09-15, Shopping  [split_50_50],Jordyn,48.90,24.45,24.45,22222.28,Jordyn owes Ryan,$492.05 ,expense,split_50_50
+2024-09-15,[split_50_50],Ryan,523.99,262.00,262.00,22484.28,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-09-15,[split_50_50],Jordyn,48.90,24.45,24.45,22459.83,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-09-15," Gotu Kola Capsules, Membrane Solutions Syringe Filters  [split_50_50]",Ryan,23.69,11.85,11.85,22471.68,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-09-16,[split_50_50],Jordyn,169.19,84.59,84.59,22387.08,Jordyn owes Ryan,Pet Care,expense,split_50_50
+2024-09-16,[split_50_50],Jordyn,169.19,84.59,84.59,22302.48,Jordyn owes Ryan,Pets,expense,split_50_50
+2024-09-16,[split_50_50],Jordyn,40.39,20.20,20.20,22282.28,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-16,[split_50_50],Jordyn,40.39,20.20,20.20,22262.08,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-17,[split_50_50],Jordyn,108.20,54.10,54.10,22207.98,Jordyn owes Ryan,Finance Charge,expense,split_50_50
+2024-09-17,Payment to Ryan [split_50_50],Jordyn,500.00,250.00,250.00,21957.98,Jordyn owes Ryan,nan,expense,split_50_50
+2024-09-17,"Kim Crawford Sauvignon Blanc, Raeburn Chardonnay [split_50_50]",Ryan,29.74,14.87,14.87,21972.85,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-17,"Home Chef Chicken, Kim Crawford Sauvignon Blanc, Kroger Peeled Baby Carrots, Luna Bar, White Claw Variety Pack, Resolve Pet Cleaner [split_50_50]",Ryan,48.41,24.20,24.20,21997.06,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-17,"Fresh Banana, Kim Crawford Sauvignon Blanc, Oikos Triple Zero Yogurt [split_50_50]",Ryan,21.62,10.81,10.81,22007.87,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-17,"34 Degrees Cheese Crisps, Freschetta Gluten-Free Pizza, Kim Crawford Sauvignon Blanc, Luna Nutrition Bars, Matchbook Chardonnay, Tito's Vodka [split_50_50]",Ryan,82.21,41.10,41.10,22048.98,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-17,[split_50_50],Ryan,15.68,7.84,7.84,22056.82,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-09-18,"Daisy Sour Cream, Kim Crawford Sauvignon Blanc, KIND Granola, Luna Bars, Luna Mash-Ups [split_50_50]",Ryan,66.05,33.02,33.02,22089.85,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-18,Payment to Ryan [split_50_50],Jordyn,300.00,150.00,150.00,21939.85,Jordyn owes Ryan,nan,expense,split_50_50
+2024-09-18,[split_50_50],Jordyn,29.10,14.55,14.55,21925.30,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-09-19, Logitech MX Anywhere 3S for Mac (Space Grey)  [split_50_50],Ryan,64.67,32.34,32.34,21957.64,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-09-19,Keychron M3 Mini 4K Wireless Mouse [split_50_50],Ryan,28.66,14.33,14.33,21971.97,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-09-20,Monthly payment on loan [split_50_50],Jordyn,214.58,107.29,107.29,21864.68,Jordyn owes Ryan,nan,expense,split_50_50
+2024-09-20, FRYS-FOOD-DRG #051  [split_50_50],Ryan,51.33,25.66,25.66,21890.35,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-20,[split_50_50],Ryan,438.70,219.35,219.35,22109.70,Jordyn owes Ryan,Pets,expense,split_50_50
+2024-09-20,[split_50_50],Ryan,450.00,225.00,225.00,22334.70,Jordyn owes Ryan,nan,expense,split_50_50
+2024-09-21,[split_50_50],Jordyn,34.00,17.00,17.00,22317.70,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-09-21,[split_50_50],Ryan,38.90,19.45,19.45,22337.15,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-09-21,[split_50_50],Ryan,20.00,10.00,10.00,22347.15,Jordyn owes Ryan,Entertainment,expense,split_50_50
+2024-09-21,"Crazy Aaron's Thinking Putty, Schylling NeeDoh Nice Cube [split_50_50]",Ryan,32.24,16.12,16.12,22363.27,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-09-21,[split_50_50],Ryan,50.90,25.45,25.45,22388.72,Jordyn owes Ryan,Auto & Transport,expense,split_50_50
+2024-09-21,[split_50_50],Ryan,41.37,20.68,20.68,22409.41,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-21,[split_50_50],Jordyn,26.14,13.07,13.07,22396.34,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-09-21,"Fidget Spinners, Mr. Pen Kneaded Eraser, Massage Oil, Knee Pillow [split_50_50]",Ryan,54.20,27.10,27.10,22423.44,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-09-21,"LEGO Creator 3-in-1 Cozy House, Crazy Aaron's Thinking Putty [split_50_50]",Ryan,51.73,25.86,25.86,22449.31,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-09-21,[split_50_50],Jordyn,540.05,270.02,270.02,22179.28,Jordyn owes Ryan,Pet Care,expense,split_50_50
+2024-09-21,[split_50_50],Jordyn,5.39,2.69,2.69,22176.58,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-09-22,"Shower Curtain Hooks, Water Filter Dispenser, Shower Curtain [split_50_50]",Ryan,53.18,26.59,26.59,22203.17,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-09-22,"Contour Legacy Leg Pillow (2 Pack), ComfiLife Knee Pillow [split_50_50]",Ryan,47.73,23.86,23.86,22227.04,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-09-22,"Digital Movies: ""The Land Before Time,"" ""An American Tail,"" ""An American Tail: Fievel Goes West"" [split_50_50]",Ryan,43.11,21.55,21.55,22248.60,Jordyn owes Ryan,Online purchase,expense,split_50_50
+2024-09-22,[split_50_50],Ryan,33.57,16.79,16.79,22265.39,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-09-22,[split_50_50],Ryan,51.56,25.78,25.78,22291.17,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-09-23,[split_50_50],Ryan,75.43,37.72,37.72,22328.89,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-23,[split_50_50],Ryan,6.52,3.26,3.26,22332.15,Jordyn owes Ryan,Software & Tech,expense,split_50_50
+2024-09-23,[split_50_50],Jordyn,236.60,118.30,118.30,22213.85,Jordyn owes Ryan,Entertainment,expense,split_50_50
+2024-09-23,[split_50_50],Ryan,146.00,73.00,73.00,22286.85,Jordyn owes Ryan,Credit Card Payment,expense,split_50_50
+2024-09-24,[split_50_50],Ryan,86.40,43.20,43.20,22330.05,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-24,[split_50_50],Jordyn,2.99,1.50,1.50,22328.55,Jordyn owes Ryan,Auto & Transport,expense,split_50_50
+2024-09-24,[split_50_50],Jordyn,42.34,21.17,21.17,22307.38,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-25,[split_50_50],Ryan,45.68,22.84,22.84,22330.22,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-25,[split_50_50],Ryan,500.00,250.00,250.00,22580.22,Jordyn owes Ryan,nan,expense,split_50_50
+2024-09-25,[split_50_50],Jordyn,30.49,15.24,15.24,22564.97,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-09-25,[split_50_50],Jordyn,26.94,13.47,13.47,22551.50,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-09-25,[split_50_50],Jordyn,28.22,14.11,14.11,22537.39,Jordyn owes Ryan,Auto & Transport,expense,split_50_50
+2024-09-25,[split_50_50],Jordyn,88.73,44.37,44.37,22493.02,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-09-26,[split_50_50],Jordyn,43.60,21.80,21.80,22471.22,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-26,[split_50_50],Ryan,30.43,15.21,15.21,22486.44,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-27,[split_50_50],Jordyn,29.09,14.54,14.54,22471.89,Jordyn owes Ryan,Shopping,expense,split_50_50
+2024-09-27,[split_50_50],Ryan,4.99,2.50,2.50,22474.39,Jordyn owes Ryan,Dining & Drinks,expense,split_50_50
+2024-09-27,[split_50_50],Ryan,21.12,10.56,10.56,22484.95,Jordyn owes Ryan,Loan Payment,expense,split_50_50
+2024-09-27,[split_50_50],Ryan,37.64,18.82,18.82,22503.77,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-27,[split_50_50],Ryan,40.68,20.34,20.34,22524.11,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-29,[split_50_50],Ryan,46.74,23.37,23.37,22547.48,Jordyn owes Ryan,Groceries,expense,split_50_50
+2024-09-30,[split_50_50],Ryan,300.00,150.00,150.00,22697.48,Jordyn owes Ryan,Uncategorized,expense,split_50_50
+2024-09-30,[split_50_50],Ryan,300.00,150.00,150.00,22847.48,Jordyn owes Ryan,Uncategorized,expense,split_50_50
+2024-11-27, Missed  [split_50_50],Ryan,220.00,110.00,110.00,22957.48,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-11,[split_50_50],Jordyn,16.93,8.46,8.46,22949.01,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-12, Food  [split_50_50],Jordyn,25.31,12.65,12.65,22936.35,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-12, Pizza  [split_50_50],Jordyn,9.09,4.54,4.54,22931.80,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-15,[split_50_50],Jordyn,19.22,9.61,9.61,22922.19,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-17, Probiotics  [split_50_50],Jordyn,33.41,16.70,16.70,22905.48,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-18,[split_50_50],Jordyn,72.95,36.48,36.48,22869.00,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-19, Electric - Missed  [split_50_50],Ryan,166.50,83.25,83.25,22952.25,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-19, Food  [split_50_50],Jordyn,79.87,39.94,39.94,22912.31,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-22,[split_50_50],Jordyn,42.82,21.41,21.41,22890.90,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-22,[split_50_50],Jordyn,31.75,15.88,15.88,22875.02,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-22, TV  [split_50_50],Ryan,146.00,73.00,73.00,22948.02,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-23,[split_50_50],Jordyn,32.20,16.10,16.10,22931.92,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-25,[split_50_50],Jordyn,9.00,4.50,4.50,22927.42,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-26,[split_50_50],Jordyn,105.00,52.50,52.50,22874.92,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-27, Groceries  [split_50_50],Ryan,9.64,4.82,4.82,22879.74,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-27, Seltzers  [split_50_50],Ryan,9.64,4.82,4.82,22884.56,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-27, House Items - Autopay  [split_50_50],Ryan,5.69,2.85,2.85,22887.41,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-27, Possibly fuel  [split_50_50],Ryan,26.67,13.34,13.34,22900.75,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-28,[split_50_50],Jordyn,73.75,36.88,36.88,22863.87,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-29," Tea, etc.  [split_50_50]",Ryan,15.51,7.75,7.75,22871.63,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-29,[split_50_50],Jordyn,24.36,12.18,12.18,22859.45,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-30," Pizza, wine, etc.  [split_50_50]",Ryan,45.49,22.75,22.75,22882.20,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-30, Crash Bandicoot 4  [split_50_50],Ryan,21.34,10.67,10.67,22892.87,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-30," Scale, spray bottles  [split_50_50]",Ryan,33.39,16.70,16.70,22909.57,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-30,[split_50_50],Jordyn,9.43,4.71,4.71,22904.85,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-30,[split_50_50],Jordyn,176.88,88.44,88.44,22816.41,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-30, Groceries  [split_50_50],Ryan,26.67,13.34,13.34,22829.75,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-30, House items  [split_50_50],Ryan,22.82,11.41,11.41,22841.16,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-30, Fireworks  [split_50_50],Ryan,4.87,2.44,2.44,22843.60,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-31," Ladder, etc.  [split_50_50]",Ryan,75.95,37.98,37.98,22881.58,Jordyn owes Ryan,nan,expense,split_50_50
+2024-12-31,[split_50_50],Ryan,225.00,112.50,112.50,22994.08,Jordyn owes Ryan,nan,expense,split_50_50
+NaT, Simple Mills (Amazon)  [split_50_50],Jordyn,15.00,7.50,7.50,22986.58,Jordyn owes Ryan,nan,expense,split_50_50
+NaT, Administration and Application Fees  [split_50_50],Ryan,308.45,154.22,154.22,23140.81,Jordyn owes Ryan,nan,expense,split_50_50
+NaT, 12/12/2023 - Missed due to Klarna (Lateral File Cabinet & Baking Sheets)  [split_50_50],Ryan,193.68,96.84,96.84,23237.65,Jordyn owes Ryan,nan,expense,split_50_50
+NaT,[split_50_50],Jordyn,33.50,16.75,16.75,23220.90,Jordyn owes Ryan,nan,expense,split_50_50
+2024-05-21,Zelle Settlement - nan,Jordyn,500.00,0.00,0.00,22720.90,Jordyn owes Ryan,Settlement,zelle,settlement
+2024-07-26,Zelle Settlement - nan,Jordyn,200.00,0.00,0.00,22520.90,Jordyn owes Ryan,Settlement,zelle,settlement
+2024-08-02,Zelle Settlement - nan,Jordyn,3000.00,0.00,0.00,19520.90,Jordyn owes Ryan,Settlement,zelle,settlement
+2024-09-09,Zelle Settlement - nan,Jordyn,1000.00,0.00,0.00,18520.90,Jordyn owes Ryan,Settlement,zelle,settlement
+2024-09-17,Zelle Settlement - nan,Jordyn,500.00,0.00,0.00,18020.90,Jordyn owes Ryan,Settlement,zelle,settlement
+2024-09-18,Zelle Settlement - nan,Jordyn,800.00,0.00,0.00,17220.90,Jordyn owes Ryan,Settlement,zelle,settlement
+2024-12-30,Zelle Settlement - nan,Jordyn,250.00,0.00,0.00,16970.90,Jordyn owes Ryan,Settlement,zelle,settlement
+2025-01-24,Rent - 2025-01,Jordyn,2119.72,911.48,1208.24,16059.42,Jordyn owes Ryan,Rent,rent,rent_payment
+2025-01-25,Rent - 2025-01,Jordyn,2165.18,931.03,1234.15,15128.39,Jordyn owes Ryan,Rent,rent,rent_payment
+2025-02-24,Rent - 2025-02,Jordyn,2196.40,944.45,1251.95,14183.94,Jordyn owes Ryan,Rent,rent,rent_payment
+2025-02-25,Rent - 2025-02,Jordyn,2165.18,931.03,1234.15,13252.91,Jordyn owes Ryan,Rent,rent,rent_payment
+2025-02-28,Zelle Settlement - nan,Jordyn,1400.00,0.00,0.00,11852.91,Jordyn owes Ryan,Settlement,zelle,settlement
+2025-03-24,Rent - 2025-03,Jordyn,2177.81,936.46,1241.35,10916.45,Jordyn owes Ryan,Rent,rent,rent_payment
+2025-03-25,Rent - 2025-03,Jordyn,2165.18,931.03,1234.15,9985.42,Jordyn owes Ryan,Rent,rent,rent_payment
+2025-03-31,Zelle Settlement - nan,Jordyn,1000.00,0.00,0.00,8985.42,Jordyn owes Ryan,Settlement,zelle,settlement
+2025-04-24,Rent - 2025-04,Jordyn,2179.58,937.22,1242.36,8048.20,Jordyn owes Ryan,Rent,rent,rent_payment
+2025-04-25,Rent - 2025-04,Jordyn,2165.18,931.03,1234.15,7117.17,Jordyn owes Ryan,Rent,rent,rent_payment
+2025-04-30,Zelle Settlement - nan,Jordyn,1000.00,0.00,0.00,6117.17,Jordyn owes Ryan,Settlement,zelle,settlement
+2025-05-24,Rent - 2025-05,Jordyn,2159.41,928.55,1230.86,5188.62,Jordyn owes Ryan,Rent,rent,rent_payment
+2025-05-25,Rent - 2025-05,Jordyn,2165.18,931.03,1234.15,4257.59,Jordyn owes Ryan,Rent,rent,rent_payment
+2025-06-24,Rent - 2025-06,Jordyn,2173.85,934.76,1239.09,3322.83,Jordyn owes Ryan,Rent,rent,rent_payment
+2025-06-25,Rent - 2025-06,Jordyn,2165.18,931.03,1234.15,2391.80,Jordyn owes Ryan,Rent,rent,rent_payment
+2025-07-24,Rent - 2025-07,Jordyn,2175.81,935.60,1240.21,1456.20,Jordyn owes Ryan,Rent,rent,rent_payment
+2025-08-24,Rent - 2025-08,Jordyn,2165.94,931.35,1234.59,524.85,Jordyn owes Ryan,Rent,rent,rent_payment
+2025-09-24,Rent - 2025-09,Jordyn,2165.18,931.03,1234.15,406.18,Ryan owes Jordyn,Rent,rent,rent_payment
+2025-10-24,Rent - 2025-10,Jordyn,2165.18,931.03,1234.15,1337.21,Ryan owes Jordyn,Rent,rent,rent_payment
+2025-11-24,Rent - 2025-11,Jordyn,2165.18,931.03,1234.15,2268.24,Ryan owes Jordyn,Rent,rent,rent_payment
+2025-12-24,Rent - 2025-12,Jordyn,2165.18,931.03,1234.15,3199.27,Ryan owes Jordyn,Rent,rent,rent_payment
