@@ -15,7 +15,8 @@
       "Bash(rm:*)",
       "Bash(ls:*)",
       "Bash(grep:*)",
-      "Bash(sed:*)"
+      "Bash(sed:*)",
+      "Bash(echo:*)"
     ],
     "deny": []
   }

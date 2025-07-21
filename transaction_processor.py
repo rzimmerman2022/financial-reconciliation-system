@@ -144,6 +144,7 @@ class TransactionProcessor:
         # Add expenses with type marker
         for expense in expenses:
             expense['transaction_type'] = 'expense'
+            expense['source_file'] = 'Consolidated_Expense_History_20250622.csv'
             # Map fields to common structure
             expense['date'] = expense.get('date_of_purchase')
             amount = expense.get('actual_amount')
@@ -155,8 +156,20 @@ class TransactionProcessor:
         # Add rent with type marker
         for rent_tx in rent:
             rent_tx['transaction_type'] = 'rent'
-            # Map fields to common structure
-            rent_tx['date'] = rent_tx.get('month')
+            rent_tx['source_file'] = 'Consolidated_Rent_Allocation_20250527.csv'
+            # Map fields to common structure - CRITICAL DATE HANDLING
+            rent_date = rent_tx.get('month')
+            # Convert "24-Jan" format to proper 2024 date
+            if isinstance(rent_date, str) and len(rent_date.split('-')) == 2:
+                year_part, month_part = rent_date.split('-')
+                if len(year_part) == 2:  # "24" -> "2024"
+                    full_year = f"20{year_part}"
+                    rent_tx['date'] = pd.to_datetime(f"{full_year}-{month_part}-01")
+                else:
+                    rent_tx['date'] = rent_date
+            else:
+                rent_tx['date'] = rent_date
+            
             ryan_amt = rent_tx.get('ryan\'s_rent_(43%)', 0)
             jordyn_amt = rent_tx.get('jordyn\'s_rent_(57%)', 0)
             total_amt = rent_tx.get('gross_total', 0)
@@ -171,6 +184,7 @@ class TransactionProcessor:
         # Add Zelle with type marker
         for zelle_tx in zelle:
             zelle_tx['transaction_type'] = 'zelle'
+            zelle_tx['source_file'] = 'Zelle_From_Jordyn_Final.csv'
             # Ensure amount is float
             amt = zelle_tx.get('amount', 0)
             zelle_tx['amount'] = float(amt) if amt is not None else 0.0
@@ -319,7 +333,8 @@ class TransactionProcessor:
                 'balance_status': status,
                 'category': expense.get('category', 'Expense'),
                 'decoded_action': action,
-                'transaction_type': 'expense'
+                'transaction_type': 'expense',
+                'source_file': expense.get('source_file', 'Unknown')
             })
             
             return True
@@ -393,7 +408,8 @@ class TransactionProcessor:
                 'balance_status': status,
                 'category': 'Rent',
                 'decoded_action': 'rent_payment',
-                'transaction_type': 'rent'
+                'transaction_type': 'rent',
+                'source_file': rent.get('source_file', 'Unknown')
             })
             
             return True
@@ -459,7 +475,8 @@ class TransactionProcessor:
                 'balance_status': status,
                 'category': 'Settlement',
                 'decoded_action': 'settlement',
-                'transaction_type': 'zelle'
+                'transaction_type': 'zelle',
+                'source_file': zelle.get('source_file', 'Unknown')
             })
             
             return True
@@ -584,6 +601,7 @@ class TransactionProcessor:
                 'Transaction_Type',
                 'Decoded_Action',
                 'Category',
+                'Source_File',
                 'Detailed_Explanation',
                 'Balance_Change',
                 'Previous_Balance'
@@ -624,6 +642,7 @@ class TransactionProcessor:
                     tx['transaction_type'],
                     tx['decoded_action'],
                     tx['category'],
+                    tx.get('source_file', 'Unknown'),
                     explanation,
                     f"${balance_change:+.2f}",
                     f"${prev_balance:.2f}"

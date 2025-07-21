@@ -1,7 +1,7 @@
 {
-  "final_result": "Jordyn owes Ryan $9967.98",
+  "final_result": "Jordyn owes Ryan $1577.08",
   "who_owes": "Jordyn",
-  "amount_owed": 9967.98,
+  "amount_owed": 1577.08,
   "statistics": {
     "total_transactions": 1546,
     "expenses_processed": 1517,
@@ -14,10 +14,10 @@
     "total_zelle_amount": 10450.0
   },
   "verification": {
-    "invariants_checked": 1143,
-    "total_transactions_processed": 1143,
+    "invariants_checked": 1152,
+    "total_transactions_processed": 1152,
     "manual_review_count": 2,
     "errors_count": 1
   },
-  "timestamp": "2025-07-20T22:18:47.287465"
+  "timestamp": "2025-07-20T22:54:02.568517"
 }

@@ -12,6 +12,7 @@
       "category": NaN,
       "running_balance": null,
       "transaction_type": "expense",
+      "source_file": "Consolidated_Expense_History_20250622.csv",
       "date": "2024-07-01 00:00:00",
       "amount": 38.45,
       "person": NaN,

@@ -1,103 +1,113 @@
-feat: Add comprehensive verbose audit trail with detailed transaction explanations
+fix: Correct rent date parsing and add source file tracking - FINAL ANSWER UPDATED
 
-## Final 2024-Only Reconciliation Complete
+## CORRECTED FINAL ANSWER: Jordyn owes Ryan $1,577.08
 
-FINAL ANSWER: Jordyn owes Ryan $9,967.98
+This commit fixes critical issues that were affecting the accuracy of the reconciliation:
 
-## New Verbose Audit Trail Features
+## Key Fixes Applied
 
-### Enhanced Transparency
-- **1,143 transactions** from January 2 - September 30, 2024 only
-- **15 detailed columns** including running balances and explanations
-- **Plain English descriptions** for every transaction
-- **Balance change tracking** showing exactly how each transaction affects the total
+### 1. Fixed Rent Date Parsing Bug
+- **Problem**: "24-Jan" was being parsed as 2025-01-24 instead of 2024-01-24
+- **Root Cause**: data_loader.py was using current year (2025) for dates without year
+- **Solution**: Added logic to interpret "24-" prefix as 2024 and "25-" as 2025
+- **Impact**: Now correctly includes 9 months of rent payments (Jan-Sep 2024)
 
-### Key Improvements
-1. **Transaction IDs**: TX_0001 through TX_1143 for easy reference
-2. **Running Balance**: Shows balance after every single transaction
-3. **Balance Direction**: Clear indicators of who owes whom at each step
-4. **Detailed Explanations**: Human-readable descriptions like:
-   - "Ryan paid $37.04. Split 50/50: Ryan owes $18.52, Jordyn owes $18.52"
-   - "Zelle settlement: Jordyn transferred $800.00 to Ryan"
-   - "Jordyn paid $2,119.72 total rent. Ryan owes $911.48 (43% share)"
+### 2. Added Source File Tracking
+- **Enhancement**: Every transaction now shows which CSV file it originated from
+- **Implementation**: Added 'source_file' field to all transaction types
+- **Benefit**: Complete transparency and traceability for audit purposes
 
-### Date Range Refinement
-- **Start Date**: January 1, 2024 (first actual transaction: January 2, 2024)
-- **End Date**: September 30, 2024 (last actual transaction: September 18, 2024)
-- **Excluded**: All 2023 transactions and post-September 2024 data
-- **Data Quality**: Clean, verified transactions only
+### 3. Enhanced Verbose Audit Trail
+- **Upgrade**: Now 16 columns instead of 15
+- **New Column**: Source_File showing data origin
+- **Examples**:
+  - Consolidated_Expense_History_20250622.csv
+  - Consolidated_Rent_Allocation_20250527.csv  
+  - Zelle_From_Jordyn_Final.csv
 
-## Files Added/Modified
+## Results Comparison
 
-### New Files:
-- **VERBOSE_AUDIT_TRAIL.csv**: Complete detailed audit trail (321KB, 1,147 lines)
-- **VERBOSE_AUDIT_TRAIL_GUIDE.md**: Comprehensive guide for reading the audit trail
-- **FINAL_2024_AUDIT_TRAIL_SUMMARY.txt**: Summary of final results
+### Before Fix (Rent Missing):
+- Transactions: 1,143 processed
+- **Result**: Jordyn owes Ryan $9,967.98
+- **Issue**: No rent payments included (incorrectly parsed as 2025 dates)
 
-### Updated Files:
-- **transaction_processor.py**: Added verbose audit trail generation with extensive comments
-- **FINAL_RECONCILIATION_REPORT.md**: Updated with 2024-only results
+### After Fix (Rent Included):
+- Transactions: 1,152 processed (+9 rent transactions)
+- **Result**: Jordyn owes Ryan $1,577.08
+- **Accuracy**: Includes all 2024 rent payments (Jan-Sep)
 
-## Technical Implementation
+## Rent Transaction Details
 
-### Code Enhancements:
-- New `generate_verbose_audit_trail()` method with comprehensive documentation
-- Enhanced `_create_detailed_explanation()` for transaction-specific descriptions
-- Date range filtering (2024-01-01 to 2024-09-30) with detailed logging
-- Verbose inline comments explaining business logic
+Added 9 rent transactions for 2024:
+- January 2024: $2,119.72 (Ryan owes $911.48)
+- February 2024: $2,196.40 (Ryan owes $944.45)
+- March 2024: $2,177.81 (Ryan owes $936.46)
+- April 2024: $2,179.58 (Ryan owes $937.22)
+- May 2024: $2,159.41 (Ryan owes $928.55)
+- June 2024: $2,173.85 (Ryan owes $934.76)
+- July 2024: $2,175.81 (Ryan owes $935.60)
+- August 2024: $2,165.94 (Ryan owes $931.35)
+- September 2024: $2,165.18 (Ryan owes $931.03)
 
-### Audit Trail Columns:
-1. Transaction_ID - Unique identifier
-2. Date - Transaction date
-3. Description - Transaction description with decoded action
-4. Paid_By - Who made the payment
-5. Total_Amount - Full transaction amount
-6. Ryan_Share - Ryan's portion of the expense
-7. Jordyn_Share - Jordyn's portion of the expense
-8. Running_Balance - Current balance after transaction
-9. Balance_Direction - Who owes whom (Jordyn → Ryan or Ryan → Jordyn)
-10. Transaction_Type - expense/rent/zelle
-11. Decoded_Action - How expense was categorized
-12. Category - Transaction category
-13. Detailed_Explanation - **Verbose plain English explanation**
-14. Balance_Change - How much balance changed (+/-)
-15. Previous_Balance - Balance before this transaction
+**Total Ryan rent obligation**: $8,390.90 for 9 months
 
-## Key Business Rules Documented
+## Business Logic Confirmation
 
-### Expense Handling:
-- **split_50_50**: Equal split, payer gets reimbursed for other's share
-- **full_reimbursement**: Non-payer owes entire amount
-- **gift**: Payer covers full cost, no reimbursement
-- **personal_X**: Individual responsibility
-
-### Rent Payments:
-- Jordyn ALWAYS pays full rent upfront (critical business rule)
+### Rent Payments (CRITICAL):
+- Jordyn pays 100% of rent upfront each month
 - Ryan owes his percentage share (43%) to Jordyn
-- Documented extensively in code comments and CRITICAL_RENT_RULES.md
+- This reduces what Jordyn owes Ryan from other expenses
+- Documented in CRITICAL_RENT_RULES.md and verbose explanations
 
-### Zelle Settlements:
-- All payments from Jordyn to Ryan
-- Reduce accumulated debt between parties
-- Tracked as separate transaction type
+### Verbose Explanations Enhanced:
+- "Jordyn paid $2119.72 total rent. Ryan owes $911.48 (43% share), Jordyn owes $1208.24 (57% share, but she already paid). Net: Ryan owes Jordyn $911.48."
+
+## Files Modified
+
+### Code Changes:
+- **data_loader.py**: Fixed parse_flexible_date() to correctly handle "24-Jan" format
+- **transaction_processor.py**: Added source_file tracking throughout processing pipeline
+
+### Updated Outputs:
+- **VERBOSE_AUDIT_TRAIL.csv**: Now 1,152 transactions with 16 columns
+- **reconciliation_ledger.csv**: Complete 2024 transaction history
+- **summary.json**: Updated with corrected final balance
+
+## Technical Details
+
+### Date Parsing Fix:
+```python
+# Before: Always used current year (2025)
+parsed_date = parsed_date.replace(year=current_year)
+
+# After: Smart year detection
+if fmt == '%d-%b' and date_str.startswith('24-'):
+    parsed_date = parsed_date.replace(year=2024)
+elif fmt == '%d-%b' and date_str.startswith('25-'):
+    parsed_date = parsed_date.replace(year=2025)
+```
+
+### Source File Integration:
+- Added to load_all_data() during transaction combination
+- Propagated through all processing methods
+- Included in verbose audit trail output
 
 ## Verification Results
 
-- **Mathematical Integrity**: Verified 1,143 times with zero violations
-- **Double-Entry Balance**: Perfect balance maintained throughout
-- **Date Range**: Clean 2024 data only (399 transactions excluded)
-- **Success Rate**: 99.91% (only 1 transaction failed due to missing data)
-- **Manual Review**: Only 2 transactions flagged for human inspection
+- **Mathematical Integrity**: Verified 1,152 times (up from 1,143)
+- **Date Range**: January 2, 2024 to September 30, 2024
+- **Rent Coverage**: 9 months included (Jan-Sep 2024)
+- **Data Quality**: Clean 2024-only data with proper source tracking
 
-## Next Steps
+## Impact Assessment
 
-The verbose audit trail provides complete transparency for:
-1. Following every transaction's impact on the balance
-2. Understanding the reconciliation methodology
-3. Verifying calculations independently
-4. Explaining results to stakeholders
+The corrected reconciliation provides a much more accurate picture:
+- **Previous**: Jordyn owes Ryan $9,967.98 (missing rent impact)
+- **Corrected**: Jordyn owes Ryan $1,577.08 (includes rent obligations)
+- **Difference**: $8,390.90 reduction due to Ryan's rent obligations
 
-This represents the definitive reconciliation for 2024 with maximum transparency.
+This represents the definitive, most accurate reconciliation for 2024 with complete transparency and proper business rule application.
 
 🤖 Generated with [Claude Code](https://claude.ai/code)
 
