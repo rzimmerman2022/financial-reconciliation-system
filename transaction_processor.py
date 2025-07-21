@@ -473,7 +473,7 @@ class TransactionProcessor:
             self.stats['errors_count'] += 1
             return False
     
-    def process_all_transactions(self, transactions: List[Dict[str, Any]]) -> None:
+    def process_all_transactions(self, transactions: List[Dict[str, Any]], start_date: str = "2024-01-01", cutoff_date: str = "2024-09-30") -> None:
         """Process all transactions through the accounting engine.
         
         This is the main processing loop that handles the entire transaction
@@ -494,14 +494,36 @@ class TransactionProcessor:
             transactions: List of all transactions sorted by date
         """
         print("\nProcessing transactions...")
+        print(f"Date range: {start_date} to {cutoff_date}")
+        
+        # Convert dates
+        start = pd.to_datetime(start_date)
+        cutoff = pd.to_datetime(cutoff_date)
         
         total = len(transactions)
         successful = 0
+        skipped_outside_range = 0
         
         for i, tx_data in enumerate(transactions):
             # Progress indicator
             if (i + 1) % 100 == 0:
                 print(f"  Processed {i + 1}/{total} transactions...")
+            
+            # Check date range
+            tx_date = tx_data.get('date')
+            if pd.isna(tx_date):
+                # Skip transactions with invalid dates
+                skipped_outside_range += 1
+                continue
+                
+            # Convert date if string
+            if isinstance(tx_date, str):
+                tx_date = pd.to_datetime(tx_date)
+                
+            # Skip transactions outside our date range
+            if tx_date < start or tx_date > cutoff:
+                skipped_outside_range += 1
+                continue
             
             # Process based on type
             tx_type = tx_data.get('transaction_type')
@@ -518,7 +540,156 @@ class TransactionProcessor:
                 successful += 1
         
         print(f"\nProcessing complete. Successfully posted: {successful}/{total} transactions")
+        print(f"Skipped {skipped_outside_range} transactions outside date range {start_date} to {cutoff_date}")
     
+    def generate_verbose_audit_trail(self) -> None:
+        """Generate a detailed, verbose audit trail for complete transparency.
+        
+        This method creates the most comprehensive audit trail possible, designed
+        to provide complete visibility into every transaction and balance change.
+        Each row contains not just the transaction data, but detailed explanations
+        in plain English about what happened and why the balance changed.
+        
+        Features:
+        - Unique transaction IDs (TX_0001, TX_0002, etc.)
+        - Running balance after each transaction
+        - Balance change calculations (+/- amounts)
+        - Verbose explanations for every transaction type
+        - Clear direction indicators (who owes whom)
+        - Previous balance tracking for full transparency
+        
+        This audit trail is perfect for:
+        - Following the complete reconciliation story
+        - Understanding how each transaction affects the balance
+        - Verifying calculations manually
+        - Explaining the results to others
+        - Complete transparency and accountability
+        """
+        verbose_path = os.path.join(self.output_dir, 'VERBOSE_AUDIT_TRAIL.csv')
+        
+        with open(verbose_path, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            
+            # Write detailed header
+            writer.writerow([
+                'Transaction_ID',
+                'Date', 
+                'Description',
+                'Paid_By',
+                'Total_Amount',
+                'Ryan_Share',
+                'Jordyn_Share',
+                'Running_Balance',
+                'Balance_Direction',
+                'Transaction_Type',
+                'Decoded_Action',
+                'Category',
+                'Detailed_Explanation',
+                'Balance_Change',
+                'Previous_Balance'
+            ])
+            
+            # Process each transaction with verbose explanations
+            # This creates a complete story of how the balance evolved
+            for i, tx in enumerate(self.all_transactions):
+                # Calculate balance change from previous transaction
+                # This shows exactly how much each transaction affected the running total
+                if i == 0:
+                    # First transaction: start from zero balance
+                    prev_balance = 0.0
+                    balance_change = tx['current_balance']
+                else:
+                    # Subsequent transactions: calculate change from previous
+                    prev_balance = self.all_transactions[i-1]['current_balance']
+                    balance_change = tx['current_balance'] - prev_balance
+                
+                # Create detailed explanation in plain English
+                # This explains what happened and why the balance changed
+                explanation = self._create_detailed_explanation(tx, balance_change)
+                
+                # Determine balance direction for easy understanding
+                # Shows who owes whom at this point in time
+                balance_direction = "Jordyn → Ryan" if tx['current_balance'] > 0 else "Ryan → Jordyn" if tx['current_balance'] < 0 else "Balanced"
+                
+                writer.writerow([
+                    f"TX_{i+1:04d}",  # Transaction ID
+                    tx['date'],
+                    tx['description'],
+                    tx['paid_by'],
+                    f"${tx['amount']:.2f}",
+                    f"${tx['ryan_share']:.2f}",
+                    f"${tx['jordyn_share']:.2f}",
+                    f"${tx['current_balance']:.2f}",
+                    balance_direction,
+                    tx['transaction_type'],
+                    tx['decoded_action'],
+                    tx['category'],
+                    explanation,
+                    f"${balance_change:+.2f}",
+                    f"${prev_balance:.2f}"
+                ])
+        
+        print(f"  - Created: {verbose_path}")
+    
+    def _create_detailed_explanation(self, tx: Dict[str, Any], balance_change: float) -> str:
+        """Create a detailed explanation for each transaction.
+        
+        This method generates human-readable explanations that describe:
+        1. Who paid what amount
+        2. How the expense was split (50/50, full reimbursement, etc.)
+        3. What each person owes as a result
+        4. Special handling for rent and Zelle payments
+        
+        The explanations are written in plain English to make the 
+        reconciliation process completely transparent and understandable
+        by anyone reviewing the audit trail.
+        
+        Args:
+            tx: Transaction dictionary with all transaction details
+            balance_change: How much the running balance changed
+            
+        Returns:
+            str: Detailed explanation of the transaction in plain English
+        """
+        tx_type = tx['transaction_type']
+        action = tx['decoded_action']
+        payer = tx['paid_by']
+        amount = tx['amount']
+        ryan_share = tx['ryan_share']
+        jordyn_share = tx['jordyn_share']
+        
+        # Handle different expense types with detailed explanations
+        if tx_type == 'expense':
+            if action == 'split_50_50':
+                # Most common case: shared expense split equally
+                return f"{payer} paid ${amount:.2f}. Split 50/50: Ryan owes ${ryan_share:.2f}, Jordyn owes ${jordyn_share:.2f}. Since {payer} paid, the other person owes them their share."
+            elif action == 'full_reimbursement':
+                # One person pays, other owes the full amount (like covering someone's meal)
+                non_payer = 'Jordyn' if payer == 'Ryan' else 'Ryan'
+                return f"{payer} paid ${amount:.2f} for full reimbursement. {non_payer} owes the entire amount to {payer}."
+            elif action == 'gift':
+                # Gift transactions: payer covers everything, no reimbursement
+                return f"{payer} paid ${amount:.2f} as a gift. No reimbursement required - {payer} covers the full cost."
+            elif action.startswith('personal_'):
+                # Personal expenses: individual responsibility
+                owner = action.split('_')[1].title()
+                return f"{payer} paid ${amount:.2f} for {owner}'s personal expense. {owner} is responsible for the full amount."
+            else:
+                # Fallback for any other expense types
+                return f"{payer} paid ${amount:.2f}. Action: {action}. Ryan share: ${ryan_share:.2f}, Jordyn share: ${jordyn_share:.2f}."
+                
+        elif tx_type == 'rent':
+            # CRITICAL: Rent payments follow special rule - Jordyn always pays full amount upfront
+            # Ryan owes his percentage share to Jordyn (documented in CRITICAL_RENT_RULES.md)
+            return f"Jordyn paid ${amount:.2f} total rent. Ryan owes ${ryan_share:.2f} (43% share), Jordyn owes ${jordyn_share:.2f} (57% share, but she already paid). Net: Ryan owes Jordyn ${ryan_share:.2f}."
+            
+        elif tx_type == 'zelle':
+            # Zelle payments are actual money transfers that settle accumulated debts
+            # Always from Jordyn to Ryan in this dataset
+            return f"Zelle settlement: Jordyn transferred ${amount:.2f} to Ryan. This reduces what Jordyn owes or increases what Ryan owes, depending on current balance."
+            
+        return f"Transaction processed: {payer} paid ${amount:.2f}."
+
     def generate_outputs(self) -> None:
         """Generate comprehensive output files for full transparency.
         
@@ -551,6 +722,9 @@ class TransactionProcessor:
         usability for both humans and downstream systems.
         """
         print("\nGenerating output files...")
+        
+        # 0. Generate verbose audit trail first
+        self.generate_verbose_audit_trail()
         
         # 1. Reconciliation ledger
         ledger_path = os.path.join(self.output_dir, 'reconciliation_ledger.csv')
