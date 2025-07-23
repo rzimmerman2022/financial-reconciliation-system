@@ -2,8 +2,8 @@
   "period": "September 30 - October 18, 2024",
   "starting_balance": 1577.08,
   "starting_status": "Jordyn owes Ryan",
-  "ending_balance": 8336.24,
-  "ending_status": "Jordyn owes Ryan",
+  "ending_balance": 4828.86,
+  "ending_status": "Ryan owes Jordyn",
   "total_transactions": 203,
   "transactions_processed": 195,
   "manual_review_needed": 8,
@@ -15,5 +15,5 @@
     "income": 7,
     "error": 7
   },
-  "balance_swing": 6759.16
+  "balance_swing": 3251.78
 }

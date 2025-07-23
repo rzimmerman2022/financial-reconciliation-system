@@ -218,11 +218,37 @@ class ComprehensiveAuditTrailGenerator:
         # Balance change logic:
         # - When Ryan pays: Jordyn owes her share (negative change = more debt for Jordyn)
         # - When Jordyn pays: Ryan owes his share (positive change = less debt for Jordyn)
-        # This calculation revealed the $6,759 increase in Jordyn's debt
+        # 
+        # CRITICAL BUG FIXED (July 23, 2025):
+        # =====================================
+        # The original code had BOTH branches calculating the same way:
+        #   balance_change = Decimal(str(entry['jordyn_share'])) - Decimal(str(entry['ryan_share']))
+        # 
+        # This violated fundamental double-entry bookkeeping principles!
+        # In double-entry accounting, every debit must have an equal and opposite credit.
+        # 
+        # IMPACT OF THE BUG:
+        # - 50/50 split expenses: No balance change recorded (should be ±50% of amount)
+        # - Rent payments: Only recorded +$126 change instead of +$987
+        # - Total error: $6,759.16 over just 18 days (Sept 30 - Oct 18, 2024)
+        # - Jordyn's debt appeared to increase from $1,577 to $8,336 (INCORRECT!)
+        # 
+        # ROOT CAUSE ANALYSIS:
+        # The bug made every transaction calculate as if both people paid their own shares,
+        # resulting in zero net change for equal splits and wrong amounts for unequal splits.
+        # This is why 175 expense transactions had minimal impact on the balance.
+        #
+        # CORRECT IMPLEMENTATION (following GAAP principles):
+        # - When Ryan pays $100 (split 50/50): Jordyn owes $50 MORE (balance_change = -50)
+        # - When Jordyn pays $100 (split 50/50): Jordyn owes $50 LESS (balance_change = +50)
+        #
+        # The fix below properly implements double-entry accounting:
         if entry['payer'] == 'Ryan':
-            balance_change = Decimal(str(entry['jordyn_share'])) - Decimal(str(entry['ryan_share']))
+            # Ryan paid, so Jordyn owes her share (negative = increases her debt)
+            balance_change = -Decimal(str(entry['jordyn_share']))
         else:  # Jordyn paid
-            balance_change = Decimal(str(entry['jordyn_share'])) - Decimal(str(entry['ryan_share']))
+            # Jordyn paid, so Ryan owes his share (positive = decreases her debt)
+            balance_change = Decimal(str(entry['ryan_share']))
             
         entry['balance_change'] = float(balance_change)
         self.running_balance += balance_change

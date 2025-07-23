@@ -1,10 +1,10 @@
 ====================================================================================================
 PHASE 5A COMPREHENSIVE AUDIT REPORT
 ====================================================================================================
-Generated: 2025-07-22 22:05:23
+Generated: 2025-07-23 01:01:04
 Period: September 30 - October 18, 2024
 Starting Balance: $1577.08 (Jordyn owes Ryan)
-Ending Balance: $8336.24 (Jordyn owes Ryan)
+Ending Balance: $4828.86 (Ryan owes Jordyn)
 ====================================================================================================
 
 TRANSACTIONS REQUIRING MANUAL REVIEW
@@ -86,85 +86,290 @@ Transaction #168
 SIGNIFICANT BALANCE CHANGES
 ----------------------------------------------------------------------------------------------------
 
-2024-10-04 - $2717.57
-  Edu Healthcare L Direct Deposit
-  Impact: $2717.57 in favor of Ryan
-  Running Balance: $4128.62 (Jordyn owes Ryan)
+2024-10-16 - $4508.53
+  Beginning Balance
+  Impact: $2254.26 in favor of Ryan
+  Running Balance: $5563.44 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-15 - $4508.53
+  Ending Balance
+  Impact: $2254.26 in favor of Ryan
+  Running Balance: $3579.42 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-17 - $3000.00
+  ONLINE ACH PAYMENT       THANK YOU
+  Impact: $1500.00 in favor of Jordyn
+  Running Balance: $4669.29 (Ryan owes Jordyn)
 --------------------------------------------------
 2024-10-02 - $2678.09
-  WF Credit Card AUTO PAY 241001 90496696665037 ZIMMERMAN,RYAN
-  Impact: $2678.09 in favor of Jordyn
-  Running Balance: $6346.19 (Jordyn owes Ryan)
+  Wells Fargo
+  Impact: $1339.05 in favor of Ryan
+  Running Balance: $489.90 (Ryan owes Jordyn)
 --------------------------------------------------
-2024-10-18 - $2127.55
-  Edu Healthcare L Direct Deposit
-  Impact: $2127.55 in favor of Ryan
-  Running Balance: $8336.24 (Jordyn owes Ryan)
+2024-10-01 - $2678.09
+  AUTOMATIC PAYMENT - THANK YOU
+  Impact: $1339.05 in favor of Ryan
+  Running Balance: $1484.42 (Jordyn owes Ryan)
+--------------------------------------------------
+2024-10-01 - $2000.00
+  Apple Savings Transfer Ryan Zimmerman
+  Impact: $1000.00 in favor of Ryan
+  Running Balance: $950.60 (Jordyn owes Ryan)
+--------------------------------------------------
+2024-10-01 - $2000.00
+  APPLE GS SAVINGS TRANSFER 910100369453 Ryan Zimmerman
+  Impact: $1000.00 in favor of Jordyn
+  Running Balance: $2512.54 (Jordyn owes Ryan)
 --------------------------------------------------
 2024-10-01 - $1800.00
-  ZELLE FROM ZIMMERMAN JOAN ON 10/01 REF # PP0Y3ZZPH3 CAMERA BDAY GIFT
-  Impact: $1800.00 in favor of Jordyn
-  Running Balance: $3710.10 (Jordyn owes Ryan)
+  Zelle
+  Impact: $900.00 in favor of Jordyn
+  Running Balance: $2294.11 (Jordyn owes Ryan)
 --------------------------------------------------
 2024-10-11 - $1428.94
-  PURCHASE AUTHORIZED ON 10/09 FBT CREDIT CARD PY DE S384284246106953 CARD 0968
-  Impact: $1428.94 in favor of Jordyn
-  Running Balance: $8511.20 (Jordyn owes Ryan)
+  First Bank & Trust
+  Impact: $714.47 in favor of Ryan
+  Running Balance: $1763.36 (Ryan owes Jordyn)
 --------------------------------------------------
-2024-10-10 - $1226.82
-  Science Care Inc Payroll U Ziry Zimmerman Ryan
-  Impact: $1226.82 in favor of Jordyn
-  Running Balance: $5855.44 (Jordyn owes Ryan)
+2024-10-14 - $1178.21
+  Amazon
+  Impact: $589.11 in favor of Ryan
+  Running Balance: $1623.93 (Ryan owes Jordyn)
 --------------------------------------------------
-2024-10-10 - $1226.82
-  SCIENCE CARE INC PAYROLL 0U549 ZIRY0WFG1 ZIMMERMAN, RYAN
-  Impact: $1226.82 in favor of Jordyn
-  Running Balance: $7082.26 (Jordyn owes Ryan)
+2024-10-14 - $1178.21
+  AMAZON MKTPL*RC1FJ7CT3 Amzn.com/billWA
+  Impact: $589.11 in favor of Jordyn
+  Running Balance: $1031.60 (Ryan owes Jordyn)
 --------------------------------------------------
-2024-10-15 - $527.68
-  Payment Autopay
-  Impact: $527.68 in favor of Jordyn
-  Running Balance: $10367.18 (Jordyn owes Ryan)
+2024-10-11 - $600.00
+  Zelle
+  Impact: $300.00 in favor of Jordyn
+  Running Balance: $1463.36 (Ryan owes Jordyn)
 --------------------------------------------------
-2024-10-15 - $527.68
-  PAYMENT - AUTOPAY
-  Impact: $527.68 in favor of Jordyn
-  Running Balance: $9539.50 (Jordyn owes Ryan)
+2024-10-16 - $527.68
+  Credit One Bank
+  Impact: $263.84 in favor of Ryan
+  Running Balance: $5834.61 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-16 - $527.68
+  Credit One Bank Payment 240928 64341996 ZIMMERMAN,RYAN
+  Impact: $263.84 in favor of Jordyn
+  Running Balance: $3298.30 (Ryan owes Jordyn)
 --------------------------------------------------
 2024-10-03 - $500.00
-  PURCHASE AUTHORIZED ON 10/02 FBT CREDIT CARD PY DE S304277044422335 CARD 0968
-  Impact: $500.00 in favor of Jordyn
-  Running Balance: $6846.19 (Jordyn owes Ryan)
+  First Bank & Trust
+  Impact: $250.00 in favor of Ryan
+  Running Balance: $740.26 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-08 - $500.00
+  Zelle
+  Impact: $250.00 in favor of Jordyn
+  Running Balance: $1031.47 (Ryan owes Jordyn)
 --------------------------------------------------
 2024-10-07 - $500.00
-  PURCHASE AUTHORIZED ON 10/05 FBT CREDIT CARD PY DE S384279402079293 CARD 0968
-  Impact: $500.00 in favor of Jordyn
-  Running Balance: $4628.62 (Jordyn owes Ryan)
+  First Bank & Trust
+  Impact: $250.00 in favor of Ryan
+  Running Balance: $1013.51 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-08 - $500.00
+  ZELLE FROM ZIMMERMAN JOAN ON 10/08 REF # PP0Y4LS6VL CLEANING SERVICE
+  Impact: $250.00 in favor of Ryan
+  Running Balance: $1326.47 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-16 - $480.00
+  Apple Pay
+  Impact: $240.00 in favor of Ryan
+  Running Balance: $3309.18 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-16 - $480.00
+  MONEY TRANSFER AUTHORIZED ON 10/14 APPLE CASH SENT MO 1INFINITELOOP CA S384288826793855 CARD 0968
+  Impact: $240.00 in favor of Jordyn
+  Running Balance: $3750.09 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-16 - $458.24
+  Apple
+  Impact: $229.12 in favor of Ryan
+  Running Balance: $6063.73 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-16 - $458.24
+  APPLECARD GSBANK PAYMENT 101524 XXXXX6849 Ryan Zimmerman
+  Impact: $229.12 in favor of Jordyn
+  Running Balance: $3069.18 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-15 - $446.15
+  CAPITAL ONE AUTO DIRECTPAY DP0F2071933A14D Ryan Zimmerman
+  Impact: $223.07 in favor of Jordyn
+  Running Balance: $1102.13 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-15 - $446.15
+  Capital One
+  Impact: $223.07 in favor of Ryan
+  Running Balance: $3969.68 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-01 - $434.29
+  APPLECARD GSBANK PAYMENT 093024 XXXXX6849 Ryan Zimmerman
+  Impact: $217.15 in favor of Jordyn
+  Running Balance: $2729.68 (Jordyn owes Ryan)
+--------------------------------------------------
+2024-10-01 - $434.29
+  Apple
+  Impact: $217.15 in favor of Ryan
+  Running Balance: $1950.60 (Jordyn owes Ryan)
+--------------------------------------------------
+2024-10-09 - $330.00
+  Apple Pay
+  Impact: $165.00 in favor of Ryan
+  Running Balance: $951.21 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-09 - $330.00
+  MONEY TRANSFER AUTHORIZED ON 10/07 APPLE CASH SENT MO 1INFINITELOOP CA S304281839298705 CARD 0968
+  Impact: $165.00 in favor of Jordyn
+  Running Balance: $807.13 (Ryan owes Jordyn)
 --------------------------------------------------
 2024-09-30 - $300.00
-  PURCHASE AUTHORIZED ON 09/28 FBT CREDIT CARD PY DE S304272814112180 CARD 0968
-  Impact: $300.00 in favor of Jordyn
-  Running Balance: $1877.08 (Jordyn owes Ryan)
+  First Bank & Trust
+  Impact: $150.00 in favor of Ryan
+  Running Balance: $1653.38 (Jordyn owes Ryan)
+--------------------------------------------------
+2024-10-16 - $300.00
+  Zelle
+  Impact: $150.00 in favor of Ryan
+  Running Balance: $6244.35 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-16 - $300.00
+  ZELLE TO RUIZ ANTHONY ON 10/16 REF #RP0Y583HZ4 CAR DETAILING INTERIOR EXTERIOR
+  Impact: $150.00 in favor of Jordyn
+  Running Balance: $3569.47 (Ryan owes Jordyn)
 --------------------------------------------------
 2024-10-15 - $300.00
-  PURCHASE AUTHORIZED ON 10/12 FBT CREDIT CARD PY DE S304286669073011 CARD 0968
-  Impact: $300.00 in favor of Jordyn
-  Running Balance: $9839.50 (Jordyn owes Ryan)
+  First Bank & Trust
+  Impact: $150.00 in favor of Ryan
+  Running Balance: $1325.15 (Ryan owes Jordyn)
 --------------------------------------------------
 2024-10-14 - $271.30
-  CAPITAL ONE AUTOPAY PYMT AuthDate 14-O
-  Impact: $271.30 in favor of Jordyn
-  Running Balance: $8982.50 (Jordyn owes Ryan)
+  Capital One
+  Impact: $135.65 in favor of Jordyn
+  Running Balance: $1488.29 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-15 - $271.30
+  CAPITAL ONE CRCARDPMT 241014 3YDSXGOAC10L877 RYAN W ZIMMERMAN
+  Impact: $135.65 in favor of Jordyn
+  Running Balance: $1325.21 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-15 - $271.30
+  Capital One
+  Impact: $135.65 in favor of Ryan
+  Running Balance: $1175.15 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-01 - $245.79
+  CLICKUP
+  Impact: $122.89 in favor of Ryan
+  Running Balance: $1361.53 (Jordyn owes Ryan)
+--------------------------------------------------
+2024-09-30 - $245.79
+  CLICKUP
+  Impact: $122.89 in favor of Jordyn
+  Running Balance: $1803.38 (Jordyn owes Ryan)
+--------------------------------------------------
+2024-10-11 - $224.77
+  RECURRING PAYMENT AUTHORIZED ON 10/10 AFFIRM * PAY DLNY7 CA S384284425949099 CARD 0968
+  Impact: $112.39 in favor of Jordyn
+  Running Balance: $976.67 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-11 - $224.77
+  Affirm
+  Impact: $112.39 in favor of Ryan
+  Running Balance: $1048.89 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-09-30 - $223.83
+  Target Card
+  Impact: $111.92 in favor of Jordyn
+  Running Balance: $1669.93 (Jordyn owes Ryan)
+--------------------------------------------------
+2024-09-30 - $223.83
+  Target
+  Impact: $111.92 in favor of Ryan
+  Running Balance: $1541.47 (Jordyn owes Ryan)
 --------------------------------------------------
 2024-10-11 - $200.00
-  PURCHASE AUTHORIZED ON 10/10 FBT CREDIT CARD PY DE S384285064389987 CARD 0968
-  Impact: $200.00 in favor of Jordyn
-  Running Balance: $8711.20 (Jordyn owes Ryan)
+  First Bank & Trust
+  Impact: $100.00 in favor of Ryan
+  Running Balance: $1563.36 (Ryan owes Jordyn)
 --------------------------------------------------
-2024-10-17 - $96.61
-  CAPITAL ONE AUTOPAY PYMT AuthDate 17-O
-  Impact: $96.61 in favor of Jordyn
-  Running Balance: $10463.79 (Jordyn owes Ryan)
+2024-10-17 - $190.23
+  Salt River Project
+  Impact: $95.11 in favor of Ryan
+  Running Balance: $6099.12 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-17 - $190.23
+  SRP SUREPAY-S1 241017 XXXXX9006 ZIMMERMEN RYAN W
+  Impact: $95.11 in favor of Jordyn
+  Running Balance: $6019.63 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-01 - $174.63
+  Avant LLC 800-71 avant.com 240930 000001667605181 RYAN ZIMMERMAN
+  Impact: $87.31 in favor of Jordyn
+  Running Balance: $2817.00 (Jordyn owes Ryan)
+--------------------------------------------------
+2024-10-01 - $174.63
+  Monthly Installment
+  Impact: $87.31 in favor of Ryan
+  Running Balance: $863.32 (Jordyn owes Ryan)
+--------------------------------------------------
+2024-10-01 - $174.63
+  Avant
+  Impact: $87.31 in favor of Ryan
+  Running Balance: $2167.74 (Jordyn owes Ryan)
+--------------------------------------------------
+2024-10-11 - $161.00
+  AUTOMATIC PAYMENT - THANK YOU
+  Impact: $80.50 in favor of Jordyn
+  Running Balance: $1523.03 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-17 - $139.91
+  FRYS-FOOD-DRG #051 CHANDLER AZ D
+  Impact: $69.95 in favor of Jordyn
+  Running Balance: $6174.40 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-17 - $139.91
+  Fry's Food and Drug
+  Impact: $69.95 in favor of Ryan
+  Running Balance: $6147.74 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-15 - $133.11
+  AMAZON MKTPL*1E56A4Y53 Amzn.com/billWA
+  Impact: $66.56 in favor of Jordyn
+  Running Balance: $1423.36 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-15 - $133.11
+  Amazon
+  Impact: $66.56 in favor of Ryan
+  Running Balance: $3723.10 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-18 - $132.62
+  CHARGE ON PURCHASES
+  Impact: $66.31 in favor of Ryan
+  Running Balance: $4818.02 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-08 - $125.93
+  Wix.com PAYOUT TX44525005400XT TRN*1*TX44525005400XT**4VXM1H64K491SPH4\RMR*IK*T
+  Impact: $62.97 in favor of Ryan
+  Running Balance: $1076.47 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-08 - $125.93
+  Wix
+  Impact: $62.97 in favor of Jordyn
+  Running Balance: $1263.51 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-07 - $120.00
+  Cox Communications
+  Impact: $60.00 in favor of Ryan
+  Running Balance: $753.48 (Ryan owes Jordyn)
+--------------------------------------------------
+2024-10-07 - $120.00
+  COX COMM PHX BANK DRAFT 100624 erYcgxl54GeLWeH Ryan Zimmerman
+  Impact: $60.00 in favor of Jordyn
+  Running Balance: $693.48 (Ryan owes Jordyn)
 --------------------------------------------------
 
 ====================================================================================================

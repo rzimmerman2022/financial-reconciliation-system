@@ -1,0 +1,19 @@
+Transaction Type,Description,Amount,Current Category,Should Be,Impact,Reason for Failure
+Zelle,"ZELLE FROM ZIMMERMAN JOAN ON 10/01 REF # PP0Y3ZZPH3 CAMERA BDAY GIFT",1800.00,gift,income/personal,Correctly handled as gift,Pattern correctly identified birthday gift
+Zelle,"ZELLE FROM ZIMMERMAN JOAN ON 10/11 REF # PP0Y4RY3TZ OCT 2024 RENT",600.00,rent (wrong payer),rent (Jordyn pays),Major error - wrong payer,Zelle rent payment should show Jordyn as payer not Ryan
+Zelle,"ZELLE FROM ZIMMERMAN JOAN ON 10/08 REF # PP0Y4LS6VL CLEANING SERVICE",500.00,expense (split 50/50),personal/income,Splits $250 incorrectly,Not recognized as income from third party
+Zelle,"ZELLE TO RUIZ ANTHONY ON 10/16 REF #RP0Y583HZ4 CAR DETAILING",300.00,expense (split 50/50),personal,Splits $150 incorrectly,Car detailing to third party split as shared expense
+Zelle,"Zelle Payment to Mom",(missing),ERROR,personal,Cannot process,Missing amount due to encoding error
+Rent,"San Palmas Web Payment",(missing),ERROR,rent,Cannot process - critical,Missing amount for rent payment
+Credit Card,"APPLE GS SAVINGS TRANSFER",2000.00,expense (split 50/50),personal,Splits $1000 incorrectly,Savings transfer treated as shared expense
+Credit Card,"WF Credit Card AUTO PAY",2678.09,expense (split 50/50),personal,Splits $1339 incorrectly,Credit card payment treated as shared expense
+Credit Card,"TARGET CARD SRVC BILL PAY",223.83,expense (split 50/50),personal,Splits $112 incorrectly,Target card payment treated as shared expense
+Credit Card,"APPLECARD GSBANK PAYMENT",434.29,expense (split 50/50),personal,Splits $217 incorrectly,Apple card payment treated as shared expense
+Credit Card,"Credit One Bank Payment",12.93,personal,personal,Correctly categorized,Pattern matched for credit card payment
+Insurance,"Progressive Advanced Insurance",(missing),ERROR,personal,Cannot process,Missing amount due to encoding error
+Insurance,"PETS BEST INSURANCE SERV",62.31,expense (split 50/50),personal,Splits $31 incorrectly,Pet insurance treated as shared expense
+Loan,"Avant LLC",174.63,expense (split 50/50),personal,Splits $87 incorrectly,Personal loan payment treated as shared
+Loan,"Sallie Mae Bank SLMLOANPMT",65.18,personal,personal,Correctly categorized,Student loan correctly identified
+Income,"Increase from Brokerage activity",16.51,income,income,Correctly categorized,Brokerage activity correctly identified
+Income,"Direct deposit from Apple",2300.00,income,income,Correctly categorized,Payroll correctly identified
+Service Fee,"Yardi Service Charge",(missing),ERROR,personal,Cannot process,Missing amount for service charge
