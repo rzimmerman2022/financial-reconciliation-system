@@ -1,0 +1,32 @@
+{
+  "system": "Phase 5A Unified Reconciliation System",
+  "generated_at": "2025-07-23T04:01:34.131969",
+  "period": "September 30 - October 18, 2024",
+  "starting_balance": 1577.08,
+  "starting_status": "Jordyn owes Ryan",
+  "ending_balance": 7259.46,
+  "ending_status": "Jordyn owes Ryan",
+  "balance_change": 5682.38,
+  "total_transactions": 203,
+  "transactions_processed": 196,
+  "manual_review_needed": 7,
+  "categories": {
+    "rent": 1,
+    "zelle": 0,
+    "expense": 166,
+    "personal": 20,
+    "income": 9,
+    "error": 7
+  },
+  "accounting_engine_summary": {
+    "ryan_receivable": 13839.37,
+    "ryan_payable": 6579.91,
+    "jordyn_receivable": 6579.91,
+    "jordyn_payable": 13839.37,
+    "current_balance": {
+      "status": "Jordyn owes Ryan",
+      "amount": 7259.46
+    },
+    "transaction_count": 167
+  }
+}

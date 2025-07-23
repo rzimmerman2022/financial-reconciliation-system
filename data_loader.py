@@ -85,8 +85,8 @@ def clean_currency(value: Union[str, float, None]) -> Optional[Decimal]:
     if not value_str or value_str in ['$ -', '$-', '-', '']:
         return None
     
-    # Remove currency symbols and spaces
-    value_str = value_str.replace('$', '').replace(',', '').strip()
+    # Remove currency symbols, spaces, and Unicode replacement characters
+    value_str = value_str.replace('$', '').replace(',', '').replace('�', '').strip()
     
     # Handle negative values in parentheses
     if value_str.startswith('(') and value_str.endswith(')'):

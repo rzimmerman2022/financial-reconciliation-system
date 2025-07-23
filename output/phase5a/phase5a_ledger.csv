@@ -1,0 +1,172 @@
+date,transaction_type,description,ryan_debit,ryan_credit,jordyn_debit,jordyn_credit,metadata,timestamp
+2024-09-30T00:00:00,SETTLEMENT,Starting Balance from Phase 4,0.00,1577.08,1577.08,0.00,{'source': 'Phase 4 ending balance'},2025-07-23T03:59:23.512778
+2024-09-30T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: PETS BEST INSURANCE SERV 877-738-7237 NC,31.16,0.00,0.00,31.16,"{'payer': 'Jordyn', 'ryan_share': '31.16', 'jordyn_share': '31.16'}",2025-07-23T03:59:23.513116
+2024-09-30T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: SPROUTS FARMERS MAR CHANDLER  AZ,6.25,0.00,0.00,6.25,"{'payer': 'Jordyn', 'ryan_share': '6.25', 'jordyn_share': '6.25'}",2025-07-23T03:59:23.513182
+2024-09-30T00:00:00,EXPENSE,Ryan paid: 50/50 Split: DoorDash,0.00,12.09,12.09,0.00,"{'payer': 'Ryan', 'ryan_share': '12.09', 'jordyn_share': '12.09'}",2025-07-23T03:59:23.513256
+2024-09-30T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Target,0.00,111.92,111.92,0.00,"{'payer': 'Ryan', 'ryan_share': '111.92', 'jordyn_share': '111.92'}",2025-07-23T03:59:23.513297
+2024-09-30T00:00:00,EXPENSE,Ryan paid: 50/50 Split: First Bank & Trust,0.00,150.00,150.00,0.00,"{'payer': 'Ryan', 'ryan_share': '150.00', 'jordyn_share': '150.00'}",2025-07-23T03:59:23.513338
+2024-09-30T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Affirm,0.00,10.56,10.56,0.00,"{'payer': 'Ryan', 'ryan_share': '10.56', 'jordyn_share': '10.56'}",2025-07-23T03:59:23.513377
+2024-09-30T00:00:00,EXPENSE,Ryan paid: 50/50 Split: RECURRING PAYMENT AUTHORIZED ON 09/27 AFFIRM * PAY WJ54B CA S584271412394880 CARD 0968,0.00,10.56,10.56,0.00,"{'payer': 'Ryan', 'ryan_share': '10.56', 'jordyn_share': '10.56'}",2025-07-23T03:59:23.513419
+2024-09-30T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Target Card,0.00,111.92,111.92,0.00,"{'payer': 'Ryan', 'ryan_share': '111.92', 'jordyn_share': '111.92'}",2025-07-23T03:59:23.513506
+2024-09-30T00:00:00,EXPENSE,Ryan paid: 50/50 Split: CLICKUP,0.00,122.90,122.90,0.00,"{'payer': 'Ryan', 'ryan_share': '122.90', 'jordyn_share': '122.90'}",2025-07-23T03:59:23.513547
+2024-09-30T00:00:00,EXPENSE,Ryan paid: 50/50 Split: DD *DOORDASH DOGHAUS,0.00,12.09,12.09,0.00,"{'payer': 'Ryan', 'ryan_share': '12.09', 'jordyn_share': '12.09'}",2025-07-23T03:59:23.513587
+2024-10-01T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: AMAZON RETA* 5Z0UV3PP3 WWW.AMAZON.CO WA,4.19,0.00,0.00,4.19,"{'payer': 'Jordyn', 'ryan_share': '4.19', 'jordyn_share': '4.19'}",2025-07-23T03:59:23.513651
+2024-10-01T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: HARKINS SANTAN VILLAGE GILBERT  AZ,4.50,0.00,0.00,4.50,"{'payer': 'Jordyn', 'ryan_share': '4.50', 'jordyn_share': '4.50'}",2025-07-23T03:59:23.513691
+2024-10-01T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: AMAZON MKTPL*VJ2T39SG3 Amzn.com/bill WA,5.49,0.00,0.00,5.49,"{'payer': 'Jordyn', 'ryan_share': '5.49', 'jordyn_share': '5.49'}",2025-07-23T03:59:23.513730
+2024-10-01T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Monthly Installment,0.00,87.32,87.32,0.00,"{'payer': 'Ryan', 'ryan_share': '87.32', 'jordyn_share': '87.32'}",2025-07-23T03:59:23.513769
+2024-10-01T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Credit One Reward,0.00,0.03,0.03,0.00,"{'payer': 'Ryan', 'ryan_share': '0.03', 'jordyn_share': '0.03'}",2025-07-23T03:59:23.513807
+2024-10-01T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Apple,0.00,217.15,217.15,0.00,"{'payer': 'Ryan', 'ryan_share': '217.15', 'jordyn_share': '217.15'}",2025-07-23T03:59:23.513866
+2024-10-01T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Avant,0.00,87.32,87.32,0.00,"{'payer': 'Ryan', 'ryan_share': '87.32', 'jordyn_share': '87.32'}",2025-07-23T03:59:23.513902
+2024-10-01T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Sallie Mae,0.00,32.59,32.59,0.00,"{'payer': 'Ryan', 'ryan_share': '32.59', 'jordyn_share': '32.59'}",2025-07-23T03:59:23.513939
+2024-10-01T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Credit One Bank,0.00,6.47,6.47,0.00,"{'payer': 'Ryan', 'ryan_share': '6.47', 'jordyn_share': '6.47'}",2025-07-23T03:59:23.513977
+2024-10-01T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Zelle,0.00,900.00,900.00,0.00,"{'payer': 'Ryan', 'ryan_share': '900.00', 'jordyn_share': '900.00'}",2025-07-23T03:59:23.514014
+2024-10-01T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,18.37,18.37,0.00,"{'payer': 'Ryan', 'ryan_share': '18.37', 'jordyn_share': '18.37'}",2025-07-23T03:59:23.514056
+2024-10-01T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,18.37,18.37,0.00,"{'payer': 'Ryan', 'ryan_share': '18.37', 'jordyn_share': '18.37'}",2025-07-23T03:59:23.514094
+2024-10-01T00:00:00,EXPENSE,Ryan paid: 50/50 Split: CREDIT ONE REWARD CREDIT,0.00,0.03,0.03,0.00,"{'payer': 'Ryan', 'ryan_share': '0.03', 'jordyn_share': '0.03'}",2025-07-23T03:59:23.514131
+2024-10-01T00:00:00,EXPENSE,Ryan paid: 50/50 Split: APPLECARD GSBANK PAYMENT 093024 XXXXX6849 Ryan Zimmerman,0.00,217.15,217.15,0.00,"{'payer': 'Ryan', 'ryan_share': '217.15', 'jordyn_share': '217.15'}",2025-07-23T03:59:23.514192
+2024-10-01T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Avant LLC 800-71 avant.com 240930 000001667605181 RYAN ZIMMERMAN,0.00,87.32,87.32,0.00,"{'payer': 'Ryan', 'ryan_share': '87.32', 'jordyn_share': '87.32'}",2025-07-23T03:59:23.514231
+2024-10-01T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Sallie Mae Bank SLMLOANPMT 240929 5922512112 SLM LOAN PMT,0.00,32.59,32.59,0.00,"{'payer': 'Ryan', 'ryan_share': '32.59', 'jordyn_share': '32.59'}",2025-07-23T03:59:23.514270
+2024-10-01T00:00:00,EXPENSE,"Ryan paid: 50/50 Split: Credit One Bank Payment 240928 58669469 ZIMMERMAN,RYAN",0.00,6.47,6.47,0.00,"{'payer': 'Ryan', 'ryan_share': '6.47', 'jordyn_share': '6.47'}",2025-07-23T03:59:23.514310
+2024-10-01T00:00:00,EXPENSE,Ryan paid: 50/50 Split: CLICKUP,0.00,122.90,122.90,0.00,"{'payer': 'Ryan', 'ryan_share': '122.90', 'jordyn_share': '122.90'}",2025-07-23T03:59:23.514402
+2024-10-02T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Wells Fargo,0.00,1339.05,1339.05,0.00,"{'payer': 'Ryan', 'ryan_share': '1339.05', 'jordyn_share': '1339.05'}",2025-07-23T03:59:23.514475
+2024-10-02T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,21.34,21.34,0.00,"{'payer': 'Ryan', 'ryan_share': '21.34', 'jordyn_share': '21.34'}",2025-07-23T03:59:23.514512
+2024-10-02T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,21.34,21.34,0.00,"{'payer': 'Ryan', 'ryan_share': '21.34', 'jordyn_share': '21.34'}",2025-07-23T03:59:23.514570
+2024-10-03T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: TARGET        00018382 CHANDLER  AZ,20.79,0.00,0.00,20.79,"{'payer': 'Jordyn', 'ryan_share': '20.79', 'jordyn_share': '20.79'}",2025-07-23T03:59:23.514624
+2024-10-03T00:00:00,EXPENSE,Ryan paid: 50/50 Split: First Bank & Trust,0.00,250.00,250.00,0.00,"{'payer': 'Ryan', 'ryan_share': '250.00', 'jordyn_share': '250.00'}",2025-07-23T03:59:23.514662
+2024-10-03T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,26.30,26.30,0.00,"{'payer': 'Ryan', 'ryan_share': '26.30', 'jordyn_share': '26.30'}",2025-07-23T03:59:23.514699
+2024-10-03T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,26.30,26.30,0.00,"{'payer': 'Ryan', 'ryan_share': '26.30', 'jordyn_share': '26.30'}",2025-07-23T03:59:23.514757
+2024-10-03T00:00:00,EXPENSE,Ryan paid: 50/50 Split: ABC*9791-MOUNTAINSIDE FIT480-5022096,0.00,20.43,20.43,0.00,"{'payer': 'Ryan', 'ryan_share': '20.43', 'jordyn_share': '20.43'}",2025-07-23T03:59:23.514803
+2024-10-04T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Affirm,0.00,34.69,34.69,0.00,"{'payer': 'Ryan', 'ryan_share': '34.69', 'jordyn_share': '34.69'}",2025-07-23T03:59:23.514867
+2024-10-04T00:00:00,EXPENSE,Ryan paid: 50/50 Split: RECURRING PAYMENT AUTHORIZED ON 10/03 AFFIRM * PAY JX1ME CA S464277458073352 CARD 0968,0.00,34.69,34.69,0.00,"{'payer': 'Ryan', 'ryan_share': '34.69', 'jordyn_share': '34.69'}",2025-07-23T03:59:23.514907
+2024-10-04T00:00:00,EXPENSE,Ryan paid: 50/50 Split: SUPER STAR CAR WASH CORO,0.00,9.98,9.98,0.00,"{'payer': 'Ryan', 'ryan_share': '9.98', 'jordyn_share': '9.98'}",2025-07-23T03:59:23.514945
+2024-10-05T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: HARKINS AZ MILLS TEMPE  AZ,7.38,0.00,0.00,7.38,"{'payer': 'Jordyn', 'ryan_share': '7.38', 'jordyn_share': '7.38'}",2025-07-23T03:59:23.514982
+2024-10-05T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: WALGREENS #3727 CHANDLER  AZ,0.50,0.00,0.00,0.50,"{'payer': 'Jordyn', 'ryan_share': '0.50', 'jordyn_share': '0.50'}",2025-07-23T03:59:23.515021
+2024-10-05T00:00:00,EXPENSE,Ryan paid: 50/50 Split: TST* DOG HAUS BIERGARTEN,0.00,8.09,8.09,0.00,"{'payer': 'Ryan', 'ryan_share': '8.09', 'jordyn_share': '8.09'}",2025-07-23T03:59:23.515060
+2024-10-05T00:00:00,EXPENSE,Ryan paid: 50/50 Split: TST*THE HUB BAR & GRILL,0.00,35.83,35.83,0.00,"{'payer': 'Ryan', 'ryan_share': '35.83', 'jordyn_share': '35.83'}",2025-07-23T03:59:23.515098
+2024-10-05T00:00:00,EXPENSE,Ryan paid: 50/50 Split: HARKINS AZ MILLS,0.00,1.50,1.50,0.00,"{'payer': 'Ryan', 'ryan_share': '1.50', 'jordyn_share': '1.50'}",2025-07-23T03:59:23.515263
+2024-10-06T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: SAFEWAY #2032 SCOTTSDALE  AZ,42.04,0.00,0.00,42.04,"{'payer': 'Jordyn', 'ryan_share': '42.04', 'jordyn_share': '42.04'}",2025-07-23T03:59:23.515310
+2024-10-06T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: HARKINS AZ MILLS TEMPE  AZ,13.50,0.00,0.00,13.50,"{'payer': 'Jordyn', 'ryan_share': '13.50', 'jordyn_share': '13.50'}",2025-07-23T03:59:23.515350
+2024-10-06T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: PY *HOPDODDY  SCOTTSDALE SCOTTSDALE  AZ,28.73,0.00,0.00,28.73,"{'payer': 'Jordyn', 'ryan_share': '28.73', 'jordyn_share': '28.73'}",2025-07-23T03:59:23.515390
+2024-10-06T00:00:00,EXPENSE,Ryan paid: 50/50 Split: HARKINS AZ MILLS,0.00,13.50,13.50,0.00,"{'payer': 'Ryan', 'ryan_share': '13.50', 'jordyn_share': '13.50'}",2025-07-23T03:59:23.515428
+2024-10-07T00:00:00,EXPENSE,Ryan paid: 50/50 Split: DoorDash,0.00,10.03,10.03,0.00,"{'payer': 'Ryan', 'ryan_share': '10.03', 'jordyn_share': '10.03'}",2025-07-23T03:59:23.515465
+2024-10-07T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Cox Communications,0.00,60.00,60.00,0.00,"{'payer': 'Ryan', 'ryan_share': '60.00', 'jordyn_share': '60.00'}",2025-07-23T03:59:23.515502
+2024-10-07T00:00:00,EXPENSE,Ryan paid: 50/50 Split: First Bank & Trust,0.00,250.00,250.00,0.00,"{'payer': 'Ryan', 'ryan_share': '250.00', 'jordyn_share': '250.00'}",2025-07-23T03:59:23.515540
+2024-10-07T00:00:00,EXPENSE,Ryan paid: 50/50 Split: COX COMM PHX BANK DRAFT 100624 erYcgxl54GeLWeH Ryan Zimmerman,0.00,60.00,60.00,0.00,"{'payer': 'Ryan', 'ryan_share': '60.00', 'jordyn_share': '60.00'}",2025-07-23T03:59:23.515600
+2024-10-07T00:00:00,EXPENSE,Ryan paid: 50/50 Split: DD *DOORDASH POKEWAVE,0.00,10.03,10.03,0.00,"{'payer': 'Ryan', 'ryan_share': '10.03', 'jordyn_share': '10.03'}",2025-07-23T03:59:23.515641
+2024-10-08T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: FRYS FUEL #7658 GILBERT  AZ,2.02,0.00,0.00,2.02,"{'payer': 'Jordyn', 'ryan_share': '2.02', 'jordyn_share': '2.02'}",2025-07-23T03:59:23.515679
+2024-10-08T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: FRYS FUEL #7658 GILBERT  AZ,15.95,0.00,0.00,15.95,"{'payer': 'Jordyn', 'ryan_share': '15.95', 'jordyn_share': '15.95'}",2025-07-23T03:59:23.515716
+2024-10-08T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,45.73,45.73,0.00,"{'payer': 'Ryan', 'ryan_share': '45.73', 'jordyn_share': '45.73'}",2025-07-23T03:59:23.515752
+2024-10-08T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Zelle,0.00,250.00,250.00,0.00,"{'payer': 'Ryan', 'ryan_share': '250.00', 'jordyn_share': '250.00'}",2025-07-23T03:59:23.515793
+2024-10-08T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Wix,0.00,62.97,62.97,0.00,"{'payer': 'Ryan', 'ryan_share': '62.97', 'jordyn_share': '62.97'}",2025-07-23T03:59:23.515837
+2024-10-08T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Wix.com PAYOUT TX44525005400XT TRN*1*TX44525005400XT**4VXM1H64K491SPH4\RMR*IK*T,0.00,62.97,62.97,0.00,"{'payer': 'Ryan', 'ryan_share': '62.97', 'jordyn_share': '62.97'}",2025-07-23T03:59:23.515876
+2024-10-08T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,45.73,45.73,0.00,"{'payer': 'Ryan', 'ryan_share': '45.73', 'jordyn_share': '45.73'}",2025-07-23T03:59:23.515913
+2024-10-08T00:00:00,EXPENSE,Ryan paid: 50/50 Split: ZELLE FROM ZIMMERMAN JOAN ON 10/08 REF # PP0Y4LS6VL CLEANING SERVICE,0.00,250.00,250.00,0.00,"{'payer': 'Ryan', 'ryan_share': '250.00', 'jordyn_share': '250.00'}",2025-07-23T03:59:23.515955
+2024-10-09T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: ESSENTIALLY YOU CHANDLER  AZ,16.88,0.00,0.00,16.88,"{'payer': 'Jordyn', 'ryan_share': '16.88', 'jordyn_share': '16.88'}",2025-07-23T03:59:23.515993
+2024-10-09T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: SPROUTS FARMERS MAR CHANDLER  AZ,40.71,0.00,0.00,40.71,"{'payer': 'Jordyn', 'ryan_share': '40.71', 'jordyn_share': '40.71'}",2025-07-23T03:59:23.516031
+2024-10-09T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,18.37,18.37,0.00,"{'payer': 'Ryan', 'ryan_share': '18.37', 'jordyn_share': '18.37'}",2025-07-23T03:59:23.516068
+2024-10-09T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Uplift,0.00,40.97,40.97,0.00,"{'payer': 'Ryan', 'ryan_share': '40.97', 'jordyn_share': '40.97'}",2025-07-23T03:59:23.516108
+2024-10-09T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Affirm,0.00,5.31,5.31,0.00,"{'payer': 'Ryan', 'ryan_share': '5.31', 'jordyn_share': '5.31'}",2025-07-23T03:59:23.516147
+2024-10-09T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Affirm,0.00,15.63,15.63,0.00,"{'payer': 'Ryan', 'ryan_share': '15.63', 'jordyn_share': '15.63'}",2025-07-23T03:59:23.516182
+2024-10-09T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Apple Pay,0.00,165.00,165.00,0.00,"{'payer': 'Ryan', 'ryan_share': '165.00', 'jordyn_share': '165.00'}",2025-07-23T03:59:23.516219
+2024-10-09T00:00:00,EXPENSE,"Ryan paid: 50/50 Split: PURCHASE AUTHORIZED ON 10/08 UPLIFT, INC. HTTPSWWW.UPLI CA S584282657800262 CARD 0968",0.00,40.97,40.97,0.00,"{'payer': 'Ryan', 'ryan_share': '40.97', 'jordyn_share': '40.97'}",2025-07-23T03:59:23.516258
+2024-10-09T00:00:00,EXPENSE,Ryan paid: 50/50 Split: RECURRING PAYMENT AUTHORIZED ON 10/08 AFFIRM * PAY 6VAIS CA S384282437831165 CARD 0968,0.00,5.31,5.31,0.00,"{'payer': 'Ryan', 'ryan_share': '5.31', 'jordyn_share': '5.31'}",2025-07-23T03:59:23.516298
+2024-10-09T00:00:00,EXPENSE,Ryan paid: 50/50 Split: RECURRING PAYMENT AUTHORIZED ON 10/08 AFFIRM * PAY T3YRB CA S584282419897152 CARD 0968,0.00,15.63,15.63,0.00,"{'payer': 'Ryan', 'ryan_share': '15.63', 'jordyn_share': '15.63'}",2025-07-23T03:59:23.516336
+2024-10-09T00:00:00,EXPENSE,Ryan paid: 50/50 Split: MONEY TRANSFER AUTHORIZED ON 10/07 APPLE CASH SENT MO 1INFINITELOOP CA S304281839298705 CARD 0968,0.00,165.00,165.00,0.00,"{'payer': 'Ryan', 'ryan_share': '165.00', 'jordyn_share': '165.00'}",2025-07-23T03:59:23.516376
+2024-10-09T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,18.37,18.37,0.00,"{'payer': 'Ryan', 'ryan_share': '18.37', 'jordyn_share': '18.37'}",2025-07-23T03:59:23.516413
+2024-10-10T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Intentional Foods Cafe,0.00,5.02,5.02,0.00,"{'payer': 'Ryan', 'ryan_share': '5.02', 'jordyn_share': '5.02'}",2025-07-23T03:59:23.516449
+2024-10-10T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Intentional Foods Cafe,0.00,25.10,25.10,0.00,"{'payer': 'Ryan', 'ryan_share': '25.10', 'jordyn_share': '25.10'}",2025-07-23T03:59:23.516486
+2024-10-10T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Intentional Foods Cafe,0.00,6.98,6.98,0.00,"{'payer': 'Ryan', 'ryan_share': '6.98', 'jordyn_share': '6.98'}",2025-07-23T03:59:23.516524
+2024-10-10T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Affirm,0.00,18.43,18.43,0.00,"{'payer': 'Ryan', 'ryan_share': '18.43', 'jordyn_share': '18.43'}",2025-07-23T03:59:23.516560
+2024-10-10T00:00:00,EXPENSE,Ryan paid: 50/50 Split: RECURRING PAYMENT AUTHORIZED ON 10/09 AFFIRM * PAY X6MX5 CA S304283418497253 CARD 0968,0.00,18.43,18.43,0.00,"{'payer': 'Ryan', 'ryan_share': '18.43', 'jordyn_share': '18.43'}",2025-07-23T03:59:23.516621
+2024-10-10T00:00:00,EXPENSE,Ryan paid: 50/50 Split: INTENTIONAL FOODS CAFE &,0.00,5.02,5.02,0.00,"{'payer': 'Ryan', 'ryan_share': '5.02', 'jordyn_share': '5.02'}",2025-07-23T03:59:23.516679
+2024-10-10T00:00:00,EXPENSE,Ryan paid: 50/50 Split: INTENTIONAL FOODS CAFE &,0.00,25.10,25.10,0.00,"{'payer': 'Ryan', 'ryan_share': '25.10', 'jordyn_share': '25.10'}",2025-07-23T03:59:23.516717
+2024-10-10T00:00:00,EXPENSE,Ryan paid: 50/50 Split: INTENTIONAL FOODS CAFE &,0.00,6.98,6.98,0.00,"{'payer': 'Ryan', 'ryan_share': '6.98', 'jordyn_share': '6.98'}",2025-07-23T03:59:23.516754
+2024-10-11T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,40.17,40.17,0.00,"{'payer': 'Ryan', 'ryan_share': '40.17', 'jordyn_share': '40.17'}",2025-07-23T03:59:23.516819
+2024-10-11T00:00:00,EXPENSE,Ryan paid: 50/50 Split: First Bank & Trust,0.00,100.00,100.00,0.00,"{'payer': 'Ryan', 'ryan_share': '100.00', 'jordyn_share': '100.00'}",2025-07-23T03:59:23.516863
+2024-10-11T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Affirm,0.00,112.39,112.39,0.00,"{'payer': 'Ryan', 'ryan_share': '112.39', 'jordyn_share': '112.39'}",2025-07-23T03:59:23.516901
+2024-10-11T00:00:00,EXPENSE,Ryan paid: 50/50 Split: First Bank & Trust,0.00,714.47,714.47,0.00,"{'payer': 'Ryan', 'ryan_share': '714.47', 'jordyn_share': '714.47'}",2025-07-23T03:59:23.516939
+2024-10-11T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Zelle,0.00,300.00,300.00,0.00,"{'payer': 'Ryan', 'ryan_share': '300.00', 'jordyn_share': '300.00'}",2025-07-23T03:59:23.516976
+2024-10-11T00:00:00,EXPENSE,Ryan paid: 50/50 Split: RECURRING PAYMENT AUTHORIZED ON 10/10 AFFIRM * PAY DLNY7 CA S384284425949099 CARD 0968,0.00,112.39,112.39,0.00,"{'payer': 'Ryan', 'ryan_share': '112.39', 'jordyn_share': '112.39'}",2025-07-23T03:59:23.517057
+2024-10-11T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,40.17,40.17,0.00,"{'payer': 'Ryan', 'ryan_share': '40.17', 'jordyn_share': '40.17'}",2025-07-23T03:59:23.517095
+2024-10-12T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: SP GODDESS GARAGE BOUT   152-07776155 AZ,47.01,0.00,0.00,47.01,"{'payer': 'Jordyn', 'ryan_share': '47.01', 'jordyn_share': '47.01'}",2025-07-23T03:59:23.517153
+2024-10-12T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: Gourmet Girls Gluten Free Tucson  AZ,26.45,0.00,0.00,26.45,"{'payer': 'Jordyn', 'ryan_share': '26.45', 'jordyn_share': '26.45'}",2025-07-23T03:59:23.517193
+2024-10-12T00:00:00,EXPENSE,Ryan paid: 50/50 Split: DoorDash,0.00,11.36,11.36,0.00,"{'payer': 'Ryan', 'ryan_share': '11.36', 'jordyn_share': '11.36'}",2025-07-23T03:59:23.517232
+2024-10-12T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,16.75,16.75,0.00,"{'payer': 'Ryan', 'ryan_share': '16.75', 'jordyn_share': '16.75'}",2025-07-23T03:59:23.517269
+2024-10-12T00:00:00,EXPENSE,Ryan paid: 50/50 Split: DD *DOORDASH TARGET,0.00,11.36,11.36,0.00,"{'payer': 'Ryan', 'ryan_share': '11.36', 'jordyn_share': '11.36'}",2025-07-23T03:59:23.517307
+2024-10-12T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,16.75,16.75,0.00,"{'payer': 'Ryan', 'ryan_share': '16.75', 'jordyn_share': '16.75'}",2025-07-23T03:59:23.517343
+2024-10-13T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: WHOLEFDS CHR 10272 CHANDLER  AZ,27.45,0.00,0.00,27.45,"{'payer': 'Jordyn', 'ryan_share': '27.45', 'jordyn_share': '27.45'}",2025-07-23T03:59:23.517381
+2024-10-13T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Chevron,0.00,3.00,3.00,0.00,"{'payer': 'Ryan', 'ryan_share': '3.00', 'jordyn_share': '3.00'}",2025-07-23T03:59:23.517418
+2024-10-13T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Pokeworks Httpspokeworkaz,0.00,8.57,8.57,0.00,"{'payer': 'Ryan', 'ryan_share': '8.57', 'jordyn_share': '8.57'}",2025-07-23T03:59:23.517456
+2024-10-13T00:00:00,EXPENSE,Ryan paid: 50/50 Split: POKEWORKS HTTPSPOKEWORKAZ,0.00,8.57,8.57,0.00,"{'payer': 'Ryan', 'ryan_share': '8.57', 'jordyn_share': '8.57'}",2025-07-23T03:59:23.517493
+2024-10-13T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Spotify,0.00,3.24,3.24,0.00,"{'payer': 'Ryan', 'ryan_share': '3.24', 'jordyn_share': '3.24'}",2025-07-23T03:59:23.517529
+2024-10-13T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Chevron,0.00,3.00,3.00,0.00,"{'payer': 'Ryan', 'ryan_share': '3.00', 'jordyn_share': '3.00'}",2025-07-23T03:59:23.517565
+2024-10-14T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Amazon,0.00,589.11,589.11,0.00,"{'payer': 'Ryan', 'ryan_share': '589.11', 'jordyn_share': '589.11'}",2025-07-23T03:59:23.517602
+2024-10-14T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Spotify,0.00,3.24,3.24,0.00,"{'payer': 'Ryan', 'ryan_share': '3.24', 'jordyn_share': '3.24'}",2025-07-23T03:59:23.517638
+2024-10-14T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Whole Foods,0.00,32.05,32.05,0.00,"{'payer': 'Ryan', 'ryan_share': '32.05', 'jordyn_share': '32.05'}",2025-07-23T03:59:23.517696
+2024-10-14T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Capital One,0.00,135.65,135.65,0.00,"{'payer': 'Ryan', 'ryan_share': '135.65', 'jordyn_share': '135.65'}",2025-07-23T03:59:23.517733
+2024-10-14T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Whole Foods,0.00,32.05,32.05,0.00,"{'payer': 'Ryan', 'ryan_share': '32.05', 'jordyn_share': '32.05'}",2025-07-23T03:59:23.517810
+2024-10-14T00:00:00,EXPENSE,Ryan paid: 50/50 Split: AMAZON MKTPL*RC1FJ7CT3 Amzn.com/billWA,0.00,589.11,589.11,0.00,"{'payer': 'Ryan', 'ryan_share': '589.11', 'jordyn_share': '589.11'}",2025-07-23T03:59:23.517849
+2024-10-15T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: Ending Balance,2254.27,0.00,0.00,2254.27,"{'payer': 'Jordyn', 'ryan_share': '2254.27', 'jordyn_share': '2254.27'}",2025-07-23T03:59:23.517935
+2024-10-15T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: BLIZZARD *US740603771    949-955-1380 CA,32.13,0.00,0.00,32.13,"{'payer': 'Jordyn', 'ryan_share': '32.13', 'jordyn_share': '32.13'}",2025-07-23T03:59:23.517974
+2024-10-15T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: FRYS 5051                866-576-4377 AZ,20.41,0.00,0.00,20.41,"{'payer': 'Jordyn', 'ryan_share': '20.41', 'jordyn_share': '20.41'}",2025-07-23T03:59:23.518013
+2024-10-15T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: PAMPERED PETS LLC TEMPE  AZ,45.00,0.00,0.00,45.00,"{'payer': 'Jordyn', 'ryan_share': '45.00', 'jordyn_share': '45.00'}",2025-07-23T03:59:23.518052
+2024-10-15T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Amazon,0.00,66.56,66.56,0.00,"{'payer': 'Ryan', 'ryan_share': '66.56', 'jordyn_share': '66.56'}",2025-07-23T03:59:23.518089
+2024-10-15T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Floyd's Chandler,0.00,23.50,23.50,0.00,"{'payer': 'Ryan', 'ryan_share': '23.50', 'jordyn_share': '23.50'}",2025-07-23T03:59:23.518126
+2024-10-15T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Capital One,0.00,223.08,223.08,0.00,"{'payer': 'Ryan', 'ryan_share': '223.08', 'jordyn_share': '223.08'}",2025-07-23T03:59:23.518162
+2024-10-15T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Capital One,0.00,135.65,135.65,0.00,"{'payer': 'Ryan', 'ryan_share': '135.65', 'jordyn_share': '135.65'}",2025-07-23T03:59:23.518198
+2024-10-15T00:00:00,EXPENSE,Ryan paid: 50/50 Split: First Bank & Trust,0.00,150.00,150.00,0.00,"{'payer': 'Ryan', 'ryan_share': '150.00', 'jordyn_share': '150.00'}",2025-07-23T03:59:23.518236
+2024-10-15T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Zelle,0.00,37.50,37.50,0.00,"{'payer': 'Ryan', 'ryan_share': '37.50', 'jordyn_share': '37.50'}",2025-07-23T03:59:23.518273
+2024-10-15T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,25.13,25.13,0.00,"{'payer': 'Ryan', 'ryan_share': '25.13', 'jordyn_share': '25.13'}",2025-07-23T03:59:23.518311
+2024-10-15T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,25.13,25.13,0.00,"{'payer': 'Ryan', 'ryan_share': '25.13', 'jordyn_share': '25.13'}",2025-07-23T03:59:23.518406
+2024-10-15T00:00:00,EXPENSE,Ryan paid: 50/50 Split: CAPITAL ONE AUTO DIRECTPAY DP0F2071933A14D Ryan Zimmerman,0.00,223.08,223.08,0.00,"{'payer': 'Ryan', 'ryan_share': '223.08', 'jordyn_share': '223.08'}",2025-07-23T03:59:23.518445
+2024-10-15T00:00:00,EXPENSE,Ryan paid: 50/50 Split: CAPITAL ONE CRCARDPMT 241014 3YDSXGOAC10L877 RYAN W ZIMMERMAN,0.00,135.65,135.65,0.00,"{'payer': 'Ryan', 'ryan_share': '135.65', 'jordyn_share': '135.65'}",2025-07-23T03:59:23.518485
+2024-10-15T00:00:00,EXPENSE,Ryan paid: 50/50 Split: ZELLE FROM ZIMMERMAN JOAN ON 10/15 REF # PP0Y54Q3MR STEAMBOAT CRUISE,0.00,37.50,37.50,0.00,"{'payer': 'Ryan', 'ryan_share': '37.50', 'jordyn_share': '37.50'}",2025-07-23T03:59:23.518526
+2024-10-15T00:00:00,EXPENSE,Ryan paid: 50/50 Split: AMAZON MKTPL*1E56A4Y53 Amzn.com/billWA,0.00,66.56,66.56,0.00,"{'payer': 'Ryan', 'ryan_share': '66.56', 'jordyn_share': '66.56'}",2025-07-23T03:59:23.518565
+2024-10-15T00:00:00,EXPENSE,Ryan paid: 50/50 Split: FLOYD'S 99,0.00,23.50,23.50,0.00,"{'payer': 'Ryan', 'ryan_share': '23.50', 'jordyn_share': '23.50'}",2025-07-23T03:59:23.518602
+2024-10-16T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: Beginning Balance,2254.27,0.00,0.00,2254.27,"{'payer': 'Jordyn', 'ryan_share': '2254.27', 'jordyn_share': '2254.27'}",2025-07-23T03:59:23.518639
+2024-10-16T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Amazon,0.00,15.36,15.36,0.00,"{'payer': 'Ryan', 'ryan_share': '15.36', 'jordyn_share': '15.36'}",2025-07-23T03:59:23.518692
+2024-10-16T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,15.26,15.26,0.00,"{'payer': 'Ryan', 'ryan_share': '15.26', 'jordyn_share': '15.26'}",2025-07-23T03:59:23.518729
+2024-10-16T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Apple,0.00,229.12,229.12,0.00,"{'payer': 'Ryan', 'ryan_share': '229.12', 'jordyn_share': '229.12'}",2025-07-23T03:59:23.518767
+2024-10-16T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Credit One Bank,0.00,263.84,263.84,0.00,"{'payer': 'Ryan', 'ryan_share': '263.84', 'jordyn_share': '263.84'}",2025-07-23T03:59:23.518809
+2024-10-16T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Credit One Bank,0.00,7.33,7.33,0.00,"{'payer': 'Ryan', 'ryan_share': '7.33', 'jordyn_share': '7.33'}",2025-07-23T03:59:23.518852
+2024-10-16T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Zelle,0.00,150.00,150.00,0.00,"{'payer': 'Ryan', 'ryan_share': '150.00', 'jordyn_share': '150.00'}",2025-07-23T03:59:23.518889
+2024-10-16T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Apple Pay,0.00,240.00,240.00,0.00,"{'payer': 'Ryan', 'ryan_share': '240.00', 'jordyn_share': '240.00'}",2025-07-23T03:59:23.518926
+2024-10-16T00:00:00,EXPENSE,Ryan paid: 50/50 Split: MONEY TRANSFER AUTHORIZED ON 10/14 APPLE CASH SENT MO 1INFINITELOOP CA S384288826793855 CARD 0968,0.00,240.00,240.00,0.00,"{'payer': 'Ryan', 'ryan_share': '240.00', 'jordyn_share': '240.00'}",2025-07-23T03:59:23.518966
+2024-10-16T00:00:00,EXPENSE,Ryan paid: 50/50 Split: APPLECARD GSBANK PAYMENT 101524 XXXXX6849 Ryan Zimmerman,0.00,229.12,229.12,0.00,"{'payer': 'Ryan', 'ryan_share': '229.12', 'jordyn_share': '229.12'}",2025-07-23T03:59:23.519006
+2024-10-16T00:00:00,EXPENSE,"Ryan paid: 50/50 Split: Credit One Bank Payment 240928 64341996 ZIMMERMAN,RYAN",0.00,263.84,263.84,0.00,"{'payer': 'Ryan', 'ryan_share': '263.84', 'jordyn_share': '263.84'}",2025-07-23T03:59:23.519044
+2024-10-16T00:00:00,EXPENSE,"Ryan paid: 50/50 Split: Credit One Bank Payment 240919 52208674 ZIMMERMAN,RYAN",0.00,7.33,7.33,0.00,"{'payer': 'Ryan', 'ryan_share': '7.33', 'jordyn_share': '7.33'}",2025-07-23T03:59:23.519082
+2024-10-16T00:00:00,EXPENSE,Ryan paid: 50/50 Split: ZELLE TO RUIZ ANTHONY ON 10/16 REF #RP0Y583HZ4 CAR DETAILING INTERIOR EXTERIOR,0.00,150.00,150.00,0.00,"{'payer': 'Ryan', 'ryan_share': '150.00', 'jordyn_share': '150.00'}",2025-07-23T03:59:23.519124
+2024-10-16T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,15.26,15.26,0.00,"{'payer': 'Ryan', 'ryan_share': '15.26', 'jordyn_share': '15.26'}",2025-07-23T03:59:23.519162
+2024-10-16T00:00:00,EXPENSE,Ryan paid: 50/50 Split: AMAZON MKTPL*ZY4IO6R93 Amzn.com/billWA,0.00,15.36,15.36,0.00,"{'payer': 'Ryan', 'ryan_share': '15.36', 'jordyn_share': '15.36'}",2025-07-23T03:59:23.519200
+2024-10-17T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: ONLINE ACH PAYMENT       THANK YOU,1500.00,0.00,0.00,1500.00,"{'payer': 'Jordyn', 'ryan_share': '1500.00', 'jordyn_share': '1500.00'}",2025-07-23T03:59:23.519239
+2024-10-17T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: DicksSportingGoods.com Coraopolis  PA,21.55,0.00,0.00,21.55,"{'payer': 'Jordyn', 'ryan_share': '21.55', 'jordyn_share': '21.55'}",2025-07-23T03:59:23.519277
+2024-10-17T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,69.96,69.96,0.00,"{'payer': 'Ryan', 'ryan_share': '69.96', 'jordyn_share': '69.96'}",2025-07-23T03:59:23.519314
+2024-10-17T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Capital One,0.00,48.31,48.31,0.00,"{'payer': 'Ryan', 'ryan_share': '48.31', 'jordyn_share': '48.31'}",2025-07-23T03:59:23.519351
+2024-10-17T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Whole Foods,0.00,15.62,15.62,0.00,"{'payer': 'Ryan', 'ryan_share': '15.62', 'jordyn_share': '15.62'}",2025-07-23T03:59:23.519388
+2024-10-17T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,11.35,11.35,0.00,"{'payer': 'Ryan', 'ryan_share': '11.35', 'jordyn_share': '11.35'}",2025-07-23T03:59:23.519425
+2024-10-17T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Salt River Project,0.00,95.12,95.12,0.00,"{'payer': 'Ryan', 'ryan_share': '95.12', 'jordyn_share': '95.12'}",2025-07-23T03:59:23.519463
+2024-10-17T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Capital One,0.00,48.31,48.31,0.00,"{'payer': 'Ryan', 'ryan_share': '48.31', 'jordyn_share': '48.31'}",2025-07-23T03:59:23.519500
+2024-10-17T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Planet Fitness,0.00,12.74,12.74,0.00,"{'payer': 'Ryan', 'ryan_share': '12.74', 'jordyn_share': '12.74'}",2025-07-23T03:59:23.519538
+2024-10-17T00:00:00,EXPENSE,Ryan paid: 50/50 Split: PLANET FIT CLUB FEES 2429001139531,0.00,12.74,12.74,0.00,"{'payer': 'Ryan', 'ryan_share': '12.74', 'jordyn_share': '12.74'}",2025-07-23T03:59:23.519582
+2024-10-17T00:00:00,EXPENSE,Ryan paid: 50/50 Split: SRP SUREPAY-S1 241017 XXXXX9006 ZIMMERMEN RYAN W,0.00,95.12,95.12,0.00,"{'payer': 'Ryan', 'ryan_share': '95.12', 'jordyn_share': '95.12'}",2025-07-23T03:59:23.519622
+2024-10-17T00:00:00,EXPENSE,Ryan paid: 50/50 Split: CAPITAL ONE CRCARDPMT 241017 3YEFS6MQ891TSRB RYAN W ZIMMERMAN,0.00,48.31,48.31,0.00,"{'payer': 'Ryan', 'ryan_share': '48.31', 'jordyn_share': '48.31'}",2025-07-23T03:59:23.519661
+2024-10-17T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Whole Foods,0.00,15.62,15.62,0.00,"{'payer': 'Ryan', 'ryan_share': '15.62', 'jordyn_share': '15.62'}",2025-07-23T03:59:23.519720
+2024-10-17T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,11.35,11.35,0.00,"{'payer': 'Ryan', 'ryan_share': '11.35', 'jordyn_share': '11.35'}",2025-07-23T03:59:23.519758
+2024-10-17T00:00:00,EXPENSE,Ryan paid: 50/50 Split: FRYS-FOOD-DRG #051 CHANDLER AZ D,0.00,69.96,69.96,0.00,"{'payer': 'Ryan', 'ryan_share': '69.96', 'jordyn_share': '69.96'}",2025-07-23T03:59:23.519796
+2024-10-18T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: LEGENDS@TALKING STICK PHOENIX  AZ,26.61,0.00,0.00,26.61,"{'payer': 'Jordyn', 'ryan_share': '26.61', 'jordyn_share': '26.61'}",2025-07-23T03:59:23.519855
+2024-10-18T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: AMAZON MARK* 0O7DK3H33 HTTPSAMAZON.C WA,8.62,0.00,0.00,8.62,"{'payer': 'Jordyn', 'ryan_share': '8.62', 'jordyn_share': '8.62'}",2025-07-23T03:59:23.519894
+2024-10-18T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: COCA COLA TEMPE AZ TEMPE  AZ,0.88,0.00,0.00,0.88,"{'payer': 'Jordyn', 'ryan_share': '0.88', 'jordyn_share': '0.88'}",2025-07-23T03:59:23.519932
+2024-10-18T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: CULVERS OF CHANDLER CHANDLER  AZ,8.86,0.00,0.00,8.86,"{'payer': 'Jordyn', 'ryan_share': '8.86', 'jordyn_share': '8.86'}",2025-07-23T03:59:23.519970
+2024-10-18T00:00:00,EXPENSE,Jordyn paid: 50/50 Split: CHARGE ON PURCHASES,66.31,0.00,0.00,66.31,"{'payer': 'Jordyn', 'ryan_share': '66.31', 'jordyn_share': '66.31'}",2025-07-23T03:59:23.520007
+2024-10-18T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Culver's,0.00,1.78,1.78,0.00,"{'payer': 'Ryan', 'ryan_share': '1.78', 'jordyn_share': '1.78'}",2025-07-23T03:59:23.520044
+2024-10-18T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Chevron,0.00,25.01,25.01,0.00,"{'payer': 'Ryan', 'ryan_share': '25.01', 'jordyn_share': '25.01'}",2025-07-23T03:59:23.520081
+2024-10-18T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,28.55,28.55,0.00,"{'payer': 'Ryan', 'ryan_share': '28.55', 'jordyn_share': '28.55'}",2025-07-23T03:59:23.520118
+2024-10-18T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Stick,0.00,21.72,21.72,0.00,"{'payer': 'Ryan', 'ryan_share': '21.72', 'jordyn_share': '21.72'}",2025-07-23T03:59:23.520154
+2024-10-18T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Annual Fee,0.00,4.13,4.13,0.00,"{'payer': 'Ryan', 'ryan_share': '4.13', 'jordyn_share': '4.13'}",2025-07-23T03:59:23.520190
+2024-10-18T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Uber,0.00,3.33,3.33,0.00,"{'payer': 'Ryan', 'ryan_share': '3.33', 'jordyn_share': '3.33'}",2025-07-23T03:59:23.520226
+2024-10-18T00:00:00,EXPENSE,Ryan paid: 50/50 Split: ANNUAL FEE 11/24 THROUGH 11/24,0.00,4.13,4.13,0.00,"{'payer': 'Ryan', 'ryan_share': '4.13', 'jordyn_share': '4.13'}",2025-07-23T03:59:23.520264
+2024-10-18T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Uber,0.00,3.33,3.33,0.00,"{'payer': 'Ryan', 'ryan_share': '3.33', 'jordyn_share': '3.33'}",2025-07-23T03:59:23.520299
+2024-10-18T00:00:00,EXPENSE,Ryan paid: 50/50 Split: CULVERS OF CHANDLER,0.00,1.78,1.78,0.00,"{'payer': 'Ryan', 'ryan_share': '1.78', 'jordyn_share': '1.78'}",2025-07-23T03:59:23.520335
+2024-10-18T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Chevron,0.00,25.01,25.01,0.00,"{'payer': 'Ryan', 'ryan_share': '25.01', 'jordyn_share': '25.01'}",2025-07-23T03:59:23.520372
+2024-10-18T00:00:00,EXPENSE,Ryan paid: 50/50 Split: Fry's Food and Drug,0.00,28.55,28.55,0.00,"{'payer': 'Ryan', 'ryan_share': '28.55', 'jordyn_share': '28.55'}",2025-07-23T03:59:23.520409
+2024-10-18T00:00:00,EXPENSE,Ryan paid: 50/50 Split: LEGENDS@TALKING STICK,0.00,21.72,21.72,0.00,"{'payer': 'Ryan', 'ryan_share': '21.72', 'jordyn_share': '21.72'}",2025-07-23T03:59:23.520448

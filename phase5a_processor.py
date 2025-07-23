@@ -19,8 +19,8 @@ import sys
 sys.path.append(str(Path(__file__).parent))
 
 from phase5a_loader import load_phase5a_data, STARTING_BALANCE
-from description_decoder import decode_transaction
-from accounting_engine import AccountingEngine, AccountingEntry, EntryType, Account
+from description_decoder import DescriptionDecoder
+from accounting_engine import AccountingEngine
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -32,6 +32,7 @@ class Phase5AProcessor:
     
     def __init__(self):
         self.engine = AccountingEngine()
+        self.decoder = DescriptionDecoder()
         self.starting_balance = STARTING_BALANCE
         self.processed_transactions = []
         self.manual_review = []
@@ -39,36 +40,50 @@ class Phase5AProcessor:
     def initialize_balance(self):
         """Initialize the accounting engine with the starting balance."""
         if self.starting_balance > 0:
-            # Jordyn owes Ryan, so debit Jordyn's payable, credit Ryan's receivable
-            entry = AccountingEntry(
+            # Jordyn owes Ryan - set up the initial receivable/payable
+            # This creates the starting debt position
+            self.engine.ryan_receivable = self.starting_balance
+            self.engine.jordyn_payable = self.starting_balance
+            
+            # Add initial balance transaction to audit trail
+            initial_transaction = {
+                'date': datetime(2024, 9, 30),
+                'transaction_type': 'INITIAL_BALANCE',
+                'description': 'Starting Balance from Phase 4',
+                'ryan_debit': 0.0,
+                'ryan_credit': float(self.starting_balance),
+                'jordyn_debit': float(self.starting_balance), 
+                'jordyn_credit': 0.0,
+                'metadata': {'source': 'Phase 4 ending balance'},
+                'timestamp': datetime.now()
+            }
+            # Create a Transaction object and add to engine's transaction list
+            from accounting_engine import Transaction, TransactionType
+            transaction = Transaction(
                 date=datetime(2024, 9, 30),
+                transaction_type=TransactionType.SETTLEMENT,
                 description="Starting Balance from Phase 4",
-                debit_account=Account.JORDYN_PAYABLE,
-                credit_account=Account.RYAN_RECEIVABLE,
-                amount=self.starting_balance,
-                entry_type=EntryType.INITIAL_BALANCE,
-                transaction_id="INIT_BALANCE"
+                ryan_debit=Decimal('0'),
+                ryan_credit=self.starting_balance,
+                jordyn_debit=self.starting_balance,
+                jordyn_credit=Decimal('0'),
+                metadata={'source': 'Phase 4 ending balance'}
             )
-            self.engine.post_entry(entry)
+            self.engine.transactions.append(transaction)
+            
             logger.info(f"Initialized with starting balance: Jordyn owes Ryan ${self.starting_balance}")
     
     def process_rent_payment(self, row):
         """Process rent payments - Jordyn pays full amount, Ryan owes 43%."""
         if row['payer'] == 'Jordyn':
-            # Jordyn paid rent - Ryan owes his share
-            ryan_share = abs(row['amount']) * Decimal('0.43')
-            
-            entry = AccountingEntry(
+            # Jordyn paid rent - use the accounting engine's rent method
+            self.engine.post_rent(
                 date=row['date'],
-                description=f"Rent Payment - Ryan owes 43%",
-                debit_account=Account.RYAN_PAYABLE,
-                credit_account=Account.JORDYN_RECEIVABLE,
-                amount=ryan_share,
-                entry_type=EntryType.EXPENSE,
-                transaction_id=f"RENT_{row.name}"
+                total_rent=abs(row['amount']),
+                ryan_percentage=0.43
             )
-            self.engine.post_entry(entry)
             
+            ryan_share = abs(row['amount']) * Decimal('0.43')
             self.processed_transactions.append({
                 'transaction_id': f"RENT_{row.name}",
                 'date': row['date'],
@@ -88,17 +103,13 @@ class Phase5AProcessor:
         desc_lower = row['description'].lower()
         
         if 'to ryan' in desc_lower or (row['payer'] == 'Jordyn' and 'zelle' in desc_lower):
-            # Jordyn → Ryan transfer
-            entry = AccountingEntry(
+            # Jordyn → Ryan transfer - use accounting engine's settlement method
+            self.engine.post_settlement(
                 date=row['date'],
-                description=f"Zelle Transfer: Jordyn → Ryan",
-                debit_account=Account.RYAN_RECEIVABLE,
-                credit_account=Account.JORDYN_PAYABLE,
                 amount=abs(row['amount']),
-                entry_type=EntryType.PAYMENT,
-                transaction_id=f"ZELLE_{row.name}"
+                from_person="Jordyn",
+                to_person="Ryan"
             )
-            self.engine.post_entry(entry)
             
             self.processed_transactions.append({
                 'transaction_id': f"ZELLE_{row.name}",
@@ -115,10 +126,10 @@ class Phase5AProcessor:
     def process_expense(self, row):
         """Process shared expenses using description patterns."""
         # Decode the description
-        result = decode_transaction(row['description'], row['amount'], row['payer'])
-        pattern = result['pattern']
+        result = self.decoder.decode_transaction(row['description'], row['amount'], row['payer'])
+        action = result['action']
         
-        if pattern == 'gift':
+        if action == 'gift':
             # Gift - no split needed
             self.processed_transactions.append({
                 'transaction_id': f"GIFT_{row.name}",
@@ -127,12 +138,12 @@ class Phase5AProcessor:
                 'payer': row['payer'],
                 'amount': row['amount'],
                 'transaction_type': 'gift',
-                'pattern': pattern,
+                'pattern': action,
                 'source': row['source']
             })
             return
             
-        elif pattern == 'personal':
+        elif action in ['personal_ryan', 'personal_jordyn']:
             # Personal expense - no split
             self.processed_transactions.append({
                 'transaction_id': f"PERSONAL_{row.name}",
@@ -141,71 +152,52 @@ class Phase5AProcessor:
                 'payer': row['payer'],
                 'amount': row['amount'],
                 'transaction_type': 'personal',
-                'pattern': pattern,
+                'pattern': action,
                 'source': row['source']
             })
             return
             
-        elif pattern == 'full_reimbursement':
-            # Full reimbursement needed
+        elif action == 'full_reimbursement':
+            # Full reimbursement needed - use accounting engine's expense method
             if row['payer'] == 'Ryan':
-                entry = AccountingEntry(
+                # Ryan paid, Jordyn owes full amount
+                self.engine.post_expense(
                     date=row['date'],
-                    description=f"Full Reimbursement: {row['description']}",
-                    debit_account=Account.JORDYN_PAYABLE,
-                    credit_account=Account.RYAN_RECEIVABLE,
-                    amount=abs(row['amount']),
-                    entry_type=EntryType.EXPENSE,
-                    transaction_id=f"FULL_{row.name}"
+                    payer="Ryan",
+                    ryan_share=Decimal('0'),
+                    jordyn_share=abs(row['amount']),
+                    description=f"Full Reimbursement: {row['description']}"
                 )
             else:  # Jordyn paid
-                entry = AccountingEntry(
+                # Jordyn paid, Ryan owes full amount
+                self.engine.post_expense(
                     date=row['date'],
-                    description=f"Full Reimbursement: {row['description']}",
-                    debit_account=Account.RYAN_PAYABLE,
-                    credit_account=Account.JORDYN_RECEIVABLE,
-                    amount=abs(row['amount']),
-                    entry_type=EntryType.EXPENSE,
-                    transaction_id=f"FULL_{row.name}"
+                    payer="Jordyn", 
+                    ryan_share=abs(row['amount']),
+                    jordyn_share=Decimal('0'),
+                    description=f"Full Reimbursement: {row['description']}"
                 )
-            
-            self.engine.post_entry(entry)
             
         else:
-            # Default 50/50 split
+            # Default 50/50 split - use accounting engine's expense method
             half_amount = abs(row['amount']) / Decimal('2')
             
-            if row['payer'] == 'Ryan':
-                entry = AccountingEntry(
-                    date=row['date'],
-                    description=f"50/50 Split: {row['description']}",
-                    debit_account=Account.JORDYN_PAYABLE,
-                    credit_account=Account.RYAN_RECEIVABLE,
-                    amount=half_amount,
-                    entry_type=EntryType.EXPENSE,
-                    transaction_id=f"SPLIT_{row.name}"
-                )
-            else:  # Jordyn paid
-                entry = AccountingEntry(
-                    date=row['date'],
-                    description=f"50/50 Split: {row['description']}",
-                    debit_account=Account.RYAN_PAYABLE,
-                    credit_account=Account.JORDYN_RECEIVABLE,
-                    amount=half_amount,
-                    entry_type=EntryType.EXPENSE,
-                    transaction_id=f"SPLIT_{row.name}"
-                )
-            
-            self.engine.post_entry(entry)
+            self.engine.post_expense(
+                date=row['date'],
+                payer=row['payer'],
+                ryan_share=half_amount,
+                jordyn_share=half_amount,
+                description=f"50/50 Split: {row['description']}"
+            )
         
         self.processed_transactions.append({
-            'transaction_id': f"{pattern}_{row.name}",
+            'transaction_id': f"{action}_{row.name}",
             'date': row['date'],
             'description': row['description'],
             'payer': row['payer'],
             'amount': row['amount'],
             'transaction_type': 'expense',
-            'pattern': pattern,
+            'pattern': action,
             'source': row['source']
         })
     
@@ -213,20 +205,36 @@ class Phase5AProcessor:
         """Categorize transaction based on description and amount."""
         desc_lower = row['description'].lower()
         
-        # Check for rent
-        if any(keyword in desc_lower for keyword in ['rent', 'san palmas']):
+        # Check for rent - expanded patterns
+        rent_keywords = ['rent', 'san palmas', '7755 e thomas', 'apartment', 'rental']
+        if any(keyword in desc_lower for keyword in rent_keywords):
             return 'rent'
         
-        # Check for Zelle transfers
-        if 'zelle' in desc_lower and ('to ryan' in desc_lower or 'to mom' not in desc_lower):
-            return 'zelle'
+        # Improved Zelle transfer detection
+        if 'zelle' in desc_lower:
+            # Check if it's between Ryan and Jordyn (not to/from others like mom)
+            if ('to ryan' in desc_lower or 'from jordyn' in desc_lower or 
+                ('zimmerman' in desc_lower and 'joan' not in desc_lower)):
+                return 'zelle'
+            # Zelle to others (mom, etc.) is personal
+            elif any(word in desc_lower for word in ['to mom', 'from joan', 'joan zimmerman']):
+                return 'personal'
         
-        # Check for credit card payments (not shared)
-        if any(keyword in desc_lower for keyword in ['autopay', 'card payment', 'credit card']):
+        # Expanded personal transaction patterns
+        personal_keywords = [
+            'autopay', 'card payment', 'credit card', 'chase card ending',
+            'payment thank you', 'apple card', 'usbank card', 'savings transfer',
+            'checking transfer', 'internal transfer', 'automatic payment'
+        ]
+        if any(keyword in desc_lower for keyword in personal_keywords):
             return 'personal'
         
-        # Check for income (not shared)
-        if any(keyword in desc_lower for keyword in ['direct deposit', 'payroll', 'from joan']):
+        # Expanded income patterns  
+        income_keywords = [
+            'direct deposit', 'payroll', 'salary', 'from joan', 'deposit',
+            'brokerage activity', 'cash back', 'refund', 'interest earned'
+        ]
+        if any(keyword in desc_lower for keyword in income_keywords):
             return 'income'
         
         # Default to expense
@@ -242,6 +250,19 @@ class Phase5AProcessor:
         
         # Process each transaction
         for idx, row in df.iterrows():
+            # Skip transactions with missing amounts
+            if pd.isna(row['amount']) or row['amount'] is None:
+                self.manual_review.append({
+                    'index': idx,
+                    'date': row['date'],
+                    'description': row['description'],
+                    'payer': row['payer'],
+                    'amount': 'MISSING',
+                    'source': row['source'],
+                    'reason': 'Missing amount due to encoding error'
+                })
+                continue
+                
             category = self.categorize_transaction(row)
             
             if category == 'rent':
@@ -288,15 +309,17 @@ class Phase5AProcessor:
     
     def generate_reports(self):
         """Generate Phase 5A reports."""
-        # Get final balance
-        balance = self.engine.get_balance()
+        # Get final balance and account summary
+        balance_status, balance_amount = self.engine.get_current_balance()
+        account_summary = self.engine.get_account_summary()
         
         # Create output directory
         output_dir = Path("output/phase5a")
         output_dir.mkdir(exist_ok=True, parents=True)
         
-        # Save ledger
-        ledger_df = pd.DataFrame([entry.__dict__ for entry in self.engine.ledger])
+        # Save transaction log from accounting engine
+        transaction_log = self.engine.get_transaction_log()
+        ledger_df = pd.DataFrame(transaction_log)
         ledger_df.to_csv(output_dir / "phase5a_ledger.csv", index=False)
         
         # Save processed transactions
@@ -313,14 +336,14 @@ class Phase5AProcessor:
             'period': 'September 30 - October 18, 2024',
             'starting_balance': float(self.starting_balance),
             'starting_balance_description': 'Jordyn owes Ryan',
-            'ending_balance': float(balance['net_balance']),
-            'ending_balance_description': 'Jordyn owes Ryan' if balance['net_balance'] > 0 else 'Ryan owes Jordyn',
+            'ending_balance': float(balance_amount),
+            'ending_balance_description': balance_status,
             'total_transactions': len(self.processed_transactions),
             'manual_review_count': len(self.manual_review),
-            'ryan_receivable': float(balance['ryan_receivable']),
-            'ryan_payable': float(balance['ryan_payable']),
-            'jordyn_receivable': float(balance['jordyn_receivable']),
-            'jordyn_payable': float(balance['jordyn_payable'])
+            'ryan_receivable': float(account_summary['ryan_receivable']),
+            'ryan_payable': float(account_summary['ryan_payable']),
+            'jordyn_receivable': float(account_summary['jordyn_receivable']),
+            'jordyn_payable': float(account_summary['jordyn_payable'])
         }
         
         # Save summary

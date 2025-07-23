@@ -1,15 +1,13 @@
 {
-  "phase": "5A",
   "period": "September 30 - October 18, 2024",
   "starting_balance": 1577.08,
-  "starting_balance_status": "Jordyn owes Ryan",
-  "ending_balance": 4807.93,
-  "ending_balance_status": "Ryan owes Jordyn",
-  "balance_change": 3230.85,
-  "days_covered": 18,
-  "transactions_processed": 196,
-  "expenses": 176,
-  "rent_payments": 0,
-  "zelle_transfers": 0,
-  "manual_review": 7
+  "starting_balance_description": "Jordyn owes Ryan",
+  "ending_balance": 7547.02,
+  "ending_balance_description": "Jordyn owes Ryan",
+  "total_transactions": 195,
+  "manual_review_count": 7,
+  "ryan_receivable": 14126.93,
+  "ryan_payable": 6579.91,
+  "jordyn_receivable": 6579.91,
+  "jordyn_payable": 14126.93
 }
