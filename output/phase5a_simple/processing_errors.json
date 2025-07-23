@@ -1,0 +1,26 @@
+[
+  {
+    "transaction": {
+      "name": NaN,
+      "date_of_purchase": "2024-07-01 00:00:00",
+      "account": NaN,
+      "merchant": NaN,
+      "merchant_description": NaN,
+      "actual_amount": "38.45",
+      "allowed_amount": null,
+      "description": NaN,
+      "category": NaN,
+      "running_balance": null,
+      "transaction_type": "expense",
+      "source_file": "Consolidated_Expense_History_20250622.csv",
+      "date": "2024-07-01 00:00:00",
+      "amount": 38.45,
+      "person": NaN,
+      "decoded_action": "split_50_50",
+      "decoded_confidence": "high",
+      "decoded_details": ""
+    },
+    "error": "'float' object has no attribute 'upper'",
+    "type": "expense_processing"
+  }
+]

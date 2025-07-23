@@ -1,0 +1,456 @@
+Bank,Account #,Statement Period,Trans. Date,Description,Category,Amount
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,04 / 18 / 24,ONLINE ACH PAYMENT       THANK YOU,Payment,"$-1,000.00"
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 13 / 24,CASH BACK REDEMPTION REF  148368906,Other Credit,$-47.58
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,04 / 17 / 24,QT 478 MESA  AZ,Purchase,$6.99
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,04 / 19 / 24,TRADER JOE S #091 TEMPE  AZ,Purchase,$1.07
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,04 / 19 / 24,TST* 12 WEST BREWING GILBERT  AZ,Purchase,$11.80
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,04 / 19 / 24,SPROUTS FARMERS MAR CHANDLER  AZ,Purchase,$17.59
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,04 / 19 / 24,FAMILY DOLLAR CHANDLER  AZ,Purchase,$5.31
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,04 / 22 / 24,FRYS FUEL #7658 GILBERT  AZ,Purchase,$35.22
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,04 / 23 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$38.51
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,04 / 26 / 24,TST* THE HUB BAR & GRILL Phoenix  AZ,Purchase,$34.36
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,04 / 28 / 24,ENDGAME BAR MESA  AZ,Purchase,$6.50
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,04 / 28 / 24,ENDGAME BAR MESA  AZ,Purchase,$7.50
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,04 / 28 / 24,UBER   TRIP HELP.UBER.COM CA,Purchase,$10.67
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,04 / 28 / 24,LOWES #01032* CHANDLER  AZ,Purchase,$127.83
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,04 / 28 / 24,IN-N-OUT CHANDLER 2 CHANDLER  AZ,Purchase,$12.86
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,04 / 29 / 24,COCA COLA TEMPE AZ TEMPE  AZ,Purchase,$3.75
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,04 / 30 / 24,TARGET        00018382 CHANDLER  AZ,Purchase,$2.62
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,04 / 30 / 24,TARGET        00018382 CHANDLER  AZ,Purchase,$20.59
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,04 / 30 / 24,TARGET.COM  *            800-591-3869 MN,Purchase,$3.22
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 01 / 24,SPROUTS FARMERS MAR CHANDLER  AZ,Purchase,$5.36
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 01 / 24,QT 478 MESA  AZ,Purchase,$9.29
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 02 / 24,AMZN Mktp US*L17PN90G3 Amzn.com/bill WA,Purchase,$9.89
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 03 / 24,COOPERS HAWK CHANDLER CHANDLER  AZ,Purchase,$49.72
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 03 / 24,FRYS #658 GILBERT  AZ,Purchase,$27.39
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 03 / 24,FRYS FUEL #7658 GILBERT  AZ,Purchase,$34.79
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 04 / 24,WHOLEFDS CHR#10272 CHANDLER  AZ,Purchase,$16.13
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 04 / 24,WHOLEFDS CHR#10272 CHANDLER  AZ,Purchase,$9.73
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 04 / 24,WHOLEFDS CHR 10272 CHANDLER  AZ,Purchase,$16.22
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 05 / 24,Amazon.com*G24VL9SL3 Amzn.com/bill WA,Purchase,$24.13
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 06 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$13.98
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 06 / 24,BLIZZARD *US721309684    949-955-1380 CA,Purchase,$96.38
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 08 / 24,SPROUTS FARMERS MAR CHANDLER  AZ,Purchase,$40.09
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 11 / 24,TST* SNOOZE - 3006 - CIRC PHOENIX  AZ,Purchase,$59.35
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 11 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$56.68
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 11 / 24,TST* THE HUB BAR & GRILL Phoenix  AZ,Purchase,$35.03
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 12 / 24,FARM AND CRAFT SCOTTSDALE SCOTTSDALE  AZ,Purchase,$83.15
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 14 / 24,FRYS #658 GILBERT  AZ,Purchase,$77.00
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 14 / 24,FRYS FUEL #7658 GILBERT  AZ,Purchase,$30.91
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 15 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$19.26
+Wells Fargo,...4296,Apr 18 2024 – May 17 2024,05 / 15 / 24,QT 478 MESA  AZ,Purchase,$6.98
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 12 / 24,AUTOMATIC PAYMENT - THANK YOU,Payment,$-117.00
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 16 / 24,ONLINE ACH PAYMENT       THANK YOU,Payment,"$-1,000.00"
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 02 / 24,SOUTHWES    5262556317570800-435-9792 TX,Other Credit,$-296.98
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 18 / 24,TST* O.H.S.O. - GILBERT GILBERT  AZ,Purchase,$84.35
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 18 / 24,Amazon.com*RU22U1VB0 Amzn.com/bill WA,Purchase,$21.88
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 19 / 24,SPROUTS FARMERS MAR CHANDLER  AZ,Purchase,$100.00
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 19 / 24,AMAZON MKTPL*RU4YW4QX1 Amzn.com/bill WA,Purchase,$19.13
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 19 / 24,AMAZON MKTPL*R44BU0ZG2 Amzn.com/bill WA,Purchase,$15.21
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 22 / 24,SAFEWAY #1535 TEMPE  AZ,Purchase,$31.36
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 22 / 24,FRYS 5627                866-576-4377 AZ,Purchase,$37.11
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 22 / 24,AMAZON MKTPL*R49DK8F80 Amzn.com/bill WA,Purchase,$12.88
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 23 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$45.57
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 26 / 24,FRYS 5051                866-576-4377 AZ,Purchase,$214.62
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 26 / 24,AMAZON MKTPL*R42S59DR1 Amzn.com/bill WA,Purchase,$20.47
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 27 / 24,AMAZON RETA* RK2N871X2 WWW.AMAZON.CO WA,Purchase,$40.64
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 27 / 24,FRYS #658 GILBERT  AZ,Purchase,$34.24
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 27 / 24,FRYS FUEL #7658 GILBERT  AZ,Purchase,$24.40
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 28 / 24,AMAZON RETA* RK8XL5512 WWW.AMAZON.CO WA,Purchase,$8.61
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 30 / 24,WELLGROOMEDPETS.COM      148-08082002 AZ,Purchase,$108.10
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 30 / 24,PETS BEST INSURANCE SERV 877-738-7237 NC,Purchase,$62.31
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 30 / 24,TM *DILLON FRANCIS       800-653-8000 CA,Purchase,$196.18
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 31 / 24,EXXON LAKE JENNINGS GAS EL CAJON  CA,Purchase,$5.64
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 31 / 24,SHELL OIL 57442518304 GILA BEND  AZ,Purchase,$7.23
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,08 / 31 / 24,CIRCLE K 09183 CHANDLER  AZ,Purchase,$30.05
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 01 / 24,OB QUICK STOP SAN DIEGO  CA,Purchase,$7.05
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 01 / 24,CHEVRON 0352705 DATELAND  AZ,Purchase,$13.98
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 01 / 24,TST*LUCYS TAVERN San Diego  CA,Purchase,$10.80
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 01 / 24,CSD 6TH & K PARK 39888 SAN DIEGO  CA,Purchase,$25.00
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 02 / 24,SHELL OIL 10006123003 SAN DIEGO  CA,Purchase,$9.37
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 02 / 24,UBER   *TRIP HELP.UBER.COM CA,Purchase,$35.96
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 02 / 24,UBER   *TRIP HELP.UBER.COM CA,Purchase,$20.00
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 02 / 24,SOUTHWES    5262556317570800-435-9792 TX,Purchase,$296.98
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 02 / 24,GRAND HYATT SAN DIEGO FB SAN DIEGO  CA,Purchase,$149.07
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 04 / 24,AKCHIN PAVILION AMPHI PHOENIX  AZ,Purchase,$39.01
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 05 / 24,TARGET        00018382 CHANDLER  AZ,Purchase,$16.78
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 05 / 24,UBER   *TRIP HELP.UBER.COM CA,Purchase,$41.15
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 06 / 24,QT 478 MESA  AZ,Purchase,$9.97
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 07 / 24,SCOTTSDALE ARTS          480-9942787  AZ,Purchase,$20.00
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 08 / 24,FRYS 5051                866-576-4377 AZ,Purchase,$297.75
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 08 / 24,AMAZON MKTPL*ZT8AP12A1 Amzn.com/bill WA,Purchase,$22.41
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 11 / 24,FRYS FUEL #7658 GILBERT  AZ,Purchase,$30.49
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 11 / 24,FRYS FUEL #7658 GILBERT  AZ,Purchase,$4.04
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 13 / 24,SPROUTS FARMERS MAR CHANDLER  AZ,Purchase,$63.19
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 15 / 24,TARGET        00018382 CHANDLER  AZ,Purchase,$48.90
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 15 / 24,IN-N-OUT CHANDLER 2 CHANDLER  AZ,Purchase,$13.89
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 16 / 24,PETSMART # 1017 CHANDLER  AZ,Purchase,$169.19
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 16 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$40.39
+Wells Fargo,...4296,Aug 19 2024 – Sep 17 2024,09 / 17 / 24,CHARGE ON PURCHASES,Interest,$108.20
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 12 / 25,AUTOMATIC PAYMENT - THANK YOU,Payment,$-161.00
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 03 / 25,AMAZON MKTPLACE PMTS Amzn.com/bill WA,Other Credit,$-8.14
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 06 / 25,AMAZON MKTPLACE PMTS Amzn.com/bill WA,Other Credit,$-19.39
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 18 / 25,IN-N-OUT MESA (POWER) MESA  AZ,Purchase,$10.56
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 19 / 25,PAMPERED PAWS GROOMING   183-36144647 AZ,Purchase,$96.00
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 19 / 25,BASHAS' #048 TEMPE  AZ,Purchase,$26.10
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 19 / 25,AMAZON MKTPL*Z97621VB2 Amzn.com/bill WA,Purchase,$25.53
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 19 / 25,SQ *GATHER MERCANTILE LLC Tempe  AZ,Purchase,$28.00
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 19 / 25,CERRETA CANDY CO INC GLENDALE  AZ,Purchase,$20.60
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 20 / 25,LITTLE SZECHUAN TEMPE  AZ,Purchase,$85.45
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 20 / 25,CHEVRON 0209999 CHANDLER  AZ,Purchase,$34.96
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 20 / 25,FLOWER CHILD INSTORE GILBERT  AZ,Purchase,$21.24
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 21 / 25,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$104.28
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 21 / 25,GUS'S FRIED CHICKEN-AHWA PHOENIX  AZ,Purchase,$71.95
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 24 / 25,BOBBY Q MESA  AZ,Purchase,$72.37
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 26 / 25,COCA COLA TEMPE AZ TEMPE  AZ,Purchase,$4.00
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 26 / 25,COCA COLA TEMPE AZ TEMPE  AZ,Purchase,$2.00
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 27 / 25,FRYS 5051                866-576-4377 AZ,Purchase,$36.80
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 28 / 25,TST*BLACK SHEEP WINE BAR Chandler  AZ,Purchase,$37.25
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 28 / 25,TST*STONE & VINE URBAN I Chandler  AZ,Purchase,$17.14
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 30 / 25,TARGET        00018382 CHANDLER  AZ,Purchase,$23.33
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 30 / 25,TARGET        00018382 CHANDLER  AZ,Purchase,$44.63
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 31 / 25,PETS BEST INSURANCE SERV 877-738-7237 NC,Purchase,$62.31
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 31 / 25,WM SUPERCENTER #6480 CHANDLER  AZ,Purchase,$73.12
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 31 / 25,DSW.                     866-3797463  OH,Purchase,$41.21
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,12 / 31 / 25,DSW.                     866-3797463  OH,Purchase,$28.84
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 01 / 25,AMAZON MKTPL*ZE02A2S61 Amzn.com/bill WA,Purchase,$30.16
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 01 / 25,TST*SNEAKY BIRD- GATEWAY Scottsdale  AZ,Purchase,$9.72
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 01 / 25,IN-N-OUT CHANDLER 2 CHANDLER  AZ,Purchase,$16.97
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 02 / 25,NATURAL NAILS SPA BY CIND CHANDLER  AZ,Purchase,$30.00
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 02 / 25,COOPER'S HAWK SCOTTSDALE SCOTTSDALE  AZ,Purchase,$50.00
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 02 / 25,PAR*MR. PICKLES SANDWICH CHANDLER  AZ,Purchase,$20.40
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 03 / 25,PY *HOPDODDY  SCOTTSDALE SCOTTSDALE  AZ,Purchase,$59.70
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 04 / 25,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$37.17
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 06 / 25,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$40.46
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 08 / 25,AMAZON RETA* Z59CK4NJ2 WWW.AMAZON.CO WA,Purchase,$37.96
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 09 / 25,FRYS FUEL #7658 GILBERT  AZ,Purchase,$21.45
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 09 / 25,FRYS #658 GILBERT  AZ,Purchase,$24.46
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 09 / 25,GDP*Against the Grain glu Mesa  AZ,Purchase,$25.89
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 11 / 25,INTENTIONAL FOODS CAFE & MESA  AZ,Purchase,$57.18
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 11 / 25,TOTAL WINE AND MORE GILBERT  AZ,Purchase,$58.44
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 11 / 25,SQ *SONORAN SCAVANGERS Chandler  AZ,Purchase,$8.00
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 11 / 25,BLACK ORCHARD FARMS INC PHOENIX  AZ,Purchase,$8.32
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 12 / 25,AMAZON MKTPL*ZD01811X1 Amzn.com/bill WA,Purchase,$39.82
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 14 / 25,WHOLEFDS CHR 10272 CHANDLER  AZ,Purchase,$16.23
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 14 / 25,AMAZON MKTPL*ZD8TK7DX1 Amzn.com/bill WA,Purchase,$54.39
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 15 / 25,IN-N-OUT MESA (POWER) MESA  AZ,Purchase,$13.32
+Wells Fargo,...4296,Dec 19 2024 – Jan 17 2025,01 / 17 / 25,CHARGE ON PURCHASES,Interest,$113.07
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,02 / 12 / 25,AUTOMATIC PAYMENT - THANK YOU,Payment,$-175.00
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,01 / 16 / 25,CASH BACK REDEMPTION REF  165418931,Other Credit,$-42.00
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,01 / 22 / 25,AMAZON MKTPLACE PMTS Amzn.com/bill WA,Other Credit,$-12.18
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,02 / 07 / 25,AMAZON MKTPLACE PMTS Amzn.com/bill WA,Other Credit,$-21.55
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,02 / 08 / 25,AMAZON RETA* Z59CK4NJ2 WWW.AMAZON.CO WA,Other Credit,$-17.18
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,02 / 08 / 25,AMAZON MKTPLACE PMTS Amzn.com/bill WA,Other Credit,$-22.63
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,01 / 19 / 25,IN-N-OUT CHANDLER 2 CHANDLER  AZ,Purchase,$19.35
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,01 / 20 / 25,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$119.84
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,01 / 20 / 25,PAR*MR. PICKLES SANDWICH CHANDLER  AZ,Purchase,$18.79
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,01 / 22 / 25,AMAZON MKTPL*Z566P9981 Amzn.com/bill WA,Purchase,$49.20
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,01 / 22 / 25,QT 478 MESA  AZ,Purchase,$10.27
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,01 / 23 / 25,AMAZON RETA* ZC3HE0HF2 WWW.AMAZON.CO WA,Purchase,$22.00
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,01 / 23 / 25,FRYS FUEL #7658 GILBERT  AZ,Purchase,$26.19
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,01 / 23 / 25,FRYS #658 GILBERT  AZ,Purchase,$86.22
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,01 / 24 / 25,AMAZON MKTPL*ZC8EB1DG2 Amzn.com/bill WA,Purchase,$17.45
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,01 / 25 / 25,DD *DOORDASH LITTLESZE DOORDASH.COM  CA,Purchase,$42.60
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,01 / 25 / 25,AMAZON MKTPL*ZG27J4RO0 Amzn.com/bill WA,Purchase,$30.45
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,01 / 27 / 25,AMAZON RETA* Z77SA6ZK2 WWW.AMAZON.CO WA,Purchase,$10.45
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,01 / 27 / 25,FLOWER CHILD CHANDLER  AZ,Purchase,$41.55
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,01 / 29 / 25,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$24.11
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,01 / 30 / 25,SPROUTS FARMERS MAR CHANDLER  AZ,Purchase,$39.02
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,01 / 30 / 25,FRANKIE'S CAR WASH GILBERT  AZ,Purchase,$13.00
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,01 / 31 / 25,PETS BEST INSURANCE SERV 877-738-7237 NC,Purchase,$62.31
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,02 / 01 / 25,TST* OVER EASY - CHANDLER CHANDLER  AZ,Purchase,$67.16
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,02 / 01 / 25,SQ *SONORAN SCAVANGERS Chandler  AZ,Purchase,$8.00
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,02 / 01 / 25,SQ *STAMPER CHEESE AZ Cave Creek  AZ,Purchase,$10.30
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,02 / 01 / 25,"SQ *GHOST TOWN FOODS, LLC Chandler  AZ",Purchase,$20.00
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,02 / 03 / 25,FRYS 5051                866-576-4377 AZ,Purchase,$175.86
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,02 / 04 / 25,PAMPERED PAWS GROOMING   183-36144647 AZ,Purchase,$80.50
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,02 / 06 / 25,FRYS FUEL #7658 GILBERT  AZ,Purchase,$23.99
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,02 / 06 / 25,FRYS #658 GILBERT  AZ,Purchase,$42.05
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,02 / 07 / 25,WHOLEFDS CHR 10272 CHANDLER  AZ,Purchase,$28.90
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,02 / 10 / 25,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$52.47
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,02 / 10 / 25,BJ'S RESTAURANTS 639 CHANDLER  AZ,Purchase,$64.29
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,02 / 13 / 25,HARKINS SANTAN VILLAGE GILBERT  AZ,Purchase,$15.75
+Wells Fargo,...4296,Jan 18 2025 – Feb 14 2025,02 / 14 / 25,CHARGE ON PURCHASES,Interest,$127.48
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,08 / 12 / 24,AUTOMATIC PAYMENT - THANK YOU,Payment,$-57.00
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 23 / 24,AMAZON MKTPLACE PMTS Amzn.com/bill WA,Other Credit,$-9.23
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,08 / 08 / 24,CASH BACK REDEMPTION REF  154113882,Other Credit,$-51.83
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 18 / 24,AMAZON MKTPL*RS9DW6DT2 Amzn.com/bill WA,Purchase,$102.22
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 19 / 24,PICAZZOS HEALTHY ITALI TEMPE  AZ,Purchase,$50.16
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 21 / 24,MANUEL'S #7 TEMPE  AZ,Purchase,$78.00
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 23 / 24,TARGET        00018382 CHANDLER  AZ,Purchase,$10.19
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 23 / 24,TARGET        00018382 CHANDLER  AZ,Purchase,$137.12
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 23 / 24,AMAZON MKTPL*RJ9FA2KA0 Amzn.com/bill WA,Purchase,$26.56
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 25 / 24,TST* SIP WINE BAR PHOENIX  AZ,Purchase,$33.47
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 25 / 24,SOUTHWESTAIR INFLIGHT DALLAS  TX,Purchase,$52.00
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 25 / 24,PEDAL HAUS BREWERY PHOENIX  AZ,Purchase,$38.76
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 26 / 24,EVOLVE BY HUDSON ST236 DES PLAINES  IL,Purchase,$8.51
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 26 / 24,WALGREENS #12304 CHICAGO  IL,Purchase,$4.09
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 26 / 24,UBER   TRIP HELP.UBER.COM CA,Purchase,$36.90
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 26 / 24,ACCENTS PLUS EVANSTON  IL,Purchase,$30.32
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 26 / 24,TST* ONESTO Milwaukee  WI,Purchase,$136.99
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 26 / 24,HILTON HOTELS RESTAURANT MILWAUKEE  WI,Purchase,$44.02
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 27 / 24,SWEET DREAMS HARTLAND  WI,Purchase,$5.78
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 27 / 24,WALGREENS #9365 HARTLAND  WI,Purchase,$2.30
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 27 / 24,TST* ANYTIME AREPA - 140 Milwaukee  WI,Purchase,$15.17
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 27 / 24,TST* 3RD STREET MARKET HA Milwaukee  WI,Purchase,$12.84
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 28 / 24,EXXON W-P-P MOBIL MILWAUKEE  WI,Purchase,$5.58
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 28 / 24,PICK N SAVE #882 MILWAUKEE  WI,Purchase,$8.07
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 28 / 24,UBER   TRIP HELP.UBER.COM CA,Purchase,$51.97
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 28 / 24,UBER   TRIP HELP.UBER.COM CA,Purchase,$9.97
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 28 / 24,SWA*UPGBOARD5264249060334800-435-9792 TX,Purchase,$80.00
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 28 / 24,SOUTHWESTAIR INFLIGHT DALLAS  TX,Purchase,$8.00
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 28 / 24,CULVERS OF CHANDLER CHANDLER  AZ,Purchase,$21.80
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 28 / 24,HILTON HOTELS MILWAUKEE  WI,Purchase,$76.00
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 29 / 24,FRONTLINE FOOD SERVIC PHOENIX  AZ,Purchase,$4.70
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 29 / 24,FRONTLINE FOOD SERVIC PHOENIX  AZ,Purchase,$4.70
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 30 / 24,AMAZON RETA* RV99E2V01 WWW.AMAZON.CO WA,Purchase,$18.33
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,07 / 31 / 24,SPROUTS FARMERS MAR CHANDLER  AZ,Purchase,$38.27
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,08 / 01 / 24,AMAZON RETA* RV7ZW3YQ0 WWW.AMAZON.CO WA,Purchase,$8.88
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,08 / 02 / 24,Amazon.com*RV8N53YJ1 Amzn.com/bill WA,Purchase,$5.34
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,08 / 02 / 24,AMAZON MKTPL*RF3027Z70 Amzn.com/bill WA,Purchase,$10.77
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,08 / 02 / 24,SQ *SPOOKY'S SWIRLS CHANDLER  AZ,Purchase,$33.49
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,08 / 03 / 24,WALGREENS #3727 CHANDLER  AZ,Purchase,$10.55
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,08 / 05 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$94.29
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,08 / 06 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$7.86
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,08 / 11 / 24,FRYS 5051                866-576-4377 AZ,Purchase,$194.88
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,08 / 13 / 24,SPROUTS FARMERS MAR CHANDLER  AZ,Purchase,$31.71
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,08 / 13 / 24,WALGREENS #2056 CHANDLER  AZ,Purchase,$15.68
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,08 / 14 / 24,FRYS FUEL #7658 GILBERT  AZ,Purchase,$25.77
+Wells Fargo,...4296,Jul 19 2024 – Aug 18 2024,08 / 18 / 24,CHARGE ON PURCHASES,Interest,$76.42
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 12 / 24,AUTOMATIC PAYMENT - THANK YOU,Payment,$-25.00
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 16 / 24,ONLINE ACH PAYMENT       THANK YOU,Payment,$-223.00
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,06 / 20 / 24,CASH BACK REDEMPTION REF  150910362,Other Credit,$-53.16
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,06 / 16 / 24,CARLOS OBRIENS MEXICAN PHOENIX  AZ,Purchase,$9.69
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,06 / 17 / 24,76 - GOOD 2 GO 555 PRESCOTT  AZ,Purchase,$38.08
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,06 / 18 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$95.98
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,06 / 20 / 24,Amazon.com*9V4F13KH3 Amzn.com/bill WA,Purchase,$23.73
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,06 / 21 / 24,IKEA TEMPE TEMPE  AZ,Purchase,$73.42
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,06 / 21 / 24,TST* ISLAND FIN POKE - GI Gilbert  AZ,Purchase,$32.36
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,06 / 21 / 24,COCA COLA TEMPE AZ TEMPE  AZ,Purchase,$1.75
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,06 / 23 / 24,SPO*REBELWINELOUNGE MESA  AZ,Purchase,$24.57
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,06 / 23 / 24,TST* THE HUB BAR & GRILL Phoenix  AZ,Purchase,$81.10
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,06 / 25 / 24,INTENTIONAL FOODS CAFE & MESA  AZ,Purchase,$12.28
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,06 / 25 / 24,FRYS 5051                866-576-4377 AZ,Purchase,$224.66
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,06 / 26 / 24,WHOLEFDS CHR#10272 CHANDLER  AZ,Purchase,$25.94
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,06 / 26 / 24,WHOLEFDS CHR#10272 CHANDLER  AZ,Purchase,$5.83
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,06 / 26 / 24,AMAZON MKTPL*RC0JI9O12 Amzn.com/bill WA,Purchase,$31.83
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,06 / 27 / 24,SPROUTS FARMERS MAR PHOENIX  AZ,Purchase,$31.11
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,06 / 27 / 24,GUS'S FRIED CHICKEN-AHWA PHOENIZ  AZ,Purchase,$62.60
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,06 / 29 / 24,HYATT REG PHOENIX F&B PHOENIX  AZ,Purchase,$3.26
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,06 / 30 / 24,HOMEGOODS #0780 PHOENIX  AZ,Purchase,$35.81
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,06 / 30 / 24,AMAZON MKTPL*RC9UP2S91 Amzn.com/bill WA,Purchase,$39.56
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 01 / 24,MY PET MARKET #15        480-8214500  AZ,Purchase,$130.91
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 01 / 24,AMAZON MKTPL*R70P09EI0 Amzn.com/bill WA,Purchase,$34.48
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 01 / 24,AMAZON MKTPL*RC2YK5UR1 Amzn.com/bill WA,Purchase,$57.53
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 01 / 24,AMAZON MKTPL*RC6HM2702 Amzn.com/bill WA,Purchase,$9.69
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 02 / 24,AMZN Mktp US*R73H30FU1 Amzn.com/bill WA,Purchase,$10.72
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 02 / 24,AMAZON MKTPL*R748S8GE0 Amzn.com/bill WA,Purchase,$19.10
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 03 / 24,PET DOCTOR OF CHANDLER CHANDLER  AZ,Purchase,$376.28
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 03 / 24,TST* POSTINO SOUTH TEMPE TEMPE  AZ,Purchase,$41.84
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 04 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$102.89
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 06 / 24,TOTAL WINE AND MORE PHOENIX  AZ,Purchase,$80.62
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 06 / 24,AMAZON.COM*R71IE4QJ2 SEATTLE  WA,Purchase,$30.17
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 07 / 24,IN-N-OUT PRESCOTT PRESCOTT  AZ,Purchase,$11.59
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 08 / 24,AMTRAK MOBIL1900710219973 WASHINGTON  DC,Purchase,$54.00
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 09 / 24,TARGET        00018382 CHANDLER  AZ,Purchase,$66.03
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 09 / 24,FRYS 5051                866-576-4377 AZ,Purchase,$244.38
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 11 / 24,COCA COLA TEMPE AZ TEMPE  AZ,Purchase,$1.75
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 13 / 24,COCA COLA TEMPE AZ TEMPE  AZ,Purchase,$2.00
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 14 / 24,TST* O.H.S.O. - GILBERT GILBERT  AZ,Purchase,$118.85
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 14 / 24,AMAZON MKTPL*RY2RM8762 Amzn.com/bill WA,Purchase,$17.14
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 14 / 24,UNPHOGETTABLE CHANDLER CHANDLER  AZ,Purchase,$46.78
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 15 / 24,MY PET MARKET #15        480-8214500  AZ,Purchase,$131.50
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 16 / 24,SPROUTS FARMERS MAR CHANDLER  AZ,Purchase,$47.19
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 16 / 24,AMAZON MKTPL*RS14F6ZM2 Amzn.com/bill WA,Purchase,$31.64
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 17 / 24,FLOWER CHILD CHANDLER  AZ,Purchase,$15.94
+Wells Fargo,...4296,Jun 18 2024 – Jul 18 2024,07 / 18 / 24,CHARGE ON PURCHASES,Interest,$32.08
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 06 / 24,PAYMENT - THANK YOU,Payment,"$-7,200.00"
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 14 / 24,ONLINE ACH PAYMENT       THANK YOU,Payment,"$-4,360.03"
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 13 / 24,LESLIES POOL SPLY CHANDLER  AZ,Other Credit,$-15.08
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 17 / 24,PICAZZOS HEALTHY ITALI TEMPE  AZ,Purchase,$43.21
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 18 / 24,SEATGEEK TICKETS HTTPSSEATGEEK NY,Purchase,$75.08
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 18 / 24,SP THE COLLECTIVE MARK   160-27912369 AZ,Purchase,$50.65
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 18 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$51.70
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 19 / 24,TST* O.H.S.O. - GILBERT GILBERT  AZ,Purchase,$71.57
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 19 / 24,TST* O.H.S.O. - GILBERT GILBERT  AZ,Purchase,$7.47
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 21 / 24,AMZN Mktp US*TC7B87XT3 Amzn.com/bill WA,Purchase,$28.41
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 21 / 24,GDP*Taste of china Gilbert  AZ,Purchase,$43.58
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 22 / 24,QT 478 MESA  AZ,Purchase,$6.98
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 23 / 24,SPROUTS FARMERS MAR CHANDLER  AZ,Purchase,$47.30
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 23 / 24,FRYS 5051                866-576-4377 AZ,Purchase,$289.99
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 24 / 24,ESPOS MEXICAN RESTAURANT CHANDLER  AZ,Purchase,$35.64
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 24 / 24,ESPOS MEXICAN RESTAURANT CHANDLER  AZ,Purchase,$4.33
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 24 / 24,Amazon.com*4A2OF3SB3 Amzn.com/bill WA,Purchase,$12.93
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 26 / 24,WHOLEFDS CHR 10272 CHANDLER  AZ,Purchase,$13.89
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 26 / 24,COCA COLA TEMPE AZ TEMPE  AZ,Purchase,$1.75
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 27 / 24,TST* THE HUB BAR & GRILL Phoenix  AZ,Purchase,$34.22
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 27 / 24,IN-N-OUT CHANDLER 2 CHANDLER  AZ,Purchase,$18.65
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 28 / 24,TACO‘S CHIWAS CHANDLER  AZ,Purchase,$19.46
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 29 / 24,FRYS #658 GILBERT  AZ,Purchase,$26.45
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 29 / 24,FRYS FUEL #7658 GILBERT  AZ,Purchase,$30.71
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 29 / 24,QT 478 MESA  AZ,Purchase,$6.98
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 31 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$26.23
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,05 / 31 / 24,Amazon.com*8Z4L76F23 Amzn.com/bill WA,Purchase,$35.03
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 02 / 24,SPROUTS FARMERS MAR CHANDLER  AZ,Purchase,$62.24
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 03 / 24,GUS'S FRIED CHICKEN-AHWA PHOENIZ  AZ,Purchase,$19.28
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 04 / 24,COCA COLA TEMPE AZ TEMPE  AZ,Purchase,$1.75
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 05 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$34.75
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 06 / 24,ESSENTIALLY YOU CHANDLER  AZ,Purchase,$35.75
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 06 / 24,AMZN Mktp US*WV3KY16J3 Amzn.com/bill WA,Purchase,$25.86
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 07 / 24,WHOLEFDS CHR 10272 CHANDLER  AZ,Purchase,$47.89
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 08 / 24,COOPERS HAWK CHANDLER CHANDLER  AZ,Purchase,$93.00
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 08 / 24,HARKINS CHANDLER FASHON CHANDLER  AZ,Purchase,$8.00
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 08 / 24,LESLIES POOL SPLY CHANDLER  AZ,Purchase,$15.08
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 09 / 24,COCA COLA TEMPE AZ TEMPE  AZ,Purchase,$1.75
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 12 / 24,WALGREENS #3727 CHANDLER  AZ,Purchase,$6.75
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 14 / 24,AMAZON MKTPL*3M8W67RS3 Amzn.com/bill WA,Purchase,$9.12
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 15 / 24,CHON THAI FOOD CHANDLER  AZ,Purchase,$31.85
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 15 / 24,NINJA JAPANESE RESTAU CHANDLER  AZ,Purchase,$19.88
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 15 / 24,TST* SNOOZE - AHWATUKEE PHOENIX  AZ,Purchase,$61.58
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 15 / 24,AMAZON MKTPL*WW63494G3 Amzn.com/bill WA,Purchase,$43.11
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 15 / 24,AMAZON MKTPL*HF2IB2WL3 Amzn.com/bill WA,Purchase,$14.54
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 15 / 24,AMAZON MKTPL*J49GH3SR3 Amzn.com/bill WA,Purchase,$25.33
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 16 / 24,TST* BOURBON JACKS AMERIC CHANDLER  AZ,Purchase,$9.40
+Wells Fargo,...4296,May 18 2024 – Jun 17 2024,06 / 16 / 24,UBER   TRIP HELP.UBER.COM CA,Purchase,$7.47
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,12 / 12 / 24,AUTOMATIC PAYMENT - THANK YOU,Payment,$-154.00
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,12 / 17 / 24,ONLINE ACH PAYMENT       THANK YOU,Payment,"$-2,000.00"
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 21 / 24,TM *DILLON FRANCIS       800-653-8000 CA,Other Credit,$-196.18
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 24 / 24,CASH BACK REDEMPTION REF  161503577,Other Credit,$-50.00
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 18 / 24,DD *DOORDASH FLOWERCHI WWW.DOORDASH. CA,Purchase,$23.57
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 19 / 24,SPROUTS FARMERS MAR CHANDLER  AZ,Purchase,$11.66
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 20 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$31.74
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 21 / 24,IN-N-OUT CHANDLER 2 CHANDLER  AZ,Purchase,$16.32
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 22 / 24,LEGENDS@ARIZONA FINANC PHOENIX  AZ,Purchase,$22.72
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 22 / 24,5GUYS 0543 QSR PHOENIX  AZ,Purchase,$23.54
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 22 / 24,5GUYS 0543 QSR PHOENIX  AZ,Purchase,$2.61
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 22 / 24,COCA COLA TEMPE AZ TEMPE  AZ,Purchase,$1.75
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 23 / 24,CHON THAI FOOD CHANDLER  AZ,Purchase,$41.68
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 23 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$6.37
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 23 / 24,SQ *SPOOKY'S SWIRLS CHANDLER  AZ,Purchase,$15.09
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 26 / 24,FRYS #658 GILBERT  AZ,Purchase,$30.10
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 26 / 24,FRYS FUEL #7658 GILBERT  AZ,Purchase,$27.08
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 26 / 24,"ETSY, INC.               718-8557955  NY",Purchase,$129.34
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 27 / 24,WWW.MRPICK* MR. PICKLE WWW.MRPICKLES AZ,Purchase,$17.09
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 27 / 24,SPROUTS FARMERS MAR CHANDLER  AZ,Purchase,$4.05
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 27 / 24,FRYS 5051                866-576-4377 AZ,Purchase,$237.69
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 27 / 24,AMAZON MKTPL*JH6FA7EO3 Amzn.com/bill WA,Purchase,$47.95
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 28 / 24,AMAZON MKTPL*Z381L8B10 Amzn.com/bill WA,Purchase,$29.31
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 30 / 24,PETS BEST INSURANCE SERV 877-738-7237 NC,Purchase,$62.31
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 30 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$73.63
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,11 / 30 / 24,AMAZON MKTPL*Z31CY65Y1 Amzn.com/bill WA,Purchase,$61.50
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,12 / 02 / 24,AMAZON MKTPL*Z39GQ5U61 Amzn.com/bill WA,Purchase,$618.12
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,12 / 07 / 24,TST*THIRSTY LION GASTROP Chandler  AZ,Purchase,$77.04
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,12 / 07 / 24,SQ *DIVILOUCOLLECTIVE Chandler  AZ,Purchase,$30.18
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,12 / 08 / 24,CHON THAI FOOD CHANDLER  AZ,Purchase,$46.16
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,12 / 09 / 24,SPROUTS FARMERS MAR CHANDLER  AZ,Purchase,$79.01
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,12 / 12 / 24,AMAZON RETA* ZX58V5V20 WWW.AMAZON.CO WA,Purchase,$22.31
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,12 / 12 / 24,FRYS FUEL #7658 GILBERT  AZ,Purchase,$22.27
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,12 / 12 / 24,FRYS FUEL #7658 GILBERT  AZ,Purchase,$4.04
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,12 / 14 / 24,AMAZON MKTPL*Z19JR31Z2 Amzn.com/bill WA,Purchase,$21.55
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,12 / 14 / 24,TST*UNION GRILL AND TAP Gilbert  AZ,Purchase,$86.02
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,12 / 14 / 24,COCA COLA TEMPE AZ TEMPE  AZ,Purchase,$1.75
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,12 / 15 / 24,TST* 12 WEST BREWING GILBERT  AZ,Purchase,$13.94
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,12 / 15 / 24,FRYS 5051                866-576-4377 AZ,Purchase,$263.16
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,12 / 15 / 24,AMAZON MKTPL*ZX41Q4801 Amzn.com/bill WA,Purchase,$8.14
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,12 / 16 / 24,AMAZON RETA* Z11G620D0 WWW.AMAZON.CO WA,Purchase,$30.68
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,12 / 16 / 24,WHOLEFDS CHR 10272 CHANDLER  AZ,Purchase,$10.48
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,12 / 17 / 24,AMAZON MKTPL*Z17KM0HY0 Amzn.com/bill WA,Purchase,$10.77
+Wells Fargo,...4296,Nov 18 2024 – Dec 18 2024,12 / 18 / 24,CHARGE ON PURCHASES,Interest,$114.17
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 12 / 24,AUTOMATIC PAYMENT - THANK YOU,Payment,$-176.00
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 16 / 24,ONLINE ACH PAYMENT       THANK YOU,Payment,"$-2,000.00"
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 03 / 24,AMAZON MARK* 0O7DK3H33 HTTPSAMAZON.C WA,Other Credit,$-17.24
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 03 / 24,AMAZON MKTPLACE PMTS Amzn.com/bill WA,Other Credit,$-10.77
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 03 / 24,AMAZON MKTPLACE PMTS Amzn.com/bill WA,Other Credit,$-7.54
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 03 / 24,AMAZON MKTPLACE PMTS Amzn.com/bill WA,Other Credit,$-20.47
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 03 / 24,AMAZON MKTPLACE PMTS Amzn.com/bill WA,Other Credit,$-7.51
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 03 / 24,AMAZON MKTPLACE PMTS Amzn.com/bill WA,Other Credit,$-26.94
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 12 / 24,CASH BACK REDEMPTION REF  160636855,Other Credit,$-42.00
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,10 / 18 / 24,LEGENDS@TALKING STICK PHOENIX  AZ,Purchase,$53.21
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,10 / 18 / 24,AMAZON MARK* 0O7DK3H33 HTTPSAMAZON.C WA,Purchase,$17.24
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,10 / 18 / 24,COCA COLA TEMPE AZ TEMPE  AZ,Purchase,$1.75
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,10 / 18 / 24,CULVERS OF CHANDLER CHANDLER  AZ,Purchase,$17.71
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,10 / 19 / 24,AMAZON RETA* GD9WA8FF3 WWW.AMAZON.CO WA,Purchase,$26.06
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,10 / 21 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$30.69
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,10 / 22 / 24,AMAZON MKTPL*K07Y95003 Amzn.com/bill WA,Purchase,$10.77
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,10 / 23 / 24,FRYS FUEL #7658 GILBERT  AZ,Purchase,$27.40
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,10 / 25 / 24,AMAZON RETA* 0J5HM1W83 WWW.AMAZON.CO WA,Purchase,$9.97
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,10 / 25 / 24,AMAZON MKTPL*A76GZ4AD3 Amzn.com/bill WA,Purchase,$33.12
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,10 / 26 / 24,BLUE WASABI SUSHI & MARTI GILBERT  AZ,Purchase,$103.59
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,10 / 26 / 24,SOMA INTIMATE #5242 CHANDLER  AZ,Purchase,$79.23
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,10 / 26 / 24,AMAZON MKTPL*AU2FZ3XS3 Amzn.com/bill WA,Purchase,$26.93
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,10 / 27 / 24,Amazon.com*FE3GZ6BF3 Amzn.com/bill WA,Purchase,$34.94
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,10 / 28 / 24,AMAZON MKTPL*SK7W69BP3 Amzn.com/bill WA,Purchase,$31.21
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,10 / 28 / 24,Amazon.com*YX28M0GD3 Amzn.com/bill WA,Purchase,$25.87
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,10 / 29 / 24,AMAZON RETA* NT0795J63 WWW.AMAZON.CO WA,Purchase,$51.19
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,10 / 30 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$42.66
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,10 / 30 / 24,IN-N-OUT MESA (POWER) MESA  AZ,Purchase,$12.89
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,10 / 31 / 24,PETS BEST INSURANCE SERV 877-738-7237 NC,Purchase,$62.31
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 01 / 24,FRYS 5051                866-576-4377 AZ,Purchase,$28.78
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 02 / 24,SQ *DR. HUMMUS Gilbert  AZ,Purchase,$8.00
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 02 / 24,SQ *SHEA CHEESE @ GILBERT Gilbert  AZ,Purchase,$9.00
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 02 / 24,SQ *GREEN CHILE SMOKEHOUS Gilbert  AZ,Purchase,$10.00
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 02 / 24,SQ *GILBERT FARMERS MARKE Gilbert  AZ,Purchase,$4.12
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 02 / 24,SQ *ART OF GHEE LLC Gilbert  AZ,Purchase,$19.00
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 03 / 24,CHON THAI FOOD CHANDLER  AZ,Purchase,$46.16
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 03 / 24,CIRCLE K 05298 PHOENIX  AZ,Purchase,$43.17
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 03 / 24,GUS'S FRIED CHICKEN-AHWA PHOENIZ  AZ,Purchase,$66.07
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 04 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$30.90
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 07 / 24,AMAZON RETA* D91SA2XR3 WWW.AMAZON.CO WA,Purchase,$16.17
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 07 / 24,SUBARU SUPERSTORE OF CHAN480-222-6000 AZ,Purchase,"$1,336.91"
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 09 / 24,AMAZON MKTPL*SZ2N45963 Amzn.com/bill WA,Purchase,$32.98
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 10 / 24,TST*LITTLE MISS BBQ Phoenix  AZ,Purchase,$52.04
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 10 / 24,CIRCLE K 09182 CHANDLER  AZ,Purchase,$33.91
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 11 / 24,COCA COLA TEMPE AZ TEMPE  AZ,Purchase,$1.75
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 13 / 24,AMAZON MKTPL*X805R3GO3 Amzn.com/bill WA,Purchase,$17.24
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 13 / 24,QT 478 MESA  AZ,Purchase,$8.29
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 14 / 24,SPROUTS FARMERS MAR CHANDLER  AZ,Purchase,$57.33
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 14 / 24,AMAZON MKTPL*NJ1N82CM3 Amzn.com/bill WA,Purchase,$37.69
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 14 / 24,AMAZON MKTPL*F51S788B3 Amzn.com/bill WA,Purchase,$6.46
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 15 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$38.70
+Wells Fargo,...4296,Oct 19 2024 – Nov 17 2024,11 / 17 / 24,CHARGE ON PURCHASES,Interest,$106.85
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 11 / 24,AUTOMATIC PAYMENT - THANK YOU,Payment,$-161.00
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 17 / 24,ONLINE ACH PAYMENT       THANK YOU,Payment,"$-3,000.00"
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 16 / 24,CASH BACK REDEMPTION REF  156925112,Other Credit,$-31.77
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 28 / 24,TARGET        00018382 CHANDLER  AZ,Other Credit,$-32.76
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 01 / 24,CASH BACK REDEMPTION REF  157904158,Other Credit,$-42.00
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 18 / 24,AMAZON MKTPL*YC0N479G3 Amzn.com/bill WA,Purchase,$29.10
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 21 / 24,VCA ANIMAL HOSPITALS HTTPSVCAHOSPI CA,Purchase,$540.05
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 21 / 24,TARGET        00018382 CHANDLER  AZ,Purchase,$5.39
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 21 / 24,TST*SNEAKY BIRD-COOLEY S 480-300-3315 AZ,Purchase,$26.14
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 21 / 24,PHO CHANDLER CHANDLER  AZ,Purchase,$34.00
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 23 / 24,StubHub Event Tickets Wilmington  DE,Purchase,$236.60
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 24 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$42.34
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 24 / 24,QT 478 MESA  AZ,Purchase,$2.99
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 25 / 24,BOBBY Q MESA  AZ,Purchase,$88.73
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 25 / 24,FRYS FUEL #7658 GILBERT  AZ,Purchase,$28.22
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 25 / 24,AMAZON MKTPL*UW9ZK4473 Amzn.com/bill WA,Purchase,$26.94
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 25 / 24,AMAZON MKTPL*BP2YO8963 Amzn.com/bill WA,Purchase,$30.49
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 26 / 24,SPROUTS FARMERS MAR CHANDLER  AZ,Purchase,$43.60
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 27 / 24,AMAZON MKTPL*6N2DS7LN3 Amzn.com/bill WA,Purchase,$29.09
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 29 / 24,CHON THAI FOOD CHANDLER  AZ,Purchase,$36.33
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 29 / 24,FRYS-FOOD-DRG #051 CHANDLER  AZ,Purchase,$1.00
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 29 / 24,SQ *SPOOKY'S SWIRLS CHANDLER  AZ,Purchase,$11.33
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 29 / 24,ZIA RECORD EXCHANGE CHAND CHANDLER  AZ,Purchase,$14.00
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 30 / 24,PETS BEST INSURANCE SERV 877-738-7237 NC,Purchase,$62.31
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,09 / 30 / 24,SPROUTS FARMERS MAR CHANDLER  AZ,Purchase,$12.50
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 01 / 24,AMAZON RETA* 5Z0UV3PP3 WWW.AMAZON.CO WA,Purchase,$8.37
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 01 / 24,HARKINS SANTAN VILLAGE GILBERT  AZ,Purchase,$9.00
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 01 / 24,AMAZON MKTPL*VJ2T39SG3 Amzn.com/bill WA,Purchase,$10.98
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 03 / 24,TARGET        00018382 CHANDLER  AZ,Purchase,$41.57
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 05 / 24,HARKINS AZ MILLS TEMPE  AZ,Purchase,$14.75
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 05 / 24,WALGREENS #3727 CHANDLER  AZ,Purchase,$1.00
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 06 / 24,SAFEWAY #2032 SCOTTSDALE  AZ,Purchase,$84.07
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 06 / 24,HARKINS AZ MILLS TEMPE  AZ,Purchase,$27.00
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 06 / 24,PY *HOPDODDY  SCOTTSDALE SCOTTSDALE  AZ,Purchase,$57.46
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 08 / 24,FRYS FUEL #7658 GILBERT  AZ,Purchase,$4.04
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 08 / 24,FRYS FUEL #7658 GILBERT  AZ,Purchase,$31.89
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 09 / 24,ESSENTIALLY YOU CHANDLER  AZ,Purchase,$33.75
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 09 / 24,SPROUTS FARMERS MAR CHANDLER  AZ,Purchase,$81.42
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 12 / 24,SP GODDESS GARAGE BOUT   152-07776155 AZ,Purchase,$94.02
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 12 / 24,Gourmet Girls Gluten Free Tucson  AZ,Purchase,$52.90
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 13 / 24,WHOLEFDS CHR 10272 CHANDLER  AZ,Purchase,$54.89
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 15 / 24,BLIZZARD *US740603771    949-955-1380 CA,Purchase,$64.25
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 15 / 24,FRYS 5051                866-576-4377 AZ,Purchase,$40.82
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 15 / 24,PAMPERED PETS LLC TEMPE  AZ,Purchase,$90.00
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 17 / 24,DicksSportingGoods.com Coraopolis  PA,Purchase,$43.10
+Wells Fargo,...4296,Sep 18 2024 – Oct 18 2024,10 / 18 / 24,CHARGE ON PURCHASES,Interest,$132.62

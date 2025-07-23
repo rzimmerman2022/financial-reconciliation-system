@@ -16,7 +16,11 @@
       "Bash(ls:*)",
       "Bash(grep:*)",
       "Bash(sed:*)",
-      "Bash(echo:*)"
+      "Bash(echo:*)",
+      "Bash(del commit_message.txt)",
+      "Bash(awk:*)",
+      "Bash(wc:*)",
+      "Bash(tail:*)"
     ],
     "deny": []
   }
