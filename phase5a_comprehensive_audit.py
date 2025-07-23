@@ -23,10 +23,25 @@ KEY FINDINGS FROM AUDIT:
 - Critical: $600 rent from Ryan flagged as error (should be from Jordyn)
 - No Zelle transfers detected despite loader finding 11
 
+CRITICAL BUG DISCOVERED (July 23, 2025):
+========================================
+This file contains a critical accounting bug in lines 222-227 that violates
+double-entry bookkeeping principles. The bug causes both payer branches to use
+identical calculations, resulting in a $6,759.16 error over just 18 days.
+
+The bug has been identified and documented but NOT fixed in this file to preserve
+the original code for audit purposes. For the corrected implementation, see:
+- phase5a_unified_reconciler.py (authoritative version)
+- phase5a_processor_fixed.py (uses AccountingEngine)
+
 OUTPUT FILES:
 1. PHASE5A_COMPREHENSIVE_AUDIT_TRAIL.csv - Complete transaction details
 2. PHASE5A_AUDIT_REPORT.txt - Human-readable report
 3. PHASE5A_AUDIT_SUMMARY.json - Summary statistics
+
+Author: Ryan & Jordyn Financial Reconciliation Team
+Version: 1.0.0-BUGGY (DO NOT USE FOR ACTUAL RECONCILIATION)
+Last Updated: July 23, 2025
 """
 
 import pandas as pd

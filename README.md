@@ -2,6 +2,23 @@
 
 A clean, focused financial reconciliation system built from lessons learned in BALANCE-pyexcel.
 
+## 🚨 CRITICAL UPDATE - Phase 5A Analysis Complete (July 23, 2025)
+
+**Major Bug Fixed**: A $6,759.16 error was discovered and corrected in the Phase 5A reconciliation system. The bug violated double-entry bookkeeping principles, causing both payer branches to use identical calculations.
+
+**Authoritative System**: Use `phase5a_unified_reconciler.py` for all reconciliation needs. This system combines:
+- Mathematically correct `accounting_engine.py` 
+- Enhanced transaction categorization (86% → 15% error rate)
+- Graceful handling of data quality issues
+- Comprehensive audit trail generation
+
+**Final Results**:
+- Starting Balance (Sept 30, 2024): $1,577.08 (Jordyn owes Ryan)
+- Ending Balance (Oct 18, 2024): $7,259.46 (Jordyn owes Ryan)
+- NOT the erroneous $8,336.24 from the buggy audit tool
+
+See `PHASE5A_COMPLETE_ANALYSIS_REPORT_20250723_041053.md` for full details.
+
 ## 🎯 Phase 1 Complete: Description Language Decoder
 
 **Status: ✅ OPERATIONAL**

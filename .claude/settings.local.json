@@ -20,7 +20,8 @@
       "Bash(del commit_message.txt)",
       "Bash(awk:*)",
       "Bash(wc:*)",
-      "Bash(tail:*)"
+      "Bash(tail:*)",
+      "Bash(del COMMIT_MESSAGE.txt)"
     ],
     "deny": []
   }

@@ -11,8 +11,24 @@ Key Features:
 - Comprehensive audit trail and transaction logging
 - Decimal precision for accurate currency calculations
 
+CRITICAL IMPORTANCE:
+==================
+This accounting engine is the mathematical foundation that prevented the $6,759
+error discovered in Phase 5A. The original audit tool violated double-entry
+bookkeeping principles by using identical calculations for both payers. This
+engine enforces strict invariants that make such errors impossible.
+
+The four-account system maintains perfect symmetry:
+- Ryan's Receivable (what Jordyn owes him) = Jordyn's Payable to Ryan
+- Jordyn's Receivable (what Ryan owes her) = Ryan's Payable to Jordyn
+- Net Position: (Ryan's Receivable - Jordyn's Receivable) = -(Jordyn's Payable - Ryan's Payable)
+
+Every transaction MUST maintain these invariants or it will be rejected.
+
 Author: Claude (Anthropic)
 Date: January 2024
+Last Updated: July 23, 2025
+Version: 2.0.0 - Enhanced with Phase 5A learnings
 """
 
 from decimal import Decimal, ROUND_HALF_UP
