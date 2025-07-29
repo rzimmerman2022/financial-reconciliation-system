@@ -1,16 +1,17 @@
 {
   "reconciliation_info": {
     "version": "2.0.0 - Enhanced with manual annotations",
-    "generated": "2025-07-28 21:09:53"
+    "generated": "2025-07-29 01:25:11"
   },
   "phase4": {
     "period": "2024-01-01 to 2024-09-30",
     "source": "Consolidated Expense History (with manual annotations)",
-    "transactions": 1138,
+    "transactions": 1139,
     "categories": {
-      "split_50_50": 1128,
-      "manual_review": 2,
-      "gift": 8
+      "split_50_50": 1007,
+      "personal": 129,
+      "manual_review": 1,
+      "gift": 2
     }
   },
   "phase5": {
@@ -26,9 +27,9 @@
   },
   "special_annotations_processed": {
     "2x_to_calculate": 0,
-    "gifts": 6,
-    "personal_100": 7,
-    "exclusions": 2
+    "gifts": 1,
+    "personal_100": 4,
+    "exclusions": 1
   },
   "baseline": {
     "date": "2024-09-30",
@@ -36,8 +37,8 @@
     "status": "Jordyn owes Ryan"
   },
   "final_balance": {
-    "amount": 8189.68,
+    "amount": 4587.47,
     "status": "Jordyn owes Ryan"
   },
-  "manual_review_needed": 153
+  "manual_review_needed": 152
 }

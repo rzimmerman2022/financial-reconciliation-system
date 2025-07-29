@@ -110,7 +110,7 @@ class EnhancedFull2024Reconciler:
             'date_of_purchase': 'date',
             'name': 'payer',
             'merchant': 'description',
-            'actual_amount': 'amount',
+            'allowed_amount': 'amount',  # CRITICAL: Use allowed_amount, not actual_amount!
             'description': 'manual_notes',  # This contains the critical annotations!
             'merchant_description': 'merchant_desc'  # Additional merchant info
         })
@@ -122,8 +122,12 @@ class EnhancedFull2024Reconciler:
         valid_payers = ['Ryan', 'Jordyn']
         phase4_df = phase4_df[phase4_df['payer'].isin(valid_payers)].copy()
         
-        # The amount is already a Decimal from data_loader, convert to float for compatibility
-        phase4_df['amount'] = phase4_df['amount'].apply(lambda x: float(x) if pd.notna(x) else 0)
+        # CRITICAL: Handle allowed_amount properly
+        # Convert "$ -" to 0 to indicate personal expense
+        phase4_df['amount'] = phase4_df['amount'].apply(lambda x: 
+            0 if (pd.isna(x) or str(x).strip() in ['$ -', '$-', '-']) 
+            else float(x)
+        )
         
         # Add source
         phase4_df['source'] = 'Consolidated_Expense_History'
@@ -338,8 +342,33 @@ class EnhancedFull2024Reconciler:
         """Process a Phase 4 transaction with manual annotations."""
         audit_id = len(self.audit_entries) + 1
         
-        # Skip if no amount
-        if pd.isna(row['amount']) or row['amount'] == 0:
+        # Skip if no amount (but handle 0 as personal expense below)
+        if pd.isna(row['amount']):
+            return
+            
+        # CRITICAL: Handle allowed_amount = 0 as personal expense
+        if row['amount'] == 0:
+            # This is a personal expense (allowed_amount was "$ -")
+            entry = {
+                'audit_id': audit_id,
+                'date': row['date'].strftime('%Y-%m-%d'),
+                'source': row.get('source', 'Unknown'),
+                'payer': row['payer'],
+                'description': row['description'],
+                'amount': 0,  # No shared amount
+                'manual_notes': row.get('manual_notes', 'Personal expense (allowed = $ -)'),
+                'phase': 'phase4',
+                'category': 'personal',
+                'action': f'personal_{row["payer"].lower()}',
+                'ryan_share': 0.0,
+                'jordyn_share': 0.0,
+                'balance_change': 0.0,
+                'notes': f'Personal expense for {row["payer"]} (allowed_amount = $ -)'
+            }
+            self.audit_entries.append(entry)
+            self.statistics['phase4']['by_category']['personal'] = \
+                self.statistics['phase4']['by_category'].get('personal', 0) + 1
+            self.statistics['phase4']['total'] += 1
             return
             
         # Get manual notes if available

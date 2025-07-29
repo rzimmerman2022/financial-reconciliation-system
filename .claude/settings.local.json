@@ -21,7 +21,12 @@
       "Bash(awk:*)",
       "Bash(wc:*)",
       "Bash(tail:*)",
-      "Bash(del COMMIT_MESSAGE.txt)"
+      "Bash(del COMMIT_MESSAGE.txt)",
+      "Bash(diff:*)",
+      "Bash(fc:*)",
+      "Bash(cut:*)",
+      "Bash(git fetch:*)",
+      "Bash(touch:*)"
     ],
     "deny": []
   }

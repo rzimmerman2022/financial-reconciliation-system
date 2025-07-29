@@ -1,7 +1,7 @@
 ================================================================================
 ENHANCED FULL 2024 FINANCIAL RECONCILIATION REPORT
 ================================================================================
-Generated: 2025-07-28 21:09:53
+Generated: 2025-07-29 01:25:11
 Version: 2.0.0 - With Manual Annotations
 ================================================================================
 
@@ -20,17 +20,18 @@ Source: Manually reconciled Google Sheets data
 SPECIAL ANNOTATIONS PROCESSED
 ----------------------------------------
 '2x to calculate' patterns: 0
-Gift transactions: 6
-100% personal expenses: 7
-Exclusion patterns: 2
+Gift transactions: 1
+100% personal expenses: 4
+Exclusion patterns: 1
 
 PHASE 4 SUMMARY (Pre-baseline)
 ----------------------------------------
-Transactions: 1138
+Transactions: 1139
 Categories:
-  gift: 8
-  manual_review: 2
-  split_50_50: 1128
+  gift: 2
+  manual_review: 1
+  personal: 129
+  split_50_50: 1007
 
 PHASE 5 SUMMARY (Post-baseline)
 ----------------------------------------
@@ -43,7 +44,7 @@ Categories:
 
 FINAL BALANCE
 ----------------------------------------
-Amount: $8189.68
+Amount: $4587.47
 Status: Jordyn owes Ryan
 
 ITEMS REQUIRING REVIEW
@@ -51,10 +52,6 @@ ITEMS REQUIRING REVIEW
 
 2024-01-04 - Amazon
   Amount: $149.95
-  Reason: Unknown
-
-2024-01-20 - Carquest
-  Amount: $24.83
   Reason: Unknown
 
 2024-10-31 00:00:00 - Increase from Brokerage Activity
@@ -69,7 +66,11 @@ ITEMS REQUIRING REVIEW
   Amount: $-45.96
   Reason: Needs manual classification confirmation
 
-... and 148 more items
+2024-10-30 00:00:00 - Whole Foods
+  Amount: $-2.52
+  Reason: Needs manual classification confirmation
+
+... and 147 more items
 
 ================================================================================
 END OF REPORT
