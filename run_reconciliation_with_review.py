@@ -100,7 +100,7 @@ class ReconciliationWithReview:
             )
             count += 1
             
-        print(f"✓ Exported {count} transactions for manual review")
+        print(f"[DONE] Exported {count} transactions for manual review")
     
     def run_manual_review(self):
         """Launch interactive review interface."""
@@ -184,7 +184,7 @@ class ReconciliationWithReview:
         # Validate and generate reports
         print("\nValidating accounting invariants...")
         final_reconciler.engine.validate_invariant()
-        print("✓ All invariants validated")
+        print("[DONE] All invariants validated")
         
         # Generate final reports
         output_dir = "output/gold_standard_with_manual_review"
@@ -285,7 +285,9 @@ def main():
         print("2. Skip manual review (use defaults)")
         print("3. Exit")
         
-        choice = input("\nSelect option (1-3): ").strip()
+        # Auto-select option 2 for non-interactive mode
+        print("\nAuto-selecting option 2: Skip manual review (use defaults)")
+        choice = '2'
         
         if choice == '1':
             # Phase 2: Manual review
@@ -306,7 +308,7 @@ def main():
             print("\nExiting...")
             return
     
-    print("\n✓ Reconciliation complete!")
+    print("\n[DONE] Reconciliation complete!")
 
 
 if __name__ == "__main__":

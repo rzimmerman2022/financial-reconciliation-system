@@ -1,0 +1,102 @@
+
+================================================================================
+GOLD STANDARD FINANCIAL RECONCILIATION REPORT
+================================================================================
+Generated: 2025-07-29 11:41:19
+Version: GOLD STANDARD 1.0.0
+Mode: from_baseline
+================================================================================
+
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+Final Balance: $8,595.87
+Status: Ryan owes Jordyn
+
+Transactions Processed: 283
+Manual Review Required: 1
+Data Quality Issues: 168
+
+TRANSACTION BREAKDOWN BY CATEGORY
+--------------------------------------------------------------------------------
+Expense                     210
+Income                       10
+Personal                     59
+
+TRANSACTION BREAKDOWN BY SOURCE
+--------------------------------------------------------------------------------
+Jordyn_Chase                            4
+Jordyn_Discover                         1
+Jordyn_WellsFargo                      43
+Ryan_MonarchMoney                     114
+Ryan_RocketMoney                      121
+
+SPECIAL PROCESSING
+--------------------------------------------------------------------------------
+Personal Expenses Excluded: 0
+Manual Adjustments Applied: 0
+Duplicate Transactions Removed: 2
+
+BALANCE DETAILS
+--------------------------------------------------------------------------------
+Ryan's Receivable (Jordyn owes Ryan): $-1,768.19
+Jordyn's Receivable (Ryan owes Jordyn): $6,827.68
+Net Position: $8,595.87 (Ryan owes Jordyn)
+
+ACCOUNTING VALIDATION
+--------------------------------------------------------------------------------
+Double-Entry Invariants: ✓ VALIDATED
+- Ryan's net position = -(Jordyn's net position)
+- Ryan's receivables = Jordyn's payables
+- Jordyn's receivables = Ryan's payables
+
+================================================================================
+
+ITEMS REQUIRING MANUAL REVIEW
+--------------------------------------------------------------------------------
+Total Items: 158
+
+Top 10 Items:
+
+2023-12-18 00:00:00 - Zelle Payment to Ryan Zimmerman
+  Amount: $0.00
+  Issue: Missing amount - encoding error
+
+2023-12-18 00:00:00 - Chase Credit Card Autopay
+  Amount: $0.00
+  Issue: Missing amount - encoding error
+
+2023-12-19 00:00:00 - Wells Fargo Card Payment
+  Amount: $0.00
+  Issue: Missing amount - encoding error
+
+2023-12-26 00:00:00 - Chase Credit Card Autopay
+  Amount: $0.00
+  Issue: Missing amount - encoding error
+
+2024-01-02 00:00:00 - Non-Chase ATM Withdrawal
+  Amount: $0.00
+  Issue: Missing amount - encoding error
+
+2024-01-02 00:00:00 - Zelle Payment to Mom
+  Amount: $0.00
+  Issue: Missing amount - encoding error
+
+2024-01-02 00:00:00 - San Palmas Web Payment
+  Amount: $0.00
+  Issue: Missing amount - encoding error
+
+2024-01-02 00:00:00 - Yardi Service Charge
+  Amount: $0.00
+  Issue: Missing amount - encoding error
+
+2024-01-02 00:00:00 - Non-Chase ATM Fee
+  Amount: $0.00
+  Issue: Missing amount - encoding error
+
+2024-01-03 00:00:00 - Progressive Advanced Insurance
+  Amount: $0.00
+  Issue: Missing amount - encoding error
+
+================================================================================
+END OF REPORT
+================================================================================
