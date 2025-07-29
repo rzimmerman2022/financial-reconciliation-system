@@ -65,6 +65,89 @@ class SplitType(Enum):
     RENT_SPLIT = "rent_split"  # 43% Ryan, 57% Jordyn
 
 
+class InteractiveReviewer:
+    """Interactive command-line reviewer for transactions."""
+    
+    def __init__(self, review_system: 'ManualReviewSystem'):
+        self.review_system = review_system
+        self.current_index = 0
+        self.pending_reviews = []
+        
+    def run(self):
+        """Run the interactive review interface."""
+        # For non-interactive environments, use spreadsheet export instead
+        print("\nInteractive terminal review is not recommended for large datasets.")
+        print("Instead, we'll export to a spreadsheet for efficient bulk review.")
+        print()
+        print("Options:")
+        print("1. Export to spreadsheet for review")
+        print("2. Use web interface (if available)")
+        print("3. Skip review (use defaults)")
+        print()
+        
+        # Auto-select option 3 for non-interactive environments
+        if not self._is_interactive():
+            print("Auto-selecting option 3: Skip review (use defaults)")
+            self._apply_default_reviews()
+            return
+            
+        choice = input("Select option (1-3): ").strip()
+        
+        if choice == "1":
+            self._export_for_spreadsheet_review()
+        elif choice == "2":
+            self._launch_web_interface()
+        else:
+            self._apply_default_reviews()
+    
+    def _is_interactive(self):
+        """Check if running in interactive mode."""
+        import sys
+        return sys.stdin.isatty()
+    
+    def _export_for_spreadsheet_review(self):
+        """Export transactions for spreadsheet review."""
+        from spreadsheet_review_system import SpreadsheetReviewSystem
+        
+        pending_df = self.review_system.get_pending_reviews()
+        if pending_df.empty:
+            print("No transactions to review!")
+            return
+            
+        review_system = SpreadsheetReviewSystem()
+        output_path = review_system.export_for_review(pending_df)
+        
+        print(f"\nExported {len(pending_df)} transactions to: {output_path}")
+        print("\nNext steps:")
+        print("1. Open the file in Excel or Google Sheets")
+        print("2. Review and update the Allowed Amount, Category, etc.")
+        print("3. Save the file")
+        print("4. Run: python spreadsheet_review_system.py")
+        print("   and select option 2 to import your reviews")
+    
+    def _launch_web_interface(self):
+        """Launch the web-based review interface."""
+        print("\nTo use the web interface:")
+        print("1. Run: python web_review_interface.py")
+        print("2. Open http://localhost:5000 in your browser")
+        print("3. Review transactions with the user-friendly interface")
+    
+    def _apply_default_reviews(self):
+        """Apply default 50/50 split to all pending transactions."""
+        pending_df = self.review_system.get_pending_reviews()
+        
+        for _, row in pending_df.iterrows():
+            self.review_system.review_transaction(
+                review_id=row['review_id'],
+                category=TransactionCategory.OTHER,
+                split_type=SplitType.SPLIT_50_50,
+                notes="Auto-reviewed with default 50/50 split",
+                reviewed_by="System Default"
+            )
+        
+        print(f"\nApplied default 50/50 split to {len(pending_df)} transactions")
+
+
 class ManualReviewSystem:
     """
     System for managing manual review of financial transactions.
