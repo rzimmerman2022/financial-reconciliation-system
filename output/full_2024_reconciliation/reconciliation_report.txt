@@ -1,0 +1,82 @@
+================================================================================
+FULL 2024 FINANCIAL RECONCILIATION REPORT
+================================================================================
+Generated: 2025-07-28 21:10:07
+Period: January 01, 2024 to October 31, 2024
+Methodology: Unified reconciliation system (Phase 5A corrected)
+================================================================================
+
+FINAL BALANCE
+----------------------------------------
+Starting Balance: $0.00 (Balanced)
+Ending Balance: $20713.23
+Status: Ryan owes Jordyn
+
+TRANSACTION SUMMARY
+----------------------------------------
+Total Transactions: 1000
+Manual Review Needed: 109
+Encoding Errors: 109
+
+BY CATEGORY
+----------------------------------------
+Expense: 848
+Income: 53
+Personal: 50
+Zelle: 49
+
+BY DATA SOURCE
+----------------------------------------
+Jordyn_Chase: 35
+Jordyn_Discover: 1
+Jordyn_WellsFargo: 295
+Ryan_MonarchMoney: 669
+
+TRANSACTIONS REQUIRING MANUAL REVIEW
+----------------------------------------
+
+2024-01-02 - Non-Chase ATM Fee
+  Amount: MISSING
+  Reason: Amount missing or zero - encoding error or data quality issue
+
+2024-01-02 - Yardi Service Charge
+  Amount: MISSING
+  Reason: Amount missing or zero - encoding error or data quality issue
+
+2024-01-02 - San Palmas Web Payment
+  Amount: MISSING
+  Reason: Amount missing or zero - encoding error or data quality issue
+
+2024-01-02 - Zelle Payment to Mom
+  Amount: MISSING
+  Reason: Amount missing or zero - encoding error or data quality issue
+
+2024-01-02 - Non-Chase ATM Withdrawal
+  Amount: MISSING
+  Reason: Amount missing or zero - encoding error or data quality issue
+
+2024-01-03 - Progressive Advanced Insurance
+  Amount: MISSING
+  Reason: Amount missing or zero - encoding error or data quality issue
+
+2024-01-10 - Non-Chase ATM Fee
+  Amount: MISSING
+  Reason: Amount missing or zero - encoding error or data quality issue
+
+2024-01-10 - Non-Chase ATM Withdrawal
+  Amount: MISSING
+  Reason: Amount missing or zero - encoding error or data quality issue
+
+2024-01-16 - WF Credit Card Autopay
+  Amount: MISSING
+  Reason: Amount missing or zero - encoding error or data quality issue
+
+2024-01-16 - Chase Credit Card Autopay
+  Amount: MISSING
+  Reason: Amount missing or zero - encoding error or data quality issue
+
+... and 144 more items
+
+================================================================================
+END OF REPORT
+================================================================================
