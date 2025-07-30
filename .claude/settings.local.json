@@ -31,7 +31,8 @@
       "Bash(move phase5a*.py archivephase5a )",
       "Bash(move run_phase5a.py archivephase5a )",
       "Bash(move test_balance_fix.py archivephase5a)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(true)"
     ],
     "deny": []
   }

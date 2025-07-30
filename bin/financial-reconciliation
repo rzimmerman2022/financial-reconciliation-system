@@ -14,5 +14,5 @@ from pathlib import Path
 
 if __name__ == "__main__":
     # Run the main script
-    script_path = Path(__file__).parent / "scripts" / "run_with_review.py"
+    script_path = Path(__file__).parent / "run-with-review"
     subprocess.run([sys.executable, str(script_path)] + sys.argv[1:])

@@ -28,18 +28,18 @@
 
 ### Phase 4 Processing (Through Sept 30, 2024)
 ```
-Raw CSV → Data Loader → Description Decoder → Accounting Engine → Output
+test-data/legacy/ → Data Loader → Description Decoder → Accounting Engine → Output
 ```
 - Uses `allowed_amount` field for manual review decisions
 - Pre-processed and validated data
 
 ### Phase 5+ Processing (Oct 1, 2024 onwards)
 ```
-Bank CSV → Data Loader → Manual Review → Accounting Engine → Output
+test-data/bank-exports/ → Data Loader → Manual Review → Accounting Engine → Output
 ```
 - Requires human categorization
-- Pattern matching for automation
-- Review decisions stored in database
+- Pattern matching for automation  
+- Review decisions stored in data/phase5_manual_reviews.db
 
 ## Key Technical Decisions
 

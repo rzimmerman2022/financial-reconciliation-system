@@ -27,50 +27,72 @@ pip install -r requirements.txt
 
 ```bash
 # Run reconciliation from baseline (recommended)
-python scripts/run_with_review.py --mode from_baseline
+python bin/run-with-review --mode from_baseline
 
 # Run reconciliation from scratch
-python scripts/run_with_review.py --mode from_scratch
+python bin/run-with-review --mode from_scratch
+
+# Alternative: Use main entry point
+python bin/financial-reconciliation --mode from_baseline
 
 # Run tests
-pytest tests/
+pytest
 ```
 
 ## 📁 Project Structure
 
 ```
 financial-reconciliation/
-├── src/                      # Source code
-│   ├── core/                # Core business logic
+├── bin/                          # Executable scripts
+│   ├── financial-reconciliation  # Main entry point
+│   └── run-with-review           # Direct reconciliation runner
+├── src/                          # Source code
+│   ├── core/                    # Core business logic
 │   │   ├── accounting_engine.py      # Double-entry bookkeeping
 │   │   ├── description_decoder.py    # Transaction pattern recognition
 │   │   └── reconciliation_engine.py  # Main reconciliation logic
-│   ├── review/              # Manual review system
+│   ├── review/                  # Manual review system
 │   │   ├── manual_review_system.py   # SQLite-based tracking
 │   │   ├── batch_review_helper.py    # Pattern-based categorization
 │   │   ├── spreadsheet_review_system.py  # Excel export/import
 │   │   └── web_review_interface.py   # Browser-based interface
-│   ├── utils/               # Utilities
-│   │   └── data_loader.py           # CSV data loading
-│   └── loaders/            # Data source loaders
-│       ├── expense_loader.py
-│       ├── rent_loader.py
-│       └── zelle_loader.py
-├── scripts/                 # Executable scripts
-│   └── run_with_review.py   # Main entry point
-├── tests/                   # Test suite
-│   ├── unit/               # Unit tests
-│   └── integration/        # Integration tests
-├── docs/                    # Documentation
-│   ├── business/           # Business logic docs
-│   └── technical/          # Technical docs
-├── data/                    # Data files
-│   ├── raw/                # Original CSVs
-│   ├── processed/          # Normalized data
-│   └── new_raw/            # Bank exports
-├── output/                  # Reconciliation results
-├── config/                  # Configuration files
-└── requirements.txt         # Python dependencies
+│   ├── utils/                   # Utilities
+│   │   └── data_loader.py            # CSV data loading
+│   ├── loaders/                # Data source loaders
+│   │   ├── expense_loader.py
+│   │   ├── rent_loader.py
+│   │   └── zelle_loader.py
+│   ├── processors/             # Data processors
+│   │   └── expense_processor.py
+│   └── reconcilers/            # Reconciliation engines
+├── tests/                        # Test suite
+│   ├── unit/                    # Unit tests
+│   └── integration/            # Integration tests
+├── docs/                         # Documentation
+│   ├── business/               # Business logic docs
+│   ├── technical/              # Technical docs
+│   ├── api/                    # API documentation
+│   ├── architecture/           # System architecture
+│   └── user-guide/             # User guides
+├── test-data/                    # Test and sample data
+│   ├── bank-exports/           # Bank CSV exports (Phase 5+)
+│   ├── legacy/                 # Pre-reviewed data (Phase 4)
+│   ├── processed/              # Normalized data
+│   ├── fixtures/               # Test fixtures
+│   └── samples/                # Sample data files
+├── data/                         # Runtime data
+│   └── phase5_manual_reviews.db  # Review database
+├── tools/                        # Development tools
+│   ├── setup.py               # Package setup
+│   └── pytest.ini             # Test configuration
+├── output/                       # Reconciliation results
+├── config/                       # Configuration files
+├── logs/                         # Application logs
+├── temp/                         # Temporary files
+├── examples/                     # Usage examples
+│   ├── quickstart/             # Quick start examples
+│   └── advanced/               # Advanced usage
+└── requirements.txt              # Python dependencies
 ```
 
 ## 🔧 Configuration
@@ -89,8 +111,9 @@ DATABASE_PATH=phase5_manual_reviews.db
 ### Data Sources
 
 Place your data files in the appropriate directories:
-- **Phase 4 Data**: `data/raw/` (pre-reviewed with allowed_amount)
-- **Phase 5+ Data**: `data/new_raw/` (bank CSVs requiring review)
+- **Phase 4 Data**: `test-data/legacy/` (pre-reviewed with allowed_amount)
+- **Phase 5+ Data**: `test-data/bank-exports/` (bank CSVs requiring review)
+- **Runtime Database**: `data/phase5_manual_reviews.db` (review decisions)
 
 ## 💼 Features
 
@@ -163,6 +186,9 @@ flake8 src/ tests/
 
 # Type checking
 mypy src/
+
+# Run development tools
+python tools/setup.py develop
 ```
 
 ### Adding Features

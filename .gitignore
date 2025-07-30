@@ -37,19 +37,20 @@ logs/
 *.tmp
 *.bak
 ~$*.xlsx
+temp/
 
 # OS
 .DS_Store
 Thumbs.db
 
 # Project specific
-archive/
-backups/
 output/
-data/raw/*
-data/new_raw/*
-!data/raw/.gitkeep
-!data/new_raw/.gitkeep
+test-data/bank-exports/*
+test-data/legacy/*
+test-data/processed/*
+!test-data/bank-exports/.gitkeep
+!test-data/legacy/.gitkeep
+!test-data/processed/.gitkeep
 
 # Sensitive data
 *_personal.csv

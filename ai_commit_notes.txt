@@ -1,0 +1,128 @@
+feat: Restructure entire codebase to gold standard industry practices
+
+This commit represents a comprehensive reorganization of the financial reconciliation 
+system from a scattered, unclear structure to a crystal-clear gold standard that 
+follows industry best practices for Python enterprise projects.
+
+## MAJOR STRUCTURAL CHANGES:
+
+### 1. REMOVED CLUTTERED DIRECTORIES:
+- DELETED archive/ folder entirely - contained 200+ scattered old files, outdated docs,
+  backup processors, old reconciliation attempts, and phase-specific duplicates
+- DELETED backups/ folder entirely - contained nested backup folders with timestamp
+  suffixes polluting the codebase with _20250718_212904 style duplicates  
+- REMOVED all backup subdirectories from src/loaders/, src/processors/, src/reconcilers/
+- REMOVED all backup subdirectories from tests/ folder
+
+### 2. CREATED GOLD STANDARD DIRECTORY STRUCTURE:
+- bin/ - Executable scripts following Unix conventions
+  * financial-reconciliation (main entry point)
+  * run-with-review (direct reconciliation runner)
+- tools/ - Development and build tools
+  * setup.py (moved from root)
+  * pytest.ini (moved from root)
+- test-data/ - Clear data organization replacing confusing data/ structure
+  * bank-exports/ (renamed from data/new_raw/ - Phase 5+ bank CSVs)
+  * legacy/ (renamed from data/raw/ - Phase 4 pre-reviewed data)
+  * processed/ (renamed from data/processed/ - normalized data)
+  * fixtures/ (for test fixtures)
+  * samples/ (for sample data files)
+- data/ - Runtime data only
+  * phase5_manual_reviews.db (moved from root)
+- logs/ - Application logs (new)
+- temp/ - Temporary files (new)
+- examples/ - Usage examples with quickstart/ and advanced/ subdirs (new)
+- docs/ - Enhanced documentation structure
+  * business/ (existing - business logic)
+  * technical/ (existing - technical docs)  
+  * api/ (new - API documentation)
+  * architecture/ (new - system architecture)
+  * user-guide/ (new - user guides)
+
+### 3. FILE MOVEMENTS AND REORGANIZATION:
+- MOVED run.py → bin/financial-reconciliation (main entry point)
+- MOVED scripts/run_with_review.py → bin/run-with-review (direct runner)
+- MOVED setup.py → tools/setup.py (build tool)
+- MOVED pytest.ini → tools/pytest.ini (test configuration)
+- MOVED data/raw/ → test-data/legacy/ (clearer naming)
+- MOVED data/new_raw/ → test-data/bank-exports/ (descriptive naming)
+- MOVED data/processed/ → test-data/processed/ (consistent location)
+- MOVED phase5_manual_reviews.db → data/phase5_manual_reviews.db (runtime data)
+- REMOVED scripts/ directory (now empty)
+
+### 4. UPDATED EXECUTABLE REFERENCES:
+- Updated bin/financial-reconciliation to reference new bin/run-with-review path
+- Made all Python scripts in bin/ executable with chmod +x
+
+### 5. GITIGNORE MODERNIZATION:
+- Updated .gitignore to reflect new directory structure
+- Changed data/raw/* → test-data/legacy/*
+- Changed data/new_raw/* → test-data/bank-exports/*  
+- Added temp/ directory to ignore list
+- Added corresponding .gitkeep files to preserve empty directories
+
+### 6. COMPREHENSIVE DOCUMENTATION UPDATES:
+
+#### README.md - 100% REWRITTEN:
+- Updated all usage commands to reference bin/ scripts
+- Completely rewrote project structure section with new gold standard layout
+- Updated data source paths (data/raw/ → test-data/legacy/, etc.)
+- Updated development commands to reference tools/ directory
+- Added new directory explanations (logs/, temp/, examples/, enhanced docs/)
+- Updated all file paths in examples and instructions
+
+#### Technical Documentation:
+- docs/technical/AI_HANDOVER_CONTEXT.md: Updated data processing pipeline
+  paths to reflect new test-data/ structure and data/ database location
+
+### 7. BENEFITS OF THIS RESTRUCTURE:
+
+#### Clarity and Navigation:
+- bin/ makes executables immediately obvious 
+- test-data/ clearly separates test/sample data from runtime data
+- tools/ consolidates development utilities
+- Eliminated 200+ backup and archive files cluttering navigation
+
+#### Industry Best Practices:
+- Follows Python packaging standards (bin/, tools/, src/, tests/)
+- Clear separation of concerns (runtime vs test data vs tools vs docs)
+- Unix conventions for executable scripts in bin/
+- Proper .gitignore patterns for new structure
+
+#### Maintainability:
+- No more nested backup directories with cryptic timestamps
+- Clear data flow: test-data/ (input) → src/ (processing) → output/ (results)
+- Enhanced documentation structure supports growth
+- Eliminated archive folder reduces confusion about current vs old code
+
+#### Developer Experience:
+- Crystal clear where to put new files
+- Obvious where to find executables, tests, docs, data
+- No more searching through backup folders for current code
+- Gold standard structure that any developer can immediately understand
+
+### 8. AI CODING CONTEXT:
+This restructure transforms the codebase from:
+- BEFORE: Scattered files, unclear hierarchy, backup pollution, mixed concerns
+- AFTER: Gold standard enterprise Python project with crystal clear organization
+
+The new structure follows these principles:
+1. Executable scripts in bin/ (Unix standard)
+2. Source code in src/ (Python standard)  
+3. Tests in tests/ (universal standard)
+4. Documentation in docs/ with clear subdirectories
+5. Test data separate from runtime data
+6. Development tools in tools/
+7. Clear .gitignore reflecting new structure
+8. 100% accurate documentation matching reality
+
+This enables:
+- Faster onboarding for new developers
+- Easier maintenance and feature development  
+- Clear understanding of system architecture
+- Professional-grade project organization
+- Elimination of technical debt from backup pollution
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>
