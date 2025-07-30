@@ -6,6 +6,8 @@ __pycache__/
 .Python
 env/
 venv/
+ENV/
+.venv/
 .env
 
 # IDE
@@ -13,8 +15,17 @@ venv/
 .idea/
 *.swp
 *.swo
+*~
+
+# Testing
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+.mypy_cache/
 
 # Data files
+*.db
 *.db-journal
 *.db-wal
 
@@ -25,7 +36,7 @@ logs/
 # Temporary files
 *.tmp
 *.bak
-~*
+~$*.xlsx
 
 # OS
 .DS_Store
@@ -34,9 +45,11 @@ Thumbs.db
 # Project specific
 archive/
 backups/
-output/gold_standard_with_manual_review/
-output/temp/
-*.backup
+output/
+data/raw/*
+data/new_raw/*
+!data/raw/.gitkeep
+!data/new_raw/.gitkeep
 
 # Sensitive data
 *_personal.csv

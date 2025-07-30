@@ -36,12 +36,10 @@ from typing import Dict, List, Tuple, Optional, Union
 from enum import Enum
 import hashlib
 
-# Add parent directory for imports
-sys.path.append(str(Path(__file__).parent))
-
-from accounting_engine import AccountingEngine, Transaction, TransactionType
-from description_decoder import DescriptionDecoder
-import data_loader
+# Import from correct paths
+from src.core.accounting_engine import AccountingEngine, Transaction, TransactionType
+from src.core.description_decoder import DescriptionDecoder
+from src.utils import data_loader
 
 # Configure logging with detailed format
 logging.basicConfig(
@@ -364,7 +362,7 @@ class GoldStandardReconciler:
         dfs = []
         
         # Monarch Money (primary)
-        monarch_file = "new_raw/BALANCE_RZ_MonarchMoney_Ledger_20220918-20250718.csv"
+        monarch_file = "data/new_raw/BALANCE_RZ_MonarchMoney_Ledger_20220918-20250718.csv"
         monarch_df = self._load_csv_with_validation(
             monarch_file,
             date_column='Date',
@@ -381,7 +379,7 @@ class GoldStandardReconciler:
             dfs.append(monarch_df)
         
         # Rocket Money (secondary)
-        rocket_file = "new_raw/BALANCE_RZ_RocketMoney_Ledger_20220915-20250720.csv"
+        rocket_file = "data/new_raw/BALANCE_RZ_RocketMoney_Ledger_20220915-20250720.csv"
         rocket_df = self._load_csv_with_validation(
             rocket_file,
             date_column='Date',
@@ -404,7 +402,7 @@ class GoldStandardReconciler:
         dfs = []
         
         # Chase
-        chase_file = "new_raw/BALANCE_JG_Chase_6173_Ledger_20231215-20250313.csv"
+        chase_file = "data/new_raw/BALANCE_JG_Chase_6173_Ledger_20231215-20250313.csv"
         chase_df = self._load_csv_with_validation(
             chase_file,
             date_column='Trans. Date',
@@ -424,7 +422,7 @@ class GoldStandardReconciler:
             dfs.append(chase_df)
         
         # Wells Fargo
-        wells_file = "new_raw/BALANCE_JG_WellsFargo_4296_Transactions_20240417-20251231.csv"
+        wells_file = "data/new_raw/BALANCE_JG_WellsFargo_4296_Transactions_20240417-20251231.csv"
         wells_df = self._load_csv_with_validation(
             wells_file,
             date_column='Trans. Date',
@@ -442,7 +440,7 @@ class GoldStandardReconciler:
             dfs.append(wells_df)
         
         # Discover
-        discover_file = "new_raw/BALANCE_JG_Discover_1544_Transactions_20241020-20250320.csv"
+        discover_file = "data/new_raw/BALANCE_JG_Discover_1544_Transactions_20241020-20250320.csv"
         discover_df = self._load_csv_with_validation(
             discover_file,
             date_column='Trans. Date',

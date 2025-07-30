@@ -1,14 +1,14 @@
 source,issue_type,count,details,timestamp
-Ryan_MonarchMoney,suspicious_amount,1,"$15,000.00 - Seq Joan M Zimmerman Ow",2025-07-29T15:12:55.963736
-Ryan_MonarchMoney,suspicious_amount,1,"$25,000.00 - Seq Joan M Zimmerman Ow",2025-07-29T15:12:55.963773
-Jordyn_Chase,missing_amount,156,,2025-07-29T15:12:55.986172
-Jordyn_Chase,suspicious_amount,1,"$10,510.17 - Ending Balance",2025-07-29T15:12:55.990760
-Jordyn_Chase,suspicious_amount,1,"$10,780.17 - Ending Balance",2025-07-29T15:12:55.990798
-Jordyn_Chase,suspicious_amount,1,"$10,780.17 - Beginning Balance",2025-07-29T15:12:55.990818
-Jordyn_Chase,suspicious_amount,1,"$12,929.58 - Ending Balance",2025-07-29T15:12:55.990836
-Jordyn_Chase,suspicious_amount,1,"$12,929.58 - Beginning Balance",2025-07-29T15:12:55.990851
-Jordyn_Chase,suspicious_amount,1,"$13,444.06 - Ending Balance",2025-07-29T15:12:55.990867
-Jordyn_Chase,suspicious_amount,1,"$13,444.06 - Beginning Balance",2025-07-29T15:12:55.990882
-Ryan_MonarchMoney,missing_amount,1,2024-10-28 00:00:00 - Interest Charge,2025-07-29T15:12:56.024677
-Ryan_RocketMoney,missing_amount,1,2024-10-28 00:00:00 - INTEREST CHARGE ON PURCHASES interest charged,2025-07-29T15:12:56.025368
-Ryan_RocketMoney,missing_amount,1,2024-10-28 00:00:00 - INTEREST CHARGE ON CASH ADVANCES interest charged,2025-07-29T15:12:56.025396
+Ryan_MonarchMoney,suspicious_amount,1,"$15,000.00 - Seq Joan M Zimmerman Ow",2025-07-30T14:16:55.615532
+Ryan_MonarchMoney,suspicious_amount,1,"$25,000.00 - Seq Joan M Zimmerman Ow",2025-07-30T14:16:55.615582
+Jordyn_Chase,missing_amount,156,,2025-07-30T14:16:55.654974
+Jordyn_Chase,suspicious_amount,1,"$10,510.17 - Ending Balance",2025-07-30T14:16:55.659186
+Jordyn_Chase,suspicious_amount,1,"$10,780.17 - Ending Balance",2025-07-30T14:16:55.659213
+Jordyn_Chase,suspicious_amount,1,"$10,780.17 - Beginning Balance",2025-07-30T14:16:55.659232
+Jordyn_Chase,suspicious_amount,1,"$12,929.58 - Ending Balance",2025-07-30T14:16:55.659249
+Jordyn_Chase,suspicious_amount,1,"$12,929.58 - Beginning Balance",2025-07-30T14:16:55.659264
+Jordyn_Chase,suspicious_amount,1,"$13,444.06 - Ending Balance",2025-07-30T14:16:55.659279
+Jordyn_Chase,suspicious_amount,1,"$13,444.06 - Beginning Balance",2025-07-30T14:16:55.659294
+Ryan_MonarchMoney,missing_amount,1,2024-10-28 00:00:00 - Interest Charge,2025-07-30T14:16:55.712227
+Ryan_RocketMoney,missing_amount,1,2024-10-28 00:00:00 - INTEREST CHARGE ON PURCHASES interest charged,2025-07-30T14:16:55.712986
+Ryan_RocketMoney,missing_amount,1,2024-10-28 00:00:00 - INTEREST CHARGE ON CASH ADVANCES interest charged,2025-07-30T14:16:55.713016

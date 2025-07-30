@@ -23,10 +23,11 @@ from pathlib import Path
 import json
 import sys
 
-sys.path.append(str(Path(__file__).parent))
+# Add parent directory to path for imports
+sys.path.append(str(Path(__file__).parent.parent))
 
-from gold_standard_reconciliation import GoldStandardReconciler, ReconciliationMode
-from manual_review_system import (
+from src.core.reconciliation_engine import GoldStandardReconciler, ReconciliationMode
+from src.review.manual_review_system import (
     ManualReviewSystem, InteractiveReviewer, 
     TransactionCategory, SplitType, ReviewStatus
 )
