@@ -53,13 +53,40 @@ logger = logging.getLogger(__name__)
 
 
 class ReconciliationMode(Enum):
-    """Modes for reconciliation to prevent double-counting."""
+    """
+    Modes for reconciliation to prevent double-counting.
+    
+    This enum defines how the reconciliation should be performed:
+    - FROM_SCRATCH: Starts from $0 balance and processes ALL transactions
+                   from the beginning. Useful for full validation or when
+                   you need to verify the entire transaction history.
+    - FROM_BASELINE: Starts from a known balance (Phase 4 ending: Sept 30, 2024)
+                    and only processes new transactions. This prevents double-counting
+                    transactions that were already included in the baseline.
+                    This is the RECOMMENDED mode for ongoing reconciliation.
+    """
     FROM_SCRATCH = "from_scratch"  # Start from $0, process all transactions
     FROM_BASELINE = "from_baseline"  # Start from known balance, process only new
 
 
 class DataQualityIssue(Enum):
-    """Types of data quality issues encountered."""
+    """
+    Types of data quality issues encountered during transaction processing.
+    
+    These issues are meticulously tracked to provide transparency about
+    data problems and help identify systematic issues with bank exports:
+    
+    - MISSING_AMOUNT: Transaction has no amount (common in Jordyn's Chase data
+                     due to Unicode encoding errors with the � character)
+    - ENCODING_ERROR: Character encoding problems preventing proper parsing
+    - INVALID_DATE: Date is missing, unparseable, or clearly incorrect
+    - DUPLICATE_TRANSACTION: Same transaction appears multiple times (detected
+                           via hash of date+amount+description)
+    - MISSING_PAYER: Cannot determine who made the transaction
+    - SUSPICIOUS_AMOUNT: Unusually large amount (>$10,000) flagged for review
+    
+    All issues are logged to data_quality_issues.csv for review.
+    """
     MISSING_AMOUNT = "missing_amount"
     ENCODING_ERROR = "encoding_error"
     INVALID_DATE = "invalid_date"
@@ -72,6 +99,23 @@ class GoldStandardReconciler:
     """
     Production-ready financial reconciliation system with comprehensive
     error handling, validation, and audit capabilities.
+    
+    This is the AUTHORITATIVE reconciliation implementation that fixes all
+    known issues from previous attempts:
+    
+    1. NO DOUBLE-COUNTING: Properly handles baseline vs transaction processing
+    2. CORRECT FIELD USAGE: Uses 'allowed_amount' for Phase 4 manual reviews
+    3. PROPER ACCOUNTING: Implements double-entry bookkeeping with invariants
+    4. DATA VALIDATION: Comprehensive checks for quality and consistency
+    5. COMPLETE AUDIT TRAIL: Every decision and calculation is logged
+    6. MANUAL REVIEW: Seamlessly integrates human oversight for new data
+    
+    Key improvements over previous versions:
+    - Fixed $6,759.16 error from double-posting transactions
+    - Correctly interprets 'allowed_amount' field (not 'actual_amount')
+    - Handles Unicode encoding errors gracefully
+    - Maintains accounting equation balance at all times
+    - Provides comprehensive data quality reporting
     """
     
     def __init__(self, mode: ReconciliationMode = ReconciliationMode.FROM_SCRATCH,
@@ -89,18 +133,20 @@ class GoldStandardReconciler:
         """
         self.mode = mode
         
-        # Initialize accounting engine
+        # Initialize the double-entry accounting engine
+        # This maintains Ryan and Jordyn's accounts with proper debits/credits
         self.engine = AccountingEngine()
         
-        # Initialize description decoder
+        # Initialize the description decoder for pattern recognition
+        # Handles special codes like "2x to calculate", gift detection, etc.
         self.decoder = DescriptionDecoder()
         
-        # Data storage
-        self.transactions = pd.DataFrame()
-        self.audit_trail = []
-        self.manual_review_items = []
-        self.data_quality_issues = []
-        self.duplicate_tracker = set()  # Track potential duplicates
+        # Data storage structures
+        self.transactions = pd.DataFrame()     # All processed transactions
+        self.audit_trail = []                  # Complete processing history
+        self.manual_review_items = []          # Transactions needing review
+        self.data_quality_issues = []          # Encoding errors, missing data, etc.
+        self.duplicate_tracker = set()         # Hash-based duplicate detection
         
         # Statistics
         self.stats = {
@@ -117,6 +163,8 @@ class GoldStandardReconciler:
         
         # Handle baseline for continuation mode
         if mode == ReconciliationMode.FROM_BASELINE:
+            # FROM_BASELINE mode MUST have baseline parameters to prevent
+            # accidentally starting from zero and double-counting everything
             if not all([baseline_date, baseline_amount is not None, baseline_who_owes]):
                 raise ValueError(
                     "FROM_BASELINE mode requires baseline_date, baseline_amount, "
@@ -125,7 +173,8 @@ class GoldStandardReconciler:
             
             self._initialize_from_baseline(baseline_date, baseline_amount, baseline_who_owes)
         else:
-            # Starting from scratch - add initial zero balance entry
+            # FROM_SCRATCH mode: Start from zero balance
+            # This processes ALL historical transactions from the beginning
             self._add_audit_entry(
                 date=datetime.now(),
                 description="System initialized - starting from zero balance",
@@ -139,7 +188,22 @@ class GoldStandardReconciler:
     def _initialize_from_baseline(self, baseline_date: datetime, 
                                   baseline_amount: Decimal, 
                                   baseline_who_owes: str):
-        """Initialize the system with a known baseline balance."""
+        """
+        Initialize the system with a known baseline balance.
+        
+        This method sets up the accounting engine with the Phase 4 ending
+        balance to continue reconciliation without reprocessing old transactions.
+        This is CRITICAL for preventing double-counting.
+        
+        The baseline represents the verified balance as of Sept 30, 2024:
+        - Amount: $1,577.08
+        - Direction: Jordyn owes Ryan
+        
+        Args:
+            baseline_date: The date of the baseline balance
+            baseline_amount: The amount owed at baseline
+            baseline_who_owes: String indicating who owes whom
+        """
         # Validate baseline
         baseline_amount = Decimal(str(baseline_amount))
         

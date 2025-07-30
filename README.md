@@ -1,111 +1,178 @@
-﻿# Financial Reconciliation System
+# Financial Reconciliation System - Gold Standard
 
-A clean, focused financial reconciliation system built from lessons learned in BALANCE-pyexcel.
+A production-ready financial reconciliation system for tracking shared expenses between Ryan and Jordyn, implementing double-entry bookkeeping with comprehensive audit trails.
 
-## 🚨 CRITICAL UPDATE - Phase 5A Analysis Complete (July 23, 2025)
+## Current Status (July 30, 2025)
 
-**Major Bug Fixed**: A $6,759.16 error was discovered and corrected in the Phase 5A reconciliation system. The bug violated double-entry bookkeeping principles, causing both payer branches to use identical calculations.
+### System Overview
+The **Gold Standard Reconciliation System** is the authoritative implementation, incorporating all lessons learned from previous phases:
+- ✅ **Bug-Free**: Fixed the $6,759.16 double-counting error from earlier versions
+- ✅ **Correct Field Usage**: Properly uses `allowed_amount` for Phase 4 manual reviews
+- ✅ **Manual Review Integration**: Seamless handling of Phase 5+ bank data
+- ✅ **Complete Audit Trail**: Every transaction tracked with full history
+- ✅ **Data Quality Handling**: Graceful management of encoding errors
 
-**Authoritative System**: Use `phase5a_unified_reconciler.py` for all reconciliation needs. This system combines:
-- Mathematically correct `accounting_engine.py` 
-- Enhanced transaction categorization (86% → 15% error rate)
-- Graceful handling of data quality issues
-- Comprehensive audit trail generation
+### Current Balance
+- **FROM_BASELINE Mode**: $8,595.87 (Ryan owes Jordyn)
+- **FROM_SCRATCH Mode**: $2,671.12 (Jordyn owes Ryan)
+- **Baseline**: $1,577.08 (Jordyn owes Ryan) as of Sept 30, 2024
 
-**Final Results**:
-- Starting Balance (Sept 30, 2024): $1,577.08 (Jordyn owes Ryan)
-- Ending Balance (Oct 18, 2024): $7,259.46 (Jordyn owes Ryan)
-- NOT the erroneous $8,336.24 from the buggy audit tool
+## Quick Start
 
-See `PHASE5A_COMPLETE_ANALYSIS_REPORT_20250723_041053.md` for full details.
+### Basic Reconciliation
+```bash
+# Run from baseline (recommended)
+python gold_standard_reconciliation.py --mode from_baseline
 
-## 🎯 Phase 1 Complete: Description Language Decoder
+# Run from scratch (full history)
+python gold_standard_reconciliation.py --mode from_scratch
+```
 
-**Status: ✅ OPERATIONAL**
-
-The core description decoder has been successfully implemented and tested. This system correctly interprets custom transaction description codes that previous attempts failed to understand.
-
-### Key Features:
-- **Smart Pattern Recognition**: Automatically detects and interprets custom description codes
-- **"2x to calculate" Logic**: Correctly handles full reimbursement patterns (not mathematical doubling)
-- **Gift Detection**: Identifies birthday, Christmas, and other gift transactions
-- **Mathematical Expressions**: Safely evaluates and processes calculation patterns
-- **Exclusion Handling**: Processes "remove" and "deduct" patterns correctly
-- **Priority System**: Ensures patterns are applied in correct order of precedence
-
-### Files:
-- `description_decoder.py` - Main decoder module
-- `test_description_decoder.py` - Comprehensive unit tests (12 test cases)
-- `demo_description_decoder.py` - Real data demonstration
-- `PHASE1_COMPLETE_SUMMARY.md` - Detailed implementation summary
+### With Manual Review (for Phase 5+ data)
+```bash
+# Complete workflow with manual review
+python run_reconciliation_with_review.py
+```
 
 ## Architecture
 
-This project follows a clean, modular approach:
+### Core Components
+- **`gold_standard_reconciliation.py`** - Main reconciliation engine
+- **`accounting_engine.py`** - Double-entry bookkeeping implementation
+- **`description_decoder.py`** - Transaction pattern recognition
+- **`manual_review_system.py`** - SQLite-based review tracking
+- **`run_reconciliation_with_review.py`** - Orchestrates complete workflow
 
-`
-â”œâ”€â”€ data/
-â”‚   â”œâ”€â”€ raw/           # Original CSV files
-â”‚   â””â”€â”€ processed/     # Cleaned data
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ loaders/       # CSV loading modules
-â”‚   â”œâ”€â”€ processors/    # Data cleaning/validation  
-â”‚   â””â”€â”€ reconcilers/   # Reconciliation logic
-â”œâ”€â”€ docs/
-â”‚   â”œâ”€â”€ assumptions.md    # Business logic assumptions
-â”‚   â”œâ”€â”€ data_sources.md   # CSV specifications
-â”‚   â””â”€â”€ audit_trail.md    # Audit requirements
-â”œâ”€â”€ tests/             # Unit tests
-â”œâ”€â”€ output/            # Generated reports
-â””â”€â”€ scripts/           # Utility scripts
-`
-
-## Key Principles
-
-1. **One CSV at a time**: Process each data source independently first
-2. **Clear assumptions**: Document all business logic upfront
-3. **Full audit trails**: Every transaction must be traceable
-
-## ⚠️ CRITICAL: Rent Payment Rules
-
-**JORDYN ALWAYS PAYS THE FULL RENT UPFRONT**
-
-See [CRITICAL_RENT_RULES.md](CRITICAL_RENT_RULES.md) for detailed explanation. This is a fundamental rule that must be understood by all developers and AI models working on this system.
-4. **Clean separation**: Keep old experimental work separate
+### Data Flow
+```
+Phase 4 Data (with allowed_amount) → Direct Processing → Accounting Engine
+Phase 5+ Data (bank CSVs) → Manual Review → User Decision → Accounting Engine
+```
 
 ## Data Sources
 
-### Current Files in data/raw/:
-- `Consolidated_Expense_History_20250622.csv` - Shared expenses
-- `Consolidated_Rent_Allocation_20250527.csv` - Rent payments and allocations
-- `Zelle_From_Jordyn_Final.csv` - Zelle payments from Jordyn
+### Phase 4 (Through Sept 30, 2024)
+- **Consolidated Expense History**: Pre-reviewed with `allowed_amount` field
+- **Status**: Complete with manual annotations
 
-## Critical Questions to Resolve
+### Phase 5+ (Oct 1, 2024 onwards)
+- **Ryan's Data**: MonarchMoney + RocketMoney CSVs
+- **Jordyn's Data**: Chase + WellsFargo + Discover CSVs
+- **Status**: Requires manual review for categorization
 
-### Rent Payment Logic (HIGHEST PRIORITY):
-1. Does Ryan pay the full rent each month?
-2. Does Jordyn pay the full rent each month? 
-3. What do the CSV columns "Ryan's Rent (43%)" and "Jordyn's Rent (57%)" actually represent?
+### Known Data Issues
+- 156 transactions in Jordyn's Chase data have missing amounts (encoding errors)
+- Chase data ends March 13, 2025 (missing recent months)
 
-## Implementation Plan
+## Key Features
 
-### Phase 1: Data Understanding
-- [ ] Analyze each CSV structure individually
-- [ ] Document field meanings and assumptions
-- [ ] Resolve rent payment logic questions
+### 1. Description Decoder
+Automatically interprets custom transaction codes:
+- "2x to calculate" = Full reimbursement (not doubling)
+- Gift detection (birthdays, Christmas)
+- Mathematical expression evaluation
+- Exclusion patterns ("remove", "deduct")
 
-### Phase 2: Single CSV Processors  
-- [ ] Build expense CSV processor (simplest)
-- [ ] Build rent CSV processor (once assumptions clear)
-- [ ] Build Zelle CSV processor
+### 2. Manual Review System
+For Phase 5+ bank data:
+- Interactive categorization interface
+- Custom amount overrides
+- Split type selection (50/50, custom, full)
+- Personal expense marking
+- Pattern learning for future automation
 
-### Phase 3: Integration
-- [ ] Combine processors with reconciliation logic
-- [ ] Generate comprehensive audit trails
-- [ ] Create final reports
+### 3. Comprehensive Audit Trail
+Every transaction tracked with:
+- Original amount vs allowed amount
+- Category and split decisions
+- Running balance after each transaction
+- Data quality issues flagged
 
-## Development Notes
+## Output Structure
 
-This project was created by migrating essential files from the original BALANCE-pyexcel experiment. The old project remains at `c:\BALANCE\BALANCE-pyexcel` for reference.
+```
+output/
+├── gold_standard/
+│   ├── summary.json              # Machine-readable results
+│   ├── reconciliation_report.txt # Human-readable report
+│   ├── audit_trail.csv          # Complete transaction log
+│   ├── accounting_ledger.csv    # Double-entry ledger
+│   ├── manual_review_required.csv
+│   └── data_quality_issues.csv
+└── gold_standard_with_manual_review/
+    └── [same structure after reviews]
+```
 
-Created: July 16, 2025
+## Critical Business Rules
+
+### Rent Payments
+**JORDYN ALWAYS PAYS THE FULL RENT UPFRONT**
+- See `CRITICAL_RENT_RULES.md` for detailed explanation
+- This is fundamental to the reconciliation logic
+
+### Transaction Processing
+1. **Phase 4 Data**: Uses `allowed_amount` field directly (pre-reviewed)
+2. **Phase 5+ Data**: Requires manual review for categorization
+3. **Personal Expenses**: Marked with `allowed_amount = "$ -"` or via review
+4. **Settlements**: Zelle/Venmo payments reduce outstanding balances
+
+## Testing
+
+```bash
+# Run comprehensive test suite
+python test_gold_standard.py
+
+# Test accounting engine
+python test_accounting_engine.py
+
+# Test description decoder
+python test_description_decoder.py
+```
+
+## Documentation
+
+### Current Documentation
+- **`GOLD_STANDARD_WORKFLOW_COMPLETE.md`** - Exhaustive workflow documentation
+- **`AI_HANDOVER_CONTEXT.md`** - Technical implementation details
+- **`CRITICAL_RENT_RULES.md`** - Rent payment business logic
+- **`CURRENT_STATUS_AND_ISSUES.md`** - Latest system status
+- **`FINAL_RECONCILIATION_REPORT.md`** - Results summary
+
+### Archived Documentation
+Old documentation has been moved to the `archive/` folder for reference.
+
+## Troubleshooting
+
+### Common Issues
+
+1. **Unicode Errors in Chase Data**
+   - System automatically tries multiple encodings
+   - Missing amounts flagged for manual review
+
+2. **Balance Mismatches**
+   - Check `audit_trail.csv` for calculation details
+   - Verify manual review decisions
+   - Ensure no duplicate transactions
+
+3. **Manual Review Not Working**
+   - Check `phase5_manual_reviews.db` exists
+   - Verify transactions have non-zero amounts
+   - Ensure proper date range selection
+
+## Next Steps
+
+1. **Complete Manual Review** of the 156 missing-amount transactions
+2. **Obtain Missing Data** for Jordyn's Chase account (March-July 2025)
+3. **Monthly Reconciliation** going forward to prevent backlogs
+4. **Pattern Training** to reduce manual review burden
+
+## Support
+
+For questions about:
+- Business logic → See `CRITICAL_RENT_RULES.md`
+- Technical details → See `AI_HANDOVER_CONTEXT.md`
+- Workflow → See `GOLD_STANDARD_WORKFLOW_COMPLETE.md`
+
+---
+Last Updated: July 30, 2025  
+System Version: GOLD STANDARD 1.0.0

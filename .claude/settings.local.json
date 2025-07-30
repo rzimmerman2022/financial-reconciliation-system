@@ -26,7 +26,11 @@
       "Bash(fc:*)",
       "Bash(cut:*)",
       "Bash(git fetch:*)",
-      "Bash(touch:*)"
+      "Bash(touch:*)",
+      "Bash(mkdir:*)",
+      "Bash(move phase5a*.py archivephase5a )",
+      "Bash(move run_phase5a.py archivephase5a )",
+      "Bash(move test_balance_fix.py archivephase5a)"
     ],
     "deny": []
   }

@@ -4,28 +4,9 @@ __pycache__/
 *$py.class
 *.so
 .Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# Virtual Environment
-.venv/
-venv/
-ENV/
 env/
+venv/
+.env
 
 # IDE
 .vscode/
@@ -33,19 +14,31 @@ env/
 *.swp
 *.swo
 
+# Data files
+*.db-journal
+*.db-wal
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.bak
+~*
+
 # OS
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
-
-# Temporary files
-*.tmp
-*.temp
-temp/
-
-# Backup files
-*~
-*.bak
+# Project specific
+archive/
+backups/
+output/gold_standard_with_manual_review/
+output/temp/
 *.backup
+
+# Sensitive data
+*_personal.csv
+*_private.json
+credentials.json
