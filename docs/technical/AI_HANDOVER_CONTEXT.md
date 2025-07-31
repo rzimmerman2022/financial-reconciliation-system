@@ -1,28 +1,49 @@
-# AI Handover Context
+# AI Handover Context - Technical Architecture
 
-## System Architecture
+## System Architecture Overview
+
+The Financial Reconciliation System is built with enterprise-grade architecture following gold standard practices for maintainability, scalability, and reliability.
 
 ### Core Components
 
-1. **Reconciliation Engine** (`src/core/reconciliation_engine.py`)
-   - Main orchestration logic
-   - Handles both FROM_BASELINE and FROM_SCRATCH modes
-   - Coordinates all data loading and processing
+#### 1. Reconciliation Engine (`src/core/reconciliation_engine.py`)
+**Purpose:** Primary orchestration and workflow management
+- **FROM_BASELINE Mode:** Processes from known baseline (Sept 30, 2024) forward
+- **FROM_SCRATCH Mode:** Complete historical processing for full audit trail
+- **Data Coordination:** Manages Phase 4 (legacy) and Phase 5+ (bank export) data sources
+- **Error Handling:** Comprehensive validation and graceful failure recovery
+- **Performance:** Optimized for large transaction volumes with progress tracking
 
-2. **Accounting Engine** (`src/core/accounting_engine.py`)
-   - Double-entry bookkeeping implementation
-   - Maintains accounting invariants
-   - Generates comprehensive audit trails
+#### 2. Accounting Engine (`src/core/accounting_engine.py`)
+**Purpose:** GAAP-compliant double-entry bookkeeping system
+- **Transaction Types:** Expense, Rent, Settlement with proper debit/credit handling
+- **Invariant Validation:** Automatic verification of accounting principles
+- **Audit Trail:** Complete transaction history with running balances
+- **Balance Calculation:** Real-time balance tracking between parties
+- **Data Integrity:** Comprehensive validation and error detection
 
-3. **Description Decoder** (`src/core/description_decoder.py`)
-   - Parses transaction descriptions
-   - Extracts metadata and amounts
-   - Handles mathematical expressions
+#### 3. Description Decoder (`src/core/description_decoder.py`)
+**Purpose:** Intelligent transaction description parsing
+- **Pattern Recognition:** Extracts amounts, dates, and metadata from descriptions
+- **Mathematical Expressions:** Evaluates complex calculation strings
+- **Custom Codes:** Handles specialized transaction codes (e.g., "2x to calculate")
+- **Normalization:** Standardizes descriptions for consistent processing
 
-4. **Manual Review System** (`src/review/manual_review_system.py`)
-   - SQLite-based review tracking
-   - Interactive review interface
-   - Persistent review decisions
+#### 4. Manual Review System (`src/review/manual_review_system.py`)
+**Purpose:** Human-in-the-loop transaction categorization
+- **SQLite Database:** Persistent storage of review decisions
+- **Multiple Interfaces:** GUI, CLI, web, and batch processing support
+- **Category Management:** Expense, Rent, Settlement, Personal classification
+- **Decision Tracking:** Complete audit trail of manual review actions
+- **Pattern Learning:** Foundation for future ML-based categorization
+
+#### 5. Visual Review GUI (`src/review/visual_review_gui.py`)
+**Purpose:** Professional desktop interface for transaction review
+- **Efficient Interface:** Keyboard shortcuts for rapid processing
+- **Progress Tracking:** Visual progress bars and session statistics
+- **Transaction Display:** Clear presentation of all transaction details
+- **Amount Adjustment:** Flexible amount editing with validation
+- **Notes Support:** Detailed commenting system for complex transactions
 
 ## Data Processing Pipeline
 

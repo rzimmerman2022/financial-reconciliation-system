@@ -1,45 +1,97 @@
 # Financial Reconciliation System
 
-A production-ready financial reconciliation system implementing double-entry bookkeeping with comprehensive audit trails for tracking shared expenses.
+[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://python.org)
+[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
+[![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Status](https://img.shields.io/badge/status-Production-green.svg)](https://github.com/yourorg/financial-reconciliation)
+
+A production-ready financial reconciliation system implementing double-entry bookkeeping with comprehensive audit trails for tracking shared expenses. Built with enterprise-grade architecture and professional tooling for accurate financial transaction processing and review.
+
+## ✨ Key Features
+
+- 🏦 **Double-Entry Bookkeeping**: GAAP-compliant accounting with automatic balance validation
+- 🎯 **Visual Transaction Review**: Professional GUI with keyboard shortcuts for efficient processing
+- 📊 **Comprehensive Audit Trails**: Complete transaction history with running balances
+- 🔍 **Pattern Recognition**: Intelligent categorization with machine learning capabilities
+- 📈 **Multiple Data Sources**: Support for bank exports, manual entries, and legacy data
+- 🛡️ **Data Quality Assurance**: Encoding detection, validation, and error reporting
+- 📤 **Flexible Export Options**: JSON, CSV, Excel formats for external analysis
+- 🌐 **Multi-Interface Support**: GUI, CLI, web, and API interfaces
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Python 3.8+
-- pip package manager
+
+- **Python 3.8+** - Core runtime environment
+- **pip** - Package manager for Python dependencies
+- **Git** - Version control (for cloning repository)
+- **tkinter** - GUI framework (usually included with Python)
+
+Optional:
+- **Excel/Google Sheets** - For bulk transaction review
+- **SQLite Browser** - For database inspection and debugging
 
 ### Installation
 
 ```bash
-# Clone the repository
+# 1. Clone the repository
 git clone https://github.com/yourorg/financial-reconciliation.git
 cd financial-reconciliation
 
-# Create virtual environment
+# 2. Create and activate virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Install dependencies
+# On Linux/macOS:
+source venv/bin/activate
+
+# On Windows:
+venv\Scripts\activate
+
+# 3. Install dependencies
 pip install -r requirements.txt
+
+# 4. Verify installation
+python bin/review-gui --help
 ```
 
-### Basic Usage
+### Quick Start Guide
 
 ```bash
-# Run reconciliation from baseline (recommended)
+# 1. Prepare your data
+# Place CSV files in test-data/bank-exports/ (for new data)
+# Place legacy files in test-data/legacy/ (for historical data)
+
+# 2. Run reconciliation (recommended approach)
 python bin/run-with-review --mode from_baseline
 
-# Run reconciliation from scratch
-python bin/run-with-review --mode from_scratch
+# 3. When prompted, choose Visual GUI Review (option 1)
+# Use keyboard shortcuts: E=Expense, R=Rent, S=Settlement, P=Personal
 
-# Alternative: Use main entry point
-python bin/financial-reconciliation --mode from_baseline
+# 4. Review results in output/gold_standard/
+```
 
-# Launch visual GUI for transaction review
-python bin/review-gui
+### All Available Commands
 
-# Run tests
-pytest
+```bash
+# 🎯 Main Reconciliation Workflows
+python bin/run-with-review --mode from_baseline    # Start from Sept 30, 2024 baseline
+python bin/run-with-review --mode from_scratch     # Process all historical data
+python bin/financial-reconciliation --help         # Main entry point with options
+
+# 🖥️ Visual Review Interface
+python bin/review-gui                               # Launch GUI for transaction review
+python bin/review-gui /path/to/custom.db          # Use custom database
+
+# 🧪 Testing and Validation
+pytest                                              # Run test suite
+pytest -v --cov=src                               # Run with coverage report
+python -m src.core.accounting_engine               # Test core engine
+
+# 🔧 Development Tools
+python tools/setup.py develop                      # Install in development mode
+black src/ tests/                                  # Format code
+flake8 src/ tests/                                 # Lint code
+mypy src/                                          # Type checking
 ```
 
 ## 📁 Project Structure
