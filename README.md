@@ -105,7 +105,7 @@ Create a `.env` file in the project root:
 # Optional configuration
 LOG_LEVEL=INFO
 OUTPUT_DIR=output
-DATABASE_PATH=phase5_manual_reviews.db
+DATABASE_PATH=data/phase5_manual_reviews.db
 ```
 
 ### Data Sources
@@ -212,7 +212,7 @@ python tools/setup.py develop
 - Check for duplicate transactions
 
 **Manual Review Not Working**
-- Ensure `phase5_manual_reviews.db` exists
+- Ensure `data/phase5_manual_reviews.db` exists
 - Verify transactions have non-zero amounts
 - Check date range filters
 
