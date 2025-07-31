@@ -36,7 +36,7 @@ from src.review.manual_review_system import (
 class ReconciliationWithReview:
     """Orchestrates reconciliation with manual review integration."""
     
-    def __init__(self, review_db_path: str = "phase5_manual_reviews.db"):
+    def __init__(self, review_db_path: str = "data/phase5_manual_reviews.db"):
         self.review_system = ManualReviewSystem(review_db_path)
         self.reconciler = None
         

@@ -27,7 +27,7 @@ from manual_review_system import ManualReviewSystem, TransactionCategory, SplitT
 class SpreadsheetReviewSystem:
     """Export/import transactions for spreadsheet-based review."""
     
-    def __init__(self, review_db_path: str = "phase5_manual_reviews.db"):
+    def __init__(self, review_db_path: str = "data/phase5_manual_reviews.db"):
         self.review_system = ManualReviewSystem(review_db_path)
         self.export_path = Path("output/manual_review_export")
         self.export_path.mkdir(exist_ok=True, parents=True)

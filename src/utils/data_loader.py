@@ -471,6 +471,6 @@ if __name__ == "__main__":
     
     print("\n" + "=" * 60)
     print("To use this module with actual data:")
-    print("df = load_expense_history('data/raw/Consolidated_Expense_History_20250622.csv')")
+    print("df = load_expense_history('test-data/legacy/Consolidated_Expense_History_20250622.csv')")
     print("print(df.columns)  # Should show cleaned column names")
     print("print(df['actual_amount'].dtype)  # Should be object (Decimal values)")

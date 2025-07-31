@@ -37,7 +37,7 @@ app.config['SECRET_KEY'] = 'your-secret-key-here'
 class WebReviewInterface:
     """Web-based interface for transaction review."""
     
-    def __init__(self, review_db_path: str = "phase5_manual_reviews.db"):
+    def __init__(self, review_db_path: str = "data/phase5_manual_reviews.db"):
         self.review_system = ManualReviewSystem(review_db_path)
         self.batch_helper = BatchReviewHelper(review_db_path)
         self.current_session = {

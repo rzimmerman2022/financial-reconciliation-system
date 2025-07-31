@@ -242,7 +242,7 @@ class GoldStandardReconciler:
         logger.info(f"Loading Phase 4 data from {start_date} to {end_date}")
         
         # Load consolidated expense history
-        file_path = "data/raw/Consolidated_Expense_History_20250622.csv"
+        file_path = "test-data/legacy/Consolidated_Expense_History_20250622.csv"
         df = data_loader.load_expense_history(file_path)
         
         if df is None or df.empty:
@@ -362,7 +362,7 @@ class GoldStandardReconciler:
         dfs = []
         
         # Monarch Money (primary)
-        monarch_file = "data/new_raw/BALANCE_RZ_MonarchMoney_Ledger_20220918-20250718.csv"
+        monarch_file = "test-data/bank-exports/BALANCE_RZ_MonarchMoney_Ledger_20220918-20250718.csv"
         monarch_df = self._load_csv_with_validation(
             monarch_file,
             date_column='Date',
@@ -379,7 +379,7 @@ class GoldStandardReconciler:
             dfs.append(monarch_df)
         
         # Rocket Money (secondary)
-        rocket_file = "data/new_raw/BALANCE_RZ_RocketMoney_Ledger_20220915-20250720.csv"
+        rocket_file = "test-data/bank-exports/BALANCE_RZ_RocketMoney_Ledger_20220915-20250720.csv"
         rocket_df = self._load_csv_with_validation(
             rocket_file,
             date_column='Date',
@@ -402,7 +402,7 @@ class GoldStandardReconciler:
         dfs = []
         
         # Chase
-        chase_file = "data/new_raw/BALANCE_JG_Chase_6173_Ledger_20231215-20250313.csv"
+        chase_file = "test-data/bank-exports/BALANCE_JG_Chase_6173_Ledger_20231215-20250313.csv"
         chase_df = self._load_csv_with_validation(
             chase_file,
             date_column='Trans. Date',
@@ -422,7 +422,7 @@ class GoldStandardReconciler:
             dfs.append(chase_df)
         
         # Wells Fargo
-        wells_file = "data/new_raw/BALANCE_JG_WellsFargo_4296_Transactions_20240417-20251231.csv"
+        wells_file = "test-data/bank-exports/BALANCE_JG_WellsFargo_4296_Transactions_20240417-20251231.csv"
         wells_df = self._load_csv_with_validation(
             wells_file,
             date_column='Trans. Date',
@@ -440,7 +440,7 @@ class GoldStandardReconciler:
             dfs.append(wells_df)
         
         # Discover
-        discover_file = "data/new_raw/BALANCE_JG_Discover_1544_Transactions_20241020-20250320.csv"
+        discover_file = "test-data/bank-exports/BALANCE_JG_Discover_1544_Transactions_20241020-20250320.csv"
         discover_df = self._load_csv_with_validation(
             discover_file,
             date_column='Trans. Date',

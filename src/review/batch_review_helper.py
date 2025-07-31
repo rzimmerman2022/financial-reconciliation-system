@@ -25,7 +25,7 @@ from manual_review_system import (
 class BatchReviewHelper:
     """Helper for efficiently reviewing multiple transactions."""
     
-    def __init__(self, review_db_path: str = "phase5_manual_reviews.db"):
+    def __init__(self, review_db_path: str = "data/phase5_manual_reviews.db"):
         self.review_system = ManualReviewSystem(review_db_path)
         
         # Define common patterns for auto-classification
