@@ -35,6 +35,9 @@ python bin/run-with-review --mode from_scratch
 # Alternative: Use main entry point
 python bin/financial-reconciliation --mode from_baseline
 
+# Launch visual GUI for transaction review
+python bin/review-gui
+
 # Run tests
 pytest
 ```
@@ -45,7 +48,8 @@ pytest
 financial-reconciliation/
 ├── bin/                          # Executable scripts
 │   ├── financial-reconciliation  # Main entry point
-│   └── run-with-review           # Direct reconciliation runner
+│   ├── run-with-review           # Direct reconciliation runner
+│   └── review-gui                # Visual GUI for transaction review
 ├── src/                          # Source code
 │   ├── core/                    # Core business logic
 │   │   ├── accounting_engine.py      # Double-entry bookkeeping
@@ -124,6 +128,7 @@ Place your data files in the appropriate directories:
 - **Comprehensive Audit Trail**: Complete transaction history with running balances
 
 ### Review System
+- **Visual GUI**: Native desktop interface with keyboard shortcuts
 - **Web Interface**: Browser-based review interface
 - **Batch Processing**: Pattern-based auto-categorization
 - **Excel Integration**: Export/import for bulk review

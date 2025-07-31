@@ -282,16 +282,31 @@ def main():
     if not pending.empty:
         print(f"\n{len(pending)} transactions need manual review.")
         print("Options:")
-        print("1. Run manual review interface")
-        print("2. Skip manual review (use defaults)")
-        print("3. Exit")
+        print("1. Launch Visual GUI Review (Recommended)")
+        print("2. Run command-line review interface")
+        print("3. Skip manual review (use defaults)")
+        print("4. Exit")
         
-        # Auto-select option 2 for non-interactive mode
-        print("\nAuto-selecting option 2: Skip manual review (use defaults)")
-        choice = '2'
+        # Prompt for user choice
+        while True:
+            choice = input("\nSelect option (1-4): ").strip()
+            if choice in ['1', '2', '3', '4']:
+                break
+            print("Please enter 1, 2, 3, or 4")
         
         if choice == '1':
-            # Phase 2: Manual review
+            # Launch Visual GUI Review
+            print("\nLaunching Visual GUI Review...")
+            print("Please use the GUI to review all transactions, then restart reconciliation.")
+            import subprocess
+            import sys
+            gui_script = Path(__file__).parent / "review-gui"
+            subprocess.run([sys.executable, str(gui_script)])
+            print("\nGUI closed. Please restart reconciliation to apply your review decisions.")
+            return
+            
+        elif choice == '2':
+            # Phase 2: Command-line manual review
             system.run_manual_review()
             
             # Phase 3: Re-run with reviews applied
@@ -303,7 +318,7 @@ def main():
             # Generate review summary
             system.generate_review_summary()
             
-        elif choice == '2':
+        elif choice == '3':
             print("\nSkipping manual review - using default 50/50 splits")
         else:
             print("\nExiting...")

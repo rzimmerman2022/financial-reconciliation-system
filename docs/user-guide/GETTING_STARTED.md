@@ -69,22 +69,48 @@ This will:
 
 ### 3. Review Flagged Transactions
 
-If transactions need manual review, you'll see a prompt:
+If transactions need manual review, you'll see a menu:
 
 ```
-156 transactions need manual review
-Would you like to review them now? (y/n):
+156 transactions need manual review.
+Options:
+1. Launch Visual GUI Review (Recommended)
+2. Run command-line review interface
+3. Skip manual review (use defaults)
+4. Exit
+
+Select option (1-4):
 ```
 
 Choose your preferred review method:
-- **y**: Interactive command-line review
-- **n**: Export for later review
+- **1**: Visual GUI with keyboard shortcuts (Recommended)
+- **2**: Interactive command-line review
+- **3**: Skip review and use defaults
+- **4**: Exit to handle manually later
 
 ## Review Methods
 
-### Interactive Review
+### Visual GUI Review (Recommended)
 
-When you choose interactive review, you'll see each transaction:
+The Visual GUI provides an intuitive interface with:
+
+- **Transaction Details**: Clear display of date, description, amount, payer
+- **Category Buttons**: Quick selection with keyboard shortcuts (E, R, S, P)
+- **Amount Adjustment**: Easy editing with quick-set buttons (Full, Half, Zero)
+- **Notes Field**: Add detailed comments for each transaction
+- **Progress Tracking**: Visual progress bar and session statistics
+- **Keyboard Shortcuts**: Efficient review with hotkeys
+
+**Key Shortcuts:**
+- E: Expense, R: Rent, S: Settlement, P: Personal
+- D: Save & Next, A: Previous, Shift+S: Skip
+- F1: Help
+
+Launch directly: `python bin/review-gui`
+
+### Command-Line Review
+
+When you choose command-line review, you'll see each transaction:
 
 ```
 Transaction 1/156

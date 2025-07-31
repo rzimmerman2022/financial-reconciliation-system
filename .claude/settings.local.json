@@ -33,7 +33,8 @@
       "Bash(move test_balance_fix.py archivephase5a)",
       "Bash(find:*)",
       "Bash(true)",
-      "Bash(pip install:*)"
+      "Bash(pip install:*)",
+      "Bash(chmod:*)"
     ],
     "deny": []
   }
