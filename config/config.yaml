@@ -1,0 +1,121 @@
+# Financial Reconciliation System Configuration
+# This file contains all configuration settings for the application
+
+app:
+  name: "Financial Reconciliation System"
+  version: "2.0.0"
+  environment: "production"
+  debug: false
+
+database:
+  # Main reconciliation database
+  reconciliation:
+    path: "data/reconciliation.db"
+    backup_enabled: true
+    backup_frequency: "daily"
+  
+  # Manual review database
+  manual_review:
+    path: "data/phase5_manual_reviews.db"
+    auto_backup: true
+
+processing:
+  # Transaction processing settings
+  batch_size: 1000
+  parallel_processing: true
+  max_workers: 4
+  
+  # Date handling
+  date_formats:
+    - "%Y-%m-%d"
+    - "%m/%d/%Y"
+    - "%d/%m/%Y"
+    - "%Y-%m-%d %H:%M:%S"
+  
+  # Amount handling
+  decimal_places: 2
+  currency: "USD"
+
+reconciliation:
+  # Matching tolerances
+  amount_tolerance: 0.01  # $0.01 tolerance for float precision
+  date_tolerance_days: 1   # 1 day tolerance for date matching
+  
+  # Fuzzy matching settings
+  description_similarity_threshold: 0.85
+  enable_fuzzy_matching: true
+
+data_quality:
+  # Data quality checks
+  enable_quality_checks: true
+  flag_missing_amounts: true
+  flag_invalid_dates: true
+  flag_duplicate_transactions: true
+  
+  # Encoding issues
+  fix_encoding_issues: true
+  encoding_fallbacks:
+    - "utf-8"
+    - "latin-1"
+    - "cp1252"
+
+output:
+  # Report generation
+  reports_directory: "output/reports"
+  excel_directory: "output/excel"
+  
+  # Default formats
+  default_report_format: "excel"
+  include_visualizations: true
+  
+  # Email settings (if enabled)
+  email_reports: false
+  email_recipients: []
+
+gui:
+  # Modern GUI settings
+  theme: "material"
+  auto_save: true
+  animation_duration: 300  # milliseconds
+  
+  # Window settings
+  default_width: 1200
+  default_height: 800
+  min_width: 1000
+  min_height: 700
+
+logging:
+  # Logging configuration
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/reconciliation.log"
+  max_file_size: "10MB"
+  backup_count: 5
+  
+  # Component-specific logging
+  components:
+    loader: "INFO"
+    processor: "INFO"
+    reconciler: "INFO"
+    gui: "DEBUG"
+
+api:
+  # API settings (if web interface enabled)
+  enabled: true
+  host: "0.0.0.0"
+  port: 5000
+  cors_enabled: true
+  rate_limiting: true
+  
+  # Security
+  require_authentication: false
+  api_key: null
+
+performance:
+  # Performance optimizations
+  cache_enabled: true
+  cache_size: 1000
+  
+  # Memory management
+  max_memory_usage: "2GB"
+  gc_threshold: 1000

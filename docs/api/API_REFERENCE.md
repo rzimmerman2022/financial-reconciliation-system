@@ -120,7 +120,7 @@ from src.core.accounting_engine import TransactionType
 
 # Available types:
 TransactionType.EXPENSE      # Shared expenses
-TransactionType.RENT         # Monthly rent payments
+TransactionType.RENT         # Monthly rent
 TransactionType.SETTLEMENT   # Zelle/Venmo transfers
 ```
 
@@ -190,334 +190,388 @@ ReconciliationMode.FROM_SCRATCH   # Process all historical data
 
 ### `src.review.manual_review_system`
 
-Manual review system for categorizing transactions.
+Manual review system for transaction decisions.
 
 #### `ManualReviewSystem`
 
 Database-backed system for storing and retrieving transaction review decisions.
 
 ```python
-from src.review.manual_review_system import ManualReviewSystem, TransactionCategory
-from decimal import Decimal
-from datetime import datetime
+from src.review.manual_review_system import ManualReviewSystem
+import pandas as pd
 
 # Initialize review system
 review_system = ManualReviewSystem("data/phase5_manual_reviews.db")
 
-# Add transaction for review
-review_id = review_system.add_transaction_for_review(
-    date=datetime(2024, 10, 15),
-    description="APPLE STORE #R285",
-    amount=Decimal("127.49"),
-    payer="Jordyn",
-    source="Chase Bank"
+# Get pending reviews
+pending = review_system.get_pending_reviews()
+# Returns pandas DataFrame with pending transactions
+
+# Save a decision
+review_system.save_decision(
+    review_id=1,
+    decision="assign",
+    payer="Ryan",
+    notes="Personal expense"
 )
 
-# Update review decision
-review_system.update_review_decision(
-    review_id=review_id,
-    category=TransactionCategory.PERSONAL,
-    allowed_amount=Decimal("0.00"),
-    notes="Personal purchase - new laptop"
-)
+# Get review statistics
+stats = review_system.get_review_stats()
 ```
 
 **Methods:**
 
-- `add_transaction_for_review(date, description, amount, payer, source, category=None, allowed_amount=None, notes=None)`
-  - Adds a transaction to the review database
+- `add_for_review(transaction_dict, reason="Manual review required")`
+  - Adds a transaction for manual review
+  - **Parameters:**
+    - `transaction_dict` (dict): Transaction data with date, description, amount, payer, source
+    - `reason` (str): Reason for review
   - **Returns:** int - Review ID
 
-- `update_review_decision(review_id, category, allowed_amount, notes=None)`
-  - Updates an existing review decision
+- `get_pending_reviews()`
+  - Gets all pending transactions as DataFrame
+  - **Returns:** pandas.DataFrame with pending reviews
+
+- `save_decision(review_id, decision, payer=None, notes="")`
+  - Saves a review decision
+  - **Parameters:**
+    - `review_id` (int): ID of review
+    - `decision` (str): "assign", "split", or "skip"
+    - `payer` (str, optional): "Ryan" or "Jordyn" for assign decisions
+    - `notes` (str): Optional notes
   - **Returns:** None
 
-- `get_pending_transactions(limit=None)`
-  - Gets transactions awaiting review
-  - **Returns:** List[Dict] of pending transactions
+- `get_review_stats()`
+  - Gets review statistics
+  - **Returns:** Dict with counts by status
 
-- `get_review_decision(review_id)`
-  - Gets existing review decision
-  - **Returns:** Dict with category, amount, notes, status
+- `export_decisions(output_path)`
+  - Exports all decisions to CSV
+  - **Parameters:**
+    - `output_path` (str): Path for CSV export
+  - **Returns:** None
 
-- `export_decisions()`
-  - Exports all review decisions
-  - **Returns:** List[Dict] of all decisions
+### `src.review.modern_visual_review_gui`
 
-#### `TransactionCategory`
+Modern Material Design GUI for transaction review.
 
-Enumeration of transaction categories for review.
+#### `ModernTransactionReviewGUI`
+
+Visual interface with keyboard shortcuts and auto-save.
 
 ```python
-from src.review.manual_review_system import TransactionCategory
-
-# Available categories:
-TransactionCategory.EXPENSE      # Shared expenses
-TransactionCategory.RENT         # Monthly rent
-TransactionCategory.SETTLEMENT   # Zelle/Venmo transfers
-TransactionCategory.PERSONAL     # Individual purchases
-```
-
-#### `ReviewStatus`
-
-Enumeration of review statuses.
-
-```python
-from src.review.manual_review_system import ReviewStatus
-
-# Available statuses:
-ReviewStatus.PENDING     # Awaiting review
-ReviewStatus.REVIEWED    # Review completed
-ReviewStatus.SKIPPED     # Review skipped
-```
-
-### `src.utils.data_loader`
-
-Utilities for loading and processing CSV data files.
-
-#### Functions
-
-- `load_expense_history(file_path, encoding_override=None)`
-  - Loads consolidated expense history CSV
-  - **Parameters:**
-    - `file_path` (str): Path to CSV file
-    - `encoding_override` (str, optional): Force specific encoding
-  - **Returns:** pandas.DataFrame with processed data
-  - **Raises:** FileNotFoundError, UnicodeDecodeError
-
-- `detect_encoding(file_path)`
-  - Automatically detects file encoding
-  - **Parameters:**
-    - `file_path` (str): Path to file
-  - **Returns:** str - Detected encoding
-
-- `clean_currency_amount(amount_str)`
-  - Converts currency string to Decimal
-  - **Parameters:**
-    - `amount_str` (str): Currency string (e.g., "$123.45")
-  - **Returns:** Decimal - Cleaned amount
-
-## GUI Classes
-
-### `src.review.visual_review_gui`
-
-Visual GUI application for transaction review.
-
-#### `TransactionReviewGUI`
-
-Main GUI application class.
-
-```python
-from src.review.visual_review_gui import TransactionReviewGUI
+from src.review.modern_visual_review_gui import ModernTransactionReviewGUI
 
 # Launch GUI
-app = TransactionReviewGUI("data/phase5_manual_reviews.db")
-app.run()
+gui = ModernTransactionReviewGUI("data/phase5_manual_reviews.db")
+gui.run()
 ```
+
+**Features:**
+- Material Design interface
+- Keyboard shortcuts (1-4 for decisions)
+- Auto-save functionality
+- Progress tracking
+- Session statistics
+- Animation effects
 
 **Methods:**
 
-- `__init__(review_db_path)`
-  - Initializes GUI application
-  - **Parameters:**
-    - `review_db_path` (str): Path to review database
-
+- `__init__(review_db_path="data/phase5_manual_reviews.db")`
+  - Initializes GUI with database path
+  
 - `run()`
-  - Starts the GUI main loop
-  - **Returns:** None
+  - Starts the GUI event loop
 
-- `load_pending_transactions()`
-  - Loads transactions needing review
-  - **Returns:** None
+### `src.loaders`
+
+Data loaders for various bank formats.
+
+#### Bank-Specific Loaders
+
+```python
+from src.loaders.chase_loader import ChaseLoader
+from src.loaders.wellsfargo_loader import WellsFargoLoader
+from src.loaders.apple_card_loader import AppleCardLoader
+from src.loaders.monarch_loader import MonarchMoneyLoader
+
+# Example usage
+loader = ChaseLoader()
+transactions = loader.load("data/chase_export.csv")
+```
+
+**Common Interface:**
+- `load(file_path)` - Loads and parses bank export file
+- Returns: pandas.DataFrame with standardized columns
+
+**Supported Banks:**
+- Chase Bank (handles encoding issues)
+- Wells Fargo
+- Apple Card
+- MonarchMoney
+- Wave Accounting
+
+### `src.processors`
+
+Data processing and report generation.
+
+#### `ExcelReportGenerator`
+
+Generates comprehensive Excel reports.
+
+```python
+from src.processors.excel_report_generator import ExcelReportGenerator
+
+generator = ExcelReportGenerator()
+generator.generate_comprehensive_report(
+    reconciliation_results,
+    manual_review_items,
+    data_quality_issues,
+    output_path="output/reports/reconciliation_report.xlsx"
+)
+```
+
+**Features:**
+- Multiple worksheets
+- Conditional formatting
+- Charts and visualizations
+- Pivot tables
+- Data quality reporting
+
+## Web API
+
+### Flask REST API
+
+RESTful API for web access.
+
+```python
+from src.web.app import create_app
+
+app = create_app()
+app.run(host='0.0.0.0', port=5000)
+```
+
+### Endpoints
+
+#### `GET /api/status`
+System health check.
+
+**Response:**
+```json
+{
+  "status": "healthy",
+  "version": "2.0.0",
+  "last_reconciliation": "2025-07-31T14:16:55"
+}
+```
+
+#### `POST /api/reconcile`
+Trigger reconciliation.
+
+**Request:**
+```json
+{
+  "start_date": "2024-01-01",
+  "end_date": "2024-12-31",
+  "mode": "from_baseline"
+}
+```
+
+#### `GET /api/reviews/pending`
+Get pending reviews.
+
+**Response:**
+```json
+{
+  "count": 2,
+  "reviews": [
+    {
+      "id": 1,
+      "date": "2024-10-31",
+      "description": "Large transfer",
+      "amount": 8000.00,
+      "payer": "Ryan",
+      "source": "MonarchMoney"
+    }
+  ]
+}
+```
+
+#### `POST /api/reviews/{id}/decision`
+Save review decision.
+
+**Request:**
+```json
+{
+  "decision": "assign",
+  "payer": "Ryan",
+  "notes": "Personal expense"
+}
+```
+
+## Utilities
+
+### Data Quality
+
+```python
+from src.utils.data_quality import DataQualityChecker
+
+checker = DataQualityChecker()
+issues = checker.check_transactions(df)
+# Returns list of quality issues
+```
+
+### Date Handling
+
+```python
+from src.utils.date_utils import parse_flexible_date, normalize_date_range
+
+# Parse various date formats
+date = parse_flexible_date("2024-01-15")
+date = parse_flexible_date("01/15/2024")
+date = parse_flexible_date("15/01/2024")
+
+# Normalize date ranges
+start, end = normalize_date_range(start_date, end_date)
+```
 
 ## Error Handling
 
-### Common Exceptions
+### Exception Hierarchy
 
-- `ValueError`: Invalid parameters or accounting invariant violations
-- `FileNotFoundError`: Missing data files or database
-- `UnicodeDecodeError`: File encoding issues
-- `sqlite3.DatabaseError`: Database access problems
+```python
+# Base exception
+class ReconciliationError(Exception):
+    pass
+
+# Specific exceptions
+class DataLoadError(ReconciliationError):
+    pass
+
+class ValidationError(ReconciliationError):
+    pass
+
+class AccountingError(ReconciliationError):
+    pass
+```
 
 ### Error Recovery
 
 ```python
 try:
-    reconciler.run_reconciliation()
-except ValueError as e:
-    print(f"Validation error: {e}")
-    # Handle invalid data
-except FileNotFoundError as e:
-    print(f"Missing file: {e}")
-    # Handle missing files
+    engine.run_reconciliation()
+except DataLoadError as e:
+    logger.error(f"Failed to load data: {e}")
+    # Handle missing or corrupt data
+except ValidationError as e:
+    logger.error(f"Validation failed: {e}")
+    # Handle invalid transactions
+except AccountingError as e:
+    logger.error(f"Accounting invariant violated: {e}")
+    # Critical error - investigate immediately
+```
+
+## Configuration
+
+### Loading Configuration
+
+```python
+import yaml
+
+with open('config/config.yaml', 'r') as f:
+    config = yaml.safe_load(f)
+
+# Access settings
+batch_size = config['processing']['batch_size']
+tolerance = config['reconciliation']['amount_tolerance']
+```
+
+### Environment Variables
+
+```python
+import os
+
+# Override with environment variables
+db_path = os.getenv('RECON_DB_PATH', 'data/reconciliation.db')
+debug = os.getenv('RECON_DEBUG', 'false').lower() == 'true'
 ```
 
 ## Best Practices
 
-### Database Management
-
-```python
-# Always use absolute paths for databases
-db_path = os.path.abspath("data/phase5_manual_reviews.db")
-review_system = ManualReviewSystem(db_path)
-
-# Close connections when done
-review_system.close()  # If implemented
-```
-
 ### Transaction Processing
 
 ```python
-# Validate amounts before processing
+from decimal import Decimal
+
+# Always use Decimal for money
+amount = Decimal('123.45')  # Not float
+
+# Validate before processing
 if amount <= 0:
     raise ValueError("Amount must be positive")
 
-# Use Decimal for currency calculations
-from decimal import Decimal
-amount = Decimal("123.45")  # Not float(123.45)
-
-# Handle timezone-aware dates
-from datetime import datetime, timezone
-date = datetime.now(timezone.utc)
+# Use consistent date handling
+from datetime import datetime
+date = datetime.strptime(date_str, '%Y-%m-%d')
 ```
 
-### Error Handling
+### Database Operations
 
 ```python
-# Always validate data before processing
-def safe_process_transaction(data):
-    try:
-        # Validate required fields
-        required = ['date', 'amount', 'description', 'payer']
-        for field in required:
-            if field not in data:
-                raise ValueError(f"Missing required field: {field}")
-        
-        # Process transaction
-        engine.post_expense(**data)
-        
-    except Exception as e:
-        logger.error(f"Transaction processing failed: {e}")
-        raise
+# Use context managers
+with sqlite3.connect(db_path) as conn:
+    cursor = conn.cursor()
+    cursor.execute(query, params)
+    conn.commit()
+
+# Always use parameterized queries
+cursor.execute(
+    "INSERT INTO reviews (date, amount) VALUES (?, ?)",
+    (date, amount)
+)
+```
+
+### Logging
+
+```python
+import logging
+
+logger = logging.getLogger(__name__)
+
+# Log at appropriate levels
+logger.debug("Processing transaction: %s", txn_id)
+logger.info("Reconciliation started")
+logger.warning("Missing amount for transaction: %s", desc)
+logger.error("Failed to load file: %s", file_path)
 ```
 
 ## Examples
 
-### Complete Reconciliation Workflow
+### Complete Workflow
 
 ```python
-from src.core.reconciliation_engine import GoldStandardReconciler, ReconciliationMode
-from src.review.manual_review_system import ManualReviewSystem
-from decimal import Decimal
-from datetime import datetime
+# 1. Run reconciliation
+from src.core.reconciliation_engine import GoldStandardReconciler
+reconciler = GoldStandardReconciler()
+reconciler.run_reconciliation()
 
-# 1. Initialize reconciler
-reconciler = GoldStandardReconciler(
-    mode=ReconciliationMode.FROM_BASELINE,
-    baseline_date=datetime(2024, 9, 30),
-    baseline_amount=Decimal('1577.08'),
-    baseline_who_owes='Jordyn owes Ryan'
+# 2. Check for manual reviews
+if reconciler.manual_review_count > 0:
+    # Launch GUI
+    from src.review.modern_visual_review_gui import ModernTransactionReviewGUI
+    gui = ModernTransactionReviewGUI()
+    gui.run()
+
+# 3. Generate reports
+from src.processors.excel_report_generator import ExcelReportGenerator
+generator = ExcelReportGenerator()
+generator.generate_comprehensive_report(
+    reconciler.get_results(),
+    "output/final_report.xlsx"
 )
-
-# 2. Run reconciliation
-reconciler.run_reconciliation(
-    phase5_start=datetime(2024, 10, 1),
-    phase5_end=datetime(2024, 12, 31)
-)
-
-# 3. Handle manual reviews if needed
-if reconciler.manual_review_items:
-    review_system = ManualReviewSystem("data/phase5_manual_reviews.db")
-    
-    for item in reconciler.manual_review_items:
-        review_system.add_transaction_for_review(
-            date=item['date'],
-            description=item['description'],
-            amount=item['amount'],
-            payer=item['payer'],
-            source=item['source']
-        )
-    
-    print(f"Added {len(reconciler.manual_review_items)} items for review")
-
-# 4. Export results
-reconciler.export_results()
-print("Reconciliation complete - check output/gold_standard/")
-```
-
-### Custom Transaction Processing
-
-```python
-from src.core.accounting_engine import AccountingEngine
-from decimal import Decimal
-from datetime import datetime
-
-# Initialize engine
-engine = AccountingEngine()
-
-# Process various transaction types
-transactions = [
-    {
-        'type': 'expense',
-        'date': datetime(2024, 10, 15),
-        'payer': 'Jordyn',
-        'ryan_share': Decimal('25.00'),
-        'jordyn_share': Decimal('25.00'),
-        'description': 'Shared dinner'
-    },
-    {
-        'type': 'rent',
-        'date': datetime(2024, 10, 1),
-        'payer': 'Jordyn',
-        'ryan_share': Decimal('1000.00'),
-        'jordyn_share': Decimal('1000.00'),
-        'description': 'October rent'
-    },
-    {
-        'type': 'settlement',
-        'date': datetime(2024, 10, 20),
-        'payer': 'Ryan',
-        'amount': Decimal('500.00'),
-        'description': 'Zelle payment'
-    }
-]
-
-# Process transactions
-for txn in transactions:
-    if txn['type'] == 'expense':
-        engine.post_expense(
-            date=txn['date'],
-            payer=txn['payer'],
-            ryan_share=txn['ryan_share'],
-            jordyn_share=txn['jordyn_share'],
-            description=txn['description']
-        )
-    elif txn['type'] == 'rent':
-        engine.post_rent(
-            date=txn['date'],
-            payer=txn['payer'],
-            ryan_share=txn['ryan_share'],
-            jordyn_share=txn['jordyn_share'],
-            description=txn['description']
-        )
-    elif txn['type'] == 'settlement':
-        engine.post_settlement(
-            date=txn['date'],
-            payer=txn['payer'],
-            amount=txn['amount'],
-            description=txn['description']
-        )
-
-# Get final balance
-balance = engine.get_current_balance()
-print(f"Final balance: {balance[0]} ${balance[1]}")
-
-# Export audit trail
-audit_trail = engine.export_audit_trail()
-print(f"Processed {len(audit_trail)} transactions")
 ```
 
 ---
 
 **Last Updated:** July 31, 2025  
-**Version:** 1.0.0
+**Version:** 2.0.0
