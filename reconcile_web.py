@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """
-Quick Launch Script for Gold Standard Web Interface
+Web Interface Launcher for Financial Reconciliation System
 
-Simply run: python launch.py
+Run the web-based reconciliation interface with manual transaction review.
+
+Usage: python reconcile_web.py
 """
 
 import subprocess
@@ -18,7 +20,7 @@ def main():
     print("=" * 60)
     
     try:
-        subprocess.run([sys.executable, "create_modern_web_gui.py"])
+        subprocess.run([sys.executable, "-m", "src.review.web_interface"])
     except KeyboardInterrupt:
         print("\nShutting down...")
     except Exception as e:

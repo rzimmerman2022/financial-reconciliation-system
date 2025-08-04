@@ -99,8 +99,6 @@ financial-reconciliation/
 │       └── summary.json
 │
 ├── config/                       # Configuration files
-├── logs/                         # Application logs
-├── temp/                         # Temporary files
 ├── examples/                     # Usage examples
 │   ├── quickstart/               # Quick start examples
 │   └── advanced/                 # Advanced usage examples
@@ -148,6 +146,7 @@ financial-reconciliation/
 - Business and technical documentation separated
 - Room for growth with api/, architecture/, user-guide/
 - Follows common documentation patterns
+- Pipeline documentation in architecture/PIPELINE.md
 
 ## Benefits of This Structure
 

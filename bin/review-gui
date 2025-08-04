@@ -30,7 +30,7 @@ sys.path.insert(0, str(project_root))
 def main():
     """Launch the visual transaction review GUI."""
     try:
-        from src.review.visual_review_gui import TransactionReviewGUI
+        from src.review.modern_visual_review_gui import TransactionReviewGUI
         
         # Determine database path
         if len(sys.argv) > 1:

@@ -1,132 +1,323 @@
-# Quick Start Guide • Gold Standard Edition
+# 🚀 Quick Start Guide
 
-Get up and running with the **Gold Standard** Financial Reconciliation System in 5 minutes!
+> **Get up and running with the Financial Reconciliation System in under 5 minutes**
 
-🌟 **NEW**: Features a cutting-edge web interface with glassmorphism design and 2025 UI standards.
+---
 
-## Prerequisites
+## 📋 Prerequisites
 
-- Python 3.8 or higher
-- Git (for cloning the repository)
+Before you begin, ensure you have:
+- **Python 3.8+** installed on your system
+- **Git** for cloning the repository
+- **Terminal/Command Prompt** access
+- **Bank export files** in CSV format (optional for initial testing)
 
-## 1. Installation (1 minute)
+---
 
+## ⚡ 60-Second Setup
+
+### 1. Clone and Install
 ```bash
 # Clone the repository
 git clone https://github.com/your-org/financial-reconciliation.git
 cd financial-reconciliation
 
-# Create virtual environment
+# Create virtual environment (recommended)
 python -m venv venv
-
-# Activate virtual environment
-# Windows:
-venv\Scripts\activate
-# macOS/Linux:
-source venv/bin/activate
+source venv/bin/activate  # On Windows: venv\\Scripts\\activate
 
 # Install dependencies
 pip install -r requirements.txt
 ```
 
-## 2. Run Your First Reconciliation (2 minutes)
+### 2. Launch Web Interface
+```bash
+# Start the modern web interface
+python reconcile_web.py
+```
+🌐 **Your browser will automatically open to http://localhost:5000**
 
+### 3. Run Basic Reconciliation
 ```bash
 # Run reconciliation with sample data
-python reconcile.py
-
-# You should see output like:
-# ================================================================================
-#                     FINANCIAL RECONCILIATION REPORT
-# ================================================================================
-# Mode: FROM_BASELINE
-# Result: Ryan owes Jordyn $8,595.87
+python reconcile.py --mode from_baseline
 ```
 
-## 3. Review Pending Transactions (2 minutes)
-
-### 🌟 Option A: Gold Standard Web Interface (RECOMMENDED)
-
-```bash
-# Launch the cutting-edge web interface
-python create_modern_web_gui.py
-
-# Features:
-# • 🎨 Glassmorphism design with backdrop blur
-# • 📱 Responsive mobile-first layout  
-# • ⚡ Smooth animations and micro-interactions
-# • ⌨️ Keyboard shortcuts (1-4 for categories)
-# • 📊 Real-time progress tracking
-# • 🌓 Dark/light mode toggle
-# • 📄 One-click CSV export
-```
-
-### Option B: Desktop GUI
-
-```bash
-# Launch the Material Design desktop interface
-python -m src.review.modern_visual_review_gui
-```
-
-### Option C: Command Line
-
-```bash
-# Use CLI for manual review
-python bin/manual_review_cli.py
-```
-
-## 4. Generate Reports
-
-After reconciliation, find your reports in:
-- `output/gold_standard/` - Gold standard reconciliation reports
-- `templates/` - Generated web interface templates
-- Export directly from the web interface with one-click CSV export
-
-## Next Steps
-
-- 📖 Read the full [README](README.md)
-- 🔧 Configure settings in `config/config.yaml`
-- 📊 Add your own bank data to `data/bank-exports/`
-- 🧪 Run tests with `python run_tests.py`
-
-## Common Commands
-
-```bash
-# Launch Gold Standard Web Interface
-python create_modern_web_gui.py
-
-# Reconcile specific date range
-python reconcile.py --start-date 2024-01-01 --end-date 2024-12-31
-
-# Run in baseline mode
-python reconcile.py --mode baseline
-
-# Export to Excel format
-python export_to_excel.py
-```
-
-## Troubleshooting
-
-**GUI won't start?**
-```bash
-# Install tkinter (usually comes with Python)
-# Ubuntu/Debian:
-sudo apt-get install python3-tk
-# macOS: Should be included
-# Windows: Should be included
-```
-
-**Import errors?**
-```bash
-# Make sure you're in the project root
-cd financial-reconciliation
-# Ensure virtual environment is activated
-```
-
-**Need help?**
-- Check [Documentation](docs/)
-- Report issues on [GitHub](https://github.com/your-org/financial-reconciliation/issues)
+**🎉 That's it! You're now running the Financial Reconciliation System.**
 
 ---
 
-Happy reconciling! 🎉
+## 🎯 Common Usage Patterns
+
+### 🌐 Web Interface (Recommended for Beginners)
+```bash
+# Launch the modern web interface with real-time progress
+python reconcile_web.py
+
+# Features available:
+# - Real-time progress tracking
+# - Interactive transaction review
+# - Mobile-responsive design
+# - One-click CSV export
+# - Glassmorphism UI design
+```
+
+### 💻 Command Line Interface (Advanced Users)
+```bash
+# Basic reconciliation
+python reconcile.py
+
+# With custom date range
+python reconcile.py --start-date 2024-01-01 --end-date 2024-12-31
+
+# Using baseline mode (recommended for production)
+python reconcile.py --mode from_baseline
+
+# With verbose output
+python reconcile.py --verbose
+```
+
+### 🔧 Utility Commands
+```bash
+# Export results to Excel
+python bin/export-excel
+
+# Run test suite
+python bin/run-tests
+
+# Launch desktop GUI for transaction review
+python bin/review-gui
+
+# Launch specific review interface
+python src/scripts/review_interface.py
+```
+
+---
+
+## 📂 Quick File Overview
+
+### 🎯 Main Entry Points
+- **`reconcile_web.py`** - Modern web interface launcher
+- **`reconcile.py`** - Command-line interface
+- **`bin/`** - All executable utilities and tools
+
+### 📁 Key Directories
+- **`src/core/`** - Main reconciliation logic
+- **`src/review/`** - Manual review interfaces (web, desktop, CLI)
+- **`test-data/`** - Sample data and bank exports
+- **`config/`** - Configuration files
+- **`docs/`** - Comprehensive documentation
+
+### ⚙️ Configuration
+- **`config/config.yaml`** - Main system configuration
+- **`requirements.txt`** - Python dependencies
+- **`pyproject.toml`** - Modern Python project setup
+
+---
+
+## 🏦 Adding Your Bank Data
+
+### Step 1: Export Your Bank Data
+Export your transactions from your bank in CSV format:
+- **Chase**: Online Banking → Statements → Download CSV
+- **Wells Fargo**: Account Summary → Download → CSV
+- **Discover**: Account Center → Download → CSV
+- **Others**: Look for "Export" or "Download" options
+
+### Step 2: Place Files in Correct Directory
+```bash
+# Copy your bank CSV files here:
+cp ~/Downloads/bank_export.csv test-data/bank-exports/
+
+# The system automatically detects bank formats
+ls test-data/bank-exports/
+```
+
+### Step 3: Run Reconciliation
+```bash
+# Process your data
+python reconcile.py --mode from_baseline
+
+# Or use the web interface for guided experience
+python reconcile_web.py
+```
+
+---
+
+## 🎨 Interface Options
+
+### 🌐 Web Interface (Best for Most Users)
+```bash
+python reconcile_web.py
+```
+**Features:**
+- Modern glassmorphism design
+- Real-time progress updates
+- Mobile-responsive layout
+- Interactive charts and visualizations
+- One-click export functionality
+
+### 🖥️ Desktop GUI (Power Users)
+```bash
+python bin/review-gui
+```
+**Features:**
+- Native desktop application
+- Keyboard shortcuts (F1 for help)
+- Material Design interface
+- Advanced review controls
+
+### 📱 Command Line (Automation & Scripts)
+```bash
+python reconcile.py
+```
+**Features:**
+- Scriptable and automatable
+- Detailed logging and output
+- Custom configuration options
+- Batch processing capabilities
+
+---
+
+## 📊 Understanding the Results
+
+### 🎯 Key Output Files
+After running reconciliation, check these files:
+
+```bash
+# Main results (if using archive mode)
+archive/output/gold_standard/
+├── accounting_ledger.csv      # Complete transaction history
+├── audit_trail.csv           # Detailed reconciliation log
+├── summary.json              # Machine-readable summary
+└── reconciliation_report.txt # Human-readable summary
+```
+
+### 💰 Reading the Balance
+The system will show results like:
+```
+Final Balance: $1,234.56
+Status: Ryan owes Jordyn
+```
+
+This means:
+- **Positive amount**: First person owes second person
+- **Negative amount**: Second person owes first person
+- **Zero**: All transactions are perfectly balanced
+
+---
+
+## 🔧 Troubleshooting
+
+### ❌ Common Issues
+
+#### Python Not Found
+```bash
+# Install Python 3.8+ from python.org
+# Then verify installation:
+python --version
+```
+
+#### Module Import Errors
+```bash
+# Ensure you're in the project directory and virtual environment is activated
+cd financial-reconciliation
+source venv/bin/activate  # Windows: venv\\Scripts\\activate
+pip install -r requirements.txt
+```
+
+#### Port 5000 Already in Use
+```bash
+# The web interface uses port 5000 by default
+# Stop other applications using port 5000, or modify config/config.yaml
+```
+
+#### CSV File Encoding Issues
+```bash
+# The system automatically handles most encoding issues
+# If you encounter problems, check the file encoding and save as UTF-8
+```
+
+### 🆘 Getting Help
+
+#### 📚 Documentation
+- **Full Documentation**: See [README.md](README.md)
+- **Architecture Guide**: See [docs/architecture/PIPELINE.md](docs/architecture/PIPELINE.md)
+- **Troubleshooting**: See [docs/user-guide/TROUBLESHOOTING.md](docs/user-guide/TROUBLESHOOTING.md)
+
+#### 🐛 Reporting Issues
+- **GitHub Issues**: [Create an issue](https://github.com/your-org/financial-reconciliation/issues)
+- **Bug Reports**: Include system info, error messages, and steps to reproduce
+
+---
+
+## 🚀 Next Steps
+
+### 🎓 Learning More
+1. **Read the Full Documentation**: [README.md](README.md) contains comprehensive information
+2. **Explore Configuration**: Customize behavior via [config/config.yaml](config/config.yaml)
+3. **Try Different Interfaces**: Test web, desktop, and CLI interfaces
+4. **Review Sample Data**: Examine files in `test-data/` directory
+
+### 🏗️ Advanced Usage
+1. **Custom Configuration**: Create environment-specific config files
+2. **Automated Workflows**: Set up scheduled reconciliation runs
+3. **API Integration**: Use the system in automated pipelines
+4. **Extend Functionality**: Add support for additional banks or formats
+
+### 🤝 Contributing
+1. **Read Contributing Guide**: See [CONTRIBUTING.md](CONTRIBUTING.md)
+2. **Join the Community**: Participate in GitHub discussions
+3. **Report Issues**: Help improve the system by reporting bugs
+4. **Submit Features**: Suggest new functionality or improvements
+
+---
+
+## 📋 Cheat Sheet
+
+### 🔥 Essential Commands
+```bash
+# Quick start
+python reconcile_web.py              # Launch web interface
+
+# Basic reconciliation
+python reconcile.py                  # CLI reconciliation
+python reconcile.py --mode baseline  # Production mode
+
+# Utilities
+python bin/export-excel              # Export to Excel
+python bin/run-tests                 # Run all tests
+python bin/review-gui                # Desktop review GUI
+
+# Advanced
+python reconcile.py --verbose        # Detailed output
+python reconcile.py --config custom.yaml  # Custom config
+```
+
+### 📂 Key File Locations
+```bash
+# Configuration
+config/config.yaml                   # Main configuration
+
+# Data
+test-data/bank-exports/             # Place your CSV files here
+data/phase5_manual_reviews.db      # Review database
+
+# Results
+archive/output/gold_standard/       # Reconciliation results
+
+# Documentation
+docs/                               # All documentation
+README.md                           # Comprehensive guide
+```
+
+### 🌐 Web Interface URLs
+- **Main Interface**: http://localhost:5000
+- **Review Interface**: Integrated in main interface
+- **API Endpoints**: http://localhost:5000/api (if enabled)
+
+---
+
+**🎉 You're ready to start reconciling financial transactions!**
+
+*For comprehensive documentation, see [README.md](README.md)*

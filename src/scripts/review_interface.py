@@ -27,7 +27,7 @@ def main():
     # Default to web interface
     interface = sys.argv[1] if len(sys.argv) > 1 else "web"
     
-    print("🏦 Financial Reconciliation System - Review Interface Launcher")
+    print("Financial Reconciliation System - Review Interface Launcher")
     print("=" * 65)
     
     if interface == "web":
