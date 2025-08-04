@@ -1,59 +1,120 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+
+# C extensions
 *.so
+
+# Distribution / packaging
 .Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Virtual environments
+.env
+.venv
 env/
 venv/
 ENV/
-.venv/
-.env
+env.bak/
+venv.bak/
 
-# IDE
-.vscode/
+# IDEs
 .idea/
+.vscode/
 *.swp
 *.swo
 *~
-
-# Testing
-.coverage
-htmlcov/
-.tox/
-.pytest_cache/
-.mypy_cache/
-
-# Data files
-*.db
-*.db-journal
-*.db-wal
-
-# Logs
-*.log
-logs/
-
-# Temporary files
-*.tmp
-*.bak
-~$*.xlsx
-temp/
+*.sublime-project
+*.sublime-workspace
 
 # OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
 # Project specific
-archive/
 output/
+temp/
+logs/
+*.db
+*.db-journal
+*.db-wal
+data/manual_reviews*.db
+data/phase*.db
+archive/
+
+# Test artifacts
+.pytest_cache/
+test-results/
+test-reports/
+
+# Local configuration
+config/local.yaml
+config/*.local.yaml
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.orig
+~$*.xlsx
+
+# Financial data (sensitive)
 test-data/bank-exports/*
 test-data/legacy/*
 test-data/processed/*
 !test-data/bank-exports/.gitkeep
 !test-data/legacy/.gitkeep
 !test-data/processed/.gitkeep
-
-# Sensitive data
 *_personal.csv
 *_private.json
 credentials.json

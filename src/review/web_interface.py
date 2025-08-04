@@ -532,7 +532,15 @@ def index():
     """Main review interface route."""
     try:
         # Load manual review data
-        manual_df = pd.read_csv("output/gold_standard/manual_review_required.csv")
+        csv_path = "output/gold_standard/manual_review_required.csv"
+        
+        # Check if file exists
+        if not os.path.exists(csv_path):
+            # Return empty state if no data file
+            return render_template('index.html', transactions=[], 
+                                 message="No transactions requiring manual review at this time.")
+        
+        manual_df = pd.read_csv(csv_path)
         
         # Convert to list of dictionaries
         transactions = []

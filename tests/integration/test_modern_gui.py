@@ -13,7 +13,7 @@ try:
     print("-" * 50)
     
     # Import and run
-    from src.review.modern_visual_review_gui import main
+    from src.review.modern_visual_review_gui import src.main as main
     main()
     
 except Exception as e:

@@ -9,9 +9,9 @@ from pathlib import Path
 # Add src to Python path
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
-from loaders.expense_loader import ExpenseHistoryLoader
-from loaders.rent_loader import RentAllocationLoader  
-from loaders.zelle_loader import ZellePaymentsLoader
+from src.loaders.expense_loader import ExpenseHistoryLoader
+from src.loaders.rent_loader import RentAllocationLoader  
+from src.loaders.zelle_loader import ZellePaymentsLoader
 
 def main():
     print("Testing Financial Reconciliation System Loaders")

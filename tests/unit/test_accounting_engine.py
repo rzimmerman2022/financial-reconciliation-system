@@ -21,7 +21,7 @@ Date: January 2024
 import unittest
 from datetime import datetime
 from decimal import Decimal
-from accounting_engine import AccountingEngine, TransactionType, Transaction
+from src.core.accounting_engine import AccountingEngine, TransactionType, Transaction
 
 
 class TestAccountingEngine(unittest.TestCase):

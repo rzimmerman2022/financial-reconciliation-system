@@ -19,12 +19,8 @@ Thank you for your interest in contributing to the Financial Reconciliation Syst
    python -m venv venv
    source venv/bin/activate  # Windows: venv\Scripts\activate
    
-   # Install dependencies
-   pip install -r requirements.txt
-   pip install -r requirements-dev.txt  # Development dependencies
-   
-   # Install in development mode
-   python tools/setup.py develop
+   # Install dependencies in development mode
+   pip install -e ".[dev]"
    ```
 
 3. **Verify Setup**
@@ -544,5 +540,5 @@ Contributors are recognized in:
 
 ---
 
-**Last Updated:** July 31, 2025  
-**Version:** 1.0.0
+**Last Updated:** January 4, 2025  
+**Version:** 4.0.1

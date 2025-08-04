@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "financial-reconciliation"
-version = "2.0.0"
+version = "4.0.1"
 description = "Enterprise-grade financial transaction reconciliation system with double-entry bookkeeping"
 readme = "README.md"
 authors = [
@@ -60,9 +60,9 @@ docs = [
 ]
 
 [project.scripts]
-reconcile = "bin.reconcile_transactions:main"
-manual-review = "bin.manual_review_cli:main"
-modern-gui = "src.review.modern_visual_review_gui:main"
+reconcile = "core.reconciliation_engine:main"
+modern-gui = "review.modern_visual_review_gui:main"
+web-interface = "review.web_interface:main"
 
 [project.urls]
 Homepage = "https://github.com/financialreconciliation/financial-reconciliation"
@@ -70,7 +70,10 @@ Documentation = "https://financial-reconciliation.readthedocs.io"
 Issues = "https://github.com/financialreconciliation/financial-reconciliation/issues"
 
 [tool.setuptools]
-packages = ["src", "bin", "tools"]
+packages = ["core", "loaders", "processors", "review", "scripts", "utils"]
+
+[tool.setuptools.package-dir]
+"" = "src"
 
 [tool.setuptools.package-data]
 "*" = ["*.json", "*.yaml", "*.yml", "*.db"]

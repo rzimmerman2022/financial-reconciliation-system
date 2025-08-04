@@ -14,7 +14,7 @@ import tempfile
 import os
 
 # Import the module to test
-from data_loader import (
+from src.utils.data_loader import (
     clean_column_names,
     clean_currency,
     parse_flexible_date,

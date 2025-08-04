@@ -8,19 +8,20 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 
 setup(
     name="financial-reconciliation",
-    version="1.0.0",
+    version="4.0.1",
     author="Financial Reconciliation Team",
     author_email="team@example.com",
     description="A production-ready financial reconciliation system with double-entry bookkeeping",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/yourorg/financial-reconciliation",
-    packages=find_packages(),
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Financial and Insurance Industry",
         "Topic :: Office/Business :: Financial :: Accounting",
-        "License :: Other/Proprietary License",
+        "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
@@ -31,7 +32,9 @@ setup(
     install_requires=requirements,
     entry_points={
         "console_scripts": [
-            "reconcile=scripts.run_with_review:main",
+            "reconcile=core.reconciliation_engine:main",
+            "modern-gui=review.modern_visual_review_gui:main",
+            "web-interface=review.web_interface:main",
         ],
     },
     include_package_data=True,

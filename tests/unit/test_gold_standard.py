@@ -30,7 +30,7 @@ from pathlib import Path
 from gold_standard_reconciliation import (
     GoldStandardReconciler, ReconciliationMode, DataQualityIssue
 )
-from accounting_engine import AccountingEngine, TransactionType
+from src.accounting_engine import AccountingEngine, TransactionType
 
 
 class TestAccountingInvariants(unittest.TestCase):

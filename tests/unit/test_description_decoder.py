@@ -6,7 +6,7 @@ Tests all the critical patterns identified in the financial reconciliation syste
 
 import unittest
 from decimal import Decimal
-from description_decoder import DescriptionDecoder, decode_transaction
+from src.core.description_decoder import DescriptionDecoder, decode_transaction
 
 
 class TestDescriptionDecoder(unittest.TestCase):

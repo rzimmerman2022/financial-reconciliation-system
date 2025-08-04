@@ -1,0 +1,32 @@
+name: Quick Check
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - develop
+
+jobs:
+  quick-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -e ".[dev]"
+    
+    - name: Run quick checks
+      run: |
+        # Quick syntax check
+        python -m py_compile src/**/*.py
+        
+        # Run fast unit tests only
+        pytest tests/unit -v -m "not slow" --tb=short
