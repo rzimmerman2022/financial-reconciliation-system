@@ -30,20 +30,62 @@ source venv/bin/activate  # On Windows: venv\\Scripts\\activate
 pip install -r requirements.txt
 ```
 
-### 2. Launch Web Interface
+### 2. Launch Premium GUI Interface
+```bash
+# Launch the GUI selector with stunning visual interfaces
+python launch_gui.py
+```
+🎨 **Choose from multiple beautiful interfaces with gradients, animations, and AI assistance**
+
+### 3. Alternative: Launch Web Interface
 ```bash
 # Start the modern web interface
 python reconcile_web.py
 ```
 🌐 **Your browser will automatically open to http://localhost:5000**
 
-### 3. Run Basic Reconciliation
+### 4. Run Basic Reconciliation
 ```bash
 # Run reconciliation with sample data
 python reconcile.py --mode from_baseline
 ```
 
 **🎉 That's it! You're now running the Financial Reconciliation System.**
+
+---
+
+## 🎨 **Visual Interface Options**
+
+### 💎 Premium Interfaces
+The system now includes multiple stunning visual interfaces:
+
+#### 🚀 **GUI Launcher** (Best Starting Point)
+```bash
+python launch_gui.py
+```
+- Interactive selection between all available interfaces  
+- Automatic dependency installation
+- Beautiful card-based selection screen
+
+#### ✨ **Ultra Modern Interface**
+- Gradient backgrounds and glassmorphism effects
+- Smooth animations and visual feedback
+- Color-coded transaction categories
+- Real-time progress tracking
+
+#### 💎 **Premium Experience**  
+- AI-powered categorization suggestions
+- Particle celebration effects 🎉
+- Advanced neumorphic design
+- Interactive charts and batch processing
+
+#### ⌨️ **Universal Shortcuts**
+All GUI interfaces support:
+- **1-5**: Quick category selection
+- **Enter**: Submit review  
+- **Space**: Skip transaction
+- **←/→**: Navigate transactions
+- **Esc**: Exit interface
 
 ---
 
