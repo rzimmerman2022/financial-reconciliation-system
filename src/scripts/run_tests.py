@@ -8,14 +8,14 @@ import subprocess
 import sys
 from pathlib import Path
 
-def run_tests():
+def main():
     """Run all tests with coverage reporting."""
     print("=" * 60)
     print("Financial Reconciliation System - Test Runner")
     print("=" * 60)
     
     # Ensure we're in the project root
-    project_root = Path(__file__).parent
+    project_root = Path(__file__).parent.parent.parent
     
     # Run pytest with coverage
     cmd = [
@@ -33,11 +33,11 @@ def run_tests():
     result = subprocess.run(cmd, cwd=project_root)
     
     if result.returncode == 0:
-        print("\n✅ All tests passed!")
-        print("\n📊 Coverage report generated in htmlcov/index.html")
+        print("\nAll tests passed!")
+        print("\nCoverage report generated in htmlcov/index.html")
     else:
-        print("\n❌ Some tests failed!")
+        print("\nSome tests failed!")
         sys.exit(1)
 
 if __name__ == "__main__":
-    run_tests()
+    main()

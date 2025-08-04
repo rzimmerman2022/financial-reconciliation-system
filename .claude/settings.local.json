@@ -39,7 +39,8 @@
       "Bash(start python src/review/modern_visual_review_gui.py)",
       "Bash(dir /T C:Projectsfinancial-reconciliationsrcreview)",
       "Bash(sqlite3:*)",
-      "Bash(dir:*)"
+      "Bash(dir:*)",
+      "Bash(set PYTHONIOENCODING=utf-8)"
     ],
     "deny": []
   }

@@ -133,10 +133,10 @@ def create_modern_template():
             
             <div class="flex items-center space-x-4">
                 <button @click="toggleTheme()" class="p-2 rounded-lg bg-white/50 hover:bg-white/70 transition-colors">
-                    <span x-text="darkMode ? '☀️' : '🌙'"></span>
+                    <span x-text="darkMode ? 'Light' : 'Dark'"></span>
                 </button>
                 <button @click="exportData()" class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors">
-                    📊 Export
+                    Export
                 </button>
             </div>
         </div>
@@ -155,7 +155,7 @@ def create_modern_template():
                             <p class="text-3xl font-bold text-gray-800" x-text="stats.total">{{ stats.total }}</p>
                         </div>
                         <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
-                            <span class="text-blue-600 text-xl">📊</span>
+                            <span class="text-blue-600 text-xl">Export</span>
                         </div>
                     </div>
                 </div>
@@ -167,7 +167,7 @@ def create_modern_template():
                             <p class="text-3xl font-bold text-green-600" x-text="stats.reviewed">{{ stats.reviewed }}</p>
                         </div>
                         <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
-                            <span class="text-green-600 text-xl">✅</span>
+                            <span class="text-green-600 text-xl">Save</span>
                         </div>
                     </div>
                 </div>
@@ -191,7 +191,7 @@ def create_modern_template():
                             <p class="text-3xl font-bold text-purple-600" x-text="Math.round((stats.reviewed / stats.total) * 100) + '%'">{{ progress }}%</p>
                         </div>
                         <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
-                            <span class="text-purple-600 text-xl">🎯</span>
+                            <span class="text-purple-600 text-xl">Target</span>
                         </div>
                     </div>
                 </div>
@@ -298,14 +298,14 @@ def create_modern_template():
                                     </button>
                                     <button @click="skipTransaction(index)"
                                             class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-lg hover:bg-yellow-200 transition-colors">
-                                        ⏭️ Skip
+                                        Skip
                                     </button>
                                 </div>
                                 
                                 <button @click="saveTransaction(index)"
                                         :disabled="!transaction.category"
                                         class="px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:from-blue-600 hover:to-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-lg">
-                                    ✅ Save & Next
+                                    Save & Next
                                 </button>
                             </div>
                         </div>
@@ -335,11 +335,11 @@ def create_modern_template():
             <!-- Completion Message -->
             <div x-show="stats.reviewed === stats.total && stats.total > 0" 
                  class="bg-gradient-to-r from-green-400 to-blue-500 rounded-2xl p-8 text-center text-white slide-in mt-8">
-                <h3 class="text-2xl font-bold mb-4">🎉 All Transactions Reviewed!</h3>
+                <h3 class="text-2xl font-bold mb-4">All Transactions Reviewed!</h3>
                 <p class="mb-6">You've successfully reviewed all {{ stats.total }} transactions.</p>
                 <button @click="exportData()" 
                         class="px-6 py-3 bg-white text-green-600 rounded-lg hover:bg-gray-100 transition-colors font-semibold">
-                    📊 Export Final Results
+                    Export Final Results
                 </button>
             </div>
         </div>
@@ -568,28 +568,28 @@ def open_browser():
 
 def main():
     """Launch the gold standard modern web GUI."""
-    print("🚀 Creating Gold Standard Modern Web Interface...")
+    print("Creating Gold Standard Modern Web Interface...")
     print("=" * 60)
     
     # Create the template
     create_modern_template()
     
-    print("✅ Template created successfully!")
-    print("🌐 Starting web server...")
+    print("Template created successfully!")
+    print("Starting web server...")
     print()
-    print("🎯 Web Interface: http://localhost:5000")
+    print("Web Interface: http://localhost:5000")
     print()
-    print("✨ Gold Standard Features:")
-    print("   • 🎨 Glassmorphism design with backdrop blur")
-    print("   • 📱 Responsive mobile-first layout")
-    print("   • ⚡ Smooth animations and micro-interactions") 
-    print("   • ⌨️  Keyboard shortcuts (1-4 for categories)")
-    print("   • 📊 Real-time progress tracking")
-    print("   • 📄 One-click CSV export")
-    print("   • 🌓 Dark/light mode toggle")
-    print("   • 🎯 Auto-scroll to next transaction")
+    print("Gold Standard Features:")
+    print("   • Glassmorphism design with backdrop blur")
+    print("   • Responsive mobile-first layout")
+    print("   • Smooth animations and micro-interactions") 
+    print("   • Keyboard shortcuts (1-4 for categories)")
+    print("   • Real-time progress tracking")
+    print("   • One-click CSV export")
+    print("   • Dark/light mode toggle")
+    print("   • Auto-scroll to next transaction")
     print()
-    print("💡 Usage Tips:")
+    print("Usage Tips:")
     print("   • Use keyboard shortcuts 1-4 to set categories")
     print("   • Click Full/Half/Zero for quick amount setting")
     print("   • Progress is saved in real-time")
