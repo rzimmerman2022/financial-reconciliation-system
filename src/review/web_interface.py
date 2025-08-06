@@ -531,11 +531,22 @@ def create_modern_template():
 def index():
     """Main review interface route."""
     try:
-        # Load manual review data
-        csv_path = "output/gold_standard/manual_review_required.csv"
+        # Load manual review data - look for it relative to project root
+        # Try multiple possible locations
+        possible_paths = [
+            Path(__file__).parent.parent.parent / "output/gold_standard/manual_review_required.csv",
+            Path("output/gold_standard/manual_review_required.csv"),
+            Path("../../output/gold_standard/manual_review_required.csv"),
+        ]
+        
+        csv_path = None
+        for path in possible_paths:
+            if path.exists():
+                csv_path = str(path)
+                break
         
         # Check if file exists
-        if not os.path.exists(csv_path):
+        if not csv_path or not os.path.exists(csv_path):
             # Return empty state if no data file
             return render_template('index.html', transactions=[], 
                                  stats={'total': 0, 'reviewed': 0, 'remaining': 0},

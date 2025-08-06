@@ -784,20 +784,20 @@ class GoldStandardReconciler:
         desc_lower = str(row.get('description', '')).lower()
         if row['payer'] == 'Ryan' or 'to jordyn' in desc_lower:
             # Ryan paying Jordyn
-            self.engine.record_payment(
+            self.engine.post_settlement(
                 date=row['date'],
-                payer='Ryan',
                 amount=amount,
-                description=row['description']
+                from_person='Ryan',
+                to_person='Jordyn'
             )
             balance_change = amount  # Reduces what Jordyn owes
         else:
             # Jordyn paying Ryan
-            self.engine.record_payment(
+            self.engine.post_settlement(
                 date=row['date'],
-                payer='Jordyn',
                 amount=amount,
-                description=row['description']
+                from_person='Jordyn',
+                to_person='Ryan'
             )
             balance_change = -amount  # Reduces what Jordyn owes
         

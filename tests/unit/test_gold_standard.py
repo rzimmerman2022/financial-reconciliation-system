@@ -76,11 +76,11 @@ class TestAccountingInvariants(unittest.TestCase):
         self.engine.jordyn_payable = Decimal('100')
         
         # Jordyn pays Ryan $50
-        self.engine.record_payment(
+        self.engine.post_settlement(
             date=datetime.now(),
-            payer='Jordyn',
             amount=Decimal('50'),
-            description='Partial payment'
+            from_person='Jordyn',
+            to_person='Ryan'
         )
         
         # Verify balances
@@ -112,11 +112,11 @@ class TestAccountingInvariants(unittest.TestCase):
             self.engine.validate_invariant()
         
         # Make a payment
-        self.engine.record_payment(
+        self.engine.post_settlement(
             date=datetime.now(),
-            payer='Jordyn',
             amount=Decimal('500'),
-            description='Settlement'
+            from_person='Jordyn',
+            to_person='Ryan'
         )
         
         # Final validation

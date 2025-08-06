@@ -148,17 +148,10 @@ def parse_flexible_date(date_str: Union[str, datetime, pd.Timestamp]) -> Optiona
             
             parsed_date = datetime.strptime(date_str, fmt)
             
-            # For formats without year, determine appropriate year
+            # For formats without year, use current year
             if fmt in ['%d-%b', '%d-%B', '%b %d', '%B %d']:
-                # Special handling for "24-Jan" format - should be 2024, not 2025
-                if fmt == '%d-%b' and date_str.startswith('24-'):
-                    parsed_date = parsed_date.replace(year=2024)
-                elif fmt == '%d-%b' and date_str.startswith('25-'):
-                    parsed_date = parsed_date.replace(year=2025)
-                else:
-                    # Default to current year for other formats
-                    current_year = datetime.now().year
-                    parsed_date = parsed_date.replace(year=current_year)
+                current_year = datetime.now().year
+                parsed_date = parsed_date.replace(year=current_year)
             
             return parsed_date
             
