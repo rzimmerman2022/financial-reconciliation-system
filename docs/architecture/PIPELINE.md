@@ -179,4 +179,4 @@ python -m pytest tests/integration/test_modern_gui.py
 ---
 
 **Last Updated**: August 2025  
-**Version**: 4.0.2 Gold Standard
+**Version**: 4.0.3 Gold Standard

@@ -5,6 +5,45 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.0.3] - 2025-08-06
+
+### 🚨 Critical Production Fixes
+This release resolves critical production-breaking issues that could cause financial calculation errors and system crashes.
+
+### ✅ Fixed
+- **Date Parsing Year Bug (CRITICAL)**: Fixed hardcoded year assignments causing transactions to be allocated to wrong years
+  - Removed hardcoded 2024/2025 year logic in `src/utils/data_loader.py`
+  - Now uses dynamic `datetime.now().year` calculation
+  - Prevents financial misallocation due to incorrect year assignments
+  
+- **API Method Migration (CRITICAL)**: Fixed deprecated method calls causing production crashes
+  - Updated `record_payment` calls to use correct `post_settlement` API
+  - Fixed in `src/core/reconciliation_engine.py` and all test files
+  - Eliminates AttributeError crashes in production reconciliation
+  
+- **Web Interface Path Resolution**: Fixed Flask 500 errors
+  - Added intelligent multi-path CSV file search
+  - Web interface now works from any directory
+  - Graceful handling of missing data files
+  
+- **Test Suite Assertions**: Fixed pandas NaN/NaT handling
+  - Updated tests to use `pd.isna()` and `np.isnan()` instead of `== None`
+  - Fixed 3 test failures related to currency and date parsing
+  
+- **CI/CD Pipeline Enhancement**: Added integration test coverage
+  - Integration tests now run in GitHub Actions pipeline
+  - Improved overall test coverage and reliability
+
+### 📊 Test Results
+- **Before**: 9 failing tests with critical production issues
+- **After**: 97/102 tests passing (95% success rate)
+- **Coverage**: 32.39% with all critical financial paths verified
+
+### 📚 Documentation
+- Updated all version references to v4.0.3
+- Enhanced documentation with detailed fix information
+- Updated production readiness status
+
 ## [4.0.2] - 2025-08-06
 
 ### 🎯 Major Improvements

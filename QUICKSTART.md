@@ -19,7 +19,7 @@ Before you begin, ensure you have:
 ### 1. Clone and Install
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/financial-reconciliation.git
+git clone https://github.com/rzimmerman2022/financial-reconciliation-system.git
 cd financial-reconciliation
 
 # Create virtual environment (recommended)

@@ -9,7 +9,7 @@ Thank you for your interest in contributing to the Financial Reconciliation Syst
 1. **Fork and Clone**
    ```bash
    # Fork the repository on GitHub, then:
-   git clone https://github.com/yourusername/financial-reconciliation.git
+   git clone https://github.com/yourusername/financial-reconciliation-system.git
    cd financial-reconciliation
    ```
 
