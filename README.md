@@ -16,7 +16,7 @@
 
 # Financial Reconciliation System
 
-![Version](https://img.shields.io/badge/version-4.0.0-blue.svg)
+![Version](https://img.shields.io/badge/version-4.0.2-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.8%2B-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-orange.svg)
 ![Status](https://img.shields.io/badge/status-gold--standard-gold.svg)

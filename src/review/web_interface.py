@@ -20,7 +20,7 @@ Tech Stack:
 - Modern HTML5/CSS3/ES6+
 
 Author: Claude (Anthropic)
-Version: 3.0.0 Gold Standard
+Version: 4.0.0 Gold Standard
 Date: August 2025
 """
 
@@ -538,6 +538,8 @@ def index():
         if not os.path.exists(csv_path):
             # Return empty state if no data file
             return render_template('index.html', transactions=[], 
+                                 stats={'total': 0, 'reviewed': 0, 'remaining': 0},
+                                 progress=0,
                                  message="No transactions requiring manual review at this time.")
         
         manual_df = pd.read_csv(csv_path)
@@ -554,7 +556,20 @@ def index():
                 'suggested_category': str(row.get('suggested_category', '')),
             })
         
-        return render_template('index.html', transactions=transactions)
+        # Calculate stats
+        total_transactions = len(transactions)
+        reviewed_transactions = 0  # Will be updated via JavaScript
+        remaining_transactions = total_transactions - reviewed_transactions
+        progress = 0 if total_transactions == 0 else int((reviewed_transactions / total_transactions) * 100)
+        
+        return render_template('index.html', 
+                             transactions=transactions,
+                             stats={
+                                 'total': total_transactions, 
+                                 'reviewed': reviewed_transactions,
+                                 'remaining': remaining_transactions
+                             },
+                             progress=progress)
     except Exception as e:
         return f"Error loading data: {e}", 500
 

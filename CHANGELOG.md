@@ -5,6 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.0.2] - 2025-08-06
+
+### Fixed
+- Resolved test suite import path issues in unit tests
+  - Fixed imports in test_expense_processor.py (changed from `processors` to `src.processors`)
+  - Fixed imports in test_gold_standard.py (changed from `gold_standard_reconciliation` to `src.core.reconciliation_engine`)
+  - Fixed syntax error in test_modern_gui.py integration test
+- Fixed web interface 500 errors on main route
+  - Added missing template variables (stats.remaining, progress) to Flask render_template calls
+  - Updated both empty state and data state responses with required template context
+
+### Changed
+- Updated version numbers from 3.0.0 to 4.0.0 in remaining files:
+  - docs/architecture/PIPELINE.md
+  - src/review/web_interface.py
+  - src/review/ultra_modern_reconciliation_gui.py
+- Standardized documentation across the project
+
+### Added
+- Comprehensive error handling for missing template variables in web interface
+
 ## [4.0.1] - 2025-01-04
 
 ### Fixed

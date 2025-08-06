@@ -27,10 +27,10 @@ import tempfile
 import json
 from pathlib import Path
 
-from gold_standard_reconciliation import (
+from src.core.reconciliation_engine import (
     GoldStandardReconciler, ReconciliationMode, DataQualityIssue
 )
-from src.accounting_engine import AccountingEngine, TransactionType
+from src.core.accounting_engine import AccountingEngine, TransactionType
 
 
 class TestAccountingInvariants(unittest.TestCase):

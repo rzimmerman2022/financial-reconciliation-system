@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "financial-reconciliation"
-version = "4.0.1"
+version = "4.0.2"
 description = "Enterprise-grade financial transaction reconciliation system with double-entry bookkeeping"
 readme = "README.md"
 authors = [

@@ -10,10 +10,7 @@ import pandas as pd
 import unittest
 from datetime import datetime
 
-# Add src to path for imports
-sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
-
-from processors.expense_processor import ExpenseProcessor
+from src.processors.expense_processor import ExpenseProcessor
 
 
 class TestExpenseProcessor(unittest.TestCase):
