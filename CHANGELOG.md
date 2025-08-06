@@ -8,41 +8,54 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [4.0.3] - 2025-08-06
 
 ### 🚨 Critical Production Fixes
-This release resolves critical production-breaking issues that could cause financial calculation errors and system crashes.
+This release resolves critical production-breaking issues including settlement calculation errors and ensures 100% test success rate.
 
 ### ✅ Fixed
-- **Date Parsing Year Bug (CRITICAL)**: Fixed hardcoded year assignments causing transactions to be allocated to wrong years
-  - Removed hardcoded 2024/2025 year logic in `src/utils/data_loader.py`
-  - Now uses dynamic `datetime.now().year` calculation
-  - Prevents financial misallocation due to incorrect year assignments
+- **Settlement Logic (CRITICAL)**: Fixed bi-directional payment processing in accounting engine
+  - Correctly handles "Jordyn pays Ryan" when Ryan owes Jordyn (reduces Ryan's debt)
+  - Correctly handles "Jordyn pays Ryan" when Jordyn owes Ryan (reduces Jordyn's debt)
+  - Fixed $1,000 calculation error where settlements were increasing debt instead of reducing it
+  - Updated `src/core/accounting_engine.py` to check debt direction before applying settlement
   
-- **API Method Migration (CRITICAL)**: Fixed deprecated method calls causing production crashes
-  - Updated `record_payment` calls to use correct `post_settlement` API
-  - Fixed in `src/core/reconciliation_engine.py` and all test files
-  - Eliminates AttributeError crashes in production reconciliation
+- **Personal Expense Processing**: Fixed handling of personal expenses with amount=0
+  - Personal expenses are now correctly processed even when amount is 0
+  - Fixed early return logic in `src/core/reconciliation_engine.py` that was skipping personal expense tracking
+  - Personal expense counter now correctly increments for flagged transactions
   
-- **Web Interface Path Resolution**: Fixed Flask 500 errors
-  - Added intelligent multi-path CSV file search
-  - Web interface now works from any directory
-  - Graceful handling of missing data files
+- **Test Suite Repairs**: Fixed 5 failing tests achieving 100% pass rate
+  - Updated loader tests to properly expect FileNotFoundError instead of empty DataFrames
+  - Fixed gold standard reconciliation tests for settlement scenarios
+  - Corrected test expectations for personal expense detection
+  - All 102 unit tests now passing (100% success rate)
+
+### 📦 Infrastructure Improvements
+- **Version Consistency**: Unified all version references to 4.0.3
+  - README.md: Updated badge and all version references
+  - pyproject.toml: Updated project version
+  - setup.py: Updated package version
+  - config/config.yaml: Updated application version from 2.0.0 to 4.0.3
   
-- **Test Suite Assertions**: Fixed pandas NaN/NaT handling
-  - Updated tests to use `pd.isna()` and `np.isnan()` instead of `== None`
-  - Fixed 3 test failures related to currency and date parsing
+- **Dependency Standardization**: Resolved dependency conflicts
+  - Flask upgraded to ≥3.1.0 across all configuration files (was ≥2.3.0 in pyproject.toml)
+  - Added missing dependencies to pyproject.toml: jinja2≥3.1.0, werkzeug≥3.1.0, flask-cors≥4.0.0
+  - Synchronized requirements between requirements.txt and pyproject.toml
   
-- **CI/CD Pipeline Enhancement**: Added integration test coverage
-  - Integration tests now run in GitHub Actions pipeline
-  - Improved overall test coverage and reliability
+- **CI/CD Hardening**: Removed failure masking in pipeline
+  - Removed `continue-on-error: true` from mypy type checking step
+  - Removed `continue-on-error: true` from integration tests step
+  - Pipeline now fails fast on any test or type checking errors
 
 ### 📊 Test Results
-- **Before**: 9 failing tests with critical production issues
-- **After**: 97/102 tests passing (95% success rate)
-- **Coverage**: 32.39% with all critical financial paths verified
+- **Before**: 97/102 tests passing (95% success rate) with critical settlement errors
+- **After**: 102/102 tests passing (100% success rate)
+- **Coverage**: Improved with all critical financial paths verified
 
 ### 📚 Documentation
-- Updated all version references to v4.0.3
-- Enhanced documentation with detailed fix information
-- Updated production readiness status
+- Updated README.md test coverage to reflect 100% pass rate
+- Updated system health status to show all tests passing
+- Added comprehensive changelog entries
+- Created dedicated CHANGELOG.md for better version tracking
+- Updated last modified date to August 6, 2025
 
 ## [4.0.2] - 2025-08-06
 

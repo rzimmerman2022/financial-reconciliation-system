@@ -396,24 +396,36 @@ class AccountingEngine:
         
         if from_person.upper() == "JORDYN" and to_person.upper() == "RYAN":
             # Jordyn is paying Ryan
-            # This reduces what Jordyn owes Ryan (if anything)
+            # Need to check who owes what to determine the correct logic
             
-            if self.ryan_receivable >= amount:
-                # Simple case: Payment less than or equal to what's owed
-                # Just reduce the outstanding balance
-                self.ryan_receivable -= amount
-                self.jordyn_payable -= amount
+            if self.jordyn_receivable > Decimal("0.00"):
+                # Case 1: Ryan owes Jordyn money (jordyn_receivable > 0)
+                # This payment reduces Ryan's debt to Jordyn
+                if self.jordyn_receivable >= amount:
+                    self.jordyn_receivable -= amount
+                    self.ryan_payable -= amount
+                else:
+                    # Overpayment: Clear Ryan's debt, then reverse
+                    reduction = self.jordyn_receivable
+                    self.jordyn_receivable = Decimal("0.00")
+                    self.ryan_payable = Decimal("0.00")
+                    remaining = amount - reduction
+                    self.jordyn_payable += remaining
+                    self.ryan_receivable += remaining
             else:
-                # Complex case: Overpayment
-                # First, clear any existing debt
-                reduction = self.ryan_receivable
-                self.ryan_receivable = Decimal("0.00")
-                self.jordyn_payable = Decimal("0.00")
-                
-                # Then reverse the balance for the overpayment
-                remaining = amount - reduction
-                self.ryan_payable += remaining      # Now Ryan owes Jordyn
-                self.jordyn_receivable += remaining # Jordyn is owed by Ryan
+                # Case 2: Jordyn owes Ryan money (ryan_receivable > 0)  
+                # This payment reduces Jordyn's debt to Ryan
+                if self.ryan_receivable >= amount:
+                    self.ryan_receivable -= amount
+                    self.jordyn_payable -= amount
+                else:
+                    # Overpayment: Clear Jordyn's debt, then reverse
+                    reduction = self.ryan_receivable
+                    self.ryan_receivable = Decimal("0.00")
+                    self.jordyn_payable = Decimal("0.00")
+                    remaining = amount - reduction
+                    self.ryan_payable += remaining
+                    self.jordyn_receivable += remaining
             
             # Record the transaction
             # Debit Jordyn (she pays out), Credit Ryan (he receives)

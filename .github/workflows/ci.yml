@@ -45,7 +45,6 @@ jobs:
     - name: Type check with mypy
       run: |
         mypy src --ignore-missing-imports
-      continue-on-error: true
     
     - name: Test with pytest (unit tests)
       run: |
@@ -54,7 +53,6 @@ jobs:
     - name: Test with pytest (integration tests)
       run: |
         pytest tests/integration -v --cov=src --cov-append --cov-report=xml --cov-report=term-missing
-      continue-on-error: true
     
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3

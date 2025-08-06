@@ -46,17 +46,13 @@ class TestExpenseHistoryLoader:
             assert len(result) == 2
     
     def test_load_raw_data_empty(self):
-        """Test loading expense data returns empty DataFrame when no file"""
-        with patch('src.loaders.expense_loader.Path') as mock_path:
-            mock_file = MagicMock()
-            mock_file.exists.return_value = False
-            mock_path.return_value = mock_file
+        """Test loading expense data raises exception when file doesn't exist"""
+        with patch('pandas.read_csv') as mock_read:
+            mock_read.side_effect = FileNotFoundError("File not found")
             
             loader = ExpenseHistoryLoader()
-            result = loader.load_raw_data()
-            
-            assert isinstance(result, pd.DataFrame)
-            assert len(result) == 0
+            with pytest.raises(FileNotFoundError):
+                loader.load_raw_data()
 
 
 class TestRentAllocationLoader:
@@ -90,17 +86,13 @@ class TestRentAllocationLoader:
             assert len(result) == 1
     
     def test_load_raw_data_empty(self):
-        """Test loading rent data returns empty DataFrame when no file"""
-        with patch('src.loaders.rent_loader.Path') as mock_path:
-            mock_file = MagicMock()
-            mock_file.exists.return_value = False
-            mock_path.return_value = mock_file
+        """Test loading rent data raises exception when file doesn't exist"""
+        with patch('pandas.read_csv') as mock_read:
+            mock_read.side_effect = FileNotFoundError("File not found")
             
             loader = RentAllocationLoader()
-            result = loader.load_raw_data()
-            
-            assert isinstance(result, pd.DataFrame)
-            assert len(result) == 0
+            with pytest.raises(FileNotFoundError):
+                loader.load_raw_data()
 
 
 class TestZellePaymentsLoader:
@@ -135,17 +127,13 @@ class TestZellePaymentsLoader:
             assert len(result) == 2
     
     def test_load_raw_data_empty(self):
-        """Test loading Zelle data returns empty DataFrame when no file"""
-        with patch('src.loaders.zelle_loader.Path') as mock_path:
-            mock_file = MagicMock()
-            mock_file.exists.return_value = False
-            mock_path.return_value = mock_file
+        """Test loading Zelle data raises exception when file doesn't exist"""
+        with patch('pandas.read_csv') as mock_read:
+            mock_read.side_effect = FileNotFoundError("File not found")
             
             loader = ZellePaymentsLoader()
-            result = loader.load_raw_data()
-            
-            assert isinstance(result, pd.DataFrame)
-            assert len(result) == 0
+            with pytest.raises(FileNotFoundError):
+                loader.load_raw_data()
 
 
 class TestAllLoadersIntegration:

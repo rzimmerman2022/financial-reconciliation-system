@@ -3,7 +3,7 @@
 
 app:
   name: "Financial Reconciliation System"
-  version: "2.0.0"
+  version: "4.0.3"
   environment: "production"
   debug: false
 

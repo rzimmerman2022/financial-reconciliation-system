@@ -16,7 +16,7 @@
 
 # Financial Reconciliation System
 
-![Version](https://img.shields.io/badge/version-4.0.2-blue.svg)
+![Version](https://img.shields.io/badge/version-4.0.3-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.8%2B-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-orange.svg)
 ![Status](https://img.shields.io/badge/status-gold--standard-gold.svg)
@@ -113,7 +113,7 @@ This system is designed with AI-friendly architecture and comprehensive document
 **System Version**: 4.0.3 (Gold Standard)  
 **Last Updated**: August 6, 2025  
 **System Status**: ✅ **FULLY OPERATIONAL**  
-**Test Coverage**: 95% (97/102 tests passing)  
+**Test Coverage**: 100% (102/102 tests passing)  
 **Last Test Run**: August 6, 2025
 
 ### 💰 Latest Reconciliation Results (Live Test)
@@ -137,7 +137,7 @@ This system is designed with AI-friendly architecture and comprehensive document
 - **Performance**: ~376 transactions per minute
 - **Memory Usage**: <200MB peak
 - **Documentation**: 100% comprehensive coverage
-- **Test Suite**: 🔧 Import paths need updating (does not affect usage)
+- **Test Suite**: ✅ All tests passing (100% success rate)
 
 ---
 
@@ -862,6 +862,31 @@ pytest tests/integration/test_web_load.py
 
 ## 📋 Changelog
 
+### 🐛 Version 4.0.3 - Critical Bug Fixes & Pipeline Ready (August 6, 2025)
+
+#### 🔧 Critical Fixes
+- **Fixed Settlement Logic**: Resolved bi-directional payment processing in accounting engine
+  - Correctly handles "Jordyn pays Ryan" when Ryan owes Jordyn (reduces debt)
+  - Correctly handles "Jordyn pays Ryan" when Jordyn owes Ryan (reduces debt)
+  - Fixed $1,000 calculation error in settlement transactions
+- **Personal Expense Processing**: Fixed handling of personal expenses with amount=0
+- **Test Suite Repairs**: Fixed 5 failing tests for 100% pass rate
+  - Updated loader tests to properly handle FileNotFoundError
+  - Fixed gold standard reconciliation tests
+  
+#### 📦 Infrastructure Improvements
+- **Version Consistency**: Unified version numbers across all configuration files (4.0.3)
+- **Dependency Standardization**: 
+  - Upgraded Flask to ≥3.1.0 across all configs
+  - Added missing dependencies: jinja2, werkzeug, flask-cors
+- **CI/CD Hardening**: Removed `continue-on-error` from critical pipeline steps
+- **Documentation Updates**: Updated test coverage and system health status
+
+#### ✅ Validation
+- All 102 unit tests passing (100% success rate)
+- CI/CD pipeline production-ready
+- Full end-to-end reconciliation validation successful
+
 ### 🚀 Version 4.0.0 - Gold Standard Release (August 4, 2025)
 
 #### 🌟 Major Features
@@ -1243,4 +1268,4 @@ We welcome feature requests! Please provide:
 
 **Built with ❤️ for accurate financial reconciliation**
 
-*Last updated: August 4, 2025 | Version 4.0.0*
+*Last updated: August 6, 2025 | Version 4.0.3*

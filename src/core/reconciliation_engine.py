@@ -588,15 +588,14 @@ class GoldStandardReconciler:
         """
         self.stats['transactions_processed'] += 1
         
-        # Skip invalid transactions
-        if pd.isna(row.get('amount')) or row.get('amount') == 0:
-            if not row.get('is_personal', False):  # Personal expenses have amount=0
-                self._record_data_quality_issue(
-                    source=row.get('source', 'Unknown'),
-                    issue_type=DataQualityIssue.MISSING_AMOUNT,
-                    count=1,
-                    details=f"{row.get('date')} - {row.get('description')}"
-                )
+        # Skip invalid transactions, but allow personal expenses with amount=0
+        if pd.isna(row.get('amount')) or (row.get('amount') == 0 and not row.get('is_personal', False)):
+            self._record_data_quality_issue(
+                source=row.get('source', 'Unknown'),
+                issue_type=DataQualityIssue.MISSING_AMOUNT,
+                count=1,
+                details=f"{row.get('date')} - {row.get('description')}"
+            )
             return
         
         # Handle Phase 4 transactions with manual review
