@@ -40,7 +40,9 @@
       "Bash(dir /T C:Projectsfinancial-reconciliationsrcreview)",
       "Bash(sqlite3:*)",
       "Bash(dir:*)",
-      "Bash(set PYTHONIOENCODING=utf-8)"
+      "Bash(set PYTHONIOENCODING=utf-8)",
+      "Bash(curl:*)",
+      "Bash(pkill:*)"
     ],
     "deny": []
   }
