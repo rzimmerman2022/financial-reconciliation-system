@@ -25,8 +25,8 @@ jobs:
     
     - name: Run quick checks
       run: |
-        # Quick syntax check
-        python -m py_compile src/**/*.py
+        # Quick syntax check - use find to handle nested directories properly
+        find src -name "*.py" -type f -exec python -m py_compile {} +
         
         # Run fast unit tests only
         pytest tests/unit -v -m "not slow" --tb=short

@@ -311,12 +311,24 @@ def main():
         print("3. Skip manual review (use defaults)")
         print("4. Exit")
         
-        # Prompt for user choice
-        while True:
-            choice = input("\nSelect option (1-4): ").strip()
-            if choice in ['1', '2', '3', '4']:
-                break
-            print("Please enter 1, 2, 3, or 4")
+        # Prompt for user choice (with non-interactive fallback)
+        import sys
+        if not sys.stdin.isatty():
+            # Non-interactive mode: default to option 3 (skip manual review)
+            print("\nNon-interactive environment detected - using option 3 (skip manual review)")
+            choice = '3'
+        else:
+            while True:
+                try:
+                    choice = input("\nSelect option (1-4): ").strip()
+                    if choice in ['1', '2', '3', '4']:
+                        break
+                    print("Please enter 1, 2, 3, or 4")
+                except EOFError:
+                    # Handle EOF in case stdin is closed
+                    print("\nEOF detected - defaulting to option 3 (skip manual review)")
+                    choice = '3'
+                    break
         
         if choice == '1':
             # Launch Visual GUI Review

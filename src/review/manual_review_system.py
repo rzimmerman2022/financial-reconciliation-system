@@ -62,7 +62,7 @@ class SplitType(Enum):
     SPLIT_CUSTOM = "split_custom"
     RYAN_FULL = "ryan_full"
     JORDYN_FULL = "jordyn_full"
-    RENT_SPLIT = "rent_split"  # 43% Ryan, 57% Jordyn
+    RENT_SPLIT = "rent_split"  # 47% Ryan, 53% Jordyn
 
 
 class InteractiveReviewer:
@@ -107,7 +107,7 @@ class InteractiveReviewer:
     
     def _export_for_spreadsheet_review(self):
         """Export transactions for spreadsheet review."""
-        from spreadsheet_review_system import SpreadsheetReviewSystem
+        from src.review.spreadsheet_review_system import SpreadsheetReviewSystem
         
         pending_df = self.review_system.get_pending_reviews()
         if pending_df.empty:
@@ -160,6 +160,12 @@ class ManualReviewSystem:
         
     def _init_database(self):
         """Initialize the database schema."""
+        import os
+        # Ensure the database directory exists
+        db_dir = os.path.dirname(self.db_path)
+        if db_dir and not os.path.exists(db_dir):
+            os.makedirs(db_dir, exist_ok=True)
+        
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
         
@@ -260,7 +266,7 @@ class ManualReviewSystem:
                 tx_hash,
                 date.isoformat() if isinstance(date, datetime) else str(date),
                 description,
-                float(amount),
+                str(amount),  # Store as string to preserve Decimal precision
                 payer,
                 source,
                 ReviewStatus.PENDING.value,
@@ -310,8 +316,8 @@ class ManualReviewSystem:
             ryan_share = amount / 2
             jordyn_share = amount / 2
         elif split_type == SplitType.RENT_SPLIT:
-            ryan_share = amount * Decimal('0.43')
-            jordyn_share = amount * Decimal('0.57')
+            ryan_share = amount * Decimal('0.47')
+            jordyn_share = amount * Decimal('0.53')
         elif split_type == SplitType.RYAN_FULL:
             ryan_share = amount
             jordyn_share = Decimal('0')
@@ -339,9 +345,9 @@ class ManualReviewSystem:
             ReviewStatus.COMPLETED.value,
             category.value,
             split_type.value,
-            float(ryan_share) if ryan_share is not None else None,
-            float(jordyn_share) if jordyn_share is not None else None,
-            float(allowed_amount) if allowed_amount is not None else float(amount),
+            str(ryan_share) if ryan_share is not None else None,
+            str(jordyn_share) if jordyn_share is not None else None,
+            str(allowed_amount) if allowed_amount is not None else str(amount),
             1 if is_personal else 0,
             notes,
             reviewed_by,

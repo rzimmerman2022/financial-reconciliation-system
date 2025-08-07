@@ -2,11 +2,11 @@
 Rent Allocation CSV Loader
 
 Loads and validates the Consolidated_Rent_Allocation CSV file.
-This file contains monthly rent breakdowns and the 43%/57% split between Ryan and Jordyn.
+This file contains monthly rent breakdowns and the 47%/53% split between Ryan and Jordyn.
 
 Based on resolved business logic:
 - Jordyn pays the full rent to the landlord
-- Ryan owes ~47% back to Jordyn (shown as 43% in older data)
+- Ryan owes 47% back to Jordyn
 """
 
 import pandas as pd

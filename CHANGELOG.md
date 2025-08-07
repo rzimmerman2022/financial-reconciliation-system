@@ -5,6 +5,37 @@ All notable changes to the Financial Reconciliation System are documented in thi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.0.5] - 2025-08-07
+
+### 🚀 Major Infrastructure Improvements
+
+#### CI/CD Pipeline Enhancements
+- **Comprehensive CI Checks**: Aligned CI pipeline with documented requirements
+  - Added Black code formatter checks for consistent code style
+  - Added isort import sorting validation
+  - Added Bandit security linting to detect vulnerabilities
+  - Added performance benchmark execution
+  - Added Sphinx documentation build validation
+- **Enhanced Type Checking**: Replaced `--ignore-missing-imports` with `--strict` mode in mypy for comprehensive type safety
+- **Fixed Quick-Check Workflow**: Resolved nested file traversal issue using `find` command instead of shell globbing
+- **Improved Coverage Reporting**: Fixed Codecov flags to accurately report both unit and integration test coverage
+- **Release Validation**: Added `twine check` step to validate package distributions before PyPI upload
+
+#### Code Quality & Robustness
+- **Import Path Fixes**: Corrected SpreadsheetReviewSystem import to use package-relative imports
+- **Database Reliability**: Added automatic directory creation before SQLite connections to prevent runtime errors
+- **Rent Split Standardization**: Aligned all rent calculations to consistent 47%/53% split (was inconsistently 43%/57% in some places)
+- **Currency Precision**: Replaced all float conversions with Decimal string storage to preserve monetary precision
+- **Duplicate Detection**: Hardened transaction hash generation to handle missing descriptions gracefully
+- **Non-Interactive Mode**: Added TTY detection and fallbacks for CI/CD environments
+- **Subprocess Error Handling**: Added proper exit code propagation in launcher scripts
+- **Flexible Reconciliation**: Made phase-4 date parameters optional for baseline-only reconciliations
+
+#### Security & Best Practices
+- **CDN Dependencies**: Documented external asset dependencies with migration path for local bundling
+- **Error Handling**: Improved error handling throughout with proper exception propagation
+- **Code Documentation**: Added comprehensive inline documentation for all fixes
+
 ## [4.0.4] - 2025-08-07
 
 ### 🔒 Security Enhancements

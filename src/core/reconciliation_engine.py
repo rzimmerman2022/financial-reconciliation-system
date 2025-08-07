@@ -556,7 +556,7 @@ class GoldStandardReconciler:
         # (handles slight description variations)
         df['tx_hash'] = df.apply(
             lambda row: hashlib.md5(
-                f"{row['date'].date()}_{row['amount']:.2f}_{row['description'][:20]}"
+                f"{row['date'].date()}_{row['amount']:.2f}_{(row['description'] or '')[:20]}"
                 .encode()
             ).hexdigest(),
             axis=1
@@ -727,7 +727,7 @@ class GoldStandardReconciler:
             return 'expense'  # Generic shared expense
     
     def _process_rent(self, row: pd.Series) -> None:
-        """Process rent payment (Jordyn pays, Ryan owes 43%)."""
+        """Process rent payment (Jordyn pays, Ryan owes 47%)."""
         if row['payer'] != 'Jordyn':
             # Flag - rent should be paid by Jordyn
             self.manual_review_items.append({
@@ -740,8 +740,8 @@ class GoldStandardReconciler:
             return
         
         amount = Decimal(str(row['amount']))
-        ryan_share = amount * Decimal('0.43')
-        jordyn_share = amount * Decimal('0.57')
+        ryan_share = amount * Decimal('0.47')
+        jordyn_share = amount * Decimal('0.53')
         
         # Post to accounting engine
         self.engine.post_expense(
@@ -763,7 +763,7 @@ class GoldStandardReconciler:
             category='rent',
             action='rent_split',
             balance_change=ryan_share,  # Ryan owes more
-            notes='Rent payment - Ryan 43%, Jordyn 57%',
+            notes='Rent payment - Ryan 47%, Jordyn 53%',
             payer=row['payer'],
             source=row.get('source', 'Unknown'),
             ryan_share=ryan_share,
@@ -970,13 +970,13 @@ class GoldStandardReconciler:
             'payer': payer or 'System',
             'source': source or 'System',
             'description': description,
-            'amount': float(amount),
+            'amount': str(amount),  # Preserve Decimal precision
             'category': category,
             'action': action,
-            'ryan_share': float(ryan_share) if ryan_share is not None else 0.0,
-            'jordyn_share': float(jordyn_share) if jordyn_share is not None else 0.0,
-            'balance_change': float(balance_change),
-            'running_balance': float(balance),
+            'ryan_share': str(ryan_share) if ryan_share is not None else '0.00',
+            'jordyn_share': str(jordyn_share) if jordyn_share is not None else '0.00',
+            'balance_change': str(balance_change),
+            'running_balance': str(balance),
             'who_owes_whom': who_owes,
             'notes': notes,
             'ryan_receivable': float(ryan_receivable),
@@ -1050,10 +1050,10 @@ class GoldStandardReconciler:
                 'mode': self.mode.value
             },
             'final_balance': {
-                'amount': float(final_balance['amount']),
+                'amount': str(final_balance['amount']),
                 'who_owes_whom': final_balance['who_owes'],
-                'ryan_receivable': float(self.engine.ryan_receivable),
-                'jordyn_receivable': float(self.engine.jordyn_receivable)
+                'ryan_receivable': str(self.engine.ryan_receivable),
+                'jordyn_receivable': str(self.engine.jordyn_receivable)
             },
             'statistics': self.stats,
             'data_quality': {
@@ -1270,17 +1270,18 @@ RECOMMENDATIONS
 """
         return report
     
-    def run_reconciliation(self, phase4_start: datetime, phase4_end: datetime,
+    def run_reconciliation(self, phase4_start: Optional[datetime] = None, 
+                          phase4_end: Optional[datetime] = None,
                           phase5_start: Optional[datetime] = None,
                           phase5_end: Optional[datetime] = None) -> None:
         """
         Run the complete reconciliation process.
         
         Args:
-            phase4_start: Start date for Phase 4 data (with manual review)
-            phase4_end: End date for Phase 4 data
-            phase5_start: Start date for Phase 5 data (raw bank data)
-            phase5_end: End date for Phase 5 data
+            phase4_start: Start date for Phase 4 data (with manual review) - optional
+            phase4_end: End date for Phase 4 data - optional
+            phase5_start: Start date for Phase 5 data (raw bank data) - optional
+            phase5_end: End date for Phase 5 data - optional
         """
         logger.info("="*80)
         logger.info("STARTING GOLD STANDARD RECONCILIATION")
@@ -1305,16 +1306,17 @@ RECOMMENDATIONS
                             logger.info(f"  Processed {idx + 1} transactions...")
         else:
             # FROM_SCRATCH mode - process everything
-            # Load Phase 4 data
-            logger.info(f"\nLoading Phase 4 data: {phase4_start} to {phase4_end}")
-            phase4_df = self.load_phase4_data(phase4_start, phase4_end)
-            
-            if not phase4_df.empty:
-                logger.info(f"Processing {len(phase4_df)} Phase 4 transactions...")
-                for idx, row in phase4_df.iterrows():
-                    self.process_transaction(row)
-                    if (idx + 1) % 100 == 0:
-                        logger.info(f"  Processed {idx + 1} transactions...")
+            # Load Phase 4 data if provided
+            if phase4_start and phase4_end:
+                logger.info(f"\nLoading Phase 4 data: {phase4_start} to {phase4_end}")
+                phase4_df = self.load_phase4_data(phase4_start, phase4_end)
+                
+                if not phase4_df.empty:
+                    logger.info(f"Processing {len(phase4_df)} Phase 4 transactions...")
+                    for idx, row in phase4_df.iterrows():
+                        self.process_transaction(row)
+                        if (idx + 1) % 100 == 0:
+                            logger.info(f"  Processed {idx + 1} transactions...")
             
             # Load Phase 5 data if provided
             if phase5_start and phase5_end:

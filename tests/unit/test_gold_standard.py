@@ -348,14 +348,14 @@ class TestEndToEndScenarios(unittest.TestCase):
             reconciler.process_transaction(row)
         
         # Verify final balance
-        # Rent: Ryan owes 43% of $2400 = $1032
+        # Rent: Ryan owes 47% of $2400 = $1128
         # Groceries: Jordyn owes 50% of $150 = $75
-        # Net before settlement: $1032 - $75 = $957 (Ryan owes Jordyn)
-        # After $500 settlement: $957 - $500 = $457 (Ryan owes Jordyn)
+        # Net before settlement: $1128 - $75 = $1053 (Ryan owes Jordyn)
+        # After $500 settlement: $1053 - $500 = $553 (Ryan owes Jordyn)
         
         balance = reconciler._get_current_balance()
         self.assertEqual(balance['who_owes'], 'Ryan owes Jordyn')
-        self.assertAlmostEqual(float(balance['amount']), 457.0, places=2)
+        self.assertAlmostEqual(float(balance['amount']), 553.0, places=2)
     
     def test_phase4_to_phase5_transition(self):
         """Test transitioning from Phase 4 to Phase 5 data."""

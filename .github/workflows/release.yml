@@ -29,6 +29,10 @@ jobs:
       run: |
         python -m build
     
+    - name: Validate distribution
+      run: |
+        twine check dist/*
+    
     - name: Create Release
       uses: softprops/action-gh-release@v1
       with:
