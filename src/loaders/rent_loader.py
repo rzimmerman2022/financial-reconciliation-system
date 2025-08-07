@@ -109,6 +109,7 @@ class RentAllocationLoader:
             if not found:
                 validation_results['column_check'][expected_col] = 'missing'
                 validation_results['issues'].append(f"Missing expected column: {expected_col}")
+                validation_results['is_valid'] = False
         
         # Basic data quality checks
         validation_results['data_quality']['total_rows'] = len(self._raw_data)
@@ -160,10 +161,13 @@ class RentAllocationLoader:
                                 f"Rent split doesn't add up for {month}: "
                                 f"${gross_total:.2f} != ${ryan_rent:.2f} + ${jordyn_rent:.2f}"
                             )
+                            validation_results['is_valid'] = False
                     except (ValueError, TypeError) as e:
                         validation_results['issues'].append(f"Error parsing rent amounts in row {idx}: {e}")
+                        validation_results['is_valid'] = False
             else:
                 validation_results['issues'].append("Cannot find all required rent columns for validation")
+                validation_results['is_valid'] = False
                 
         except Exception as e:
             validation_results['issues'].append(f"Error validating rent split logic: {e}")
@@ -238,7 +242,7 @@ class RentAllocationLoader:
 
 def main():
     """Test the rent allocation loader."""
-    # Set up logging
+    # Set up logging only when run directly
     logging.basicConfig(level=logging.INFO)
     
     # Create and test the loader

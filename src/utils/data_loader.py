@@ -21,8 +21,7 @@ from typing import Optional, Union, Dict, Any
 import logging
 from pathlib import Path
 
-# Set up logging
-logging.basicConfig(level=logging.INFO)
+# Set up logging (without overriding app config)
 logger = logging.getLogger(__name__)
 
 
@@ -371,33 +370,45 @@ def validate_data_quality(df: pd.DataFrame, dataset_name: str = "Unknown") -> Di
             issues['invalid_names'] = df[invalid_mask]['name'].unique().tolist()
     
     # Check for suspicious amounts
-    amount_columns = [col for col in df.columns if 'amount' in col.lower() and df[col].dtype == 'object']
+    amount_columns = [col for col in df.columns if 'amount' in col.lower()]
     
     for col in amount_columns:
         # Skip if column has all NaN values
         if df[col].notna().sum() == 0:
             continue
+        
+        # Try to convert to numeric for comparison
+        try:
+            # Create a numeric version of the column for comparison
+            if df[col].dtype == 'object':
+                # Try to convert using our clean_currency function
+                numeric_col = df[col].apply(lambda x: clean_currency(x) if pd.notna(x) else None)
+            else:
+                # Already numeric
+                numeric_col = df[col]
             
-        # Negative amounts
-        negative_mask = df[col].notna() & (df[col] < 0)
-        if negative_mask.any():
-            issues['negative_amounts'].extend(
-                df[negative_mask].index.tolist()
-            )
-        
-        # Zero amounts
-        zero_mask = df[col].notna() & (df[col] == 0)
-        if zero_mask.any():
-            issues['zero_amounts'].extend(
-                df[zero_mask].index.tolist()
-            )
-        
-        # Large amounts (over $5000)
-        large_mask = df[col].notna() & (df[col] > 5000)
-        if large_mask.any():
-            issues['large_amounts'].extend(
-                [(idx, float(df.loc[idx, col])) for idx in df[large_mask].index]
-            )
+            # Negative amounts
+            negative_mask = numeric_col.notna() & (numeric_col < 0)
+            if negative_mask.any():
+                issues['negative_amounts'].extend(
+                    df[negative_mask].index.tolist()
+                )
+            
+            # Zero amounts
+            zero_mask = numeric_col.notna() & (numeric_col == 0)
+            if zero_mask.any():
+                issues['zero_amounts'].extend(
+                    df[zero_mask].index.tolist()
+                )
+            
+            # Large amounts (over $5000)
+            large_mask = numeric_col.notna() & (numeric_col > 5000)
+            if large_mask.any():
+                issues['large_amounts'].extend(
+                    [(idx, float(numeric_col.loc[idx])) for idx in df[large_mask].index]
+                )
+        except Exception as e:
+            logger.warning(f"Could not analyze amounts in column {col}: {e}")
     
     # Check for missing dates
     date_columns = [col for col in df.columns if 'date' in col.lower()]

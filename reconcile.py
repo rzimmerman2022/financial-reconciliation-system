@@ -16,8 +16,20 @@ def main():
     # Pass all command line arguments
     cmd = [sys.executable, str(script_path)] + sys.argv[1:]
     
-    # Run the reconciliation
-    return subprocess.call(cmd)
+    # Run the reconciliation with proper error handling
+    try:
+        result = subprocess.run(cmd, check=True, capture_output=True, text=True)
+        print(result.stdout)
+        if result.stderr:
+            print(result.stderr, file=sys.stderr)
+        return 0
+    except subprocess.CalledProcessError as e:
+        print(f"Error running reconciliation: {e}", file=sys.stderr)
+        if e.stdout:
+            print(e.stdout)
+        if e.stderr:
+            print(e.stderr, file=sys.stderr)
+        return e.returncode
 
 if __name__ == "__main__":
     sys.exit(main())

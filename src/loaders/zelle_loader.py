@@ -105,6 +105,7 @@ class ZellePaymentsLoader:
             else:
                 validation_results['column_check'][col] = 'missing'
                 validation_results['issues'].append(f"Missing expected column: {col}")
+                validation_results['is_valid'] = False
         
         # Check for unexpected columns
         for col in actual_columns:
@@ -123,6 +124,7 @@ class ZellePaymentsLoader:
                 validation_results['data_quality'][f'{col}_empty_count'] = empty_count
                 if empty_count > 0:
                     validation_results['issues'].append(f"Column {col} has {empty_count} empty values")
+                    validation_results['is_valid'] = False
         
         # Business logic validation - ensure all are Zelle transfers
         self._validate_zelle_logic(validation_results)
@@ -277,7 +279,7 @@ class ZellePaymentsLoader:
 
 def main():
     """Test the Zelle payments loader."""
-    # Set up logging
+    # Set up logging only when run directly
     logging.basicConfig(level=logging.INFO)
     
     # Create and test the loader

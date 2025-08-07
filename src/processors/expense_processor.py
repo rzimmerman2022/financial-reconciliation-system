@@ -28,6 +28,7 @@ import logging
 import re
 from typing import Optional, Dict, Any
 from datetime import datetime
+from decimal import Decimal, InvalidOperation
 
 logger = logging.getLogger(__name__)
 
@@ -127,8 +128,8 @@ class ExpenseProcessor:
         
         return df
     
-    def _clean_currency(self, value) -> Optional[float]:
-        """Convert currency string to float."""
+    def _clean_currency(self, value) -> Optional[Decimal]:
+        """Convert currency string to Decimal for precision."""
         if pd.isna(value) or value == '' or str(value).strip() == '':
             return None
         
@@ -144,8 +145,8 @@ class ExpenseProcessor:
             if cleaned == '' or cleaned == '-':
                 return None
                 
-            return float(cleaned)
-        except (ValueError, TypeError):
+            return Decimal(cleaned)
+        except (ValueError, TypeError, InvalidOperation):
             logger.warning(f"Could not parse currency value: {value}")
             return None
     

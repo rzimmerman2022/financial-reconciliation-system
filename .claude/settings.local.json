@@ -42,7 +42,8 @@
       "Bash(dir:*)",
       "Bash(set PYTHONIOENCODING=utf-8)",
       "Bash(curl:*)",
-      "Bash(pkill:*)"
+      "Bash(pkill:*)",
+      "Bash(test:*)"
     ],
     "deny": []
   }

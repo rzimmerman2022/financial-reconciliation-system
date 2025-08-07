@@ -41,12 +41,7 @@ from src.core.accounting_engine import AccountingEngine, Transaction, Transactio
 from src.core.description_decoder import DescriptionDecoder
 from src.utils import data_loader
 
-# Configure logging with detailed format
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S'
-)
+# Set up logging (without overriding app config)
 logger = logging.getLogger(__name__)
 
 

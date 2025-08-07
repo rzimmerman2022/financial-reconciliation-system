@@ -1,8 +1,11 @@
-# API Reference
+# API Reference - v4.0.4
 
 ## Overview
 
 The Financial Reconciliation System provides a comprehensive Python API for programmatic access to all reconciliation, review, and accounting functionality. This reference covers all public classes, methods, and interfaces.
+
+**Last Updated**: 2025-08-07  
+**Version**: 4.0.4
 
 ## Core Modules
 

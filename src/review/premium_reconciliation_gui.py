@@ -1266,8 +1266,33 @@ class PremiumReconciliationGUI:
             
     def toggle_theme(self):
         """Toggle between light and dark themes."""
-        # This would implement full theme switching
-        pass
+        # Toggle theme state
+        current_theme = getattr(self, 'current_theme', 'light')
+        new_theme = 'dark' if current_theme == 'light' else 'light'
+        self.current_theme = new_theme
+        
+        # Update colors based on theme
+        if new_theme == 'dark':
+            # Dark theme colors
+            bg_color = "#1a1a1a"
+            fg_color = "#ffffff"
+            card_bg = "#2d2d2d"
+        else:
+            # Light theme colors  
+            bg_color = "#ffffff"
+            fg_color = "#000000"
+            card_bg = "#f0f0f0"
+        
+        # Apply theme to main window
+        self.configure(fg_color=bg_color)
+        
+        # Update all frames
+        for widget in self.winfo_children():
+            if hasattr(widget, 'configure'):
+                try:
+                    widget.configure(fg_color=card_bg)
+                except:
+                    pass
         
     def toggle_batch_mode(self):
         """Toggle batch processing mode."""
@@ -1362,18 +1387,26 @@ Great work! 🌟
         
     def _slide_out(self):
         """Slide out animation."""
-        # Visual feedback for skip
-        pass
+        # Visual feedback for skip - fade transaction display
+        if hasattr(self, 'transaction_display'):
+            self.transaction_display.configure(state='disabled')
+            self.after(100, lambda: self.transaction_display.configure(state='normal'))
         
     def _slide_in(self):
         """Slide in animation."""
-        # Visual feedback for next
-        pass
+        # Visual feedback for next - brief highlight
+        if hasattr(self, 'transaction_frame'):
+            original_color = self.transaction_frame.cget('border_color')
+            self.transaction_frame.configure(border_color=ColorScheme.SUCCESS)
+            self.after(200, lambda: self.transaction_frame.configure(border_color=original_color))
         
     def _slide_in_reverse(self):
         """Reverse slide animation."""
-        # Visual feedback for previous
-        pass
+        # Visual feedback for previous - brief highlight
+        if hasattr(self, 'transaction_frame'):
+            original_color = self.transaction_frame.cget('border_color')
+            self.transaction_frame.configure(border_color=ColorScheme.WARNING)
+            self.after(200, lambda: self.transaction_frame.configure(border_color=original_color))
         
     def _celebrate(self):
         """Celebration animation."""

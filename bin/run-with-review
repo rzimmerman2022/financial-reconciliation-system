@@ -39,6 +39,30 @@ class ReconciliationWithReview:
     def __init__(self, review_db_path: str = "data/phase5_manual_reviews.db"):
         self.review_system = ManualReviewSystem(review_db_path)
         self.reconciler = None
+    
+    def _normalize_lookup_key(self, date, description, amount):
+        """Normalize lookup key components for consistent matching."""
+        # Normalize date to string format
+        if isinstance(date, (pd.Timestamp, datetime)):
+            date_str = date.strftime('%Y-%m-%d')
+        else:
+            date_str = str(date)
+        
+        # Normalize description
+        desc_str = str(description).strip()
+        
+        # Normalize amount to 2 decimal places
+        if isinstance(amount, (int, float, Decimal)):
+            amount_str = f"{float(amount):.2f}"
+        else:
+            # Try to parse and format
+            try:
+                amount_val = float(str(amount).replace('$', '').replace(',', ''))
+                amount_str = f"{amount_val:.2f}"
+            except:
+                amount_str = str(amount)
+        
+        return f"{date_str}_{desc_str}_{amount_str}"
         
     def run_initial_reconciliation(self, mode: ReconciliationMode,
                                  phase4_start: datetime = None,
@@ -144,7 +168,7 @@ class ReconciliationWithReview:
         # Convert reviews to format expected by reconciliation
         review_lookup = {}
         for _, review in completed_reviews.iterrows():
-            key = f"{review['date']}_{review['description']}_{review['amount']}"
+            key = self._normalize_lookup_key(review['date'], review['description'], review['amount'])
             
             # Determine allowed amount based on review
             if review['is_personal'] == 1:
@@ -213,7 +237,7 @@ class ReconciliationWithReview:
         
         # Apply manual reviews
         for idx, row in phase5_df.iterrows():
-            key = f"{row['date']}_{row['description']}_{row['amount']}"
+            key = self._normalize_lookup_key(row['date'], row['description'], row['amount'])
             
             if key in review_lookup:
                 review = review_lookup[key]

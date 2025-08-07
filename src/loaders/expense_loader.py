@@ -150,7 +150,7 @@ class ExpenseHistoryLoader:
 
 def main():
     """Test the expense loader."""
-    # Set up logging
+    # Set up logging only when run directly
     logging.basicConfig(level=logging.INFO)
     
     # Create and test the loader

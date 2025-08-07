@@ -549,9 +549,18 @@ class AccountingEngine:
         This provides complete transparency and allows for external
         verification of all calculations.
         """
+        # Get account summary and convert current_balance tuple properly
+        account_summary = self.get_account_summary()
+        if 'current_balance' in account_summary:
+            status, amount = account_summary['current_balance']
+            account_summary['current_balance'] = {
+                'status': status,
+                'amount': str(amount)
+            }
+        
         audit_data = {
             "generated_at": datetime.now().isoformat(),
-            "account_summary": self.get_account_summary(),
+            "account_summary": account_summary,
             "transactions": self.get_transaction_log()
         }
         

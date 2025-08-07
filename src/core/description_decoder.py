@@ -19,8 +19,7 @@ import re
 from typing import Dict, Any, Optional
 import logging
 
-# Set up logging
-logging.basicConfig(level=logging.INFO)
+# Set up logging (without overriding app config)
 logger = logging.getLogger(__name__)
 
 
@@ -238,23 +237,44 @@ class DescriptionDecoder:
         """
         Safely evaluate a mathematical expression.
         Only allows basic arithmetic operations on numbers.
+        Uses AST parsing instead of eval for security.
         """
+        import ast
+        import operator
+        
         try:
             # Remove any whitespace
             expression = expression.replace(" ", "")
             
             # Check if expression contains only allowed characters
-            allowed_chars = set("0123456789.+-*/")
+            allowed_chars = set("0123456789.+-*/()")
             if not all(c in allowed_chars for c in expression):
                 return None
             
-            # Use eval with restricted globals for safety
-            # Only allow basic math operations
-            allowed_names = {
-                "__builtins__": {},
+            # Define allowed operations
+            ops = {
+                ast.Add: operator.add,
+                ast.Sub: operator.sub,
+                ast.Mult: operator.mul,
+                ast.Div: operator.truediv,
+                ast.USub: operator.neg,
             }
             
-            result = eval(expression, allowed_names)
+            def eval_expr(node):
+                if isinstance(node, ast.Num):  # <number>
+                    return node.n
+                elif isinstance(node, ast.Constant):  # Python 3.8+
+                    return node.value
+                elif isinstance(node, ast.BinOp):  # <left> <operator> <right>
+                    return ops[type(node.op)](eval_expr(node.left), eval_expr(node.right))
+                elif isinstance(node, ast.UnaryOp):  # <operator> <operand> e.g., -1
+                    return ops[type(node.op)](eval_expr(node.operand))
+                else:
+                    raise ValueError(f"Unsupported expression: {ast.dump(node)}")
+            
+            # Parse and evaluate the expression
+            node = ast.parse(expression, mode='eval')
+            result = eval_expr(node.body)
             return Decimal(str(result))
         
         except Exception:
