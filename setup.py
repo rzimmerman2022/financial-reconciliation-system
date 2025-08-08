@@ -8,7 +8,7 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 
 setup(
     name="financial-reconciliation",
-    version="4.0.3",
+    version="4.1.0",
     author="Financial Reconciliation Team",
     author_email="team@example.com",
     description="A production-ready financial reconciliation system with double-entry bookkeeping",

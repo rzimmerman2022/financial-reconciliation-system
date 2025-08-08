@@ -1,8 +1,10 @@
-# Gold Standard Project Structure
+# Gold Standard Project Structure (v4.1.0)
 
 ## Overview
 
-This document describes the gold standard directory structure implemented for the Financial Reconciliation System, following industry best practices for Python enterprise projects.
+This document describes the gold standard directory structure implemented for the Financial Reconciliation System, following industry best practices for Python enterprise projects. 
+
+**Updated in v4.1.0**: Added accuracy improvements module and enhanced reconciliation runner.
 
 ## Directory Layout
 
@@ -16,6 +18,7 @@ financial-reconciliation/
 │   ├── __init__.py
 │   ├── core/                     # Core business logic
 │   │   ├── accounting_engine.py      # Double-entry bookkeeping
+│   │   ├── accuracy_improvements.py  # v4.1.0: Enhanced validation & matching
 │   │   ├── description_decoder.py    # Transaction pattern recognition
 │   │   └── reconciliation_engine.py  # Main reconciliation logic
 │   │
@@ -94,6 +97,7 @@ financial-reconciliation/
 │       ├── audit_trail.csv
 │       ├── data_quality_issues.csv
 │       ├── data_quality_report.txt
+│       └── accuracy_report.txt   # v4.1.0: Detailed accuracy metrics
 │       ├── manual_review_required.csv
 │       ├── reconciliation_report.txt
 │       └── summary.json
@@ -110,6 +114,7 @@ financial-reconciliation/
 ├── .vscode/                      # VS Code configuration
 ├── .gitignore                    # Git ignore rules
 ├── README.md                     # Project documentation
+├── run_accurate_reconciliation.py # v4.1.0: Maximum accuracy runner
 └── requirements.txt              # Python dependencies
 ```
 

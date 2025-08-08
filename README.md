@@ -16,10 +16,11 @@
 
 # Financial Reconciliation System
 
-![Version](https://img.shields.io/badge/version-4.0.5-blue.svg)
+![Version](https://img.shields.io/badge/version-4.1.0-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.8%2B-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-orange.svg)
 ![Status](https://img.shields.io/badge/status-production--ready-gold.svg)
+![Accuracy](https://img.shields.io/badge/accuracy-enhanced-red.svg)
 ![Interface](https://img.shields.io/badge/interface-modern--web--gui-brightgreen.svg)
 ![Pipeline](https://img.shields.io/badge/pipeline-fully--automated-success.svg)
 ![Security](https://img.shields.io/badge/security-enhanced-purple.svg)
@@ -163,6 +164,19 @@ pip install -r requirements.txt
 ```
 
 ### 🖥️ Run Reconciliation
+
+#### 🎯 NEW: Maximum Accuracy Mode (v4.1.0) - Best for One-Time Runs
+```bash
+# For critical reconciliation requiring maximum accuracy
+python run_accurate_reconciliation.py
+
+# Features:
+# - Advanced duplicate detection (85% similarity threshold)
+# - Robust validation with detailed error reporting
+# - Improved pattern matching with confidence scoring
+# - No automatic 50/50 defaults
+# - Comprehensive accuracy report in output/accuracy_report.txt
+```
 
 #### Option 1: Web Interface (Recommended)
 ```bash
@@ -862,6 +876,36 @@ pytest tests/integration/test_web_load.py
 ---
 
 ## 📋 Changelog
+
+### 🎯 Version 4.1.0 - Maximum Accuracy Improvements (August 8, 2025)
+
+#### 🔍 Accuracy Enhancements
+- **Advanced Duplicate Detection**: Implemented fuzzy matching with 85% similarity threshold
+  - Full description hashing (previously only first 20 chars)
+  - Normalized descriptions to catch variations
+  - Date proximity checking (within 3 days)
+- **Robust Data Validation**: Enhanced parsing and validation
+  - 15+ date format support with future/past date validation
+  - Unicode character handling in amounts (fixes � issues)
+  - Suspicious amount detection (>$50k or <$0.01)
+- **Improved Pattern Matching**: Enhanced description decoder
+  - Confidence scoring (0-1 scale) for all decoded transactions
+  - Flexible pattern matching (case/space insensitive)
+  - Expanded gift patterns (Christmas, Valentine's, etc.)
+- **Manual Review Preservation**: No automatic 50/50 defaults
+  - Preserves manual review requirements
+  - Warns about pending reviews before running
+  - Tracks low-confidence decodings
+
+#### 📊 New Features
+- **Accuracy Runner**: `run_accurate_reconciliation.py` for maximum accuracy
+- **Comprehensive Reporting**: Detailed accuracy metrics and validation warnings
+- **Transaction Consistency Checks**: Cross-field validation for data integrity
+
+#### 📚 Documentation
+- Updated README with accuracy mode instructions
+- Added comprehensive inline documentation
+- Standardized version to 4.1.0 across all files
 
 ### 🐛 Version 4.0.3 - Critical Bug Fixes & Pipeline Ready (August 6, 2025)
 
