@@ -25,8 +25,8 @@ except ImportError:
 from src.review.ultra_modern_reconciliation_gui import main
 
 if __name__ == "__main__":
-    print("🚀 Launching Ultra Modern Reconciliation GUI...")
-    print("✨ Features:")
+    print("Launching Ultra Modern Reconciliation GUI...")
+    print("Features:")
     print("  - Beautiful gradient backgrounds")
     print("  - Smooth animations")
     print("  - Keyboard shortcuts (1-5 for categories, Enter to submit)")
@@ -37,7 +37,7 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("\n\n👋 Thank you for using the reconciliation system!")
+        print("\n\nThank you for using the reconciliation system!")
     except Exception as e:
-        print(f"\n❌ Error: {e}")
+        print(f"\nError: {e}")
         print("Please ensure the database exists at: data/phase5_manual_reviews.db")
