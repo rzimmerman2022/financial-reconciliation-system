@@ -16,20 +16,20 @@ sys.path.insert(0, str(Path(__file__).parent))
 from ultra_modern_dashboard import main
 
 if __name__ == "__main__":
-    print("🚀 Launching Premium Financial Dashboard v5.0...")
+    print("Launching Premium Financial Dashboard v5.0...")
     print("=" * 50)
     print("Features:")
-    print("  ✨ Ultra-modern glassmorphic design")
-    print("  📊 Real-time data visualization")
-    print("  🎨 Premium animations and effects")
-    print("  📈 Interactive charts and analytics")
-    print("  🌙 Dark/Light theme support")
+    print("  * Ultra-modern glassmorphic design")
+    print("  * Real-time data visualization")
+    print("  * Premium animations and effects")
+    print("  * Interactive charts and analytics")
+    print("  * Dark/Light theme support")
     print("=" * 50)
     
     try:
         main()
     except KeyboardInterrupt:
-        print("\n👋 Dashboard closed.")
+        print("\nDashboard closed.")
     except Exception as e:
-        print(f"\n❌ Error: {e}")
+        print(f"\nError: {e}")
         input("Press Enter to exit...")

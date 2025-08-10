@@ -1,7 +1,57 @@
 #!/usr/bin/env python3
 """
-Main entry point for the Financial Reconciliation System.
-This script provides a simple interface to run reconciliation.
+Financial Reconciliation System - Main Entry Point
+==================================================
+
+DESCRIPTION:
+This is the primary command-line entry point for the Financial Reconciliation System.
+It provides automated transaction reconciliation with comprehensive data quality
+checks and detailed reporting capabilities.
+
+FEATURES:
+- Multi-bank transaction reconciliation (Chase, Wells Fargo, Discover, etc.)
+- Double-entry bookkeeping with GAAP compliance
+- Intelligent duplicate detection and data quality validation
+- Baseline mode to prevent double-counting from known good states
+- Comprehensive Excel and CSV report generation
+- Configurable processing modes and parameters
+
+USAGE:
+    Basic reconciliation:
+        python reconcile.py
+    
+    With date range:
+        python reconcile.py --start-date 2024-01-01 --end-date 2024-12-31
+    
+    Baseline mode (recommended for production):
+        python reconcile.py --mode from_baseline
+    
+    With custom configuration:
+        python reconcile.py --config config/production.yaml
+
+SUPPORTED MODES:
+    - from_scratch: Complete reconciliation from beginning of data
+    - from_baseline: Reconcile from established baseline date (prevents double-counting)
+
+OUTPUT FILES:
+    - output/reconciliation_report.txt: Human-readable summary
+    - output/accounting_ledger.csv: Complete transaction ledger
+    - output/manual_review_required.csv: Transactions requiring human review
+    - output/data_quality_issues.csv: Data quality problems detected
+    - output/audit_trail.csv: Complete audit trail of all decisions
+
+PREREQUISITES:
+    - Python 3.8+ with required packages (see requirements.txt)
+    - Bank export CSV files in test-data/bank-exports/
+    - Proper configuration in config/config.yaml
+
+AUTHORS: Financial Reconciliation System Team
+VERSION: 6.0.0
+DATE: August 10, 2025
+LICENSE: MIT License
+
+For detailed documentation, see README.md and docs/ directory.
+For troubleshooting, see docs/user-guide/TROUBLESHOOTING.md.
 """
 
 import subprocess

@@ -182,7 +182,7 @@ python run_accurate_reconciliation.py
 #### Option 1: Web Interface (Recommended)
 ```bash
 # Launch modern web interface
-python reconcile_web.py
+python src/web/reconcile_web.py
 # Opens automatically at http://localhost:5000
 # Features: Real-time progress, interactive charts, mobile-responsive design
 ```
@@ -203,16 +203,19 @@ python reconcile.py --mode baseline
 
 ```bash
 # Export results to Excel
-python bin/export-excel
+python src/scripts/export_to_excel.py
 
 # Run comprehensive test suite
-python bin/run-tests
+python src/scripts/run_tests.py
 
-# Launch desktop review GUI
-python bin/review-gui
+# Launch ultra-premium GUI (recommended)
+python launch_ultra_premium_gui.py
 
-# Choose from multiple stunning GUI interfaces
-python launch_gui.py
+# Launch premium dashboard
+python launch_premium_dashboard.py
+
+# View transaction chronologically
+python scripts/chronological_viewer.py
 ```
 
 ### 🎨 **Premium GUI Interfaces**

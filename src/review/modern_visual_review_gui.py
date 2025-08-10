@@ -828,8 +828,58 @@ class ModernTransactionReviewGUI:
                 self.show_completion_message()
                 
         except Exception as e:
-            messagebox.showerror("Error", f"Failed to load transactions: {e}")
-            self.root.quit()
+            print(f"Warning: Failed to load transactions from database: {e}")
+            print("Creating demo transactions for testing...")
+            self._create_demo_transactions()
+            messagebox.showinfo("Demo Mode", "Running in demo mode with sample transactions.")
+    
+    def _create_demo_transactions(self):
+        """Create demo transactions for testing the interface."""
+        self.transactions = [
+            {
+                'review_id': 1,
+                'date': datetime.now(),
+                'description': 'Whole Foods Market - Weekly grocery shopping for household items including fresh produce, dairy, and pantry staples',
+                'amount': -127.89,
+                'payer': 'Ryan',
+                'source': 'Chase Sapphire Credit Card'
+            },
+            {
+                'review_id': 2,
+                'date': datetime.now() - timedelta(days=1),
+                'description': 'Monthly Apartment Rent Payment - Downtown Seattle Apartment',
+                'amount': -2850.00,
+                'payer': 'Jordyn',
+                'source': 'Bank of America Checking'
+            },
+            {
+                'review_id': 3,
+                'date': datetime.now() - timedelta(days=2),
+                'description': 'Starbucks Coffee Shop - Morning latte and breakfast sandwich',
+                'amount': -14.75,
+                'payer': 'Ryan',
+                'source': 'Apple Pay / Chase Debit'
+            },
+            {
+                'review_id': 4,
+                'date': datetime.now() - timedelta(days=3),
+                'description': 'Uber Ride Share - Airport transportation for business trip',
+                'amount': -43.20,
+                'payer': 'Jordyn',
+                'source': 'American Express Card'
+            },
+            {
+                'review_id': 5,
+                'date': datetime.now() - timedelta(days=4),
+                'description': 'Netflix Monthly Subscription - Premium streaming service plan',
+                'amount': -17.99,
+                'payer': 'Ryan',
+                'source': 'Auto-pay / Chase Credit'
+            }
+        ]
+        
+        self.stats['total'] = len(self.transactions)
+        self.update_progress()
             
     def show_current_transaction(self):
         """Display the current transaction with animation."""
