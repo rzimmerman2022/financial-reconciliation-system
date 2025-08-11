@@ -160,7 +160,7 @@ chart.set_data([
 
 1. **Launch Application**
    ```bash
-   python ultra_modern_dashboard.py
+   python bin/launch_web_interface
    ```
 
 2. **Navigate Views**

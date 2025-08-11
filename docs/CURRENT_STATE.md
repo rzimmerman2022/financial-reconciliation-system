@@ -33,7 +33,7 @@ financial-reconciliation/
 ├── pytest.ini            # Test configuration
 ├── .gitignore             # Git ignore patterns (includes archive/)
 ├── reconcile.py           # CLI entry point
-├── reconcile_web.py       # Web interface entry point
+├── bin/launch_web_interface  # Web interface entry point
 ├── bin/                   # Executable scripts
 ├── src/                   # Source code
 ├── tests/                 # Test suite
@@ -146,7 +146,7 @@ python bin/run-tests
 ```mermaid
 graph TD
     A[User Starts Process] --> B{Entry Point}
-    B -->|Web| C[reconcile_web.py]
+   B -->|Web| C[launch_web_interface]
     B -->|CLI| D[reconcile.py]
     
     C --> E[src.review.web_interface]
@@ -536,7 +536,7 @@ pytest tests/unit/test_accounting_engine.py -v
 pytest -k "test_reconciliation" tests/
 
 # Debug web interface
-python reconcile_web.py --debug
+python -m src.review.web_interface --debug
 ```
 
 ---

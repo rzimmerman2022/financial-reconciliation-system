@@ -26,7 +26,7 @@ financial-reconciliation/
 │   │   ├── manual_review_system.py   # SQLite-based tracking
 │   │   ├── batch_review_helper.py    # Pattern-based categorization
 │   │   ├── spreadsheet_review_system.py  # Excel export/import
-│   │   └── web_review_interface.py   # Browser-based interface
+│   │   └── web_interface.py          # Browser-based interface
 │   │
 │   ├── utils/                    # Utilities
 │   │   └── data_loader.py            # CSV data loading and encoding

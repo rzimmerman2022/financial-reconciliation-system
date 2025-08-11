@@ -59,13 +59,12 @@ python reconcile.py --mode from_baseline
 ### 💎 Premium Interfaces
 The system now includes multiple stunning visual interfaces:
 
-#### 🚀 **GUI Launcher** (Best Starting Point)
+#### �️ **Desktop Review GUI**
 ```bash
-python launch_gui.py
+python bin/review-gui
 ```
-- Interactive selection between all available interfaces  
-- Automatic dependency installation
-- Beautiful card-based selection screen
+- Launches the desktop review experience  
+- Keyboard shortcuts and export tools built-in
 
 #### ✨ **Ultra Modern Interface**
 - Gradient backgrounds and glassmorphism effects
@@ -94,7 +93,9 @@ All GUI interfaces support:
 ### 🌐 Web Interface (Recommended for Beginners)
 ```bash
 # Launch the modern web interface with real-time progress
-python reconcile_web.py
+python bin/launch_web_interface
+# or run the module directly
+python -m src.review.web_interface
 
 # Features available:
 # - Real-time progress tracking
@@ -130,8 +131,8 @@ python bin/run-tests
 # Launch desktop GUI for transaction review
 python bin/review-gui
 
-# Launch specific review interface
-python src/scripts/review_interface.py
+# Launch web interface directly (advanced)
+python -m src.review.web_interface
 ```
 
 ---
@@ -139,7 +140,7 @@ python src/scripts/review_interface.py
 ## 📂 Quick File Overview
 
 ### 🎯 Main Entry Points
-- **`reconcile_web.py`** - Modern web interface launcher
+- **`bin/launch_web_interface`** - Modern web interface launcher
 - **`reconcile.py`** - Command-line interface
 - **`bin/`** - All executable utilities and tools
 
@@ -181,7 +182,9 @@ ls test-data/bank-exports/
 python reconcile.py --mode from_baseline
 
 # Or use the web interface for guided experience
-python reconcile_web.py
+python bin/launch_web_interface
+# or
+python -m src.review.web_interface
 ```
 
 ---
@@ -190,7 +193,9 @@ python reconcile_web.py
 
 ### 🌐 Web Interface (Best for Most Users)
 ```bash
-python reconcile_web.py
+python bin/launch_web_interface
+# or
+python -m src.review.web_interface
 ```
 **Features:**
 - Modern glassmorphism design
@@ -320,7 +325,7 @@ pip install -r requirements.txt
 ### 🔥 Essential Commands
 ```bash
 # Quick start
-python reconcile_web.py              # Launch web interface
+python bin/launch_web_interface      # Launch web interface
 
 # Basic reconciliation
 python reconcile.py                  # CLI reconciliation

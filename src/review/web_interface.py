@@ -24,12 +24,9 @@ Version: 4.0.0 Gold Standard
 Date: August 2025
 """
 
-from flask import Flask, render_template, request, jsonify, send_file
+from flask import Flask, render_template, request, jsonify
 import pandas as pd
-import json
 from pathlib import Path
-from datetime import datetime
-import sqlite3
 import os
 import webbrowser
 import threading
@@ -44,6 +41,8 @@ templates_dir.mkdir(exist_ok=True)
 # Create static directory for CSS/JS
 static_dir = Path("static")
 static_dir.mkdir(exist_ok=True)
+vendor_dir = static_dir / "vendor"
+vendor_dir.mkdir(parents=True, exist_ok=True)
 
 def create_modern_template():
     """Create the modern web template with gold standard design."""
@@ -607,13 +606,9 @@ def index():
 @app.route('/api/save_decision', methods=['POST'])
 def save_decision():
     """Save a review decision."""
-    try:
-        data = request.json
-        # Here you would save to your database
-        # For now, just return success
-        return jsonify({'success': True, 'message': 'Decision saved'})
-    except Exception as e:
-        return jsonify({'success': False, 'error': str(e)}), 500
+    data = request.get_json(silent=True) or {}
+    # TODO: Persist decision to database when backend is ready
+    return jsonify({'success': True, 'message': 'Decision received', 'received': bool(data)})
 
 def open_browser():
     """Open browser after a short delay."""

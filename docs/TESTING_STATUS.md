@@ -75,7 +75,7 @@ output/gold_standard/
 
 #### Test Command
 ```bash
-python reconcile_web.py
+python bin/launch_web_interface
 ```
 
 #### Results: ✅ FULLY FUNCTIONAL

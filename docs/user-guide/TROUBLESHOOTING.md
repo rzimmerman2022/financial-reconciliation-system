@@ -252,7 +252,7 @@ sudo apt-get install xvfb
 xvfb-run -a python bin/review-gui
 
 # Option 3: Use web interface instead
-python src/review/web_review_interface.py
+python -m src.review.web_interface
 ```
 
 #### Issue: GUI appears but buttons don't work

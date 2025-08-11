@@ -9,7 +9,7 @@ The Financial Reconciliation System follows a clear pipeline from data ingestion
 ```mermaid
 graph TD
     A[User] --> B[Entry Points]
-    B --> C[reconcile_web.py - Web GUI]
+  B --> C[launch_web_interface - Web GUI]
     B --> D[reconcile.py - CLI]
     
     C --> E[web_interface.py]
@@ -43,7 +43,7 @@ graph TD
 
 ### 1. Web Interface (Recommended)
 ```bash
-python reconcile_web.py
+python bin/launch_web_interface
 ```
 - Opens Gold Standard Web GUI at http://localhost:5000
 - Features glassmorphism design with real-time progress tracking

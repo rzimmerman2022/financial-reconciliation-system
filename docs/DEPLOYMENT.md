@@ -306,7 +306,7 @@ wfastcgi-enable
 # Download NSSM from https://nssm.cc/
 
 # Install service
-nssm install FinancialReconciliation "C:\Python39\python.exe" "C:\financial-reconciliation\src\web\reconcile_web.py"
+nssm install FinancialReconciliation "C:\Python39\python.exe" "-m" "src.review.web_interface"
 nssm set FinancialReconciliation AppDirectory "C:\financial-reconciliation"
 nssm set FinancialReconciliation DisplayName "Financial Reconciliation System"
 nssm set FinancialReconciliation Description "Financial transaction reconciliation web service"

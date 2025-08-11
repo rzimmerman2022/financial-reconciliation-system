@@ -304,7 +304,9 @@ python run_accurate_reconciliation.py
 python launch_ultra_premium_gui.py
 
 # Web interface
-python src/web/reconcile_web.py
+python bin/launch_web_interface
+# or
+python -m src.review.web_interface
 ```
 
 ### Most Important Classes

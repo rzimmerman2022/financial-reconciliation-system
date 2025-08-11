@@ -66,7 +66,7 @@ The **Financial Reconciliation System** is a comprehensive, production-ready sol
 
 This system is designed with AI-friendly architecture and comprehensive documentation:
 
-- **Clear Entry Points**: Two main scripts (`reconcile.py` for CLI, `reconcile_web.py` for web)
+- **Clear Entry Points**: Two main scripts (`reconcile.py` for CLI, `bin/launch_web_interface` for web)
 - **Modular Design**: Well-separated concerns in `src/` directory structure
 - **Extensive Documentation**: Every component has detailed docstrings and architecture docs
 - **Standardized Patterns**: Consistent coding patterns throughout the codebase
@@ -375,8 +375,11 @@ python bin/export-excel
 
 The modern web interface provides comprehensive transaction review capabilities:
 
-Note: To run without internet access for CSS/JS assets, set a local assets toggle and place files under `static/vendor/` (tailwind.min.js, alpine.min.js, chart.umd.js).
+Offline assets: To run without internet access for CSS/JS, set an env var and place assets in `static/vendor/`:
+- Required files: `tailwind.min.js`, `alpine.min.js`, `chart.umd.js`
 - Windows PowerShell: `$env:USE_LOCAL_ASSETS='true'`
+- Optional integrity check (PowerShell): `Get-FileHash static\vendor\tailwind.min.js -Algorithm SHA256`
+- Recommended: Note SHA256 hashes in `docs/CURRENT_STATE.md` after updating assets
 
 #### 🖱️ Navigation
 - **Transaction List**: Scroll through all transactions requiring review
@@ -462,7 +465,7 @@ financial-reconciliation/
 ├── 📄 pytest.ini                  # Test runner configuration
 ├── 📄 .gitignore                   # Git ignore patterns
 ├── 🎯 reconcile.py                 # CLI entry point for reconciliation
-├── 🌐 reconcile_web.py             # Web interface entry point
+├── 🌐 bin/launch_web_interface     # Web interface entry point
 │
 ├── 📁 bin/                         # Executable scripts directory
 │   ├── 🔧 financial-reconciliation # Main CLI wrapper script
@@ -575,7 +578,7 @@ financial-reconciliation/
 graph TD
     A[User Input] --> B{Entry Point}
     B -->|CLI| C[reconcile.py]
-    B -->|Web| D[reconcile_web.py]
+  B -->|Web| D[launch_web_interface]
     
     C --> E[ReconciliationWithReview]
     D --> F[WebInterface]
@@ -615,7 +618,7 @@ graph TD
 
 #### 1. 🎯 Entry Points
 - **`reconcile.py`**: Command-line interface for automated reconciliation
-- **`reconcile_web.py`**: Web interface launcher with real-time progress
+- **`bin/launch_web_interface`**: Web interface launcher with real-time progress
 - **`bin/` scripts**: Specialized utilities for specific tasks
 
 #### 2. 🔧 Core Processing Engine
@@ -975,7 +978,7 @@ pytest tests/integration/test_web_load.py
 - **Documentation**: Complete documentation overhaul with AI-friendly verbose content
 
 #### 🗂️ File Structure Changes
-- `launch.py` → `reconcile_web.py` (clearer naming)
+- `launch.py` → `bin/launch_web_interface` (clearer naming)
 - `create_modern_web_gui.py` → `src/review/web_interface.py`
 - `export_to_excel.py` → `src/scripts/export_to_excel.py`
 - `run_tests.py` → `src/scripts/run_tests.py`
