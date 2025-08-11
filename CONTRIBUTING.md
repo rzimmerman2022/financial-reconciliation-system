@@ -540,5 +540,21 @@ Contributors are recognized in:
 
 ---
 
-**Last Updated:** January 4, 2025  
-**Version:** 4.0.1
+## 🧾 Changelog Policy
+
+We follow Keep a Changelog and Semantic Versioning.
+
+- For every PR, add an entry to `CHANGELOG.md` under one of: Added, Changed, Fixed, Removed
+- Group unrelated small fixes under a single entry when appropriate.
+- If a change is purely internal and not user-facing, note it under Changed.
+- Breaking changes must be explicitly called out; add migration notes in docs if needed.
+
+## 📝 Documentation Policy
+
+- README and QUICKSTART must reflect current commands and entry points.
+- Add/update docs in `docs/` for new features, flags, or behaviors.
+- Link new docs from `docs/INDEX.md`.
+- When adding web assets or external deps, update `docs/user-guide/LOCAL_ASSETS.md`.
+
+**Last Updated:** August 11, 2025  
+**Version:** 6.0.2

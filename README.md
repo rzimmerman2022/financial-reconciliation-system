@@ -51,6 +51,8 @@
 
 The **Financial Reconciliation System** is a comprehensive, production-ready solution designed to handle complex financial transaction reconciliation between multiple parties and data sources. It features automated transaction matching, intelligent data quality management, and a modern visual interface for manual review of ambiguous transactions.
 
+Looking for specific docs? See `docs/INDEX.md` for a sitemap.
+
 ### 🎯 Problems Solved
 
 | Problem | Solution |
@@ -417,6 +419,13 @@ python bin/review-gui data/custom_reviews.db
 - **Ctrl+E**: Export reviews to CSV
 
 ### 📝 Command Line Interface
+## 🧾 Changelog & Releases
+
+- Primary changelog: see `CHANGELOG.md` (Keep a Changelog; SemVer)
+- Release notes: summarized changes also in `docs/CHANGELOG.md` for continuity
+- For every PR: include a CHANGELOG entry under Added/Changed/Fixed/Removed
+
+Last updated: 2025-08-11
 
 #### 🔧 Advanced Options
 
