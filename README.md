@@ -380,6 +380,7 @@ Offline assets: To run without internet access for CSS/JS, set an env var and pl
 - Windows PowerShell: `$env:USE_LOCAL_ASSETS='true'`
 - Optional integrity check (PowerShell): `Get-FileHash static\vendor\tailwind.min.js -Algorithm SHA256`
 - Recommended: Note SHA256 hashes in `docs/CURRENT_STATE.md` after updating assets
+- See also: `docs/user-guide/LOCAL_ASSETS.md` for full offline setup instructions
 
 #### 🖱️ Navigation
 - **Transaction List**: Scroll through all transactions requiring review
