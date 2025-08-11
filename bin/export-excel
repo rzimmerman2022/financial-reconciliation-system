@@ -3,7 +3,7 @@
 import sys
 from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent))
-from src.scripts.export_to_excel import main
+from src.scripts.export_to_excel import export_data_to_excel as main
 
 if __name__ == "__main__":
     main()

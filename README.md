@@ -16,7 +16,7 @@
 
 # Financial Reconciliation System
 
-![Version](https://img.shields.io/badge/version-5.0.0-blue.svg)
+![Version](https://img.shields.io/badge/version-6.0.0-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.8%2B-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-orange.svg)
 ![Status](https://img.shields.io/badge/status-production--ready-gold.svg)
@@ -150,7 +150,7 @@ This system is designed with AI-friendly architecture and comprehensive document
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/financial-reconciliation.git
+git clone https://github.com/rzimmerman2022/financial-reconciliation-system.git
 cd financial-reconciliation
 
 # Create and activate virtual environment
@@ -182,7 +182,9 @@ python run_accurate_reconciliation.py
 #### Option 1: Web Interface (Recommended)
 ```bash
 # Launch modern web interface
-python src/web/reconcile_web.py
+python bin/launch_web_interface
+## or
+python -m src.review.web_interface
 # Opens automatically at http://localhost:5000
 # Features: Real-time progress, interactive charts, mobile-responsive design
 ```
@@ -203,7 +205,7 @@ python reconcile.py --mode baseline
 
 ```bash
 # Export results to Excel
-python src/scripts/export_to_excel.py
+python bin/export-excel
 
 # Run comprehensive test suite
 python src/scripts/run_tests.py
@@ -212,7 +214,7 @@ python src/scripts/run_tests.py
 python launch_ultra_premium_gui.py
 
 # Launch premium dashboard
-python launch_premium_dashboard.py
+python launch_ultra_premium_gui.py
 
 # View transaction chronologically
 python scripts/chronological_viewer.py
@@ -223,9 +225,7 @@ python scripts/chronological_viewer.py
 #### 🌟 NEW: Ultra-Modern Dashboard v5.0
 ```bash
 # Launch the premium dashboard with gold-standard graphics
-python ultra_modern_dashboard.py
-# or use the launcher
-python launch_premium_dashboard.py
+python launch_ultra_premium_gui.py
 
 # Features:
 # - Glassmorphic design with depth and shadows
@@ -241,7 +241,7 @@ The system now includes multiple visually stunning interfaces for transaction re
 
 #### 🚀 GUI Launcher (Recommended)
 ```bash
-python launch_gui.py
+python launch_ultra_premium_gui.py
 ```
 Interactive launcher to choose between all available interfaces with automatic dependency management.
 
@@ -358,7 +358,9 @@ python reconcile.py --mode from_baseline
 #### Step 3: Review Flagged Transactions
 ```bash
 # Launch web interface for manual review
-python reconcile_web.py
+python bin/launch_web_interface
+## or
+python -m src.review.web_interface
 # Navigate to http://localhost:5000
 # Review and classify ambiguous transactions
 ```
@@ -366,12 +368,15 @@ python reconcile_web.py
 #### Step 4: Generate Reports
 ```bash
 # Export comprehensive Excel report
-python bin/export-excel --output reports/reconciliation_$(date +%Y%m%d).xlsx
+python bin/export-excel
 ```
 
 ### 🌐 Web Interface Usage
 
 The modern web interface provides comprehensive transaction review capabilities:
+
+Note: To run without internet access for CSS/JS assets, set a local assets toggle and place files under `static/vendor/` (tailwind.min.js, alpine.min.js, chart.umd.js).
+- Windows PowerShell: `$env:USE_LOCAL_ASSETS='true'`
 
 #### 🖱️ Navigation
 - **Transaction List**: Scroll through all transactions requiring review
@@ -1278,8 +1283,8 @@ See [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md) for complete license info
 - **Troubleshooting**: Common issues and solutions in [docs/user-guide/TROUBLESHOOTING.md](docs/user-guide/TROUBLESHOOTING.md)
 
 #### 💬 Community Support
-- **GitHub Issues**: [Create an issue](https://github.com/your-org/financial-reconciliation/issues) for bugs and feature requests
-- **GitHub Discussions**: [Join discussions](https://github.com/your-org/financial-reconciliation/discussions) for questions and community help
+- **GitHub Issues**: [Create an issue](https://github.com/rzimmerman2022/financial-reconciliation-system/issues) for bugs and feature requests
+- **GitHub Discussions**: [Join discussions](https://github.com/rzimmerman2022/financial-reconciliation-system/discussions) for questions and community help
 - **Stack Overflow**: Tag questions with `financial-reconciliation`
 
 #### 📧 Direct Contact

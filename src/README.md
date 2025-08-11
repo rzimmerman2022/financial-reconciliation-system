@@ -61,8 +61,10 @@ python launch_premium_dashboard.py
 
 #### 6. **Web Interface**
 ```bash
-# Location: /src/web/reconcile_web.py
-python src/web/reconcile_web.py
+# Location: /src/review/web_interface.py (launcher available)
+python bin/launch_web_interface
+# or
+python -m src.review.web_interface
 ```
 **Purpose**: Browser-based interface with real-time features  
 **Use Case**: Remote access, mobile-friendly interface  
@@ -88,8 +90,8 @@ python scripts/view_all_transactions.py
 
 #### 9. **Excel Export Utility**
 ```bash
-# Location: /src/scripts/export_to_excel.py
-python src/scripts/export_to_excel.py
+# Location: /bin/export-excel
+python bin/export-excel
 ```
 **Purpose**: Export reconciliation results to Excel  
 **Use Case**: Report generation, data sharing
@@ -181,7 +183,7 @@ Multiple interface implementations for different user preferences:
 
 #### **Web Interface**
 - **File**: `web_interface.py`
-- **Location**: `/src/web/reconcile_web.py`
+- **Launcher**: `bin/launch_web_interface`
 - **Features**: Browser-based, mobile-friendly, real-time updates
 - **Technology**: Flask, Alpine.js, TailwindCSS
 

@@ -73,8 +73,8 @@ brew install python sqlite
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/your-org/financial-reconciliation.git
-cd financial-reconciliation
+git clone https://github.com/rzimmerman2022/financial-reconciliation-system.git
+cd financial-reconciliation-system
 ```
 
 ### 2. Create Virtual Environment
@@ -129,7 +129,7 @@ python reconcile.py --help
 python src/scripts/run_tests.py
 
 # Start web interface
-python src/web/reconcile_web.py
+python bin/launch_web_interface
 ```
 
 ## Production Deployment
@@ -159,7 +159,7 @@ sudo -u reconciliation -s
 
 # Clone and setup application
 cd /opt/financial-reconciliation
-git clone https://github.com/your-org/financial-reconciliation.git .
+git clone https://github.com/rzimmerman2022/financial-reconciliation-system.git .
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -818,7 +818,7 @@ export FLASK_ENV=development
 export FLASK_DEBUG=1
 
 # Run in debug mode
-python src/web/reconcile_web.py
+python bin/launch_web_interface
 ```
 
 ### Performance Issues
@@ -829,7 +829,7 @@ iotop
 df -h
 
 # Check application performance
-python -m cProfile src/web/reconcile_web.py
+python -m cProfile -m src.review.web_interface
 
 # Monitor database queries
 sqlite3 /path/to/manual_reviews.db

@@ -42,11 +42,8 @@ The Financial Reconciliation System includes multiple graphical user interfaces 
 ### Quick Start
 
 ```bash
-# Launch the premium dashboard
-python ultra_modern_dashboard.py
-
-# Or use the launcher with startup messages
-python launch_premium_dashboard.py
+# Launch the ultra-premium desktop GUI
+python launch_ultra_premium_gui.py
 ```
 
 ### System Requirements

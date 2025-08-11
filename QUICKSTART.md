@@ -20,7 +20,7 @@ Before you begin, ensure you have:
 ```bash
 # Clone the repository
 git clone https://github.com/rzimmerman2022/financial-reconciliation-system.git
-cd financial-reconciliation
+cd financial-reconciliation-system
 
 # Create virtual environment (recommended)
 python -m venv venv
@@ -30,17 +30,17 @@ source venv/bin/activate  # On Windows: venv\\Scripts\\activate
 pip install -r requirements.txt
 ```
 
-### 2. Launch Premium GUI Interface
+### 2. Launch Desktop GUI (Ultra-Premium)
 ```bash
-# Launch the GUI selector with stunning visual interfaces
-python launch_gui.py
+python launch_ultra_premium_gui.py
 ```
-🎨 **Choose from multiple beautiful interfaces with gradients, animations, and AI assistance**
 
 ### 3. Alternative: Launch Web Interface
 ```bash
 # Start the modern web interface
-python reconcile_web.py
+python bin/launch_web_interface
+# or
+python -m src.review.web_interface
 ```
 🌐 **Your browser will automatically open to http://localhost:5000**
 
@@ -288,7 +288,7 @@ pip install -r requirements.txt
 - **Troubleshooting**: See [docs/user-guide/TROUBLESHOOTING.md](docs/user-guide/TROUBLESHOOTING.md)
 
 #### 🐛 Reporting Issues
-- **GitHub Issues**: [Create an issue](https://github.com/your-org/financial-reconciliation/issues)
+- **GitHub Issues**: [Create an issue](https://github.com/rzimmerman2022/financial-reconciliation-system/issues)
 - **Bug Reports**: Include system info, error messages, and steps to reproduce
 
 ---

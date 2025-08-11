@@ -11,6 +11,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Repository structure cleanup and standardization
 - Documentation overhaul with comprehensive guides
 
+## [6.0.1] - 2025-08-10
+
+### Fixed
+- Export CLI now calls the correct function via `bin/export-excel`
+- Accurate runner aligned with reconciler API (baseline params)
+- Top-level `description_decoder.py` now shims to core module (no wildcard)
+- Web UI supports `USE_LOCAL_ASSETS` to use local JS assets under `static/vendor/`
+
+### Changed
+- Updated README and QUICKSTART to correct commands and paths
+- Added `docs/DEPRECATIONS.md` with deprecated commands and replacements
+
 ## [6.0.0] - 2025-08-10
 
 ### Added

@@ -47,6 +47,17 @@ static_dir.mkdir(exist_ok=True)
 
 def create_modern_template():
     """Create the modern web template with gold standard design."""
+    import os
+    use_local = os.environ.get('USE_LOCAL_ASSETS', 'false').lower() in ('1', 'true', 'yes', 'on')
+    
+    if use_local:
+        tailwind = "/static/vendor/tailwind.min.js"
+        alpine = "/static/vendor/alpine.min.js"
+        chartjs = "/static/vendor/chart.umd.js"
+    else:
+        tailwind = "https://cdn.tailwindcss.com"
+        alpine = "https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+        chartjs = "https://cdn.jsdelivr.net/npm/chart.js"
     
     template_content = '''<!DOCTYPE html>
 <html lang="en">
@@ -58,9 +69,9 @@ def create_modern_template():
     <!-- Modern CSS Framework -->
     <!-- Note: For production, consider bundling these assets locally for offline use and security -->
     <!-- To use local assets, set USE_LOCAL_ASSETS=true environment variable -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="__TAILWIND__"></script>
+    <script src="__ALPINE__" defer></script>
+    <script src="__CHARTJS__"></script>
     
     <!-- Custom Styles -->
     <style>
@@ -525,6 +536,13 @@ def create_modern_template():
     </script>
 </body>
 </html>'''
+
+    # Substitute asset URLs
+    template_content = (template_content
+        .replace("__TAILWIND__", tailwind)
+        .replace("__ALPINE__", alpine)
+        .replace("__CHARTJS__", chartjs)
+    )
     
     with open(templates_dir / "index.html", "w", encoding="utf-8") as f:
         f.write(template_content)

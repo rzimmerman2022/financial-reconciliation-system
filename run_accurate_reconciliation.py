@@ -26,9 +26,9 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).parent))
 
 from src.core.reconciliation_engine import GoldStandardReconciler, ReconciliationMode
-from src.core.accuracy_improvements import apply_accuracy_improvements, AccuracyValidator
+from src.core.accuracy_improvements import apply_accuracy_improvements
 from src.review.manual_review_system import ManualReviewSystem
-from src.core.accounting_engine import AccountingEngine
+# AccountingEngine is used internally by GoldStandardReconciler; no direct import needed here
 
 # Configure detailed logging
 logging.basicConfig(
@@ -58,9 +58,12 @@ class AccurateReconciliationRunner:
         logger.info("=" * 80)
         
         # Initialize reconciler with baseline mode to avoid double-counting
+        # Provide baseline parameters required by the reconciler API
         self.reconciler = GoldStandardReconciler(
             mode=ReconciliationMode.FROM_BASELINE,
-            manual_review_db="data/phase5_manual_reviews.db"
+            baseline_date=datetime(2024, 9, 30),
+            baseline_amount=Decimal('1577.08'),
+            baseline_who_owes="Jordyn owes Ryan"
         )
         
         # Apply accuracy improvements
