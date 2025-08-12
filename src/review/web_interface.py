@@ -28,6 +28,7 @@ from flask import Flask, render_template, request, jsonify
 import pandas as pd
 from pathlib import Path
 import os
+import sys
 import webbrowser
 import threading
 import time
@@ -157,6 +158,11 @@ def create_modern_template():
     <!-- Main Content -->
     <main class="pt-24 px-6 pb-6">
         <div class="max-w-7xl mx-auto">
+            <!-- Empty state -->
+            <div x-show="transactions.length === 0" class="bg-white/80 backdrop-blur-sm rounded-2xl p-10 text-center mb-8">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">No transactions to review</h3>
+                <p class="text-gray-600">Everything looks good. When transactions require manual review, they'll appear here.</p>
+            </div>
             
             <!-- Dashboard Stats -->
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
@@ -222,7 +228,7 @@ def create_modern_template():
             </div>
             
             <!-- Transaction Cards -->
-            <div class="space-y-6">
+            <div class="space-y-6" x-show="transactions.length > 0">
                 <template x-for="(transaction, index) in transactions" :key="index">
                     <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 card-hover slide-in"
                          :class="transaction.reviewed ? 'opacity-60' : ''">
@@ -376,6 +382,19 @@ def create_modern_template():
                     { label: '🤝 Settlement', value: 'settlement' },
                     { label: '👤 Personal', value: 'personal' }
                 ],
+                // simple toast
+                toastTimer: null,
+                showToast(msg, variant = 'success') {
+                    const existing = document.getElementById('toast');
+                    if (existing) existing.remove();
+                    const el = document.createElement('div');
+                    el.id = 'toast';
+                    el.className = `fixed bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-lg shadow-lg text-white ${variant === 'error' ? 'bg-red-600' : 'bg-green-600'}`;
+                    el.textContent = msg;
+                    document.body.appendChild(el);
+                    clearTimeout(this.toastTimer);
+                    this.toastTimer = setTimeout(() => el.remove(), 2500);
+                },
                 
                 get stats() {
                     const total = this.transactions.length;
@@ -402,6 +421,15 @@ def create_modern_template():
                         if (transaction.reviewed === undefined) {
                             transaction.reviewed = false;
                         }
+                        // restore from localStorage
+                        const key = this._txKey(transaction);
+                        const saved = localStorage.getItem(key);
+                        if (saved) {
+                            try {
+                                const s = JSON.parse(saved);
+                                Object.assign(transaction, s);
+                            } catch {}
+                        }
                     });
                 },
                 
@@ -414,6 +442,27 @@ def create_modern_template():
                     
                     transaction.reviewed = true;
                     transaction.reviewed_at = new Date().toISOString();
+                    // persist locally
+                    this._persistLocal(transaction);
+                    // persist to backend
+                    fetch('/api/save_decision', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            date: transaction.date,
+                            description: transaction.description,
+                            amount: transaction.amount,
+                            payer: transaction.payer,
+                            source: transaction.source,
+                            category: transaction.category,
+                            allowed_amount: transaction.allowed_amount,
+                            notes: transaction.notes,
+                            reviewed_at: transaction.reviewed_at
+                        })
+                    })
+                    .then(r => r.json())
+                    .then(() => this.showToast('Decision saved'))
+                    .catch(() => this.showToast('Save failed', 'error'));
                     
                     // Auto-scroll to next unreviewed transaction
                     setTimeout(() => {
@@ -500,6 +549,20 @@ def create_modern_template():
                             block: 'center' 
                         });
                     }
+                },
+                _txKey(t) {
+                    return `tx:${(t.date || '')}|${(t.description || '').toLowerCase()}|${t.amount}|${t.payer || ''}`
+                },
+                _persistLocal(t) {
+                    try {
+                        localStorage.setItem(this._txKey(t), JSON.stringify({
+                            category: t.category,
+                            allowed_amount: t.allowed_amount,
+                            notes: t.notes,
+                            reviewed: t.reviewed,
+                            reviewed_at: t.reviewed_at
+                        }));
+                    } catch {}
                 }
             }
         }
@@ -546,6 +609,11 @@ def create_modern_template():
     with open(templates_dir / "index.html", "w", encoding="utf-8") as f:
         f.write(template_content)
 
+@app.route('/healthz')
+def healthz():
+    """Simple health check endpoint."""
+    return 'ok', 200
+
 @app.route('/')
 def index():
     """Main review interface route."""
@@ -564,13 +632,22 @@ def index():
                 csv_path = str(path)
                 break
         
-        # Check if file exists
+    # Check if file exists
         if not csv_path or not os.path.exists(csv_path):
-            # Return empty state if no data file
-            return render_template('index.html', transactions=[], 
-                                 stats={'total': 0, 'reviewed': 0, 'remaining': 0},
-                                 progress=0,
-                                 message="No transactions requiring manual review at this time.")
+            # Return empty state if no data file, with guidance
+            guidance = (
+                "No transactions requiring manual review at this time. "
+                "If you expected items here, ensure the CSV exists at: "
+                "output/gold_standard/manual_review_required.csv. "
+                "You can generate it by running 'python reconcile.py --mode from_baseline'."
+            )
+            return render_template(
+                'index.html',
+                transactions=[],
+                stats={'total': 0, 'reviewed': 0, 'remaining': 0},
+                progress=0,
+                message=guidance,
+            )
         
         manual_df = pd.read_csv(csv_path)
         
@@ -607,13 +684,95 @@ def index():
 def save_decision():
     """Save a review decision."""
     data = request.get_json(silent=True) or {}
-    # TODO: Persist decision to database when backend is ready
-    return jsonify({'success': True, 'message': 'Decision received', 'received': bool(data)})
+    # Persist decision to SQLite using ManualReviewSystem
+    try:
+        # Lazy import to avoid circulars when generating template
+        try:
+            from .manual_review_system import ManualReviewSystem, TransactionCategory, SplitType
+        except Exception:
+            from review.manual_review_system import ManualReviewSystem, TransactionCategory, SplitType  # type: ignore
+
+        db_path = os.environ.get('MANUAL_REVIEW_DB', str(Path('data') / 'phase5_manual_reviews.db'))
+        # Ensure path exists
+        Path(db_path).parent.mkdir(parents=True, exist_ok=True)
+        mrs = ManualReviewSystem(db_path)
+
+        # Extract fields
+        date = data.get('date')
+        description = data.get('description', '')
+        amount = data.get('amount', 0)
+        payer = data.get('payer', 'Unknown')
+        source = data.get('source')
+        category_in = (data.get('category') or 'other').lower()
+        allowed_amount = data.get('allowed_amount')
+        notes = data.get('notes')
+
+        # Map simple categories to enum
+        cat_map = {
+            'rent': 'RENT',
+            'settlement': 'SETTLEMENT',
+            'expense': 'OTHER',
+            'personal': 'OTHER',  # Track personal flag separately
+            'other': 'OTHER'
+        }
+        cat_enum = TransactionCategory[cat_map.get(category_in, 'OTHER')]
+        is_personal = category_in == 'personal'
+
+        # Add/get review row
+        from decimal import Decimal
+        review_id = mrs.add_transaction_for_review(
+            date=date,
+            description=description,
+            amount=Decimal(str(abs(float(amount) if amount is not None else 0))),
+            payer=payer,
+            source=source or 'Web GUI'
+        )
+
+        # Save review
+        mrs.review_transaction(
+            review_id=review_id,
+            category=cat_enum,
+            split_type=SplitType.SPLIT_50_50,
+            allowed_amount=Decimal(str(allowed_amount)) if allowed_amount is not None else None,
+            is_personal=is_personal,
+            notes=notes,
+            reviewed_by='Web GUI'
+        )
+
+        return jsonify({'success': True, 'message': 'Decision saved', 'review_id': review_id})
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
 
 def open_browser():
     """Open browser after a short delay."""
     time.sleep(1.5)  # Wait for server to start
-    webbrowser.open('http://localhost:5000')
+    url = 'http://localhost:5000'
+    success = False
+    try:
+        success = webbrowser.open(url)
+    except Exception:
+        success = False
+    if not success:
+        # Fallbacks for Windows
+        try:
+            if sys.platform.startswith('win'):
+                os.startfile(url)  # type: ignore[attr-defined]
+                success = True
+        except Exception:
+            success = False
+    if not success:
+        try:
+            if sys.platform.startswith('win'):
+                import subprocess
+                subprocess.run([
+                    'powershell', '-NoProfile', '-Command',
+                    'Start-Process', 'http://localhost:5000'
+                ], check=False)
+                success = True
+        except Exception:
+            success = False
+    if not success:
+        print("Could not auto-open a browser. Please open http://localhost:5000 manually.")
 
 def main():
     """Launch the gold standard modern web GUI."""
@@ -626,7 +785,8 @@ def main():
     print("Template created successfully!")
     print("Starting web server...")
     print()
-    print("Web Interface: http://localhost:5000")
+    print("Web Interface URL: http://localhost:5000")
+    print("Health Check:     http://localhost:5000/healthz (should return 'ok')")
     print()
     print("Gold Standard Features:")
     print("   • Glassmorphism design with backdrop blur")
@@ -651,7 +811,11 @@ def main():
     threading.Thread(target=open_browser, daemon=True).start()
     
     # Start the Flask app
-    app.run(debug=False, host='0.0.0.0', port=5000, use_reloader=False)
+    try:
+        app.run(debug=False, host='127.0.0.1', port=5000, use_reloader=False, threaded=True)
+    except OSError as e:
+        print(f"Failed to start server: {e}")
+        print("If port 5000 is in use, set FLASK_RUN_PORT=another_port and retry.")
 
 if __name__ == "__main__":
     main()

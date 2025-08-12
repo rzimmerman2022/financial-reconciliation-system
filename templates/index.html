@@ -97,6 +97,11 @@
     <!-- Main Content -->
     <main class="pt-24 px-6 pb-6">
         <div class="max-w-7xl mx-auto">
+            <!-- Empty state -->
+            <div x-show="transactions.length === 0" class="bg-white/80 backdrop-blur-sm rounded-2xl p-10 text-center mb-8">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">No transactions to review</h3>
+                <p class="text-gray-600">Everything looks good. When transactions require manual review, they'll appear here.</p>
+            </div>
             
             <!-- Dashboard Stats -->
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
@@ -162,7 +167,7 @@
             </div>
             
             <!-- Transaction Cards -->
-            <div class="space-y-6">
+            <div class="space-y-6" x-show="transactions.length > 0">
                 <template x-for="(transaction, index) in transactions" :key="index">
                     <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 card-hover slide-in"
                          :class="transaction.reviewed ? 'opacity-60' : ''">
@@ -316,6 +321,19 @@
                     { label: '🤝 Settlement', value: 'settlement' },
                     { label: '👤 Personal', value: 'personal' }
                 ],
+                // simple toast
+                toastTimer: null,
+                showToast(msg, variant = 'success') {
+                    const existing = document.getElementById('toast');
+                    if (existing) existing.remove();
+                    const el = document.createElement('div');
+                    el.id = 'toast';
+                    el.className = `fixed bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-lg shadow-lg text-white ${variant === 'error' ? 'bg-red-600' : 'bg-green-600'}`;
+                    el.textContent = msg;
+                    document.body.appendChild(el);
+                    clearTimeout(this.toastTimer);
+                    this.toastTimer = setTimeout(() => el.remove(), 2500);
+                },
                 
                 get stats() {
                     const total = this.transactions.length;
@@ -342,6 +360,15 @@
                         if (transaction.reviewed === undefined) {
                             transaction.reviewed = false;
                         }
+                        // restore from localStorage
+                        const key = this._txKey(transaction);
+                        const saved = localStorage.getItem(key);
+                        if (saved) {
+                            try {
+                                const s = JSON.parse(saved);
+                                Object.assign(transaction, s);
+                            } catch {}
+                        }
                     });
                 },
                 
@@ -354,6 +381,27 @@
                     
                     transaction.reviewed = true;
                     transaction.reviewed_at = new Date().toISOString();
+                    // persist locally
+                    this._persistLocal(transaction);
+                    // persist to backend
+                    fetch('/api/save_decision', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            date: transaction.date,
+                            description: transaction.description,
+                            amount: transaction.amount,
+                            payer: transaction.payer,
+                            source: transaction.source,
+                            category: transaction.category,
+                            allowed_amount: transaction.allowed_amount,
+                            notes: transaction.notes,
+                            reviewed_at: transaction.reviewed_at
+                        })
+                    })
+                    .then(r => r.json())
+                    .then(() => this.showToast('Decision saved'))
+                    .catch(() => this.showToast('Save failed', 'error'));
                     
                     // Auto-scroll to next unreviewed transaction
                     setTimeout(() => {
@@ -440,6 +488,20 @@
                             block: 'center' 
                         });
                     }
+                },
+                _txKey(t) {
+                    return `tx:${(t.date || '')}|${(t.description || '').toLowerCase()}|${t.amount}|${t.payer || ''}`
+                },
+                _persistLocal(t) {
+                    try {
+                        localStorage.setItem(this._txKey(t), JSON.stringify({
+                            category: t.category,
+                            allowed_amount: t.allowed_amount,
+                            notes: t.notes,
+                            reviewed: t.reviewed,
+                            reviewed_at: t.reviewed_at
+                        }));
+                    } catch {}
                 }
             }
         }
