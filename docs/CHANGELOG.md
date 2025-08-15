@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Repository structure cleanup and standardization
 - Documentation overhaul with comprehensive guides
+ - Web UI startup UX: added /healthz, improved browser fallback, HOST/PORT support
 
 ## [6.0.1] - 2025-08-10
 

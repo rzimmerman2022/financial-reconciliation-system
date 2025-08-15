@@ -311,6 +311,10 @@ nssm set FinancialReconciliation AppDirectory "C:\financial-reconciliation"
 nssm set FinancialReconciliation DisplayName "Financial Reconciliation System"
 nssm set FinancialReconciliation Description "Financial transaction reconciliation web service"
 
+# Optional: set host/port
+setx HOST 127.0.0.1
+setx PORT 5000
+
 # Start service
 nssm start FinancialReconciliation
 ```

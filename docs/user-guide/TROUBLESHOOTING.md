@@ -253,6 +253,10 @@ xvfb-run -a python bin/review-gui
 
 # Option 3: Use web interface instead
 python -m src.review.web_interface
+
+If browser doesn’t open:
+- Manually open http://localhost:5000
+- Health check: http://localhost:5000/healthz → ok
 ```
 
 #### Issue: GUI appears but buttons don't work

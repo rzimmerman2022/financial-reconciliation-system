@@ -42,7 +42,12 @@ python bin/launch_web_interface
 # or
 python -m src.review.web_interface
 ```
-🌐 **Your browser will automatically open to http://localhost:5000**
+🌐 Your browser should open to http://localhost:5000
+
+If it doesn’t:
+- Manually open http://localhost:5000
+- Health check: http://localhost:5000/healthz → should return ok
+- To change host/port: set HOST/PORT or FLASK_RUN_HOST/FLASK_RUN_PORT
 
 ### 4. Run Basic Reconciliation
 ```bash

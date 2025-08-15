@@ -35,6 +35,10 @@ import time
 
 app = Flask(__name__)
 
+# Server configuration (set in main)
+SERVER_HOST = '127.0.0.1'
+SERVER_PORT = 5000
+
 # Create templates directory
 templates_dir = Path("templates")
 templates_dir.mkdir(exist_ok=True)
@@ -743,10 +747,14 @@ def save_decision():
     except Exception as e:
         return jsonify({'success': False, 'error': str(e)}), 500
 
+def _server_url() -> str:
+    host_for_url = 'localhost' if SERVER_HOST in ('127.0.0.1', '0.0.0.0') else SERVER_HOST
+    return f"http://{host_for_url}:{SERVER_PORT}"
+
 def open_browser():
     """Open browser after a short delay."""
     time.sleep(1.5)  # Wait for server to start
-    url = 'http://localhost:5000'
+    url = _server_url()
     success = False
     try:
         success = webbrowser.open(url)
@@ -766,13 +774,13 @@ def open_browser():
                 import subprocess
                 subprocess.run([
                     'powershell', '-NoProfile', '-Command',
-                    'Start-Process', 'http://localhost:5000'
+                    'Start-Process', url
                 ], check=False)
                 success = True
         except Exception:
             success = False
     if not success:
-        print("Could not auto-open a browser. Please open http://localhost:5000 manually.")
+        print(f"Could not auto-open a browser. Please open {url} manually.")
 
 def main():
     """Launch the gold standard modern web GUI."""
@@ -785,8 +793,17 @@ def main():
     print("Template created successfully!")
     print("Starting web server...")
     print()
-    print("Web Interface URL: http://localhost:5000")
-    print("Health Check:     http://localhost:5000/healthz (should return 'ok')")
+    # Read host/port from environment (with sensible defaults)
+    global SERVER_HOST, SERVER_PORT
+    SERVER_HOST = os.environ.get('HOST', os.environ.get('FLASK_RUN_HOST', '127.0.0.1'))
+    try:
+        SERVER_PORT = int(os.environ.get('PORT') or os.environ.get('FLASK_RUN_PORT') or 5000)
+    except ValueError:
+        SERVER_PORT = 5000
+
+    url = _server_url()
+    print(f"Web Interface URL: {url}")
+    print(f"Health Check:     {url}/healthz (should return 'ok')")
     print()
     print("Gold Standard Features:")
     print("   • Glassmorphism design with backdrop blur")
@@ -812,10 +829,10 @@ def main():
     
     # Start the Flask app
     try:
-        app.run(debug=False, host='127.0.0.1', port=5000, use_reloader=False, threaded=True)
+        app.run(debug=False, host=SERVER_HOST, port=SERVER_PORT, use_reloader=False, threaded=True)
     except OSError as e:
         print(f"Failed to start server: {e}")
-        print("If port 5000 is in use, set FLASK_RUN_PORT=another_port and retry.")
+        print("If the port is in use, set PORT or FLASK_RUN_PORT to an available port and retry.")
 
 if __name__ == "__main__":
     main()

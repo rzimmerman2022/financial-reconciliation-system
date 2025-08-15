@@ -358,7 +358,8 @@ pytest tests/unit/test_accounting_engine.py::TestAccountingEngine::test_double_e
 
 #### Web Interface Test
 - **Status**: ✅ RUNNING
-- **Server**: Flask running on http://127.0.0.1:5000
+- **Server**: Flask running on http://127.0.0.1:5000 (health: /healthz)
+- **Config**: HOST/PORT (or FLASK_RUN_HOST/FLASK_RUN_PORT) to customize binding
 - **Assets**: Can run offline when `USE_LOCAL_ASSETS=true` with assets placed in `static/vendor/`
 
 #### Test Suite Status

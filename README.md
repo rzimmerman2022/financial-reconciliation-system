@@ -384,6 +384,11 @@ Offline assets: To run without internet access for CSS/JS, set an env var and pl
 - Recommended: Note SHA256 hashes in `docs/CURRENT_STATE.md` after updating assets
 - See also: `docs/user-guide/LOCAL_ASSETS.md` for full offline setup instructions
 
+Server tips:
+- Health check: visit `http://localhost:5000/healthz` → should return `ok`.
+- If the browser doesn’t open automatically, copy the URL printed in the terminal.
+- Customize binding via env vars: `HOST` (or `FLASK_RUN_HOST`) and `PORT` (or `FLASK_RUN_PORT`).
+
 #### 🖱️ Navigation
 - **Transaction List**: Scroll through all transactions requiring review
 - **Review Controls**: Classify transactions with dropdown menus
