@@ -82,6 +82,7 @@ def create_modern_template():
         /* Glassmorphism effect */
         .glass {
             background: rgba(255, 255, 255, 0.1);
+            -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
@@ -153,10 +154,10 @@ def create_modern_template():
                 <div class="hidden md:block">
                     <input type="text" x-model="searchQuery" placeholder="Search description, payer, amount..." class="px-3 py-2 rounded-lg bg-white/70 border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent w-72">
                 </div>
-                <button @click="toggleTheme()" class="p-2 rounded-lg bg-white/50 hover:bg-white/70 transition-colors">
+                <button @click="toggleTheme()" aria-label="Toggle color theme" title="Toggle color theme" class="p-2 rounded-lg bg-white/50 hover:bg-white/70 transition-colors">
                     <span x-text="darkMode ? 'Light' : 'Dark'"></span>
                 </button>
-                <button @click="exportData()" class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors">
+                <button @click="exportData()" aria-label="Export reviewed transactions" title="Export reviewed transactions" class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors">
                     Export
                 </button>
             </div>
@@ -171,7 +172,7 @@ def create_modern_template():
                 <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                     <div class="flex items-center gap-3 flex-1">
                         <input type="text" x-model="searchQuery" placeholder="Search description, payer, source, amount..." class="px-3 py-2 rounded-lg bg-white/70 border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent w-full md:w-96">
-                        <select x-model="categoryFilter" class="px-3 py-2 rounded-lg bg-white/70 border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        <select x-model="categoryFilter" aria-label="Filter by category" title="Filter by category" class="px-3 py-2 rounded-lg bg-white/70 border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                             <option value="">All categories</option>
                             <template x-for="c in categories" :key="c.value">
                                 <option :value="c.value" x-text="c.label"></option>
