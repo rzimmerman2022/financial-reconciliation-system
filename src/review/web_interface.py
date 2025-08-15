@@ -148,7 +148,11 @@ def create_modern_template():
                 </div>
             </div>
             
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-3">
+                <!-- Quick Search -->
+                <div class="hidden md:block">
+                    <input type="text" x-model="searchQuery" placeholder="Search description, payer, amount..." class="px-3 py-2 rounded-lg bg-white/70 border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent w-72">
+                </div>
                 <button @click="toggleTheme()" class="p-2 rounded-lg bg-white/50 hover:bg-white/70 transition-colors">
                     <span x-text="darkMode ? 'Light' : 'Dark'"></span>
                 </button>
@@ -162,6 +166,25 @@ def create_modern_template():
     <!-- Main Content -->
     <main class="pt-24 px-6 pb-6">
         <div class="max-w-7xl mx-auto">
+            <!-- Filters -->
+            <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-4 mb-6">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                    <div class="flex items-center gap-3 flex-1">
+                        <input type="text" x-model="searchQuery" placeholder="Search description, payer, source, amount..." class="px-3 py-2 rounded-lg bg-white/70 border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent w-full md:w-96">
+                        <select x-model="categoryFilter" class="px-3 py-2 rounded-lg bg-white/70 border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="">All categories</option>
+                            <template x-for="c in categories" :key="c.value">
+                                <option :value="c.value" x-text="c.label"></option>
+                            </template>
+                        </select>
+                    </div>
+                    <label class="inline-flex items-center gap-2 text-gray-700">
+                        <input type="checkbox" x-model="hideReviewed" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                        <span>Hide reviewed</span>
+                    </label>
+                </div>
+            </div>
+
             <!-- Empty state -->
             <div x-show="transactions.length === 0" class="bg-white/80 backdrop-blur-sm rounded-2xl p-10 text-center mb-8">
                 <h3 class="text-xl font-semibold text-gray-800 mb-2">No transactions to review</h3>
@@ -233,7 +256,7 @@ def create_modern_template():
             
             <!-- Transaction Cards -->
             <div class="space-y-6" x-show="transactions.length > 0">
-                <template x-for="(transaction, index) in transactions" :key="index">
+                <template x-for="(transaction, index) in filteredTransactions" :key="index">
                     <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 card-hover slide-in"
                          :class="transaction.reviewed ? 'opacity-60' : ''">
                         
@@ -267,7 +290,7 @@ def create_modern_template():
                                 <label class="block text-sm font-semibold text-gray-700 mb-3">Category</label>
                                 <div class="flex flex-wrap gap-3">
                                     <template x-for="category in categories" :key="category.value">
-                                        <button @click="transaction.category = category.value"
+                                        <button @click="transaction.category = category.value; _persistLocal(transaction)"
                                                 class="px-4 py-2 rounded-full transition-all duration-200"
                                                 :class="transaction.category === category.value ? 
                                                        'bg-blue-500 text-white shadow-lg' : 
@@ -287,23 +310,24 @@ def create_modern_template():
                                             <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">$</span>
                                             <input type="number" 
                                                    x-model="transaction.allowed_amount"
+                                                   @input="_persistLocal(transaction)"
                                                    class="w-full pl-8 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                                                    step="0.01">
                                         </div>
                                     </div>
                                     <div class="flex space-x-2 mt-2">
-                                        <button @click="transaction.allowed_amount = Math.abs(transaction.amount)"
+                                        <button @click="transaction.allowed_amount = Math.abs(transaction.amount); _persistLocal(transaction)"
                                                 class="px-3 py-1 text-sm bg-green-100 text-green-700 rounded-lg hover:bg-green-200">Full</button>
-                                        <button @click="transaction.allowed_amount = Math.abs(transaction.amount) / 2"
+                                        <button @click="transaction.allowed_amount = Math.abs(transaction.amount) / 2; _persistLocal(transaction)"
                                                 class="px-3 py-1 text-sm bg-yellow-100 text-yellow-700 rounded-lg hover:bg-yellow-200">Half</button>
-                                        <button @click="transaction.allowed_amount = 0"
+                                        <button @click="transaction.allowed_amount = 0; _persistLocal(transaction)"
                                                 class="px-3 py-1 text-sm bg-red-100 text-red-700 rounded-lg hover:bg-red-200">Zero</button>
                                     </div>
                                 </div>
                                 
                                 <div>
                                     <label class="block text-sm font-semibold text-gray-700 mb-2">Notes</label>
-                                    <textarea x-model="transaction.notes"
+                                    <textarea x-model="transaction.notes" @input="_persistLocal(transaction)"
                                               placeholder="Add any notes about this transaction..."
                                               class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
                                               rows="3"></textarea>
@@ -376,10 +400,14 @@ def create_modern_template():
     </div>
     
     <script>
-        function reviewApp() {
+    function reviewApp() {
             return {
                 darkMode: false,
                 transactions: {{ transactions | tojson }},
+        // filters
+        searchQuery: '',
+        hideReviewed: false,
+        categoryFilter: '',
                 categories: [
                     { label: '💰 Expense', value: 'expense' },
                     { label: '🏠 Rent', value: 'rent' },
@@ -408,6 +436,17 @@ def create_modern_template():
                         reviewed,
                         remaining: total - reviewed
                     };
+                },
+                get filteredTransactions() {
+                    const q = (this.searchQuery || '').toLowerCase().trim();
+                    const byQuery = (t) => {
+                        if (!q) return true;
+                        const parts = [t.description, t.payer, t.source, String(t.amount), t.category].map(x => (x || '').toString().toLowerCase());
+                        return parts.some(p => p.includes(q));
+                    };
+                    const byReviewed = (t) => this.hideReviewed ? !t.reviewed : true;
+                    const byCategory = (t) => this.categoryFilter ? (t.category === this.categoryFilter) : true;
+                    return this.transactions.filter(t => byQuery(t) && byReviewed(t) && byCategory(t));
                 },
                 
                 init() {
@@ -438,7 +477,9 @@ def create_modern_template():
                 },
                 
                 saveTransaction(index) {
-                    const transaction = this.transactions[index];
+                    // We map from filtered index to original index for correctness
+                    const tx = this.filteredTransactions[index];
+                    const transaction = this.transactions.find(t => this._txKey(t) === this._txKey(tx)) || tx;
                     if (!transaction.category) {
                         alert('Please select a category');
                         return;
@@ -470,7 +511,9 @@ def create_modern_template():
                     
                     // Auto-scroll to next unreviewed transaction
                     setTimeout(() => {
-                        const nextIndex = this.transactions.findIndex((t, i) => i > index && !t.reviewed);
+                        const allCards = Array.from(document.querySelectorAll('.card-hover'));
+                        const currentIdx = allCards.findIndex(c => c.contains(document.activeElement)) || index;
+                        const nextIndex = this.transactions.findIndex((t, i) => i > currentIdx && !t.reviewed);
                         if (nextIndex !== -1) {
                             document.querySelectorAll('.card-hover')[nextIndex].scrollIntoView({ 
                                 behavior: 'smooth', 

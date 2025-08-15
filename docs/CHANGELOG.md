@@ -12,6 +12,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Documentation overhaul with comprehensive guides
  - Web UI startup UX: added /healthz, improved browser fallback, HOST/PORT support
 
+### Added
+- Web UI: client-side search and category filter, "hide reviewed" toggle
+- Web UI: local autosave for category/amount/notes with restore on reload
+- Web UI: backend persistence via /api/save_decision into SQLite (data/phase5_manual_reviews.db)
+
 ## [6.0.1] - 2025-08-10
 
 ### Fixed

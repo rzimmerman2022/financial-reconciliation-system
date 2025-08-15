@@ -104,9 +104,10 @@ python -m src.review.web_interface
 
 # Features available:
 # - Real-time progress tracking
-# - Interactive transaction review
-# - Mobile-responsive design
-# - One-click CSV export
+# - Search and category filter + hide reviewed toggle
+# - Local autosave (notes/category/amount persist in your browser)
+# - Server-side save on "Save & Next" to SQLite (data/phase5_manual_reviews.db)
+# - Mobile-responsive design and one-click CSV export
 # - Glassmorphism UI design
 ```
 

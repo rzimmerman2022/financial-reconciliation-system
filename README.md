@@ -188,7 +188,7 @@ python bin/launch_web_interface
 ## or
 python -m src.review.web_interface
 # Opens automatically at http://localhost:5000
-# Features: Real-time progress, interactive charts, mobile-responsive design
+# Features: Real-time progress, search/filter, hide reviewed, local autosave, SQLite-backed persistence
 ```
 
 #### Option 2: Command Line Interface
